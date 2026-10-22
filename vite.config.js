@@ -2,6 +2,7 @@
 // one tile per name: shows the .webp (or the .gif if that's all there is) and links every format
 // tiles are split into sections by the gen/<section>/ folder they come from, with a divider between
 // hand-made files that have no gen file go in the first section
+// only files inside a subject folder are tiles, so root files like favicon.webp stay out
 // tile images get ?v=<hash> so browsers drop old copies when a file changes, links stay clean for hotlinking
 import{readdirSync as rd,readFileSync as rf}from'fs'
 import{createHash}from'crypto'
@@ -12,7 +13,7 @@ const dims=(b,x)=>x=='gif'?[b.readUInt16LE(6),b.readUInt16LE(8)]:[b.readUIntLE(2
 const gallery=()=>{
   const sec={},g=Object.fromEntries(sections.map(s=>[s,{}]))
   for(const f of walk('gen').filter(f=>f.endsWith('.js'))){const[,s,...r]=f.split('/');sec[r.join('/').slice(0,-3)]=s}
-  for(const f of walk('public').filter(f=>/\.(webp|gif)$/.test(f)).sort()){
+  for(const f of walk('public').filter(f=>/^public\/[^/]+\/.+\.(webp|gif)$/.test(f)).sort()){
     const p=f.slice(7),x=p.split('.').pop(),id=p.slice(0,-x.length-1)
     if(!hidden.includes(p))(g[sec[id]??sections[0]][id]??={})[x]=f
   }
