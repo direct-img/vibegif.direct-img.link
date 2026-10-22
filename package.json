@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gen": "node scripts/gen.js"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^1.0.13",
+    "sharp": "^0.35.5",
     "vite": "^8.3.5"
   }
 }
