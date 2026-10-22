@@ -1,4 +1,5 @@
-// renders gen/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
+// renders gen/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
+// the section folder (bw, color) only picks where it shows in the gallery, it isn't part of the url
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    re-renders the named ones
 import{createCanvas}from'@napi-rs/canvas'
@@ -8,8 +9,11 @@ import{dirname,resolve}from'path'
 import{pathToFileURL as url}from'url'
 const S=256,redo=process.argv.slice(2)
 const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):`${d}/${e.name}`)
-for(const f of walk('gen').filter(f=>f.endsWith('.js')).sort()){
-  const id=f.slice(4,-3),o=`public/${id}`
+const files=walk('gen').filter(f=>f.endsWith('.js')).sort(),ids=files.map(f=>f.split('/').slice(2).join('/').slice(0,-3))
+const dup=ids.find((d,i)=>ids.indexOf(d)!=i)
+if(dup)throw Error(`${dup} is in more than one section`)
+for(const[k,f]of files.entries()){
+  const id=ids[k],o=`public/${id}`
   if(!redo.includes(id)&&ex(o+'.webp')&&ex(o+'.gif'))continue
   const{default:draw,frames=16,delay=80}=await import(url(resolve(f)))
   const px=[...Array(frames)].map((_,i)=>{
