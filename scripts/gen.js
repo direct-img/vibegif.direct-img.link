@@ -1,5 +1,5 @@
 // renders gen/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
-// the section folder (bw, color) only picks where it shows in the gallery, it isn't part of the url
+// the section folder (bw, color, anime) only picks where it shows in the gallery, it isn't part of the url
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    re-renders the named ones
 import{createCanvas}from'@napi-rs/canvas'
