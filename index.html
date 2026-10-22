@@ -5,28 +5,38 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>vibegif</title>
 <meta name="description" content="public domain gallery of 1000 gifs and animated webp">
+<script>try{localStorage.bg&&document.documentElement.classList.add("dark")}catch{}</script>
 <style>
+:root{--bg:#fff;--fg:#000;--mute:#888}
+.dark{--bg:#000;--fg:#fff;--mute:#777}
 @font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/multipleof4/stain.otf@master/dist/Stain.otf") format("opentype");font-display:swap}
 *{box-sizing:border-box;margin:0}
-body{background:#fff;color:#000;font-family:"Stain",sans-serif;text-align:center;padding:24px 16px}
-h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;max-width:900px}
+body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px}
+h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;max-width:900px;padding:0 40px}
 p{font-size:clamp(16px,3vw,22px);margin-bottom:16px}
 iframe{border:0;border-radius:6px;margin-bottom:28px}
 main{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;max-width:1400px;margin:auto}
 figure>a{display:flex;align-items:center;justify-content:center;aspect-ratio:1}
 figcaption{font-size:14px;margin-top:4px}
-figcaption a{color:#888;text-decoration:none;margin:0 4px}
-figcaption a:hover{color:#000;text-decoration:underline}
+figcaption a{color:var(--mute);text-decoration:none;margin:0 4px}
+figcaption a:hover{color:var(--fg);text-decoration:underline}
+#bg{position:absolute;top:16px;right:16px;width:28px;height:28px;padding:0;border:2px solid var(--fg);border-radius:50%;background:linear-gradient(90deg,var(--fg) 50%,var(--bg) 50%);cursor:pointer}
 img{width:100%;height:100%;object-fit:contain}
 @media(max-width:480px){main{grid-template-columns:repeat(3,1fr);gap:10px}}
 </style>
 </head>
 <body>
+<button id="bg" aria-label="black background" aria-pressed="false"></button>
 <h1>public domain gallery of 1000 gifs and animated webp</h1>
 <p>feel free to hot link them</p>
 <iframe src="https://github.com/sponsors/multipleof4/button" title="Sponsor multipleof4" height="32" width="114"></iframe>
 <main>
 <!--gallery-->
 </main>
+<script>
+const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
+b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
+sync()
+</script>
 </body>
 </html>
