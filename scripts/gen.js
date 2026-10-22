@@ -1,7 +1,7 @@
 // renders gen/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
 // the section folder (bw, color, anime) only picks where it shows in the gallery, it isn't part of the url
 // npm run gen                 renders only what's missing (published files never change by accident)
-// npm run gen -- cat/blink    re-renders the named ones
+// npm run gen -- cat/blink    renders only the named ones, even if they already exist
 import{createCanvas}from'@napi-rs/canvas'
 import sharp from'sharp'
 import{readdirSync as rd,existsSync as ex,mkdirSync as mk,statSync as st}from'fs'
@@ -14,7 +14,7 @@ const dup=ids.find((d,i)=>ids.indexOf(d)!=i)
 if(dup)throw Error(`${dup} is in more than one section`)
 for(const[k,f]of files.entries()){
   const id=ids[k],o=`public/${id}`
-  if(!redo.includes(id)&&ex(o+'.webp')&&ex(o+'.gif'))continue
+  if(redo.length?!redo.includes(id):ex(o+'.webp')&&ex(o+'.gif'))continue
   const{default:draw,frames=16,delay=80}=await import(url(resolve(f)))
   const px=[...Array(frames)].map((_,i)=>{
     const c=createCanvas(S,S).getContext('2d')
