@@ -5,7 +5,7 @@
 // tile images get ?v=<hash> so browsers drop old copies when a file changes, links stay clean for hotlinking
 import{readdirSync as rd,readFileSync as rf}from'fs'
 import{createHash}from'crypto'
-const sections=['bw','color','anime']
+const sections=['bw','color','anime','manga']
 const hidden=['cat/tail.gif']  // same drawing as cat/wag.gif, kept so old links still work
 const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):`${d}/${e.name}`)
 const dims=(b,x)=>x=='gif'?[b.readUInt16LE(6),b.readUInt16LE(8)]:[b.readUIntLE(24,3)+1,b.readUIntLE(27,3)+1]
