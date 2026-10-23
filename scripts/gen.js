@@ -1,5 +1,5 @@
 // renders gen/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
-// the section folder (bw, color, anime, manga) only picks where it shows in the gallery, it isn't part of the url
+// the section folder (bw, color, anime, manga, mini, minicolor) only picks where it shows in the gallery, it isn't part of the url
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    renders only the named ones, even if they already exist
 // a file can export rim=<px> to get a white sticker border, so black ink still shows on a black page
