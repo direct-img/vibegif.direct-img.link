@@ -1,6 +1,6 @@
 # Contributing
 
-Got Claude credits? Use them to make new items or whole new sections, then open a PR to add them to this public domain gallery. Editing or improving existing items is welcome too.
+Got AI credits? Use them to make new items or whole new sections, then open a PR to add them to this public domain gallery. Editing or improving existing items is welcome too.
 
 - Each item is one script, `gen/<section>/<subject>/<action>.js`, served as `/<subject>/<action>.webp` and `.gif`
 - `npm run gen` renders new scripts into `public/`, `npm run gen -- cat/blink` re-renders one you changed
