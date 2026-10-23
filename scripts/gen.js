@@ -3,7 +3,8 @@
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    renders only the named ones, even if they already exist
 // a file can export rim=<px> to get a white sticker border, so black ink still shows on a black page
-// and invert=true to swap ink and paper (#111 <-> #fff), turning a black silhouette with a white rim into a white one with a dark rim
+// delay can be one number or a list with one entry per frame (ms)
+// invert=true swaps ink and paper (#111 <-> #fff), turning a black silhouette with a white rim into a white one with a dark rim
 import{createCanvas}from'@napi-rs/canvas'
 import sharp from'sharp'
 import{readdirSync as rd,existsSync as ex,mkdirSync as mk,statSync as st}from'fs'

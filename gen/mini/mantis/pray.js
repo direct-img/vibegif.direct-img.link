@@ -1,6 +1,6 @@
 // praying mantis: it sways, tilts its triangle head side to side, and gives its folded forearms a little pump
 const{sin,cos,PI,max}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 export default(c,t)=>{
   const s=sin(T*t),pm=t>.3&&t<.6?sin(PI*(t-.3)/.3):0,ht=.3*sin(T*t+1)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=4

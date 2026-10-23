@@ -1,4 +1,4 @@
-// fills <!--gallery--> in index.html from whatever is in public/
+// fills <!--gallery--> in index.html from whatever is in public/, and every <!--count--> with how many tiles that is
 // one tile per name: shows the .webp (or the .gif if that's all there is) and links every format
 // tiles are split into sections by the gen/<section>/ folder they come from, with a divider between
 // hand-made files that have no gen file go in the first section
@@ -23,4 +23,7 @@ const gallery=()=>{
     return`<figure><a href="/${id}.${x}"><img src="/${id}.${x}?v=${v}" alt="${id.replace('/',' ')}" width="${w}" height="${h}" loading="lazy" decoding="async"></a><figcaption>${links}</figcaption></figure>`
   }).join('\n')).filter(Boolean).join('\n<hr>\n')
 }
-export default{plugins:[{name:'gallery',transformIndexHtml:h=>h.replace('<!--gallery-->',gallery())}]}
+export default{plugins:[{name:'gallery',transformIndexHtml:h=>{
+  const g=gallery()
+  return h.replace('<!--gallery-->',g).replaceAll('<!--count-->',g.split('<figure>').length-1)
+}}]}
