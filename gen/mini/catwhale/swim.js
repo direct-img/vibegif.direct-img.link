@@ -1,9 +1,9 @@
-// cat-whale drifting along: one solid ink shape, it bobs, flicks its tail, twitches an ear, puffs a spout and blinks
+// cat-whale drifting along: one solid white shape with a dark edge, it bobs, flicks its tail, twitches an ear, puffs a spout and blinks
 const{sin,cos,PI,min,max}=Math,T=2*PI
-export const frames=24,delay=85,rim=3,invert=true
+export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{
   const s=sin(T*t),k=sin(T*t-1.4),p=t/.45,tw=t>.6&&t<.68?.3:0,bl=t>.82&&t<.9,tx=46+4*k,ty=92-5*k
-  c.fillStyle=c.strokeStyle='#111';c.lineWidth=6
+  c.fillStyle=c.strokeStyle='#fff';c.lineWidth=6
   c.translate(128,132+7*s);c.rotate(.04*cos(T*t));c.scale(.9,.9);c.translate(-126,-128)
   const shape=(x,y,r,f)=>{c.save();c.translate(x,y);c.rotate(r);c.beginPath();f();c.fill();c.stroke();c.restore()}
   shape(0,0,0,()=>{
@@ -24,7 +24,7 @@ export default(c,t)=>{
     for(const d of[-1,1])c.beginPath(),c.moveTo(x,y-h),c.quadraticCurveTo(x+d*w*.8,y-h-w*.5,x+d*w,y-h+w*.5),c.stroke(),
       c.beginPath(),c.arc(x+d*w,y-h+w*.5+5,5*g,0,T),c.fill()
   }
-  c.fillStyle=c.strokeStyle='#fff'
+  c.fillStyle=c.strokeStyle='#111'
   if(bl)c.lineWidth=3.5,c.beginPath(),c.arc(190,128,6,.15*PI,.85*PI),c.stroke()
   else c.beginPath(),c.arc(190,130,6.5,0,T),c.fill()
   c.lineWidth=3;c.beginPath();c.moveTo(214,160);c.quadraticCurveTo(206,167,196,165);c.stroke()

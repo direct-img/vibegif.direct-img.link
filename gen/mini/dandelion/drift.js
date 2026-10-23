@@ -1,11 +1,11 @@
 // lion whose mane is dandelion fluff: three seeds blow off and drift away, new ones grow back in their place
 const{sin,cos,PI,min,max}=Math,T=2*PI
-export const frames=24,delay=85,rim=3,invert=true
+export const frames=24,delay=85,rim=3,rimColor='#111'
 const N=18,F=[1,2,3]
 const seed=c=>{c.beginPath();c.moveTo(0,0);c.lineTo(24,0);for(let j=-2;j<=2;j++)c.moveTo(24,0),c.lineTo(24+10*cos(j*.42),10*sin(j*.42));c.stroke()}
 export default(c,t)=>{
   const bl=t>.86&&t<.92
-  c.fillStyle=c.strokeStyle='#111';c.lineWidth=6
+  c.fillStyle=c.strokeStyle='#fff';c.lineWidth=6
   c.translate(128,128);c.scale(1.1,1.1);c.translate(-128,-128)
   const shape=g=>{c.beginPath();g();c.fill();c.stroke()}
   c.lineWidth=7;c.beginPath();c.moveTo(150,204);c.quadraticCurveTo(186,210,188+6*sin(T*t),178);c.stroke();c.lineWidth=6
@@ -23,7 +23,7 @@ export default(c,t)=>{
   c.lineWidth=6
   for(const d of[-1,1])shape(()=>c.arc(128+d*30,70,11,0,T))
   shape(()=>c.arc(128,100,40,0,T))
-  c.fillStyle=c.strokeStyle='#fff'
+  c.fillStyle=c.strokeStyle='#111'
   for(const d of[-1,1])if(bl)c.lineWidth=3.5,c.beginPath(),c.arc(128+d*15,94,5,.15*PI,.85*PI),c.stroke()
   else c.beginPath(),c.arc(128+d*15,96,5,0,T),c.fill()
   c.beginPath();c.moveTo(121,108);c.lineTo(135,108);c.lineTo(128,116);c.closePath();c.fill()
