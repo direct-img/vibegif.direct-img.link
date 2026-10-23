@@ -1,6 +1,6 @@
 // sheep whose body is a little rain cloud: it floats and bobs, the puffs breathe, tiny legs dangle, raindrops fall from underneath
 const{sin,PI,min}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 const P=[[78,112,28],[106,90,32],[142,88,32],[170,108,26],[96,130,28],[132,132,30],[160,128,24],[62,130,20]]
 export default(c,t)=>{
   const y=5*sin(T*t),bl=t>.5&&t<.56

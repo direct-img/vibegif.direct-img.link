@@ -1,6 +1,6 @@
 // phoenix rising: big wingbeats lift it, the flame crest and tail feathers flicker
 const{sin,PI}=Math,T=2*PI
-export const frames=24,delay=70,rim=3
+export const frames=24,delay=70,rim=3,invert=true
 export default(c,t)=>{
   const f=sin(T*t)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

@@ -1,6 +1,6 @@
 // narwhal swimming along: bobs, flicks its tail, and the white spiral on its long tusk keeps twirling toward the tip
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 export default(c,t)=>{
   const s=sin(T*t),k=sin(T*t-1.4),bl=t>.8&&t<.86
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

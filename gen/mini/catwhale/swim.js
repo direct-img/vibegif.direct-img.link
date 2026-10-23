@@ -1,6 +1,6 @@
 // cat-whale drifting along: one solid ink shape, it bobs, flicks its tail, twitches an ear, puffs a spout and blinks
 const{sin,cos,PI,min,max}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 export default(c,t)=>{
   const s=sin(T*t),k=sin(T*t-1.4),p=t/.45,tw=t>.6&&t<.68?.3:0,bl=t>.82&&t<.9,tx=46+4*k,ty=92-5*k
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

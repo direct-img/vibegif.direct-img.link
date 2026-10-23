@@ -1,6 +1,6 @@
 // owl nestled in a crescent moon: the moon's curve is its back and left wing, the lower tip is the perch it grips; big ringed eyes blink, the head tilts, a star twinkles
 const{sin,cos,PI,atan2,sqrt,hypot}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 // crescent edges are circles through tips B and A, bulging s px toward the lower left
 const B=[84,60],A=[204,214],M=[(B[0]+A[0])/2,(B[1]+A[1])/2],L=hypot(A[0]-B[0],A[1]-B[1]),n=[(B[1]-A[1])/L,(A[0]-B[0])/L]
 const circ=s=>{const r=(L*L/4+s*s)/(2*s);return[M[0]-(r-s)*n[0],M[1]-(r-s)*n[1],r]}

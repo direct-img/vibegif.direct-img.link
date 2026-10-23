@@ -1,6 +1,6 @@
 // seahorse standing upright in the current: sways side to side, its dorsal fin flutters, tail curled under, blinks
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 export default(c,t)=>{
   const s=sin(T*t),bl=t>.78&&t<.84,f=1+.18*sin(T*t*4)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

@@ -1,7 +1,7 @@
 // fox spirit sitting side-on, three white-tipped tails fanned out behind it swaying one after another,
 // a fox-fire flame flickering beside its nose, an ear twitches and it blinks
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 export default(c,t)=>{
   const bl=t>.7&&t<.77,tw=t>.36&&t<.44?.3:0,hr=.04*sin(T*t),f=k=>3*sin(T*t*2+k)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6;c.translate(122,218);c.scale(.88,.88);c.translate(-138,-218)

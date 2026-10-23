@@ -1,6 +1,6 @@
 // heron standing on one leg: S-curved neck and long beak, it tilts its head, the plume feathers sway, it blinks
 const{sin,PI}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 export default(c,t)=>{
   const hd=t>.25&&t<.65?.18*sin(PI*(t-.25)/.4):0,br=sin(T*t),pl=.08*sin(T*t-1),bl=t>.8&&t<.86
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

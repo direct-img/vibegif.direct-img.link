@@ -1,6 +1,6 @@
 // starfish sitting on its two bottom arms, waving hello with its upper right arm, smiling and blinking
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 export default(c,t)=>{
   const cx=128,cy=134+2*sin(T*t*2),bl=t>.7&&t<.76,wv=.5+.5*sin(T*t*2)
   c.fillStyle='#111'

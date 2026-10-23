@@ -1,6 +1,6 @@
 // swan gliding on still water: the neck sways and the head dips, ripples slide back under it, a blink
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=90,rim=3
+export const frames=24,delay=90,rim=3,invert=true
 export default(c,t)=>{
   const s=sin(T*t),hx=172+5*s,hy=70+4*cos(T*t),bl=t>.55&&t<.62
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

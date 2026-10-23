@@ -1,6 +1,6 @@
 // pufferfish: rests, puffs up into a round spiky ball with a surprised look, wobbles, then lets the air out
 const{sin,cos,PI,abs,hypot}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 const sm=x=>x<0?0:x>1?1:x*x*(3-2*x)
 export default(c,t)=>{
   const g=sm((t-.1)/.25)-sm((t-.6)/.25),cx=134,cy=128+4*sin(T*t),rx=56+24*g+2*g*sin(T*t*4),ry=42+38*g,bl=t>.9&&t<.96

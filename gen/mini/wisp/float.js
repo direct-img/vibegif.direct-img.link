@@ -1,6 +1,6 @@
 // will-o-wisp floating: a round flame spirit bobbing and tilting, its flame tips flicker, embers drift up beside it, it blinks
 const{sin,PI}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 export default(c,t)=>{
   const bl=t>.4&&t<.46,Mx=128+6*sin(T*t*2),My=40+4*sin(T*t*3),R=4*sin(T*t*2+1),L=4*sin(T*t*2+2.5)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

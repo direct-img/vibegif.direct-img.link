@@ -1,6 +1,6 @@
 // turtle that carries a little cottage as its shell: it plods in place, the chimney puffs smoke, window and door cut out in white
 const{sin,PI,max,min}=Math,T=2*PI
-export const frames=24,delay=90,rim=3
+export const frames=24,delay=90,rim=3,invert=true
 export default(c,t)=>{
   const b=1.5*sin(2*T*t),bl=t>.8&&t<.86
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

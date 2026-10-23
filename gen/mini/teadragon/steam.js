@@ -1,6 +1,6 @@
 // teapot dragon: the spout is its neck and head, the handle is its arrow-tipped tail; steam puffs from its snout and the lid rattles up
 const{sin,PI,min}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 export default(c,t)=>{
   const lh=t>.4&&t<.6?sin(PI*(t-.4)/.2):0,bl=t>.82&&t<.88
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6

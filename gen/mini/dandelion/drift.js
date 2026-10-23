@@ -1,6 +1,6 @@
 // lion whose mane is dandelion fluff: three seeds blow off and drift away, new ones grow back in their place
 const{sin,cos,PI,min,max}=Math,T=2*PI
-export const frames=24,delay=85,rim=3
+export const frames=24,delay=85,rim=3,invert=true
 const N=18,F=[1,2,3]
 const seed=c=>{c.beginPath();c.moveTo(0,0);c.lineTo(24,0);for(let j=-2;j<=2;j++)c.moveTo(24,0),c.lineTo(24+10*cos(j*.42),10*sin(j*.42));c.stroke()}
 export default(c,t)=>{

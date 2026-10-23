@@ -1,6 +1,6 @@
 // yeti waving hello: shaggy spiky fur all round, one arm waving, a big open smile and a blink
 const{sin,cos,PI}=Math,T=2*PI
-export const frames=24,delay=80,rim=3
+export const frames=24,delay=80,rim=3,invert=true
 export default(c,t)=>{
   const bl=t>.6&&t<.66,br=sin(T*t),a=-2.65+.28*sin(T*t*2)
   c.fillStyle=c.strokeStyle='#111';c.lineWidth=6
