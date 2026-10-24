@@ -3,7 +3,7 @@
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    renders only the named ones, even if they already exist
 // a file can export rim=<px> to get a sticker border, white unless it also exports rimColor, so a shape that matches the page still shows
-// delay can be one number or a list with one entry per frame (ms)
+// delay can be one number or a list with one entry per frame (ms), a number is spread to every frame since sharp only applies it to the first
 import{createCanvas}from'@napi-rs/canvas'
 import sharp from'sharp'
 import{readdirSync as rd,existsSync as ex,mkdirSync as mk,statSync as st}from'fs'
@@ -17,7 +17,8 @@ if(dup)throw Error(`${dup} is in more than one section`)
 for(const[k,f]of files.entries()){
   const id=ids[k],o=`public/${id}`
   if(redo.length?!redo.includes(id):ex(o+'.webp')&&ex(o+'.gif'))continue
-  const{default:draw,frames=16,delay=80,rim=0,rimColor='#fff'}=await import(url(resolve(f)))
+  let{default:draw,frames=16,delay=80,rim=0,rimColor='#fff'}=await import(url(resolve(f)))
+  if(!Array.isArray(delay))delay=Array(frames).fill(delay)
   const px=[...Array(frames)].map((_,i)=>{
     let c=createCanvas(S,S).getContext('2d')
     Object.assign(c,{lineWidth:7,lineCap:'round',lineJoin:'round',strokeStyle:'#111',fillStyle:'#fff'})
