@@ -38,6 +38,11 @@ figcaption a:hover{color:var(--fg);text-decoration:underline}
 #gh svg{width:20px;height:20px;fill:currentColor}
 img{width:100%;height:100%;object-fit:contain}
 hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
+#nl{display:grid;grid-template-columns:1fr auto;gap:8px;max-width:420px;margin:48px auto 0}
+#nl p,#nl div,#nl output{grid-column:1/-1;margin:0}
+#nl input,#nl button{font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0}
+#nl button{background:var(--fg);color:var(--bg);cursor:pointer}
+#nl output{font-size:14px;color:var(--mute)}
 @media(max-width:480px){main{grid-template-columns:repeat(3,1fr);gap:10px}}
 </style>
 </head>
@@ -50,11 +55,32 @@ hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
 <main>
 <!--gallery-->
 </main>
+<form id="nl">
+<p>signup for vibegif newsletter</p>
+<input type="email" name="email" required placeholder="you@example.com" aria-label="email">
+<button>subscribe</button>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAFG4HWETOcDDQ5vg" data-appearance="interaction-only" data-size="flexible"></div>
+<output></output>
+</form>
 <script>
 const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
 b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
 sync()
+const nl=document.getElementById("nl"),m=nl.querySelector("output"),tk=()=>nl.querySelector("[name=cf-turnstile-response]")?.value
+nl.querySelector(".cf-turnstile").dataset.theme=d.classList.contains("dark")?"dark":"light"
+nl.onsubmit=async e=>{
+  e.preventDefault()
+  m.value="subscribing..."
+  for(let i=0;i<50&&!tk();i++)await new Promise(r=>setTimeout(r,100))
+  try{
+    const r=await(await fetch("https://newsletter.planetrenox.com/api/sub",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({pool:"vibegif",email:nl.email.value.trim(),token:tk()||""})})).json()
+    m.value=r.ok?"✓ subscribed!":r.error=="captcha failed"?"couldn't verify you're human, try again":r.error||"error"
+  }catch{m.value="network error"}
+  window.turnstile?.reset()
+}
 </script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script data-goatcounter="https://vibegif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
