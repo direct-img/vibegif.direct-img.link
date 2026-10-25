@@ -4,7 +4,7 @@
 
 <p align="center">public domain gallery of gifs and animated webp<br><a href="https://vibegif.direct-img.link">vibegif.direct-img.link</a></p>
 
-Every file is CC0, hotlink away: `https://vibegif.direct-img.link/cat/blink.webp` (or `.gif`).
+Every file is CC0, hotlink away: `https://vibegif.direct-img.link/cat/wag.webp` (or `.gif`).
 
 ```sh
 npm i
