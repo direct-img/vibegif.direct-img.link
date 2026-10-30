@@ -15,4 +15,9 @@ npm run build  # site goes to dist/
 
 Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-[![direct-img/vibegif.direct-img.link star history](https://starry.direct-img.link/direct-img/vibegif.direct-img.link.svg)](https://starry.direct-img.link)
+<a href="https://starry.direct-img.link">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://starry.direct-img.link/direct-img/vibegif.direct-img.link/dark.svg">
+    <img alt="direct-img/vibegif.direct-img.link star history" src="https://starry.direct-img.link/direct-img/vibegif.direct-img.link.svg">
+  </picture>
+</a>
