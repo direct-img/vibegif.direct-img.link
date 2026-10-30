@@ -15,4 +15,4 @@ npm run build  # site goes to dist/
 
 Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-<p align="center"><img src="https://gh.direct-img.link/direct-img/vibegif.direct-img.link.svg" alt="star history"></p>
+[![direct-img/vibegif.direct-img.link star history](https://gh.direct-img.link/direct-img/vibegif.direct-img.link.svg)](https://gh.direct-img.link)
