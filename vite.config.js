@@ -6,6 +6,7 @@
 // tile images get ?v=<hash> so browsers drop old copies when a file changes, links stay clean for hotlinking
 // <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
+// plus catalog.txt, one line per tile: <id> | the first comment line of its gen script, so people and AIs can grep for one to hotlink
 // /test is index.html again but with only the pending sections, unlisted, for approving new ones before they go live
 import{readdirSync as rd,readFileSync as rf}from'fs'
 import{createHash}from'crypto'
@@ -41,6 +42,12 @@ ${all.map(t=>`<image:image><image:loc>${site+t.src}</image:loc></image:image>`).
 </url>
 </urlset>
 `
+const about=(s,id)=>{try{return rf(`gen/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
+const catalog=s=>`# vibegif: ${s.flat().length} public domain (CC0) animations, hotlink ${site}/<id>.webp (or .gif)
+# transparent background, most are 256x256
+# one line per animation, <id> | what it shows, grouped by section, each section is one art style
+${s.map((ts,k)=>`\n## ${sections[k]}\n`+ts.map(t=>[t.id,about(sections[k],t.id)].filter(Boolean).join(' | ')).join('\n')).join('\n')}
+`
 const test=h=>h.replace('max-image-preview:large','noindex').replace(/<link rel="canonical".*\n/,'').replace('<!--ld-->','')
   .replace('vibegif ·','vibegif test ·').replace(/<h1>.*<\/h1>/,'<h1><!--count--> gifs waiting for approval</h1>').replace('feel free to hot link them','not on the main page yet')
 export default{build:{rolldownOptions:{input:['index.html','test.html']}},plugins:[{name:'gallery',
@@ -50,5 +57,9 @@ export default{build:{rolldownOptions:{input:['index.html','test.html']}},plugin
     return h.replace('<!--gallery-->',s.map(ts=>ts.map(figure).join('\n')).filter(Boolean).join('\n<hr>\n'))
       .replace('<!--ld-->',ld(all)).replaceAll('<!--count-->',all.length)
   },
-  generateBundle(){this.emitFile({type:'asset',fileName:'sitemap.xml',source:sitemap(tiles().flat())})}
+  generateBundle(){
+    const s=tiles()
+    this.emitFile({type:'asset',fileName:'sitemap.xml',source:sitemap(s.flat())})
+    this.emitFile({type:'asset',fileName:'catalog.txt',source:catalog(s)})
+  }
 }]}
