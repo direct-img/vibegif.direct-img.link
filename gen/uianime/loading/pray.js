@@ -1,9 +1,10 @@
 // purple haired shrine maiden squeezing her eyes shut and praying hard while a ring of loading dots spins around her and sparkles twinkle
 const{sin,cos,PI,min}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#9775fa',HD='#6741d9',HL='#e5dbff',RED='#fa5252',BL='#ff8fab',SW='#a5d8ff',DOT=['#fd7e14','#fcc419','#ffe066','#fff3bf']
 const ds=(c,a,b,s,f)=>{for(const[l,k]of[[a,'#111'],[b,s]])c.lineWidth=l,c.strokeStyle=k,c.beginPath(),f(),c.stroke();c.strokeStyle='#111'}
-const spark=(c,x,y,r)=>{c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.15,y+(b-a)*r*.15,x+a*r,y+b*r);c.fill();c.stroke()}
+const spark=(c,x,y,r)=>{if(r<1e-6)return dot(c,x,y);c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.15,y+(b-a)*r*.15,x+a*r,y+b*r);c.fill();c.stroke()}
 export default(c,t,i)=>{
   const n=12
   for(let k=0;k<n;k++){const g=(i-k+n)%n,a=-PI/2+k*T/n;c.fillStyle=DOT[min(g,3)],c.lineWidth=4,c.beginPath(),c.arc(128+104*cos(a),122+104*sin(a),g<3?12-g*1.5:7,0,T),c.fill(),c.stroke()}

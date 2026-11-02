@@ -1,5 +1,6 @@
 // happy rocket blasting up and away with a file strapped to its nose, flame flickering, speed streaks and little clouds rushing past
 const{sin,PI,round}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=16,delay=70
 const RD='#ff6b6b',NZ='#adb5bd',FO='#ff922b',FY='#ffd43b',AR='#4dabf7',LN='#d0ebff',BL='#ffa8a8'
 const cloud=(c,x,y,s)=>{const b=[[-14*s,3*s,10*s],[2*s,-4*s,13*s],[17*s,3*s,9*s]];c.lineWidth=13;for(const[a,d,r]of b)c.beginPath(),c.arc(x+a,y+d,r,0,T),c.stroke();c.fillStyle='#fff';for(const[a,d,r]of b)c.beginPath(),c.arc(x+a,y+d,r,0,T),c.fill();c.lineWidth=7}
@@ -8,7 +9,7 @@ export default(c,t,i)=>{
   c.translate(128,128);c.rotate(.6)
   for(const[x,o,L]of[[-56,0,40],[58,.5,40],[-70,.3,30],[72,.8,30]]){
     const p=(t*2+o)%1,y=-50+p*120,l=L*sin(PI*p)
-    for(const[lw,s]of[[11,'#111'],[5,'#fff']])c.lineWidth=lw,c.strokeStyle=s,c.beginPath(),c.moveTo(x,y-l/2),c.lineTo(x,y+l/2),c.stroke()
+    for(const[lw,s]of[[11,'#111'],[5,'#fff']])c.lineWidth=lw,c.strokeStyle=s,l<1e-6?dot(c,x,y):(c.beginPath(),c.moveTo(x,y-l/2),c.lineTo(x,y+l/2),c.stroke())
   }
   c.strokeStyle='#111'
   for(const[x,o]of[[-88,.1],[90,.6]]){const p=(t+o)%1,s=sin(PI*p);if(s>.15)cloud(c,x,-46+p*92,.85*s)}

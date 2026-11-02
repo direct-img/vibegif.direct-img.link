@@ -1,6 +1,7 @@
 // blissed-out amanita mushroom with a smiling face on its stem, rainbow ripple bands flowing outward across its wobbling cap, white spots pulsing, sparkles rising around it
 export const frames=24,delay=70
 const P=['#ff2e93','#ff7a1a','#ffd21f','#3ddc6a','#1ec8ff','#7b5cff'],T=Math.PI*2,{sin,cos}=Math
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 const D=[[-.55,-.45,13],[.05,-.78,15],[.6,-.42,12],[-.15,-.3,9],[.32,-.2,8],[-.8,-.15,7],[.82,-.12,7]]
 export default(c,t)=>{
   const s=sin(T*t),cx=128+7*s,cy=118,rx=100,ry=80*(1+.04*sin(2*T*t)),cap=()=>{
@@ -17,6 +18,7 @@ export default(c,t)=>{
   for(let j=0;j<6;j++){
     const p=(t+j/6)%1,a=j*2.4+1,x=128+(j%2?1:-1)*(96+12*sin(a)),y=226-p*200,z=16*sin(Math.PI*p)
     c.fillStyle=P[j]
+    if(z<1e-6){dot(c,x,y);continue}
     c.beginPath()
     for(let k=0;k<8;k++){
       const r=k%2?z*.32:z,b=k*Math.PI/4+p*3

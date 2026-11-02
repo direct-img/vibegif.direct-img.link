@@ -1,5 +1,6 @@
 // a paper plane swoops in, flies a loop-the-loop and zooms off the other side, leaving a dashed trail behind it
 const{sin,cos,PI,atan2,min,max,hypot}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=24,delay=60
 const sm=u=>(u=min(1,max(0,u)),u*u*(3-2*u))
 const P=s=>{const w=sm((s-.28)/.38);return[-52+360*s-56*sin(T*w),176-56*(1-cos(T*w))-22*sin(PI*min(1,max(0,s)))]}
@@ -8,7 +9,7 @@ const L=.46
 const trail=(c,h)=>{
   const D=[];let cur=null
   for(const[s,x,y,l]of Q){if(s<h-L||s>h-.06){cur=null;continue}if(l%30<17){if(!cur)D.push(cur=[]);cur.push([x,y,s])}else cur=null}
-  for(const k of[0,1])for(const d of D){const f=(d[0][2]-h+L)/L;c.lineWidth=k?max(0,9*f-1):4+9*f;c.strokeStyle=k?'#fff':'#111';c.beginPath();for(const[x,y]of d)c.lineTo(x,y);c.stroke()}
+  for(const k of[0,1])for(const d of D){const f=(d[0][2]-h+L)/L;c.lineWidth=k?max(0,9*f-1):4+9*f;c.strokeStyle=k?'#fff':'#111';if(d.length<2)dot(c,d[0][0],d[0][1]);else{c.beginPath();for(const[x,y]of d)c.lineTo(x,y);c.stroke()}}
 }
 const plane=(c,h)=>{
   const[x,y]=P(h),[a,b]=P(h-.01),[e,f]=P(h+.01)

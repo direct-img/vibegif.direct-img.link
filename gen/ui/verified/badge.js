@@ -1,8 +1,9 @@
 // scalloped seal badge with a big check, gently wobbling, a shine sweeps across it and little sparkles twinkle
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=20,delay=80
 const cl=u=>min(1,max(0,u))
-const star=(c,x,y,r)=>{c.beginPath();for(let k=0;k<8;k++){const a=k*PI/4,q=k%2?r*.42:r;c.lineTo(x+cos(a)*q,y+sin(a)*q)}c.closePath();c.fill();c.stroke()}
+const star=(c,x,y,r)=>{if(r<1e-6)return dot(c,x,y);c.beginPath();for(let k=0;k<8;k++){const a=k*PI/4,q=k%2?r*.42:r;c.lineTo(x+cos(a)*q,y+sin(a)*q)}c.closePath();c.fill();c.stroke()}
 export default(c,t)=>{
   const a=.1*sin(T*t),sh=cl((t-.12)/.3)
   for(const d of[-1,1]){

@@ -1,6 +1,7 @@
 // girl in an apron dips a ladle into a steaming pot, blows on it, sips, and melts into a happy ^^ with flowers
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=20,delay=80,rim=4
 const tone=(c,s,r)=>{const k=createCanvas(s,s),x=k.getContext('2d');x.fillStyle='#111';for(const[a,b]of[[0,0],[s,0],[0,s],[s,s],[s/2,s/2]])x.beginPath(),x.arc(a,b,r,0,T),x.fill();return c.createPattern(k,'repeat')}
 const ease=u=>(u=max(0,min(1,u)),u*u*(3-2*u))
@@ -8,8 +9,8 @@ const mix=(a,b,u)=>a.map((v,k)=>v+(b[k]-v)*u)
 // ladle keyframes: [bowl x, bowl y, tilt, hand x, hand y]
 const K=[[0,[150,252,0,176,226]],[.18,[150,252,0,176,226]],[.3,[126,178,0,184,206]],[.4,[126,178,0,184,206]],[.46,[124,160,-.5,182,196]],[.56,[124,160,-.5,182,196]],[.64,[150,206,0,188,222]],[.86,[150,206,0,188,222]],[1,[150,252,0,176,226]]]
 const pose=t=>{for(let k=1;k<K.length;k++)if(t<=K[k][0])return mix(K[k-1][1],K[k][1],ease((t-K[k-1][0])/(K[k][0]-K[k-1][0])));return K[0][1]}
-const flower=(c,x,y,r,a)=>{c.save();c.translate(x,y);c.rotate(a);c.fillStyle='#fff';c.lineWidth=3;for(let k=0;k<5;k++){const b=k*T/5;c.beginPath();c.ellipse(cos(b)*r*.6,sin(b)*r*.6,r*.5,r*.35,b,0,T);c.fill();c.stroke()}c.fillStyle='#111';c.beginPath();c.arc(0,0,r*.25,0,T);c.fill();c.restore()}
-const spark=(c,x,y,r)=>{c.fillStyle='#fff';c.lineWidth=2.5;c.beginPath();for(let k=0;k<8;k++){const q=k%2?r*.3:r,b=k*PI/4;c.lineTo(x+cos(b)*q,y+sin(b)*q)}c.closePath();c.fill();c.stroke()}
+const flower=(c,x,y,r,a)=>{if(r<1e-6)return dot(c,x,y,3);c.save();c.translate(x,y);c.rotate(a);c.fillStyle='#fff';c.lineWidth=3;for(let k=0;k<5;k++){const b=k*T/5;c.beginPath();c.ellipse(cos(b)*r*.6,sin(b)*r*.6,r*.5,r*.35,b,0,T);c.fill();c.stroke()}c.fillStyle='#111';c.beginPath();c.arc(0,0,r*.25,0,T);c.fill();c.restore()}
+const spark=(c,x,y,r)=>{c.fillStyle='#fff';c.lineWidth=2.5;if(r<1e-6)return dot(c,x,y);c.beginPath();for(let k=0;k<8;k++){const q=k%2?r*.3:r,b=k*PI/4;c.lineTo(x+cos(b)*q,y+sin(b)*q)}c.closePath();c.fill();c.stroke()}
 export default(c,t)=>{
   const DOT=tone(c,6,1.3),FINE=tone(c,4,.8)
   const[bx,by,ba,hx,hy]=pose(t),dip=t<.24||t>.92,blow=t>=.3&&t<.42,sip=t>=.44&&t<.58,yum=t>=.6&&t<.9

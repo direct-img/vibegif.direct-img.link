@@ -1,5 +1,6 @@
 // turquoise haired girl waving goodbye as a winged love letter flaps up and away into the corner and vanishes with a twinkle
 const{sin,cos,PI,max,min}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#3bc9db',HD='#1098ad',HL='#e3fafc',EYE='#f783ac',ED='#a61e4d',CAR='#d0bfff',CD='#9775fa',FL='#ffd43b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',ENV='#fff9db',HT='#fa5252'
 const ds=(c,a,b,s,f)=>{for(const[l,k]of[[a,'#111'],[b,s]])c.lineWidth=l,c.strokeStyle=k,c.beginPath(),f(),c.stroke();c.strokeStyle='#111'}
@@ -13,7 +14,7 @@ const eye=(c,x,y,d)=>{
   c.lineWidth=2.5;c.beginPath();c.moveTo(x-8,y+18);c.lineTo(x+8,y+18);c.stroke()
 }
 const heart=(c,x,y,s)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();c.moveTo(0,8);c.bezierCurveTo(-13,-1,-9,-12,0,-5);c.bezierCurveTo(9,-12,13,-1,0,8);c.restore();c.fill();c.stroke()}
-const spark=(c,x,y,r)=>{c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.15,y+(b-a)*r*.15,x+a*r,y+b*r);c.fill();c.stroke()}
+const spark=(c,x,y,r)=>{if(r<1e-6)return dot(c,x,y);c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.15,y+(b-a)*r*.15,x+a*r,y+b*r);c.fill();c.stroke()}
 const letter=(c,x,y,s,f)=>{
   c.save();c.translate(x,y);c.scale(s,s);c.rotate(-.25)
   c.fillStyle='#fff';c.lineWidth=5

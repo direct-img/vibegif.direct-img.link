@@ -1,5 +1,6 @@
 // easter chibi with bunny-ear headband and a basket: spots a painted egg in the grass, pulls it out, holds it up sparkling, drops it in her basket
 const{sin,cos,PI,max,min}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f59f00',HL='#fff9db',EYE='#f06595',ED='#a61e4d',DRESS='#a5d8ff',DD='#4dabf7',EAR='#fff',PINK='#faa2c1',BASK='#c08a5e',BD='#8d6346',GRASS='#69db7c',GD='#2f9e44',SHOE='#f783ac',BL='#ffa8a8',MO='#c92a2a',EGG=[['#b197fc','#fff'],['#f783ac','#ffd43b'],['#4dabf7','#fff'],['#ffd43b','#69db7c']]
 const cl=x=>max(0,min(1,x)),ease=x=>x*x*(3-2*x),lerp=(a,b,k)=>[a[0]+(b[0]-a[0])*k,a[1]+(b[1]-a[1])*k]
@@ -16,7 +17,7 @@ const egg=(c,x,y,s,k,a=0)=>{const[f,p]=EGG[k];c.save();c.translate(x,y);c.rotate
   const sh=()=>{c.beginPath();c.moveTo(0,-15);c.bezierCurveTo(11,-15,13,4,12,7);c.bezierCurveTo(10,15,-10,15,-12,7);c.bezierCurveTo(-13,4,-11,-15,0,-15)}
   sh();c.fillStyle=f;c.lineWidth=4/s;c.fill();c.save();c.clip();c.strokeStyle=p;c.lineWidth=3.5/s;c.beginPath();for(let i=0;i<=6;i++)c.lineTo(-14+i*4.7,(i%2?-1:3));c.stroke()
   c.fillStyle=p;for(const[px,py]of[[-5,-8],[5,-8],[0,9]])c.beginPath(),c.arc(px,py,2.2,0,T),c.fill();c.restore();sh();c.stroke();c.restore()}
-const spark=(c,x,y,r)=>{c.beginPath();c.moveTo(x,y-r);for(const[px,py,qx,qy]of[[r,0,r*.18,-r*.18],[0,r,r*.18,r*.18],[-r,0,-r*.18,r*.18],[0,-r,-r*.18,-r*.18]])c.quadraticCurveTo(x+qx,y+qy,x+px,y+py);c.fill();c.stroke()}
+const spark=(c,x,y,r)=>{if(r<1e-6)return dot(c,x,y);c.beginPath();c.moveTo(x,y-r);for(const[px,py,qx,qy]of[[r,0,r*.18,-r*.18],[0,r,r*.18,r*.18],[-r,0,-r*.18,r*.18],[0,-r,-r*.18,-r*.18]])c.quadraticCurveTo(x+qx,y+qy,x+px,y+py);c.fill();c.stroke()}
 export default(c,t)=>{
   const BK=[78,198],GR=[192,222],UP=[170,64]
   const H=t<.15?lerp(BK,GR,ease(t/.15)):t<.3?GR:t<.5?lerp(GR,UP,ease((t-.3)/.2)):t<.78?UP:t<.86?lerp(UP,[150,192],ease((t-.78)/.08)):t<.95?lerp([150,192],BK,ease((t-.86)/.09)):BK

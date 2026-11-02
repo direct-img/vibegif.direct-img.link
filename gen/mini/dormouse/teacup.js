@@ -1,5 +1,6 @@
 // dormouse asleep in a teacup: its back rises and falls with each breath, z's drift up, an ear twitches, its tail hangs over the side
 const{sin,cos,PI,min,max}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{
   const b=sin(T*t),tw=t>.55&&t<.62?.3:0
@@ -7,7 +8,7 @@ export default(c,t)=>{
   const shape=f=>{c.beginPath();f();c.fill();c.stroke()}
   for(let i=0;i<2;i++){
     const q=(t+i/2)%1,z=sin(PI*q)*(7+5*q),x=150+44*q+6*sin(T*q),y=84-58*q
-    c.lineWidth=4;c.beginPath();c.moveTo(x-z,y-z);c.lineTo(x+z,y-z);c.lineTo(x-z,y+z);c.lineTo(x+z,y+z);c.stroke()
+    c.lineWidth=4;if(z<1e-6){dot(c,x,y);continue}c.beginPath();c.moveTo(x-z,y-z);c.lineTo(x+z,y-z);c.lineTo(x-z,y+z);c.lineTo(x+z,y+z);c.stroke()
   }
   c.lineWidth=6
   shape(()=>c.ellipse(128,216,98,16,0,0,T))

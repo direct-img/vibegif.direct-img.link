@@ -1,5 +1,6 @@
 // lilac-haired shop girl in a frilly headband bowing politely in welcome, hands folded in front, sparkles twinkling around her
 const{sin,cos,PI,min,max}=Math,T=2*PI
+const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=12,delay=120
 const SKIN='#ffe3d1',HAIR='#da77f2',HD='#ae3ec9',HL='#f8f0fc',EYE='#20c997',ED='#087f5b',DR='#4c6ef5',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',SP='#ffd43b'
 const eye=(c,x,y,d)=>{
@@ -10,7 +11,7 @@ const eye=(c,x,y,d)=>{
   c.fillStyle='#fff';c.beginPath();c.arc(x-4,y-5,4.5,0,T);c.fill();c.beginPath();c.arc(x+5,y+8,2,0,T);c.fill()
   c.lineWidth=6;c.beginPath();c.moveTo(x-16,y-6);c.quadraticCurveTo(x,y-20,x+16,y-6);c.moveTo(x+d*15,y-7);c.lineTo(x+d*21,y-12);c.stroke()
 }
-const spark=(c,x,y,r)=>{c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.2,y+(b-a)*r*.2,x+a*r,y+b*r);c.fill();c.stroke()}
+const spark=(c,x,y,r)=>{if(r<1e-6)return dot(c,x,y);c.beginPath();c.moveTo(x,y-r);for(const[a,b]of[[1,0],[0,1],[-1,0],[0,-1]])c.quadraticCurveTo(x+(a+b)*r*.2,y+(b-a)*r*.2,x+a*r,y+b*r);c.fill();c.stroke()}
 export default(c,t)=>{
   const b=min(1,max(0,1.6*sin(PI*t)**2-.3)),dn=b>.4
   const head=(f,q=1)=>{c.save();c.translate(128,q?36+40*b:186+40*b);c.scale(1,q?1+.12*b:1-.38*b);c.translate(-128,q?-36:-186);f();c.restore()}
