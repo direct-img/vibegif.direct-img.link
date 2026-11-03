@@ -13,7 +13,8 @@
 .dark{--bg:#000;--fg:#fff;--mute:#777}
 @font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/multipleof4/stain.otf@master/dist/Stain.otf") format("opentype");font-display:swap}
 *{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px}
+body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px;min-height:100dvh;display:flex;flex-direction:column}
+#page{flex:1 0 auto}
 h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;padding:0 40px}
 p{font-size:clamp(16px,3vw,22px);margin-bottom:16px}
 a{color:var(--fg)}
@@ -32,6 +33,7 @@ footer a:hover{color:var(--fg);text-decoration:underline}
 </style>
 </head>
 <body>
+<div id="page">
 <button id="bg" aria-label="black background" aria-pressed="false"></button>
 <h1>vibegif newsletter</h1>
 <p>new sections of the <a href="/">public domain gif gallery</a>, now and then</p>
@@ -45,6 +47,7 @@ footer a:hover{color:var(--fg);text-decoration:underline}
 <div class="cf-turnstile" data-sitekey="0x4AAAAAAFG4HWETOcDDQ5vg" data-appearance="interaction-only" data-size="flexible"></div>
 <output></output>
 </form>
+</div>
 <footer><a href="/faq/">FAQ</a></footer>
 <script>
 const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
