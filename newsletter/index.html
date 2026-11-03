@@ -26,7 +26,7 @@ time{color:var(--mute);white-space:nowrap}
 #nl input,#nl button{font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0}
 #nl button{background:var(--fg);color:var(--bg);cursor:pointer}
 #nl output{font-size:14px;color:var(--mute)}
-footer{max-width:1400px;margin:40px auto 0;padding-top:10px;border-top:1px solid var(--mute);font-size:14px}
+footer{margin:40px -16px 0;padding-top:10px;border-top:.5px solid color-mix(in srgb,var(--mute),transparent 45%);font-size:14px}
 footer a{color:var(--mute);text-decoration:none;margin:0 8px}
 footer a:hover{color:var(--fg);text-decoration:underline}
 </style>
@@ -45,7 +45,7 @@ footer a:hover{color:var(--fg);text-decoration:underline}
 <div class="cf-turnstile" data-sitekey="0x4AAAAAAFG4HWETOcDDQ5vg" data-appearance="interaction-only" data-size="flexible"></div>
 <output></output>
 </form>
-<footer><a href="/faq/">faq</a></footer>
+<footer><a href="/faq/">FAQ</a></footer>
 <script>
 const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
 b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
