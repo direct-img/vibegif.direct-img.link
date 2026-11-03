@@ -45,6 +45,9 @@ hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
 #nl output{font-size:14px;color:var(--mute)}
 #nl a{color:inherit}
 @media(max-width:480px){main{grid-template-columns:repeat(3,1fr);gap:10px}}
+footer{max-width:1400px;margin:40px auto 0;padding-top:10px;border-top:1px solid var(--mute);font-size:14px}
+footer a{color:var(--mute);text-decoration:none;margin:0 8px}
+footer a:hover{color:var(--fg);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -63,6 +66,7 @@ hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
 <div class="cf-turnstile" data-sitekey="0x4AAAAAAFG4HWETOcDDQ5vg" data-appearance="interaction-only" data-size="flexible"></div>
 <output></output>
 </form>
+<footer><a href="/faq/">faq</a></footer>
 <script>
 const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
 b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}

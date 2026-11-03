@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vibegif faq · webp or gif?</title>
+<link rel="icon" type="image/webp" href="/favicon.webp">
+<link rel="canonical" href="https://vibegif.direct-img.link/faq/">
+<meta name="description" content="vibegif faq: should you use webp or gif? webp, it has more colors and smooth semi-transparent edges">
+<script>try{localStorage.bg&&document.documentElement.classList.add("dark")}catch{}</script>
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#888}
+.dark{--bg:#000;--fg:#fff;--mute:#777}
+@font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/multipleof4/stain.otf@master/dist/Stain.otf") format("opentype");font-display:swap}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px}
+h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;padding:0 40px}
+p{font-size:clamp(16px,3vw,22px);margin-bottom:16px}
+a{color:var(--fg)}
+section{max-width:640px;margin:32px auto;text-align:left}
+h2{font-weight:400;font-size:clamp(19px,3.6vw,28px);margin-bottom:10px}
+section p{font-size:clamp(16px,2.6vw,19px);line-height:1.5}
+#bg{position:absolute;top:16px;right:16px;width:28px;height:28px;padding:0;border:2px solid var(--fg);border-radius:50%;background:linear-gradient(90deg,var(--fg) 50%,var(--bg) 50%);cursor:pointer}
+footer{max-width:1400px;margin:40px auto 0;padding-top:10px;border-top:1px solid var(--mute);font-size:14px}
+footer a{color:var(--mute);text-decoration:none;margin:0 8px}
+footer a:hover{color:var(--fg);text-decoration:underline}
+</style>
+</head>
+<body>
+<button id="bg" aria-label="black background" aria-pressed="false"></button>
+<h1>faq</h1>
+<p><a href="/">back to the gallery</a></p>
+<section id="webp-or-gif">
+<h2>should I use webp or gif?</h2>
+<p>the maintainers of vibegif recommend webp. it's actually more quality than gif, because gif is limited in color range (256 colors per frame) and semi-transparency (every pixel is either fully see-through or fully solid), so gradients get banded and soft edges get jagged. every animation here comes in both, so use the .gif only where webp isn't supported.</p>
+</section>
+<footer><a href="/faq/">faq</a></footer>
+<script>
+const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
+b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
+sync()
+</script>
+<script data-goatcounter="https://vibegif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
