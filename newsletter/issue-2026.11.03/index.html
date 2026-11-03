@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- this file is the email itself, copy it for the next issue and keep these or it breaks in some mail apps:
+- every img tag keeps its inline style: proton mail's app injects "table img{max-width:none}", which beats an img{max-width:100%} in the head style block,
+  so a row of 160px imgs overflows a phone, the email gets zoomed out and sits off center. inline styles win over it
+- multi-column tables keep table-layout:fixed so the columns stay equal whatever is inside them,
+  which also means a long caption can't widen its column, so captions get a wbr tag after the slash to wrap there, not mid word
+- imgs keep their width/height attributes, outlook desktop ignores css sizes
+- set line-height inline on headings, proton forces h1{line-height:1.5}
+- use .gif in emails, a lot of mail apps can't animate webp, and absolute urls only
+- the head style block only holds extras (font, link color), anything layout goes inline since some gmail apps drop the whole block -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
@@ -13,7 +22,6 @@
 @font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/multipleof4/stain.otf@master/dist/Stain.otf") format("opentype");font-display:swap}
 body{margin:0;padding:0;background:#fff}
 a{color:#000}
-img{border:0;display:block;margin:0 auto;max-width:100%;height:auto}
 </style>
 </head>
 <body style="margin:0;padding:0;background:#fff">
@@ -23,39 +31,39 @@ img{border:0;display:block;margin:0 auto;max-width:100%;height:auto}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
 
 <tr><td style="font-size:15px;color:#888;padding-bottom:6px">vibegif newsletter · nov 3 2026</td></tr>
-<tr><td style="font-size:32px;line-height:1.2;padding:0 0 4px"><h1 style="margin:0;font-size:32px;font-weight:400">hooray, vibegif has hit 1000 anims</h1></td></tr>
-<tr><td style="padding:8px 0 20px"><a href="https://vibegif.direct-img.link/success/jump.webp"><img src="https://vibegif.direct-img.link/success/jump.gif" width="200" height="200" alt="chibi girl jumping for joy in a shower of confetti"></a></td></tr>
+<tr><td style="font-size:32px;line-height:1.2;padding:0 0 4px"><h1 style="margin:0;line-height:1.2;font-size:32px;font-weight:400">hooray, vibegif has hit 1000 anims</h1></td></tr>
+<tr><td style="padding:8px 0 20px"><a href="https://vibegif.direct-img.link/success/jump.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/success/jump.gif" width="200" height="200" alt="chibi girl jumping for joy in a shower of confetti"></a></td></tr>
 <tr><td style="font-size:19px;line-height:1.5;padding:0 0 28px">in the last 2 weeks, we have had nearly <b>1000</b> visitors on the site, served <b>51 GB</b> over the network, and have a total of <b>3</b> newsletter subscribers.</td></tr>
 
 <tr><td style="border-top:3px dashed #888;padding:28px 0 4px;font-size:22px">thank you to you 3 subs</td></tr>
-<tr><td style="padding:8px 0 28px"><a href="https://vibegif.direct-img.link/thanks/heart.webp"><img src="https://vibegif.direct-img.link/thanks/heart.gif" width="170" height="170" alt="girl making a heart with her hands, a red heart beating inside it"></a></td></tr>
+<tr><td style="padding:8px 0 28px"><a href="https://vibegif.direct-img.link/thanks/heart.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/thanks/heart.gif" width="170" height="170" alt="girl making a heart with her hands, a red heart beating inside it"></a></td></tr>
 
 <tr><td style="border-top:3px dashed #888;padding:28px 0 14px;font-size:22px">the 3 top countries visiting vibegif were these 3</td></tr>
 <tr><td style="padding:0 0 28px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/usa.webp"><img src="https://vibegif.direct-img.link/flag/usa.gif" width="160" height="160" alt="usa flag"></a>usa</td>
-<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/india.webp"><img src="https://vibegif.direct-img.link/flag/india.gif" width="160" height="160" alt="india flag"></a>india</td>
-<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/uk.webp"><img src="https://vibegif.direct-img.link/flag/uk.gif" width="160" height="160" alt="uk flag"></a>uk</td>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed"><tr>
+<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/usa.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/flag/usa.gif" width="160" height="160" alt="usa flag"></a>usa</td>
+<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/india.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/flag/india.gif" width="160" height="160" alt="india flag"></a>india</td>
+<td width="33%" valign="top" style="padding:0 4px;font-size:15px;color:#888"><a href="https://vibegif.direct-img.link/flag/uk.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/flag/uk.gif" width="160" height="160" alt="uk flag"></a>uk</td>
 </tr></table>
 </td></tr>
 
 <tr><td style="border-top:3px dashed #888;padding:28px 0 14px;font-size:22px">here are some of the anims added recently</td></tr>
 <tr><td style="padding:0 0 12px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 <tr>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/dj.webp"><img src="https://vibegif.direct-img.link/robot/dj.gif" width="160" height="160" alt="robot dj in sunglasses and pink headphones scratching a record"></a>robot/dj</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/van/groovy.webp"><img src="https://vibegif.direct-img.link/van/groovy.gif" width="160" height="160" alt="rainbow hippie van cruising with hearts puffing out"></a>van/groovy</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/wfh/cat.webp"><img src="https://vibegif.direct-img.link/wfh/cat.gif" width="160" height="160" alt="girl coding from home while her cat walks across the keyboard"></a>wfh/cat</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/dj.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/robot/dj.gif" width="160" height="160" alt="robot dj in sunglasses and pink headphones scratching a record"></a>robot/<wbr>dj</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/van/groovy.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/van/groovy.gif" width="160" height="160" alt="rainbow hippie van cruising with hearts puffing out"></a>van/<wbr>groovy</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/wfh/cat.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/wfh/cat.gif" width="160" height="160" alt="girl coding from home while her cat walks across the keyboard"></a>wfh/<wbr>cat</td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/mushroom/trip.webp"><img src="https://vibegif.direct-img.link/mushroom/trip.gif" width="160" height="160" alt="smiling rainbow mushroom with a rippling cap"></a>mushroom/trip</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/umbrella.webp"><img src="https://vibegif.direct-img.link/robot/umbrella.gif" width="160" height="160" alt="robot in the rain holding its umbrella over a kitten"></a>robot/umbrella</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/pumpkinspice/sip.webp"><img src="https://vibegif.direct-img.link/pumpkinspice/sip.gif" width="160" height="160" alt="pumpkin spice latte in a knit mitten tipped for a sip"></a>pumpkinspice/sip</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/mushroom/trip.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/mushroom/trip.gif" width="160" height="160" alt="smiling rainbow mushroom with a rippling cap"></a>mushroom/<wbr>trip</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/umbrella.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/robot/umbrella.gif" width="160" height="160" alt="robot in the rain holding its umbrella over a kitten"></a>robot/<wbr>umbrella</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/pumpkinspice/sip.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/pumpkinspice/sip.gif" width="160" height="160" alt="pumpkin spice latte in a knit mitten tipped for a sip"></a>pumpkinspice/<wbr>sip</td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/vim/exit.webp"><img src="https://vibegif.direct-img.link/vim/exit.gif" width="160" height="160" alt="girl stuck in vim mashing esc, then typing :q!"></a>vim/exit</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/turkey/strut.webp"><img src="https://vibegif.direct-img.link/turkey/strut.gif" width="160" height="160" alt="turkey strutting with its tail feathers fanned"></a>turkey/strut</td>
-<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/emote.webp"><img src="https://vibegif.direct-img.link/robot/emote.gif" width="160" height="160" alt="robot face screen blinking, smiling and going heart eyes"></a>robot/emote</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/vim/exit.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/vim/exit.gif" width="160" height="160" alt="girl stuck in vim mashing esc, then typing :q!"></a>vim/<wbr>exit</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/turkey/strut.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/turkey/strut.gif" width="160" height="160" alt="turkey strutting with its tail feathers fanned"></a>turkey/<wbr>strut</td>
+<td width="33%" valign="top" style="padding:0 4px 14px;font-size:14px;color:#888"><a href="https://vibegif.direct-img.link/robot/emote.webp"><img style="display:block;margin:0 auto;border:0;max-width:100%;height:auto" src="https://vibegif.direct-img.link/robot/emote.gif" width="160" height="160" alt="robot face screen blinking, smiling and going heart eyes"></a>robot/<wbr>emote</td>
 </tr>
 </table>
 </td></tr>
