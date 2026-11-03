@@ -33,4 +33,4 @@ jobs:
           POOL: vibegif
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NEWSLETTER_SEND_KEY: ${{ secrets.NEWSLETTER_SEND_KEY }}
-          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
+          NEWSLETTER_FROM: vibegif@planetrenox.com
