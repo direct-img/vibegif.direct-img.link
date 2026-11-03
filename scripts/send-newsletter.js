@@ -1,4 +1,4 @@
-// sends newsletter/<ISSUE>/index.html to every active subscriber of POOL through resend's batch api
+// gets POOL's active subscribers from newsletter.planetrenox.com (/api/list) and emails them newsletter/<ISSUE>/index.html, resend only does the sending (batch api)
 // subject is the html <title>, {{{EMAIL}}} becomes the recipient's address and {{{POOL}}} the pool (both url-encoded), for the unsubscribe link:
 // <!--email--><a href="https://vibegif.direct-img.link/newsletter/unsubscribe/?pool={{{POOL}}}&email={{{EMAIL}}}">unsubscribe</a><!--/email-->
 // <!--email-->...<!--/email--> parts only go out by email, the web copy at /newsletter/<ISSUE>/ drops them (see vite.config.js)
