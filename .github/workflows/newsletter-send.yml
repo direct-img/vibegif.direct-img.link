@@ -1,0 +1,36 @@
+name: "Newsletter: SEND to subscribers (pool vibegif)"
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue dir under newsletter/ (e.g. issue-2026.11.03). Sends to ALL subscribers."
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+# Never run two real sends at once
+concurrency:
+  group: newsletter-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Send to pool "vibegif"
+        run: node scripts/send-newsletter.js
+        env:
+          ISSUE: ${{ inputs.issue }}
+          POOL: vibegif
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEWSLETTER_SEND_KEY: ${{ secrets.NEWSLETTER_SEND_KEY }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}

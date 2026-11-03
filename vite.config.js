@@ -8,6 +8,8 @@
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script, so people and AIs can grep for one to hotlink
 // /test is index.html again but with only the pending sections, unlisted, for approving new ones before they go live
+// <!--issues--> in newsletter/index.html lists every newsletter/issue-*/ newest first (title from its <title>, date from its folder name)
+// each issue is the email scripts/send-newsletter.js sends, also served as a web page minus its <!--email-->...<!--/email--> parts
 import{readdirSync as rd,readFileSync as rf}from'fs'
 import{createHash}from'crypto'
 const site='https://vibegif.direct-img.link',cc0='https://creativecommons.org/publicdomain/zero/1.0/'
@@ -40,8 +42,14 @@ const sitemap=all=>`<?xml version="1.0" encoding="UTF-8"?>
 <url><loc>${site}/</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod>
 ${all.map(t=>`<image:image><image:loc>${site+t.src}</image:loc></image:image>`).join('\n')}
 </url>
+${['newsletter/',...issues().map(n=>`newsletter/${n}/`)].map(p=>`<url><loc>${site}/${p}</loc></url>`).join('\n')}
 </urlset>
 `
+const issues=()=>rd('newsletter',{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name.startsWith('issue-')).map(e=>e.name).sort().reverse()
+const issueList=()=>issues().map(n=>{
+  const t=rf(`newsletter/${n}/index.html`,'utf8').match(/<title>([^<]*)<\/title>/i)?.[1].trim()||n,d=n.slice(6).replaceAll('.','-')
+  return`<li><a href="/newsletter/${n}/">${t}</a><time datetime="${d}">${d}</time></li>`
+}).join('\n')||'<li>no issues yet</li>'
 const about=(s,id)=>{try{return rf(`gen/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
 const catalog=s=>`# vibegif: ${s.flat().length} public domain (CC0) animations, hotlink ${site}/<id>.webp (or .gif)
 # transparent background, most are 256x256
@@ -50,8 +58,10 @@ ${s.map((ts,k)=>`\n## ${sections[k]}\n`+ts.map(t=>[t.id,about(sections[k],t.id)]
 `
 const test=h=>h.replace('max-image-preview:large','noindex').replace(/<link rel="canonical".*\n/,'').replace('<!--ld-->','')
   .replace('vibegif ·','vibegif test ·').replace(/<h1>.*<\/h1>/,'<h1><!--count--> gifs waiting for approval</h1>').replace('feel free to hot link them','not on the main page yet')
-export default{build:{rolldownOptions:{input:['index.html','test.html']}},plugins:[{name:'gallery',
+export default{build:{rolldownOptions:{input:['index.html','test.html','newsletter/index.html','newsletter/unsubscribe/index.html',...issues().map(n=>`newsletter/${n}/index.html`)]}},plugins:[{name:'gallery',
   transformIndexHtml:(h,{path})=>{
+    if(path=='/newsletter/index.html')return h.replace('<!--issues-->',issueList())
+    if(path.startsWith('/newsletter/'))return h.replace(/<!--email-->[\s\S]*?<!--\/email-->/g,'').replace(/\{\{\{\w+\}\}\}/g,'')
     const t=path=='/test.html',s=tiles(t?pending:sections),all=s.flat()
     if(t)h=test(rf('index.html','utf8'))
     return h.replace('<!--gallery-->',s.map(ts=>ts.map(figure).join('\n')).filter(Boolean).join('\n<hr>\n'))

@@ -43,6 +43,7 @@ hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
 #nl input,#nl button{font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0}
 #nl button{background:var(--fg);color:var(--bg);cursor:pointer}
 #nl output{font-size:14px;color:var(--mute)}
+#nl a{color:inherit}
 @media(max-width:480px){main{grid-template-columns:repeat(3,1fr);gap:10px}}
 </style>
 </head>
@@ -56,7 +57,7 @@ hr{grid-column:1/-1;border:0;border-top:3px dashed var(--mute);margin:24px 0}
 <!--gallery-->
 </main>
 <form id="nl">
-<p>signup for vibegif newsletter</p>
+<p>signup for <a href="/newsletter/">vibegif newsletter</a></p>
 <input type="email" name="email" required placeholder="you@example.com" aria-label="email">
 <button>subscribe</button>
 <div class="cf-turnstile" data-sitekey="0x4AAAAAAFG4HWETOcDDQ5vg" data-appearance="interaction-only" data-size="flexible"></div>

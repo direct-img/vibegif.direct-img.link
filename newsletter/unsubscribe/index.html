@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>unsubscribe · vibegif newsletter</title>
+<link rel="icon" type="image/webp" href="/favicon.webp">
+<meta name="robots" content="noindex">
+<script>try{localStorage.bg&&document.documentElement.classList.add("dark")}catch{}</script>
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#888}
+.dark{--bg:#000;--fg:#fff;--mute:#777}
+@font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/multipleof4/stain.otf@master/dist/Stain.otf") format("opentype");font-display:swap}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px}
+h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;padding:0 40px}
+p{font-size:clamp(16px,3vw,22px);margin-bottom:16px}
+a{color:var(--fg)}
+#bg{position:absolute;top:16px;right:16px;width:28px;height:28px;padding:0;border:2px solid var(--fg);border-radius:50%;background:linear-gradient(90deg,var(--fg) 50%,var(--bg) 50%);cursor:pointer}
+form{display:grid;grid-template-columns:1fr auto;gap:8px;max-width:420px;margin:32px auto}
+form p,form output{grid-column:1/-1;margin:0}
+input,button{font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0}
+form button{background:var(--fg);color:var(--bg);cursor:pointer}
+output{font-size:14px;color:var(--mute)}
+</style>
+</head>
+<body>
+<button id="bg" aria-label="black background" aria-pressed="false"></button>
+<h1>unsubscribe</h1>
+<form id="un">
+<p>stop getting the vibegif newsletter</p>
+<input type="email" name="email" required placeholder="you@example.com" aria-label="email">
+<button>unsubscribe</button>
+<output></output>
+</form>
+<p><a href="/newsletter/">back to the newsletter</a></p>
+<script>
+const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
+b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
+sync()
+// links in emails carry ?pool=&email=, the page unsubscribes right away (a POST, so link scanners that only GET don't unsubscribe anyone)
+const f=document.getElementById("un"),m=f.querySelector("output"),q=new URLSearchParams(location.search)
+const go=async()=>{
+  m.value="unsubscribing..."
+  try{
+    const r=await(await fetch("https://newsletter.planetrenox.com/api/unsub",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({pool:q.get("pool")||"vibegif",email:f.email.value.trim()})})).json()
+    if(r.ok){m.value=`✓ ${r.email} won't get vibegif emails anymore`;f.email.value="";history.replaceState(null,"",location.pathname)}
+    else m.value=r.error=="invalid email"?"that email doesn't look right":"something went wrong, try again"
+  }catch{m.value="network error"}
+}
+f.onsubmit=e=>{e.preventDefault();go()}
+// URLSearchParams turns a + into a space, and emails never contain spaces
+const e=q.get("email")?.trim().replace(/ /g,"+")
+if(e){f.email.value=e;go()}
+</script>
+</body>
+</html>

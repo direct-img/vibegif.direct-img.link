@@ -1,0 +1,32 @@
+name: "Newsletter: test send (pool test)"
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue dir under newsletter/ (e.g. issue-2026.11.03)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Send to pool "test"
+        run: node scripts/send-newsletter.js
+        env:
+          ISSUE: ${{ inputs.issue }}
+          POOL: test
+          SUBJECT_PREFIX: "[TEST] "
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEWSLETTER_SEND_KEY: ${{ secrets.NEWSLETTER_SEND_KEY }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
