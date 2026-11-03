@@ -1,4 +1,4 @@
-// Chile animeflag: the flag of Chile, white and red bands with the blue canton and white star, waving on a silver pole, with a cheerful anime girl on the fly side with wavy brown hair, red copihue flowers in her hair and a blue cardigan, waving hello and winking
+// Chile anime flag: the flag of Chile, white and red bands with the blue canton and white star, waving on a silver pole, with a cheerful anime girl on the fly side with wavy brown hair, red copihue flowers in her hair and a blue cardigan, waving hello and winking
 export const frames=16,delay=80
 const W=240,H=160,X=12,Y=18,A=5,T=Math.PI*2,{sin,cos,round}=Math
 const OL='#3a2024',SK='#fbdcc4',SKS='#eab497'

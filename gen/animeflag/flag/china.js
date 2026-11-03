@@ -1,4 +1,4 @@
-// China animeflag: the red flag of China with its big yellow star and four small yellow stars, waving on a silver pole, with an anime girl in the fly side with long black hair, golden eyes, a pink peony and swinging red tassel in her hair, a white blouse with gold trim, and a baby panda on her shoulder waving its paw
+// China anime flag: the red flag of China with its big yellow star and four small yellow stars, waving on a silver pole, with an anime girl in the fly side with long black hair, golden eyes, a pink peony and swinging red tassel in her hair, a white blouse with gold trim, and a baby panda on her shoulder waving its paw
 export const frames=16,delay=80
 const W=240,H=160,X=12,Y=18,A=5,T=Math.PI*2,{sin,cos,round,atan2}=Math
 const OL='#3a2024',SK='#ffe4d2',SKS='#f4bfa8'

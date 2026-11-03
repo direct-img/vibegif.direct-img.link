@@ -1,4 +1,4 @@
-// Singapore animeflag: the red and white flag of Singapore with its white crescent and five stars, waving on a silver pole, with a smiling anime girl on the fly side with a swinging black ponytail and a lavender blouse, holding up a sprig of purple Vanda Miss Joaquim orchids, Singapore's national flower, with another orchid in her hair
+// Singapore anime flag: the red and white flag of Singapore with its white crescent and five stars, waving on a silver pole, with a smiling anime girl on the fly side with a swinging black ponytail and a lavender blouse, holding up a sprig of purple Vanda Miss Joaquim orchids, Singapore's national flower, with another orchid in her hair
 export const frames=16,delay=80
 const W=240,H=160,X=12,Y=18,A=5,T=Math.PI*2,{sin,cos,round}=Math
 const OL='#3a2024',SK='#f6d3b8',SKS='#e3ac90'

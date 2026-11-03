@@ -1,4 +1,4 @@
-// Turkey animeflag: the red flag of Turkey with its white crescent and star, waving on a silver pole, with an anime girl on the fly side, clear of the crescent and star, with long dark wavy hair, green eyes, a red tulip in her hair and a turquoise blouse, hugging a fluffy white odd-eyed Van cat that swishes its tail
+// Turkey anime flag: the red flag of Turkey with its white crescent and star, waving on a silver pole, with an anime girl on the fly side, clear of the crescent and star, with long dark wavy hair, green eyes, a red tulip in her hair and a turquoise blouse, hugging a fluffy white odd-eyed Van cat that swishes its tail
 export const frames=16,delay=80
 const W=240,H=160,X=12,Y=18,A=5,T=Math.PI*2,{sin,cos,round}=Math
 const OL='#3a2024',SK='#fbe0cc',SKS='#ecb8a0'

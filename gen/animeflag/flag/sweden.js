@@ -1,4 +1,4 @@
-// Sweden animeflag: the blue flag of Sweden with its yellow Nordic cross, waving on a silver pole, with a gentle anime girl in the lower fly quadrant wearing a midsummer flower crown of daisies, her long wheat-blonde hair streaming in the wind as little daisies drift away on the breeze
+// Sweden anime flag: the blue flag of Sweden with its yellow Nordic cross, waving on a silver pole, with a gentle anime girl in the lower fly quadrant wearing a midsummer flower crown of daisies, her long wheat-blonde hair streaming in the wind as little daisies drift away on the breeze
 export const frames=16,delay=80
 const W=240,H=150,X=12,Y=24,A=5,T=Math.PI*2,{sin,cos,round}=Math
 const OL='#5a3030',SK='#ffe9dc',SKS='#f3c3b0'
