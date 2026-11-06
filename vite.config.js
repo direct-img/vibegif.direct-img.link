@@ -3,7 +3,7 @@
 // tiles are split into sections by the gen/<section>/ folder they come from, with a divider between
 // hand-made files that have no gen file go in the first section
 // only files inside a subject folder are tiles, so root files like favicon.webp stay out
-// tile images get ?v=<hash> so browsers drop old copies when a file changes, links stay clean for hotlinking
+// tile images use the plain url, no ?v= cache buster, so copying the image address gives the clean hotlink (a changed file may show stale until caches expire)
 // <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script, so people and AIs can grep for one to hotlink
@@ -11,7 +11,6 @@
 // <!--issues--> in newsletter/index.html lists every newsletter/issue-*/ newest first (title from its <title>, date from its folder name)
 // each issue is the email scripts/send-newsletter.js sends, also served as a web page minus its <!--email-->...<!--/email--> parts
 import{readdirSync as rd,readFileSync as rf}from'fs'
-import{createHash}from'crypto'
 const site='https://vibegif.direct-img.link',cc0='https://creativecommons.org/publicdomain/zero/1.0/'
 const sections=['bw','color','anime','manga','mini','minicolor','ui','uicolor','uianime','meme','holiday','animedev','robot','psychedelic','animeflag']
 const pending=[]  // approved ones move up into sections
@@ -28,7 +27,7 @@ const tiles=(list=sections)=>{
   }
   return list.map(s=>Object.entries(g[s]).map(([id,fm])=>{
     const x=fm.webp?'webp':'gif',b=rf(fm[x]),[w,h]=dims(b,x)
-    return{id,fm,x,w,h,src:`/${id}.${x}?v=${createHash('md5').update(b).digest('hex').slice(0,8)}`}
+    return{id,fm,x,w,h,src:`/${id}.${x}`}
   }))
 }
 const figure=t=>{
