@@ -12,8 +12,8 @@
 // each issue is the email scripts/send-newsletter.js sends, also served as a web page minus its <!--email-->...<!--/email--> parts
 import{readdirSync as rd,readFileSync as rf}from'fs'
 const site='https://vibegif.direct-img.link',cc0='https://creativecommons.org/publicdomain/zero/1.0/'
-const sections=['bw','color','anime','manga','mini','minicolor','ui','uicolor','uianime','meme','holiday','animedev','robot','psychedelic','animeflag','loader','avatar']
-const pending=['inkwash']  // approved ones move up into sections
+const sections=['bw','color','anime','manga','mini','minicolor','ui','uicolor','uianime','meme','holiday','animedev','robot','psychedelic','animeflag','loader','avatar','inkwash']
+const pending=[]  // approved ones move up into sections
 const hidden=['cat/tail.gif']  // same drawing as cat/wag.gif, kept so old links still work
 const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):`${d}/${e.name}`)
 const dims=(b,x)=>x=='gif'?[b.readUInt16LE(6),b.readUInt16LE(8)]:[b.readUIntLE(24,3)+1,b.readUIntLE(27,3)+1]
