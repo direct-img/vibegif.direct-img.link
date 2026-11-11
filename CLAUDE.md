@@ -1,0 +1,1 @@
+When making new sections, don't look at previous animations, just tell the helpers the process, without looking at examples, also remember that the first line of an animation file is a code comment description of the animation.
