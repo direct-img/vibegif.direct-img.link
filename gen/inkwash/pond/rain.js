@@ -1,22 +1,4 @@
-// ink wash raindrops hitting a still pond on rice paper, interlocking rings spreading and fading between lily pads, faint slanted rain streaks
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash raindrops hitting a still pond, interlocking rings spreading and fading between lily pads, faint slanted rain streaks
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
@@ -45,32 +27,11 @@ const B=(c,p,w,a=.85,d=1,f=u=>S(PI*u**.6)**.6)=>{
     c.stroke()
   }
 }
-// vermilion seal with uneven edges and carved marks
-const seal=(c,x,y,z=15,r=R(5))=>{
-  const j=()=>r()*1.4-.7,l=(a,b,d,e)=>{c.moveTo(x+a*z,y+b*z);c.lineTo(x+d*z,y+e*z)}
-  c.globalCompositeOperation='source-over';c.filter='none'
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
-  }
-  c.fill()
-  c.strokeStyle='#f3ecdc';c.lineWidth=z*.1;c.lineCap='butt';c.beginPath()
-  l(.22,.26,.78,.24);l(.5,.2,.5,.56);l(.24,.55,.76,.56);l(.3,.56,.24,.8);l(.7,.56,.78,.8);l(.4,.8,.62,.79)
-  c.stroke()
-}
-// put back the sheet's half-transparent deckle pixels (d = pixels grabbed right after paper) so moving ink never alters them
-const fix=(c,d)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(d[k+3]<255)for(let j=0;j<4;j++)e[k+j]=d[k+j]
-  c.putImageData(m,0,0)
-}
 // drop sites: x, y, phase
 const D=[[96,96,0],[168,118,.37],[122,134,.7],[132,168,.18],[196,176,.55],[150,84,.84],[104,204,.45],[190,72,.1]]
-export const frames=24,delay=75
+export const frames=24,delay=75,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data,r=R(31)
+  const r=R(31)
   c.globalCompositeOperation='multiply'
   // a breath of wash for the water
   c.filter='blur(14px)';c.fillStyle=K(.09)
@@ -111,6 +72,4 @@ export default(c,t)=>{
     const u=(t*2+r())%1,x=60+r()*160-u*40,y=36+u*170
     B(c,[[x,y],[x-5,y+22]],1.4,.4*min(1,u*6,(1-u)*6))
   }
-  seal(c,216,214)
-  fix(c,pd)
 }

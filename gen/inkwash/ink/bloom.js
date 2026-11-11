@@ -1,27 +1,9 @@
-// ink wash drop of black ink falling onto wet rice paper and blooming outward in feathery tendrils, then fading away
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash drop of black ink falling onto the page and blooming outward in feathery tendrils, then fading away
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),
-ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a})`,
+ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a*.85})`,
 // brush stroke with body: centerline f(u), width w(u), painted from u=a to u=e
 br=(c,f,w,col,e=1,a=0,n=40)=>{
   const L=[],Q=[]
@@ -40,30 +22,28 @@ bl=(c,x,y,rx,ry,col,sd=1,ro=0,wb=.12)=>{
   }
   c.fill()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=3)=>{
-  const r=rn(s),j=()=>r()*1.5-.75
-  c.save();c.globalCompositeOperation='source-over';c.filter='none';c.globalAlpha=1
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
+// soften anything that runs off the canvas
+fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.globalAlpha=1
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='butt'
-  ;[[.2,.24,.8,.22],[.5,.22,.5,.52],[.24,.5,.78,.52],[.3,.52,.2,.8],[.68,.52,.8,.8],[.42,.68,.42,.82],[.56,.66,.57,.8]]
-    .forEach(m=>{c.beginPath();c.moveTo(x+m[0]*z+j()/2,y+m[1]*z);c.lineTo(x+m[2]*z,y+m[3]*z+j()/2);c.stroke()})
   c.restore()
 },
-// keep the half-transparent deckle pixels identical on every frame (small webp)
-grab=c=>c.getImageData(0,0,256,256).data,
-keep=(c,pd)=>{
+// it is all one ink, so store a single colour and snap alpha to coarser steps so the lossless webp stays small
+snap=c=>{
   const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
+  for(let k=0;k<e.length;k+=4){
+    const a=e[k+3]=min(255,e[k+3]+4>>3<<3)
+    e[k]=a&&21;e[k+1]=a&&18;e[k+2]=a&&15
+  }
   c.putImageData(m,0,0)
 }
-export const frames=26,delay=[...Array(26)].map((_,i)=>i==18?700:i>24?250:80)
+export const dither=true,frames=26,delay=[...Array(26)].map((_,i)=>i==18?700:i>24?250:80)
 export default(c,t,i)=>{
-  paper(c,23);const pd=grab(c);c.globalCompositeOperation='multiply'
+  c.globalCompositeOperation='multiply'
   const X=118,Y=140,d=i/5,g=1-(1-cl((i-5)/14))**2.2,o=ss(19,25,i),R=8+50*g,r=rn(9)
   if(i<5){
     // falling drop
@@ -97,6 +77,6 @@ export default(c,t,i)=>{
       bl(c,X+C(a)*m,Y+S(a)*m,s,s,ink(.8),k)
     }
   }
-  c.globalAlpha=1;seal(c,205,36,15,8)
-  keep(c,pd)
+  fade(c)
+  snap(c)
 }

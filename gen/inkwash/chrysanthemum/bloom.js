@@ -1,24 +1,7 @@
-// ink wash chrysanthemum on rice paper unfurling ring by ring from a tight round bud, short loaded petal strokes over a faint yellow wash, deep-lobed leaves, then fading back to the bud
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash chrysanthemum unfurling ring by ring from a tight round bud, short loaded petal strokes over a faint yellow wash, deep-lobed leaves, then fading back to the bud
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
-K=['#141210','#37322d','#6b655c','#9d968a','#c9c2b4'],
+// five tones of one warm black ink, as see-through washes
+K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // quadratic curve as a point function
 bz=(a,b,d)=>u=>[(1-u)**2*a[0]+2*u*(1-u)*b[0]+u*u*d[0],(1-u)**2*a[1]+2*u*(1-u)*b[1]+u*u*d[1]],
@@ -47,24 +30,23 @@ wash=(c,x,y,rx,ry,col,al=.4,rot=0,sd=3,bl=2)=>{
   c.fillStyle=c.strokeStyle=col;c.globalAlpha=al;path();c.fill()
   c.filter='blur(.8px)';c.globalAlpha=al*.55;c.lineWidth=1.3;path();c.stroke();c.restore()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,s=16)=>{
-  const r=rn(11);c.save();c.globalCompositeOperation='multiply';c.fillStyle='#b8322a';c.globalAlpha=.88
-  c.beginPath()
-  for(let k=0;k<24;k++){const e=k/6|0,f=k%6/6,j=r()*1.4,p=[[f*s,j],[s-j,f*s],[s-f*s,s-j],[j,s-f*s]][e];c.lineTo(x+p[0],y+p[1])}
-  c.fill();c.globalCompositeOperation='source-over';c.strokeStyle='#f3ecdc';c.lineWidth=s/11;c.lineCap='square'
-  c.beginPath()
-  ;[[.22,.24,.78,.24],[.78,.24,.78,.78],[.78,.78,.24,.78],[.24,.78,.24,.5],[.24,.5,.54,.5],[.54,.5,.54,.62]]
-    .forEach(([a,b,d,e])=>{c.moveTo(x+a*s,y+b*s);c.lineTo(x+d*s,y+e*s)})
-  c.stroke();c.restore()
-}
-// d = paper pixels grabbed right after paper(c). Ink pixels are snapped to coarser steps so frames compress well, and the
-// half-transparent deckle edge is put back as plain paper: a changed see-through pixel makes the webp encoder store the whole changed area again
-const grab=c=>c.getImageData(0,0,256,256).data,
-fin=(c,d,q=2)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(e[k]!=d[k]||e[k+1]!=d[k+1]||e[k+2]!=d[k+2]||e[k+3]!=d[k+3])
-    for(let j=0;j<4;j++)e[k+j]=d[k+3]<255?d[k+j]:j<3?Math.min(255,(e[k+j]>>q<<q)+(1<<q>>1)):255
+// soft fade where the painting runs off the canvas
+fade=(c,w=16)=>{
+  c.save();c.filter='none';c.globalAlpha=1;c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
+  }
+  c.restore()
+},
+// snap colour (and, more finely, alpha) to coarser steps so the frames compress well
+snap=(c,q=3)=>{
+  const m=c.getImageData(0,0,256,256),e=m.data,h=1<<q>>1
+  for(let k=0;k<e.length;k+=4)if(e[k+3]){
+    for(let j=0;j<3;j++)e[k+j]=Math.min(255,(e[k+j]>>q<<q)+h)
+    e[k+3]=e[k+3]<3?0:Math.min(255,e[k+3]+2>>2<<2)
+  }
   c.putImageData(m,0,0)
 },
 sm=(a,b,x)=>(x=Math.min(1,Math.max(0,(x-a)/(b-a))))*x*(3-2*x)
@@ -82,7 +64,9 @@ flower=(c,g,al)=>{
       const a=(k+r()*.7)/n*T+L*.9,d=1+.22*S(a),rb=R*z*(.9+r()*.2),le=l*(.5+.5*o)*(.85+r()*.4)*d,q=a+(r()-.5)*.5*o+(C(a)<0?-.25:.25)*o+1.25*(1-o),
       b=[O[0]+C(a)*rb,O[1]+S(a)*rb*.86],e=[b[0]+C(q)*le,b[1]+S(q)*le*.9],m=[(b[0]+e[0])/2+C(a)*le*.14,(b[1]+e[1])/2+S(a)*le*.14-le*.1*o],
       f=bz(b,m,e),w=u=>W*(.6+.4*o)*S(Math.PI*u**.62)**.75+.25
-      st(c,f,w,K[L<2?2:1],al*(L<2?.6:.5)*(.8+.2*o));st(c,f,w,K[L<2?1:0],al*.34,.5)
+      // each petal partly lifts the ink behind it, so the rings read one over another instead of pooling black
+      c.globalCompositeOperation='destination-out';st(c,f,w,'#000',.3*al);c.globalCompositeOperation='multiply'
+      st(c,f,w,K[L<2?2:1],al*(L<2?.85:.75)*(.8+.2*o));st(c,f,w,K[L<2?1:0],al*.45,.5)
     }
   })
   // heart: a cluster of dark dots
@@ -103,9 +87,9 @@ leaf=(c,x,y,a,z,tn)=>{
   lobe(.12,a+1.15,15,5);lobe(.12,a-1.15,15,5);lobe(.42,a+.8,17,5.5);lobe(.42,a-.8,17,5.5);lobe(.5,a+.1,19,6.5)
   st(c,P,v=>1.4*(1-v)**.7+.2,K[0],.8,.9)
 }
-export const frames=30,delay=[...Array(30)].map((_,i)=>i==21?900:85)
+export const frames=30,delay=[...Array(30)].map((_,i)=>i==21?900:85),dither=true
 export default(c,t)=>{
-  paper(c);const pd=grab(c),f=sm(.8,1,t);c.globalCompositeOperation='multiply'
+  const f=sm(.8,1,t);c.globalCompositeOperation='multiply'
   c.filter='blur(.4px)'
   // stem: one tapered stroke, then leaf stalks and leaves
   st(c,bz([130,113],[150,172],[122,250]),u=>1.5+1.5*u,K[1],.88,1,.82)
@@ -116,5 +100,5 @@ export default(c,t)=>{
   c.filter='blur(.4px)'
   // bloom, hold, then the ink fades back to the bud
   flower(c,sm(0,.64,t),1-f);flower(c,0,f)
-  c.filter='none';seal(c,206,210);fin(c,pd)
+  c.filter='none';fade(c,18);snap(c)
 }

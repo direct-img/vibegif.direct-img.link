@@ -1,23 +1,5 @@
-// ink wash turtle seen from above paddling through water on rice paper, flippers stroking and a ripple wake trailing behind
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
-const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=['#141210','#3a3632','#6e6962','#a39d94','#cfc9be']
+// ink wash turtle seen from above paddling through water, flippers stroking and a ripple wake trailing behind
+const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points
 const sp=(p,n=8)=>{
@@ -59,34 +41,8 @@ const W=(c,col,a=.5,b=3,rim=.4)=>{
   c.filter='blur(.7px)';c.globalAlpha=a*rim;c.lineWidth=1.1;c.stroke()
   c.restore()
 }
-// vermilion seal with carved marks
-const seal=(c,x,y,z=15)=>{
-  const r=R(z+x)
-  c.save();c.translate(x,y);c.filter='blur(.4px)';c.globalAlpha=.85;c.fillStyle='#b8322a'
-  c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6,d=z/2-r()*1.3,m=f*2-1
-    c.lineTo(...[[m*d,-d],[d,m*d],[-m*d,d],[-d,-m*d]][e])
-  }
-  c.fill();c.globalCompositeOperation='source-over';c.globalAlpha=.9
-  c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='square'
-  c.beginPath()
-  ;[[-.28,-.3,.28,-.3],[0,-.3,0,.02],[-.3,.02,.3,.02],[-.2,.02,-.3,.32],[.2,.02,.3,.32],[-.08,.3,.08,.3]]
-    .forEach(([a,b,d,e])=>{c.moveTo(a*z,b*z);c.lineTo(d*z,e*z)})
-  c.stroke();c.restore()
-}
-// keep the half-transparent deckle pixels exactly as the paper left them, so ink at the edge doesn't bloat the webp
-const keep=c=>{
-  const pd=c.getImageData(0,0,256,256).data
-  return()=>{
-    const m=c.getImageData(0,0,256,256),e=m.data
-    for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
-    c.putImageData(m,0,0)
-  }
-}
 const fin=u=>S(u*Math.PI)**.6
 export default(c,t)=>{
-  paper(c,43);const fix=keep(c)
   c.globalCompositeOperation='multiply';c.filter='blur(.5px)'
   const st=S(t*T),sg=C(t*T)
   c.save();c.translate(106,104);c.rotate(-.62);c.scale(1.18,1.18)
@@ -111,13 +67,12 @@ export default(c,t)=>{
   c.filter='blur(1px)';c.globalAlpha=.9;blob(c,0,-44,7,9,0,3,.06);c.fillStyle=K[1];c.fill()
   c.filter='blur(.5px)';c.globalAlpha=1;c.fillStyle=K[0]
   ;[-1,1].forEach(s=>{c.beginPath();c.arc(s*5.2,-46,1.5,0,T);c.fill()})
-  // shell: pale wash, then dark scutes with paper left between them
+  // shell: pale wash, then dark scutes with gaps left between them
   blob(c,0,0,26,32,0,6,.04);W(c,K[3],.75,1.2,.9)
   c.filter='blur(1.3px)';c.fillStyle=K[0]
   ;[[0,-17,9,8],[0,0,10,8.5],[0,17,9,8],[-16,-12,6,9],[16,-12,6,9],[-18,5,5.5,8.5],[18,5,5.5,8.5],[-13,21,5.5,6.5],[13,21,5.5,6.5]].forEach(([x,y,a,b],k)=>{
     c.globalAlpha=.78+k%3*.07;blob(c,x,y,a,b,x*.02,k+20,.12,8);c.fill()
   })
   c.restore()
-  seal(c,40,218,15);fix()
 }
-export const frames=14,delay=85
+export const dither=true,frames=14,delay=85

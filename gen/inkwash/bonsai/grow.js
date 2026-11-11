@@ -1,24 +1,7 @@
-// ink wash pine bonsai in a shallow pot painted in stroke by stroke on rice paper, trunk then branches then needle pads, held, then the ink fades away
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash pine bonsai in a shallow pot painted in stroke by stroke, trunk then branches then needle pads, held, then the ink fades away
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
-K=['#141210','#37322d','#6b655c','#9d968a','#c9c2b4'],
+// five tones of one warm black ink, as see-through washes
+K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // quadratic curve as a point function
 bz=(a,b,d)=>u=>[(1-u)**2*a[0]+2*u*(1-u)*b[0]+u*u*d[0],(1-u)**2*a[1]+2*u*(1-u)*b[1]+u*u*d[1]],
@@ -47,24 +30,13 @@ wash=(c,x,y,rx,ry,col,al=.4,rot=0,sd=3,bl=2)=>{
   c.fillStyle=c.strokeStyle=col;c.globalAlpha=al;path();c.fill()
   c.filter='blur(.8px)';c.globalAlpha=al*.55;c.lineWidth=1.3;path();c.stroke();c.restore()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,s=16)=>{
-  const r=rn(11);c.save();c.globalCompositeOperation='multiply';c.fillStyle='#b8322a';c.globalAlpha=.88
-  c.beginPath()
-  for(let k=0;k<24;k++){const e=k/6|0,f=k%6/6,j=r()*1.4,p=[[f*s,j],[s-j,f*s],[s-f*s,s-j],[j,s-f*s]][e];c.lineTo(x+p[0],y+p[1])}
-  c.fill();c.globalCompositeOperation='source-over';c.strokeStyle='#f3ecdc';c.lineWidth=s/11;c.lineCap='square'
-  c.beginPath()
-  ;[[.22,.24,.78,.24],[.78,.24,.78,.78],[.78,.78,.24,.78],[.24,.78,.24,.5],[.24,.5,.54,.5],[.54,.5,.54,.62]]
-    .forEach(([a,b,d,e])=>{c.moveTo(x+a*s,y+b*s);c.lineTo(x+d*s,y+e*s)})
-  c.stroke();c.restore()
-}
-// d = paper pixels grabbed right after paper(c). Ink pixels are snapped to coarser steps so frames compress well, and the
-// half-transparent deckle edge is put back as plain paper: a changed see-through pixel makes the webp encoder store the whole changed area again
-const grab=c=>c.getImageData(0,0,256,256).data,
-fin=(c,d,q=2)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(e[k]!=d[k]||e[k+1]!=d[k+1]||e[k+2]!=d[k+2]||e[k+3]!=d[k+3])
-    for(let j=0;j<4;j++)e[k+j]=d[k+3]<255?d[k+j]:j<3?Math.min(255,(e[k+j]>>q<<q)+(1<<q>>1)):255
+// snap colour (and, more finely, alpha) to coarser steps so the frames compress well
+snap=(c,q=3)=>{
+  const m=c.getImageData(0,0,256,256),e=m.data,h=1<<q>>1
+  for(let k=0;k<e.length;k+=4)if(e[k+3]){
+    for(let j=0;j<3;j++)e[k+j]=Math.min(255,(e[k+j]>>q<<q)+h)
+    e[k+3]=e[k+3]<3?0:Math.min(255,e[k+3]+2>>2<<2)
+  }
   c.putImageData(m,0,0)
 },
 sm=(a,b,x)=>(x=Math.min(1,Math.max(0,(x-a)/(b-a))))*x*(3-2*x)
@@ -77,9 +49,9 @@ const SK=[
   [[122,148],[158,158],[194,140],3.6,1,2,.42,.5],[[130,100],[98,96],[64,114],3,.9,2,.48,.56],[[142,122],[166,112],[186,98],2.4,.8,2,.54,.6]],
 // needle pads: x, y, half width, painted from
 PD=[[196,136,25,.56],[62,110,25,.63],[186,94,19,.7],[130,56,23,.76]]
-export const frames=32,delay=[...Array(32)].map((_,i)=>i==24?1500:i<24?90:75)
+export const frames=32,delay=[...Array(32)].map((_,i)=>i==24?1500:i<24?90:75),dither=true
 export default(c,t,i)=>{
-  paper(c);const pd=grab(c),p=Math.min(1,i/24),A=i>24?1-(i-24)/8:1,r=rn(17);c.globalCompositeOperation='multiply'
+  const p=Math.min(1,i/24),A=i>24?1-(i-24)/8:1,r=rn(17);c.globalCompositeOperation='multiply'
   // pot: pale wash inside a few firm lines, moss dots on the soil
   c.filter='blur(1px)';c.fillStyle=K[3];c.globalAlpha=.45*A*sm(.1,.2,p)
   c.beginPath();[[65,205],[183,205],[175,224],[76,224]].forEach(q=>c.lineTo(...q));c.fill()
@@ -98,5 +70,5 @@ export default(c,t,i)=>{
       if(k<g*36)st(c,bz([fx,fy],[fx+C(a)*l*.5,fy+S(a)*l*.5],[fx+C(a)*l,fy+S(a)*l]),u=>1.1*(1-u)**.6+.15,K[f%2?1:0],.9*A)
     }
   })
-  c.filter='none';seal(c,206,212);fin(c,pd)
+  c.filter='none';c.globalAlpha=1;snap(c)
 }

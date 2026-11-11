@@ -1,25 +1,7 @@
-// ink wash hare hopping through grass tufts under a pale full moon on rice paper
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash hare hopping through grass tufts under a pale full moon
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
-// warm ink at alpha a
-ink=(a,v=22)=>`rgba(${v},${v-3},${v-6},${a})`,
+// warm, semi-transparent ink at alpha a
+ink=a=>`rgba(20,18,16,${a*.8})`,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // catmull-rom samples through p (z: closed)
 cr=(p,z,n=8)=>{
@@ -58,32 +40,18 @@ el=(x,y,rx,ry,ro=0,n=8)=>[...Array(n)].map((_,k)=>{
   const a=k/n*T,u=C(a)*rx,v=S(a)*ry
   return[x+u*C(ro)-v*S(ro),y+u*S(ro)+v*C(ro)]
 }),
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=9)=>{
-  const r=rn(s),j=()=>r()*1.6-.8
-  c.save();c.globalCompositeOperation='source-over';c.filter='blur(.4px)'
-  c.fillStyle='rgba(184,50,42,.88)';c.beginPath()
-  for(let k=0;k<28;k++){
-    const f=k%7/7*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][k/7|0])
+// soften anything that runs off the canvas edge
+fade=(c,w=18)=>{
+  c.save();c.setTransform(1,0,0,1,0,0);c.filter='none';c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/9;c.lineCap='butt';c.beginPath()
-  for(let k=0;k<6;k++){
-    const g=x+z*(.24+(k%3)*.26),h=y+z*(.24+(r()*3|0)*.26),l=z*(.26+.26*(r()<.4))
-    k%2?(c.moveTo(g,h-l/2),c.lineTo(g,h+l/2)):(c.moveTo(h-y+x-l/2,g-x+y),c.lineTo(h-y+x+l/2,g-x+y))
-  }
-  c.stroke();c.restore()
-},
-// restore the sheet's half-transparent deckle pixels so moving ink never alters them (keeps the webp small)
-fix=(c,pd)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
-  c.putImageData(m,0,0)
+  c.restore()
 }
-export const frames=24,delay=75
+export const frames=24,delay=75,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data
   c.globalCompositeOperation='multiply'
   const G=214,u=t*2%1,cl=v=>max(0,min(1,v)),
   y=-30*S(PI*cl((u-.2)/.5)),st=S(PI*cl((u-.05)/.65)),pc=.26*S(T*(u+.05)),
@@ -112,9 +80,9 @@ export default(c,t)=>{
   },
   fore=(o,a)=>br(c,[[-17-5*st+o,6],[(-17-5*st+ff[0])/2+o-3,(6+ff[1])/2],[ff[0]+o,ff[1]],[ff[0]+o-5,ff[1]+2]],6.5,a,u=>1-u*.5),
   ea=-1.9+1.45*cl(st*1.2)
-  // moon: bare paper inside a halo of wash
-  c.filter='blur(10px)';c.fillStyle=ink(.2);c.beginPath();c.arc(186,66,48,0,T);c.fill()
-  c.globalCompositeOperation='source-over';c.filter='blur(.9px)';c.fillStyle='#f6f0e2'
+  // moon: a clear disc cut from a halo of wash
+  c.filter='blur(10px)';c.fillStyle=ink(.4);c.beginPath();c.arc(186,66,48,0,T);c.fill()
+  c.globalCompositeOperation='destination-out';c.filter='blur(.9px)';c.fillStyle='#000'
   c.beginPath();c.arc(186,66,27,0,T);c.fill()
   c.globalCompositeOperation='multiply'
   // far grass
@@ -141,6 +109,6 @@ export default(c,t)=>{
   ;[-3,0,3].forEach(k=>br(c,[[-39-7*st,-3],[-50-7*st,-4+k]],.9,.5,u=>1))
   c.setTransform(1,0,0,1,0,0)
   for(let j=-1;j<2;j++)tuft(j*192+t*192+10,224,6,34,.85,3),tuft(j*192+t*192+96,225,5,26,.8,8),tuft(j*192+t*192+150,224,4,20,.7,14)
-  c.filter='none';seal(c,26,28,15,53)
-  fix(c,pd)
+  c.filter='none'
+  fade(c)
 }

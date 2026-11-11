@@ -1,24 +1,7 @@
-// ink wash gnarled plum branch on rice paper, pale rose blossoms opening one by one with dark stamens, petals drifting down
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash gnarled plum branch, pale rose blossoms opening one by one with dark stamens, petals drifting down
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
-K=['#141210','#37322d','#6b655c','#9d968a','#c9c2b4'],
+// five tones of one warm black ink, as see-through washes
+K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // quadratic curve as a point function
 bz=(a,b,d)=>u=>[(1-u)**2*a[0]+2*u*(1-u)*b[0]+u*u*d[0],(1-u)**2*a[1]+2*u*(1-u)*b[1]+u*u*d[1]],
@@ -47,24 +30,23 @@ wash=(c,x,y,rx,ry,col,al=.4,rot=0,sd=3,bl=2)=>{
   c.fillStyle=c.strokeStyle=col;c.globalAlpha=al;path();c.fill()
   c.filter='blur(.8px)';c.globalAlpha=al*.55;c.lineWidth=1.3;path();c.stroke();c.restore()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,s=16)=>{
-  const r=rn(11);c.save();c.globalCompositeOperation='multiply';c.fillStyle='#b8322a';c.globalAlpha=.88
-  c.beginPath()
-  for(let k=0;k<24;k++){const e=k/6|0,f=k%6/6,j=r()*1.4,p=[[f*s,j],[s-j,f*s],[s-f*s,s-j],[j,s-f*s]][e];c.lineTo(x+p[0],y+p[1])}
-  c.fill();c.globalCompositeOperation='source-over';c.strokeStyle='#f3ecdc';c.lineWidth=s/11;c.lineCap='square'
-  c.beginPath()
-  ;[[.22,.24,.78,.24],[.78,.24,.78,.78],[.78,.78,.24,.78],[.24,.78,.24,.5],[.24,.5,.54,.5],[.54,.5,.54,.62]]
-    .forEach(([a,b,d,e])=>{c.moveTo(x+a*s,y+b*s);c.lineTo(x+d*s,y+e*s)})
-  c.stroke();c.restore()
-}
-// d = paper pixels grabbed right after paper(c). Ink pixels are snapped to coarser steps so frames compress well, and the
-// half-transparent deckle edge is put back as plain paper: a changed see-through pixel makes the webp encoder store the whole changed area again
-const grab=c=>c.getImageData(0,0,256,256).data,
-fin=(c,d,q=2)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(e[k]!=d[k]||e[k+1]!=d[k+1]||e[k+2]!=d[k+2]||e[k+3]!=d[k+3])
-    for(let j=0;j<4;j++)e[k+j]=d[k+3]<255?d[k+j]:j<3?Math.min(255,(e[k+j]>>q<<q)+(1<<q>>1)):255
+// soft fade where the painting runs off the canvas
+fade=(c,w=16)=>{
+  c.save();c.filter='none';c.globalAlpha=1;c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
+  }
+  c.restore()
+},
+// snap colour (and, more finely, alpha) to coarser steps so the frames compress well
+snap=(c,q=3)=>{
+  const m=c.getImageData(0,0,256,256),e=m.data,h=1<<q>>1
+  for(let k=0;k<e.length;k+=4)if(e[k+3]){
+    for(let j=0;j<3;j++)e[k+j]=Math.min(255,(e[k+j]>>q<<q)+h)
+    e[k+3]=e[k+3]<3?0:Math.min(255,e[k+3]+2>>2<<2)
+  }
   c.putImageData(m,0,0)
 },
 sm=(a,b,x)=>(x=Math.min(1,Math.max(0,(x-a)/(b-a))))*x*(3-2*x)
@@ -95,9 +77,9 @@ bloom=(c,[x,y,r,a,o],t)=>{
   }
   c.globalAlpha=1
 }
-export const frames=32,delay=90
+export const frames=32,delay=90,dither=true
 export default(c,t)=>{
-  paper(c);const pd=grab(c),r=rn(5);c.globalCompositeOperation='multiply'
+  const r=rn(5);c.globalCompositeOperation='multiply'
   c.filter='blur(.5px)'
   PT.slice(1).forEach(([x,y,v],k)=>{
     const[X,Y,w]=PT[k],q=k%2*2-1,f=bz([X,Y],[(X+x)/2+(y-Y)*.12*q,(Y+y)/2-(x-X)*.12*q],[x,y]),wf=u=>(w+(v-w)*u)*(1+.1*(2*u-1)**4)
@@ -117,5 +99,5 @@ export default(c,t)=>{
     const p=(t+k/3+.1)%1,x=[128,186,70][k]+p*34+S(T*p*2+k)*8,y=[90,84,160][k]+p*120
     c.filter='blur(.5px)';pet(c,x,y,4.6,2.8*Math.abs(C(T*p*1.5+k))+.9,p*5+k,1.3*S(Math.PI*p)**.5)
   }
-  c.filter='none';c.globalAlpha=1;seal(c,202,206);fin(c,pd)
+  c.filter='none';c.globalAlpha=1;fade(c,18);snap(c)
 }

@@ -1,25 +1,7 @@
-// ink wash tiger prowling through grass on rice paper, bold wet-stroke stripes over an ochre wash, tail swishing
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash tiger prowling through grass, bold wet-stroke stripes over an ochre wash, tail swishing
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
-// warm ink at alpha a
-ink=(a,v=22)=>`rgba(${v},${v-3},${v-6},${a})`,
+// warm, semi-transparent ink at alpha a
+ink=a=>`rgba(20,18,16,${a*.8})`,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // catmull-rom samples through p (z: closed)
 cr=(p,z,n=8)=>{
@@ -58,32 +40,24 @@ el=(x,y,rx,ry,ro=0,n=8)=>[...Array(n)].map((_,k)=>{
   const a=k/n*T,u=C(a)*rx,v=S(a)*ry
   return[x+u*C(ro)-v*S(ro),y+u*S(ro)+v*C(ro)]
 }),
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=9)=>{
-  const r=rn(s),j=()=>r()*1.6-.8
-  c.save();c.globalCompositeOperation='source-over';c.filter='blur(.4px)'
-  c.fillStyle='rgba(184,50,42,.88)';c.beginPath()
-  for(let k=0;k<28;k++){
-    const f=k%7/7*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][k/7|0])
+// soften anything that runs off the canvas edge
+fade=(c,w=18)=>{
+  c.save();c.setTransform(1,0,0,1,0,0);c.filter='none';c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/9;c.lineCap='butt';c.beginPath()
-  for(let k=0;k<6;k++){
-    const g=x+z*(.24+(k%3)*.26),h=y+z*(.24+(r()*3|0)*.26),l=z*(.26+.26*(r()<.4))
-    k%2?(c.moveTo(g,h-l/2),c.lineTo(g,h+l/2)):(c.moveTo(h-y+x-l/2,g-x+y),c.lineTo(h-y+x+l/2,g-x+y))
-  }
-  c.stroke();c.restore()
+  c.restore()
 },
-// restore the sheet's half-transparent deckle pixels so moving ink never alters them (keeps the webp small)
-fix=(c,pd)=>{
+// snap colour and alpha to coarser steps so the lossless webp stays small
+snap=(c,q=12)=>{
   const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
+  for(let k=0;k<e.length;k++)e[k]=min(255,Math.round(e[k]/q)*q)
   c.putImageData(m,0,0)
 }
-export const frames=18,delay=105
+export const frames=18,delay=105,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data
   c.globalCompositeOperation='multiply'
   const G=210,oc=a=>`rgba(190,136,72,${a})`,sw=S(t*T),cw=C(t*T),
   ik=(a,b,l,m)=>{
@@ -126,7 +100,7 @@ export default(c,t)=>{
   c.filter='blur(.6px)'
   for(let k=3;k<tq.length-1;k+=3)bar(tq[k],tq[k+1],0,5.5,.9,3+k%2*2.5)
   br(c,tq.slice(-5),8,.9,u=>.4+.6*S(PI*u))
-  // body: graded ochre wash along the back, shoulder and haunch; the belly stays paper
+  // body: graded ochre wash along the back, shoulder and haunch; the belly is left empty
   c.filter='blur(6px)';c.fillStyle=oc(.45);c.beginPath()
   cr([[86,112],[122,116],[162,117],[200,113],[213,130],[204,148],[170,141],[130,143],[98,148],[80,138]],1).forEach(e=>c.lineTo(...e));c.fill()
   c.filter='blur(4px)';c.fillStyle=oc(.3)
@@ -144,7 +118,7 @@ export default(c,t)=>{
   }
   for(let k=0;k<4;k++)br(c,[[114+k*24+r()*6,165],[110+k*24,152-r()*6]],3+r()*3,.85,pt)
   leg(F,100,.25,33,36);leg(B,198,0,37,40)
-  // head: heavy, low and watchful; ochre brow and cheeks, paper muzzle, ruff in dry brush
+  // head: heavy, low and watchful; ochre brow and cheeks, empty muzzle, ruff in dry brush
   c.translate(64,140);c.scale(1.5,1.5);c.translate(-62,-136)
   c.filter='blur(3px)';c.fillStyle=oc(.5);c.beginPath();c.ellipse(61,130,20,13,-.1,0,T);c.fill()
   c.fillStyle=oc(.3);c.beginPath();c.ellipse(60,140,21,15,-.1,0,T);c.fill()
@@ -162,6 +136,5 @@ export default(c,t)=>{
   ;[[77,131,82,139],[79,140,76,148],[38,133,35,141]].forEach(([a,b,d,e])=>br(c,[[a,b],[d,e]],4.5,.9,pt))
   ;[-1,1].forEach(m=>[0,1,2].forEach(k=>br(c,[[52+m*7,149],[52+m*20,146+k*4.5]],1,.6,u=>1-u*.6)))
   c.setTransform(1,0,0,1,0,0);grass(1)
-  seal(c,26,30,15,21)
-  fix(c,pd)
+  fade(c);snap(c)
 }

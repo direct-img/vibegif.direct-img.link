@@ -1,23 +1,5 @@
-// ink wash dragonfly hovering and darting above a reed tip on rice paper, wings a blur of pale wash, faint reflection in the water
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
-const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=['#141210','#3a3632','#6e6962','#a39d94','#cfc9be']
+// ink wash dragonfly hovering and darting above a reed tip, wings a blur of pale wash, faint reflection in the water
+const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points
 const sp=(p,n=8)=>{
@@ -52,37 +34,22 @@ const blob=(c,x,y,rx,ry,ro=0,s=1,n=.16,m=12)=>{
   p.forEach((q,k)=>c.quadraticCurveTo(q[0],q[1],(q[0]+z(k+1)[0])/2,(q[1]+z(k+1)[1])/2))
   c.closePath()
 }
+// soften anything that runs off the canvas so it never looks cropped
+const fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.globalAlpha=1
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
+  }
+  c.restore()
+}
 // wet wash of the current path: soft fill plus a darker pooled rim
 const W=(c,col,a=.5,b=3,rim=.4)=>{
   c.save();c.fillStyle=c.strokeStyle=col
   c.filter=`blur(${b}px)`;c.globalAlpha=a;c.fill()
   c.filter='blur(.7px)';c.globalAlpha=a*rim;c.lineWidth=1.1;c.stroke()
   c.restore()
-}
-// vermilion seal with carved marks
-const seal=(c,x,y,z=15)=>{
-  const r=R(z+x)
-  c.save();c.translate(x,y);c.filter='blur(.4px)';c.globalAlpha=.85;c.fillStyle='#b8322a'
-  c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6,d=z/2-r()*1.3,m=f*2-1
-    c.lineTo(...[[m*d,-d],[d,m*d],[-m*d,d],[-d,-m*d]][e])
-  }
-  c.fill();c.globalCompositeOperation='source-over';c.globalAlpha=.9
-  c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='square'
-  c.beginPath()
-  ;[[-.28,-.3,.28,-.3],[0,-.3,0,.02],[-.3,.02,.3,.02],[-.2,.02,-.3,.32],[.2,.02,.3,.32],[-.08,.3,.08,.3]]
-    .forEach(([a,b,d,e])=>{c.moveTo(a*z,b*z);c.lineTo(d*z,e*z)})
-  c.stroke();c.restore()
-}
-// keep the half-transparent deckle pixels exactly as the paper left them, so ink at the edge doesn't bloat the webp
-const keep=c=>{
-  const pd=c.getImageData(0,0,256,256).data
-  return()=>{
-    const m=c.getImageData(0,0,256,256),e=m.data
-    for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
-    c.putImageData(m,0,0)
-  }
 }
 const fin=u=>S(u*Math.PI)**.6,ss=u=>(u=Math.max(0,Math.min(1,u)),u*u*(3-2*u))
 // dragonfly in its own frame, head toward +x; m=1 paints the faint reflection
@@ -114,12 +81,11 @@ const fly=(c,t,m)=>{
   }
 }
 export default(c,t)=>{
-  paper(c,17);const fix=keep(c)
   c.globalCompositeOperation='multiply';c.filter='blur(.5px)'
   const sw=S(t*T),d=ss((t-.42)/.07)-ss((t-.86)/.09),
     x=168-d*30+3*S(t*T*2),y=84-d*14+2.5*C(t*T*3),ro=-2.5+d*.5+.05*S(t*T*2)
-  // water: bare paper with a few pale dry strokes
-  c.globalAlpha=.55
+  // water: just a few pale dry strokes
+  c.globalAlpha=.9
   B(c,[[30,212],[90,215],[150,211],[226,214]],2.2,K[3],fin,3)
   B(c,[[96,228],[150,230],[210,227]],1.6,K[4],fin,2)
   // faint reflection
@@ -136,6 +102,6 @@ export default(c,t)=>{
   c.globalAlpha=.45;B(c,[[98,155],[120,118+sw],[128,84+sw*2],[122,62+sw*4]],3,K[2],u=>u**.4*(1-u)**.8*1.6)
   // the dragonfly itself
   c.save();c.translate(x,y);c.rotate(ro);c.scale(1.3,1.3);fly(c,t,0);c.restore()
-  seal(c,218,224,15);fix()
+  fade(c)
 }
-export const frames=24,delay=85
+export const dither=true,frames=24,delay=85

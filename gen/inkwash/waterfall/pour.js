@@ -1,22 +1,4 @@
-// ink wash waterfall on rice paper, tall fall of unpainted paper pouring between dark cliffs with flowing dry strokes, spray mist rising at the base, leaning pine
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash waterfall, tall fall pouring between dark cliffs with flowing dry strokes, spray mist rising at the base, leaning pine
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
@@ -45,30 +27,15 @@ const B=(c,p,w,a=.85,d=1,f=u=>S(PI*u**.6)**.6)=>{
     c.stroke()
   }
 }
-// vermilion seal with uneven edges and carved marks
-const seal=(c,x,y,z=15,r=R(5))=>{
-  const j=()=>r()*1.4-.7,l=(a,b,d,e)=>{c.moveTo(x+a*z,y+b*z);c.lineTo(x+d*z,y+e*z)}
-  c.globalCompositeOperation='source-over';c.filter='none'
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
-  }
-  c.fill()
-  c.strokeStyle='#f3ecdc';c.lineWidth=z*.1;c.lineCap='butt';c.beginPath()
-  l(.22,.26,.78,.24);l(.5,.2,.5,.56);l(.24,.55,.76,.56);l(.3,.56,.24,.8);l(.7,.56,.78,.8);l(.4,.8,.62,.79)
-  c.stroke()
-}
 // filled polygon in a left-to-right gradient of ink (alpha a at x, b at X)
 const G=(c,p,x,a,X,b)=>{
   const g=c.createLinearGradient(x,0,X,0)
   g.addColorStop(0,K(a));g.addColorStop(1,K(b))
   c.fillStyle=g;c.beginPath();p.map(q=>c.lineTo(...q));c.fill()
 }
-export const frames=20,delay=70
+export const frames=20,delay=70,dither=true
 export default(c,t)=>{
-  paper(c)
-  c.globalCompositeOperation='multiply'
+  c.globalCompositeOperation='multiply';c.translate(0,8)
   const r=R(23),v=u=>1-u*.6
   // cliffs: darkest against the water, dissolving outward; a pale far wall behind the lip
   c.filter='blur(3px)'
@@ -91,7 +58,7 @@ export default(c,t)=>{
   // leaning pine
   B(c,[[86,34],[96,18],[118,13]],4.5,.92,.7,v)
   ;[[100,17,11],[116,11,13],[126,19,9],[106,7,8]].map(([x,y,z])=>B(c,[[x-z,y+1],[x,y-2],[x+z,y+2]],5,.85,.6))
-  // falling water: tapered streaks sliding down the bare paper
+  // falling water: tapered streaks sliding down the empty gap
   for(let j=0;j<8;j++){
     const o=(j-3.5)*2.9+r()*2,s=2+j%2,p=r()
     for(let k=0;k<3;k++){
@@ -106,14 +73,13 @@ export default(c,t)=>{
   c.filter='none'
   ;[[96,230,34],[150,226,50],[124,237,28]].map(([x,y,l])=>B(c,[[x,y],[x+l/2,y+1],[x+l,y]],1.8,.3))
   // mist: static banks dissolving the cliff feet, then spray puffs swelling and rising
-  c.globalCompositeOperation='source-over';c.filter='blur(7px)'
-  c.fillStyle='rgba(243,236,220,.9)'
+  c.globalCompositeOperation='destination-out';c.filter='blur(7px)'
+  c.fillStyle='rgba(0,0,0,.9)'
   c.beginPath();c.ellipse(60,208,62,9,0,0,T);c.ellipse(212,208,44,9,0,0,T);c.fill()
   for(let k=0;k<6;k++){
     const u=(t+k/6)%1
-    c.fillStyle=`rgba(243,236,220,${S(PI*u)*.85})`
+    c.fillStyle=`rgba(0,0,0,${S(PI*u)*.85})`
     c.beginPath();c.arc(142+(k%3-1)*(10+u*16),200-u*16,9+u*12,0,T);c.fill()
   }
   c.filter='none'
-  seal(c,216,22)
 }

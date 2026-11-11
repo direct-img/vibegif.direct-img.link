@@ -1,23 +1,5 @@
-// two ink wash koi circling each other seen from above on rice paper, one black ink and one with vermilion patches, ripple rings trailing their tails
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
-const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=['#141210','#3a3632','#6e6962','#a39d94','#cfc9be']
+// two ink wash koi circling each other seen from above, one black ink and one with vermilion patches, ripple rings trailing their tails
+const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points
 const sp=(p,n=8)=>{
@@ -59,22 +41,6 @@ const W=(c,col,a=.5,b=3,rim=.4)=>{
   c.filter='blur(.7px)';c.globalAlpha=a*rim;c.lineWidth=1.1;c.stroke()
   c.restore()
 }
-// vermilion seal with carved marks
-const seal=(c,x,y,z=15)=>{
-  const r=R(z+x)
-  c.save();c.translate(x,y);c.filter='blur(.4px)';c.globalAlpha=.85;c.fillStyle='#b8322a'
-  c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6,d=z/2-r()*1.3,m=f*2-1
-    c.lineTo(...[[m*d,-d],[d,m*d],[-m*d,d],[-d,-m*d]][e])
-  }
-  c.fill();c.globalCompositeOperation='source-over';c.globalAlpha=.9
-  c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='square'
-  c.beginPath()
-  ;[[-.28,-.3,.28,-.3],[0,-.3,0,.02],[-.3,.02,.3,.02],[-.2,.02,-.3,.32],[.2,.02,.3,.32],[-.08,.3,.08,.3]]
-    .forEach(([a,b,d,e])=>{c.moveTo(a*z,b*z);c.lineTo(d*z,e*z)})
-  c.stroke();c.restore()
-}
 // one koi seen from above, head at angle a on the pond circle
 const koi=(c,t,a,k)=>{
   const X=124,Y=128,r=58,P=[...Array(9)].map((_,j)=>{
@@ -110,14 +76,13 @@ const koi=(c,t,a,k)=>{
   })
 }
 export default(c,t)=>{
-  paper(c)
   c.globalCompositeOperation='multiply';c.filter='blur(.5px)'
   // ripple arcs left where each tail passed, widening as they fade
   for(let m=0;m<6;m++){
     const o=m/6*T+.3,g=((t*T-1.8-o)%Math.PI+T)%Math.PI/Math.PI,x=124+C(o)*58,y=128+S(o)*58
     ;[0,1].forEach(j=>{
       const q=5+g*22+j*7
-      c.globalAlpha=(1-g)**1.5*(j?.45:.7)
+      c.globalAlpha=(1-g)**1.5*(j?.65:.95)
       B(c,[...Array(6)].map((_,i)=>{
         const b=o+m*2+j*2.6+i*.36
         return[x+C(b)*q,y+S(b)*q]
@@ -125,6 +90,5 @@ export default(c,t)=>{
     })
   }
   koi(c,t,t*T,0);koi(c,t,t*T+Math.PI,1)
-  seal(c,222,220,15)
 }
-export const frames=32,delay=90
+export const dither=true,frames=32,delay=90

@@ -1,23 +1,5 @@
-// ink wash kingfisher on a reed stem dives into the water with splash rings and flutters back up to its perch, small teal and orange accents on rice paper
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
-const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=['#141210','#3a3632','#6e6962','#a39d94','#cfc9be']
+// ink wash kingfisher on a reed stem dives into the water with splash rings and flutters back up to its perch, small teal and orange accents
+const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points
 const sp=(p,n=8)=>{
@@ -52,37 +34,22 @@ const blob=(c,x,y,rx,ry,ro=0,s=1,n=.16,m=12)=>{
   p.forEach((q,k)=>c.quadraticCurveTo(q[0],q[1],(q[0]+z(k+1)[0])/2,(q[1]+z(k+1)[1])/2))
   c.closePath()
 }
+// soften anything that runs off the canvas so it never looks cropped
+const fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.globalAlpha=1
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
+  }
+  c.restore()
+}
 // wet wash of the current path: soft fill plus a darker pooled rim
 const W=(c,col,a=.5,b=3,rim=.4)=>{
   c.save();c.fillStyle=c.strokeStyle=col
   c.filter=`blur(${b}px)`;c.globalAlpha=a;c.fill()
   c.filter='blur(.7px)';c.globalAlpha=a*rim;c.lineWidth=1.1;c.stroke()
   c.restore()
-}
-// vermilion seal with carved marks
-const seal=(c,x,y,z=15)=>{
-  const r=R(z+x)
-  c.save();c.translate(x,y);c.filter='blur(.4px)';c.globalAlpha=.85;c.fillStyle='#b8322a'
-  c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6,d=z/2-r()*1.3,m=f*2-1
-    c.lineTo(...[[m*d,-d],[d,m*d],[-m*d,d],[-d,-m*d]][e])
-  }
-  c.fill();c.globalCompositeOperation='source-over';c.globalAlpha=.9
-  c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='square'
-  c.beginPath()
-  ;[[-.28,-.3,.28,-.3],[0,-.3,0,.02],[-.3,.02,.3,.02],[-.2,.02,-.3,.32],[.2,.02,.3,.32],[-.08,.3,.08,.3]]
-    .forEach(([a,b,d,e])=>{c.moveTo(a*z,b*z);c.lineTo(d*z,e*z)})
-  c.stroke();c.restore()
-}
-// keep the half-transparent deckle pixels exactly as the paper left them, so ink at the edge doesn't bloat the webp
-const keep=c=>{
-  const pd=c.getImageData(0,0,256,256).data
-  return()=>{
-    const m=c.getImageData(0,0,256,256),e=m.data
-    for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
-    c.putImageData(m,0,0)
-  }
 }
 const fin=u=>S(u*Math.PI)**.6,leaf=u=>u**.4*(1-u)**.8*1.6,cl=u=>Math.max(0,Math.min(1,u)),ss=u=>(u=cl(u),u*u*(3-2*u)),
   bz=(a,b,d,u)=>[0,1].map(k=>(1-u)*(1-u)*a[k]+2*u*(1-u)*b[k]+u*u*d[k]),TE='#3d7480',OR='#c46a2c'
@@ -106,7 +73,7 @@ const bird=(c,be,op,fl)=>{
   // folded wing, dark
   c.filter='blur(.8px)';c.globalAlpha=.8*(1-op)+.01
   B(c,[P(6,3),P(15,5),P(25,2)],4,K[1],fin)
-  // head, cheek left as paper, long dark beak, eye
+  // head, cheek left empty, long dark beak, eye
   c.filter='blur(.8px)';c.globalAlpha=.95;blob(c,h[0],h[1]-1,6.6,5.8,0,2,.05);c.fillStyle=TE;c.fill()
   c.globalAlpha=.7;B(c,[[h[0]-5,h[1]-4],[h[0],h[1]-6.5],[h[0]+5,h[1]-4]],2.4,K[0],fin)
   c.filter='blur(.5px)';c.globalAlpha=1
@@ -115,13 +82,12 @@ const bird=(c,be,op,fl)=>{
   c.globalAlpha=.8;B(c,[[h[0]-1,h[1]+4],[h[0]+3,h[1]+5]],1.4,OR,fin)
 }
 export default(c,t)=>{
-  paper(c,37);const fix=keep(c)
   c.globalCompositeOperation='multiply';c.filter='blur(.5px)'
   const A=.14,D=.3,U=.5,L=.74,E=[176,203],
     b=t<A?5:t<L?5*Math.exp(-(t-A)*13)*C((t-A)*42):5+5*Math.exp(-(t-L)*15)*C((t-L)*42)-5*Math.exp(-(t-L)*15)*(1+C((t-L)*42)),
     pp=[106+b*.5,100+b],pc=[pp[0]+4,pp[1]-20]
-  // water: bare paper and a few pale dry strokes
-  c.globalAlpha=.55
+  // water: just a few pale dry strokes
+  c.globalAlpha=.9
   B(c,[[26,206],[90,209],[130,206]],2,K[3],fin,3)
   B(c,[[150,224],[190,226],[232,223]],1.6,K[4],fin,2)
   B(c,[[40,226],[80,228],[112,226]],1.4,K[4],fin,2)
@@ -164,6 +130,6 @@ export default(c,t)=>{
   c.restore()
   // feet on the stem
   if(t<A||t>=L){c.globalAlpha=.9;B(c,[[pp[0]-1,pp[1]-5],[pp[0]+2,pp[1]+1]],1.2,K[0],u=>1)}
-  seal(c,222,38,15);fix()
+  fade(c)
 }
-export const frames=36,delay=[...Array(36)].map((_,i)=>i<5||i>29?120:70)
+export const dither=true,frames=36,delay=[...Array(36)].map((_,i)=>i<5||i>29?120:70)

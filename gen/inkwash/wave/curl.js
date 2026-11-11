@@ -1,22 +1,4 @@
-// ink wash sea wave on rice paper, a few big dark brushstrokes rising into a curl that rolls forward and breaks, spray of dry-brush flecks and ink dots scattering, then the swell re-forms
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash sea wave, a few big dark brushstrokes rising into a curl that rolls forward and breaks, spray of dry-brush flecks and ink dots scattering, then the swell re-forms
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
@@ -45,27 +27,7 @@ const B=(c,p,w,a=.85,d=1,f=u=>S(PI*u**.6)**.6)=>{
     c.stroke()
   }
 }
-// vermilion seal with uneven edges and carved marks
-const seal=(c,x,y,z=15,r=R(5))=>{
-  const j=()=>r()*1.4-.7,l=(a,b,d,e)=>{c.moveTo(x+a*z,y+b*z);c.lineTo(x+d*z,y+e*z)}
-  c.globalCompositeOperation='source-over';c.filter='none'
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
-  }
-  c.fill()
-  c.strokeStyle='#f3ecdc';c.lineWidth=z*.1;c.lineCap='butt';c.beginPath()
-  l(.22,.26,.78,.24);l(.5,.2,.5,.56);l(.24,.55,.76,.56);l(.3,.56,.24,.8);l(.7,.56,.78,.8);l(.4,.8,.62,.79)
-  c.stroke()
-}
-// put back the sheet's half-transparent deckle pixels (d = pixels grabbed right after paper) so moving ink never alters them
-const fix=(c,d)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(d[k+3]<255)for(let j=0;j<4;j++)e[k+j]=d[k+j]
-  c.putImageData(m,0,0)
-}
-const pc=a=>`rgba(243,236,220,${a})`,
+const pc=a=>`rgba(0,0,0,${a})`,
 // point at u along a smooth curve through p
 cr=(p,u)=>{
   const n=p.length-1,x=min(u*n,n-1e-6),i=x|0,v=x-i,g=j=>p[max(0,min(n,j))]
@@ -77,11 +39,10 @@ mx=(p,q,e)=>p.map(([x,y],k)=>[x+(q[k][0]-x)*e,y+(q[k][1]-y)*e]),
 P=[[[16,218],[48,186],[80,144],[108,112],[130,96],[146,93],[157,99],[161,108]],
 [[16,218],[50,182],[86,128],[122,92],[158,83],[184,98],[193,126],[181,149]],
 [[16,218],[52,184],[88,136],[126,104],[162,99],[188,120],[194,150],[185,174]]]
-export const frames=22,delay=95
+export const frames=22,delay=95,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data,r=R(41),
-  M=()=>c.globalCompositeOperation='multiply',O=()=>c.globalCompositeOperation='source-over',
+  const r=R(41),
+  M=()=>c.globalCompositeOperation='multiply',O=()=>c.globalCompositeOperation='destination-out',
   // one wave along spine p at opacity al, its lip going dry from fraction dr
   wave=(p,al,dr)=>{
     const[x,y]=p[7],q=seg(p,0,1,28),g=c.createLinearGradient(0,p[4][1],0,222),
@@ -95,7 +56,7 @@ export default(c,t)=>{
     B(c,seg(p.map(([a,b])=>[a-9,b-3]),.05,.7),7,.3,.4,u=>1-u*.6)
     B(c,q,19,.93,dr,u=>(.3+.7*S(PI*min(1,u*1.25)**.8))*(1-u*.45))
     B(c,seg(o,.12,.9),10,.6,dr-.1,u=>S(PI*u)**.6)
-    // foam: flecks of bare paper dragged across the lip
+    // foam: flecks erased to nothing, dragged across the lip
     O()
     ;[[.42,.9,-6,1.5],[.56,1,-2,2.4],[.5,.84,3,1.3],[.64,.98,6,2],[.26,.6,-7,1.1],[.7,.95,1.5,1]].map(([a,b,n,w])=>
       B(c,seg(p,a,b).map(([x,y],i,s)=>{
@@ -124,6 +85,4 @@ export default(c,t)=>{
     }
     c.globalAlpha=1
   }
-  seal(c,216,24)
-  fix(c,pd)
 }

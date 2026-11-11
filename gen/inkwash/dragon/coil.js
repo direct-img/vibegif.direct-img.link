@@ -1,25 +1,7 @@
-// ink wash dragon weaving through clouds on rice paper, body appearing and vanishing in wet mist, claws and whiskers, chasing a pale vermilion pearl
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash dragon weaving through clouds, body appearing and vanishing in wet mist, claws and whiskers, chasing a pale vermilion pearl
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
-// warm ink at alpha a
-ink=(a,v=22)=>`rgba(${v},${v-3},${v-6},${a})`,
+// warm, semi-transparent ink at alpha a
+ink=a=>`rgba(20,18,16,${a*.8})`,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 // catmull-rom samples through p (z: closed)
 cr=(p,z,n=8)=>{
@@ -58,32 +40,18 @@ el=(x,y,rx,ry,ro=0,n=8)=>[...Array(n)].map((_,k)=>{
   const a=k/n*T,u=C(a)*rx,v=S(a)*ry
   return[x+u*C(ro)-v*S(ro),y+u*S(ro)+v*C(ro)]
 }),
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=9)=>{
-  const r=rn(s),j=()=>r()*1.6-.8
-  c.save();c.globalCompositeOperation='source-over';c.filter='blur(.4px)'
-  c.fillStyle='rgba(184,50,42,.88)';c.beginPath()
-  for(let k=0;k<28;k++){
-    const f=k%7/7*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][k/7|0])
+// soften anything that runs off the canvas edge
+fade=(c,w=18)=>{
+  c.save();c.setTransform(1,0,0,1,0,0);c.filter='none';c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/9;c.lineCap='butt';c.beginPath()
-  for(let k=0;k<6;k++){
-    const g=x+z*(.24+(k%3)*.26),h=y+z*(.24+(r()*3|0)*.26),l=z*(.26+.26*(r()<.4))
-    k%2?(c.moveTo(g,h-l/2),c.lineTo(g,h+l/2)):(c.moveTo(h-y+x-l/2,g-x+y),c.lineTo(h-y+x+l/2,g-x+y))
-  }
-  c.stroke();c.restore()
-},
-// restore the sheet's half-transparent deckle pixels so moving ink never alters them (keeps the webp small)
-fix=(c,pd)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
-  c.putImageData(m,0,0)
+  c.restore()
 }
-export const frames=18,delay=100
+export const frames=18,delay=100,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data
   c.globalCompositeOperation='multiply'
   const wv=k=>S(t*T+k),
   q0=cr([[90,94],[116,108],[152,98],[178,68],[212,76],[216,116],[178,136],[132,138],[98,160],[104,196],[146,214],[190,200],[214,178],[234,168]],0,9),
@@ -120,9 +88,9 @@ export default(c,t)=>{
       br(c,[p,[p[0]+C(g)*8,p[1]+S(g)*8],[p[0]+C(g+.7)*13,p[1]+S(g+.7)*13]],3.6,.95,pt)
     }
   })
-  // mist: untouched paper swallowing stretches of the body, edged with soft cloud curls
+  // mist: soft cut-outs swallowing stretches of the body, edged with soft cloud curls
   const M=[[216,98,23,24],[112,150,27,19],[152,210,30,15],[52,150,30,12],[190,38,30,11]]
-  c.globalCompositeOperation='source-over';c.filter='blur(6px)';c.fillStyle='#f3ecdc'
+  c.globalCompositeOperation='destination-out';c.filter='blur(6px)';c.fillStyle='#000'
   M.forEach(([x,y,a,b],k)=>{c.beginPath();c.ellipse(x+(k<3)*12*wv(k*2),y,a,b,0,0,T);c.fill();c.fill()})
   c.globalCompositeOperation='multiply'
   M.forEach(([x,y,a,b],k)=>{
@@ -149,8 +117,9 @@ export default(c,t)=>{
   br(c,[[-25,-11],[-17,-15],[-8,-11]],4.5,.95)
   ;[[[-3,-8],[9,-22],[24,-27]],[[9,-21],[10,-32]],[[-9,-9],[2,-27],[13,-36]],[[0,-24],[-6,-33]]].forEach(p=>br(c,p,5,.92,pt))
   ;[-1,1].forEach(m=>br(c,[[-37,m*2-2],[-50,m*11+2*wv(m)],[-62,m*8+4*wv(m+1)],[-66,m*-2+5*wv(m+2)]],2.4,.85,u=>1-u*.7))
-  c.globalCompositeOperation='source-over';c.fillStyle='#f3ecdc';c.beginPath();c.arc(-17,-8.5,2.6,0,T);c.fill()
+  c.globalCompositeOperation='destination-out';c.fillStyle='#000';c.beginPath();c.arc(-17,-8.5,2.6,0,T);c.fill()
+  c.globalCompositeOperation='source-over'
   br(c,[[-18,-9],[-17,-8]],2.4,.97)
-  c.setTransform(1,0,0,1,0,0);c.filter='none';seal(c,26,212,15,33)
-  fix(c,pd)
+  c.setTransform(1,0,0,1,0,0);c.filter='none'
+  fade(c)
 }

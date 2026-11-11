@@ -1,24 +1,5 @@
-// ink wash lone fisherman in a straw hat sitting in a small boat on wide empty water, rice paper, boat bobbing gently, fishing line in the water with ripples spreading
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash lone fisherman in a straw hat sitting in a small boat on wide empty water, boat bobbing gently, fishing line in the water with ripples spreading
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
-R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
 // brush stroke through points p: width w, alpha (or colour) a, dry-brush hairlines from fraction d, pressure profile f
 const B=(c,p,w,a=.85,d=1,f=u=>S(PI*u**.6)**.6)=>{
@@ -57,30 +38,19 @@ const Q=(c,p)=>{
   const n=p.length,m=k=>[(p[k%n][0]+p[(k+1)%n][0])/2,(p[k%n][1]+p[(k+1)%n][1])/2]
   c.moveTo(...m(n-1));p.forEach((q,k)=>c.quadraticCurveTo(...q,...m(k)));c.closePath()
 }
-// vermilion seal with uneven edges and carved marks
-const seal=(c,x,y,z=15,r=R(5))=>{
-  const j=()=>r()*1.4-.7,l=(a,b,d,e)=>{c.moveTo(x+a*z,y+b*z);c.lineTo(x+d*z,y+e*z)}
-  c.globalCompositeOperation='source-over';c.filter='none'
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
+// soft fade to nothing at the canvas edges
+const fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out'
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill()
-  c.strokeStyle='#f3ecdc';c.lineWidth=z*.1;c.lineCap='butt';c.beginPath()
-  l(.22,.26,.78,.24);l(.5,.2,.5,.56);l(.24,.55,.76,.56);l(.3,.56,.24,.8);l(.7,.56,.78,.8);l(.4,.8,.62,.79)
-  c.stroke()
+  c.restore()
 }
-// put back the sheet's half-transparent deckle pixels (d = pixels grabbed right after paper) so moving ink never alters them
-const fix=(c,d)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(d[k+3]<255)for(let j=0;j<4;j++)e[k+j]=d[k+j]
-  c.putImageData(m,0,0)
-}
-export const frames=24,delay=90
+export const frames=24,delay=90,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data,w=S(t*T),v=C(t*T),fx=158,fy=170
+  const w=S(t*T),v=C(t*T),fx=158,fy=170
   c.globalCompositeOperation='multiply'
   // far shore, barely there
   let g=c.createLinearGradient(0,52,0,84);g.addColorStop(0,K(.2));g.addColorStop(1,K(0))
@@ -121,6 +91,5 @@ export default(c,t)=>{
   const a=96+tip[0]*C(v*.05)-tip[1]*S(v*.05),b=164+w*2.4+tip[0]*S(v*.05)+tip[1]*C(v*.05)
   c.strokeStyle=K(.6);c.lineWidth=.7
   c.beginPath();c.moveTo(a,b);c.quadraticCurveTo(a+2,b+30,fx,fy);c.stroke()
-  seal(c,214,212)
-  fix(c,pd)
+  fade(c)
 }

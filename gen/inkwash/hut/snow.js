@@ -1,22 +1,4 @@
-// ink wash thatched hut under snow-laden pines on rice paper, snow left as bare paper against a soft grey wash, sparse snowflakes falling, warm orange glow in the window, chimney smoke curling up
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash thatched hut under snow-laden pines, snow cut out as empty space against a soft grey wash, sparse snowflakes falling, warm orange glow in the window, chimney smoke curling up
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
@@ -50,50 +32,28 @@ const Q=(c,p)=>{
   const n=p.length,m=k=>[(p[k%n][0]+p[(k+1)%n][0])/2,(p[k%n][1]+p[(k+1)%n][1])/2]
   c.moveTo(...m(n-1));p.forEach((q,k)=>c.quadraticCurveTo(...q,...m(k)));c.closePath()
 }
-// vermilion seal with uneven edges and carved marks
-const seal=(c,x,y,z=15,r=R(5))=>{
-  const j=()=>r()*1.4-.7,l=(a,b,d,e)=>{c.moveTo(x+a*z,y+b*z);c.lineTo(x+d*z,y+e*z)}
-  c.globalCompositeOperation='source-over';c.filter='none'
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
-  }
-  c.fill()
-  c.strokeStyle='#f3ecdc';c.lineWidth=z*.1;c.lineCap='butt';c.beginPath()
-  l(.22,.26,.78,.24);l(.5,.2,.5,.56);l(.24,.55,.76,.56);l(.3,.56,.24,.8);l(.7,.56,.78,.8);l(.4,.8,.62,.79)
-  c.stroke()
-}
-// put back the sheet's half-transparent deckle pixels (d = pixels grabbed right after paper) so moving ink never alters them
-const fix=(c,d)=>{
-  const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(d[k+3]<255)for(let j=0;j<4;j++)e[k+j]=d[k+j]
-  c.putImageData(m,0,0)
-}
-const pc='rgba(243,236,220,.97)'
-export const frames=24,delay=90
+export const frames=16,delay=120,dither=true
 export default(c,t)=>{
-  paper(c)
-  const pd=c.getImageData(0,0,256,256).data,r=R(53),
-  M=()=>c.globalCompositeOperation='multiply',O=()=>c.globalCompositeOperation='source-over',
-  // pine: dry trunk, wet drooping boughs [height up the trunk, side, reach], each topped with a lick of bare paper
+  const r=R(53),
+  M=()=>c.globalCompositeOperation='multiply',O=()=>c.globalCompositeOperation='source-over',E=()=>c.globalCompositeOperation='destination-out',
+  // pine: dry trunk, wet drooping boughs [height up the trunk, side, reach], each topped with a lick of erased snow
   pine=(x,y,h,b)=>{
     B(c,[[x-2,y],[x+2,y-h*.45],[x-1,y-h]],h*.05+2,.9,.5,u=>1-u*.7)
     b.map(([v,s,l],k)=>{
       const Y=y-h*v,p=[[x,Y],[x+s*l*.5,Y-2+k%2*2],[x+s*l,Y+l*.3+3]]
       c.filter='blur(1.1px)';B(c,p,10+l*.25,.6,1,u=>S(PI*u**.5)**.6);c.filter='none'
       B(c,p.map(([a,b],j)=>[a+s*j*2,b+2+j]),4+l*.08,.88,.45)
-      O();B(c,p.map(([a,b],j)=>[a-s*j*l*.14,b-4.5+j*.5]),3+l*.07,pc,1,u=>S(PI*u**.8)**.5);M()
+      E();B(c,p.map(([a,b],j)=>[a-s*j*l*.14,b-4.5+j*.5]),3+l*.07,'#000',1,u=>S(PI*u**.8)**.5);M()
     })
   }
   M()
-  // one soft grey wash behind the trees and hut, everything else stays paper
+  // one soft grey wash behind the trees and hut, everything else stays empty
   c.filter='blur(10px)';c.fillStyle=K(.25)
   c.beginPath();Q(c,[[34,128],[52,74],[112,58],[174,78],[224,108],[224,152],[186,172],[110,174],[52,168]]);c.fill()
   c.filter='blur(6px)';c.fillStyle=K(.12)
   c.beginPath();Q(c,[[90,140],[120,100],[176,104],[200,140],[150,168]]);c.fill()
-  // snowbank: paper lifted back along the foot of the wash
-  O();c.fillStyle=pc;c.beginPath();c.ellipse(128,190,120,13,0,0,T);c.fill();M()
+  // snowbank: the foot of the wash erased away
+  E();c.fillStyle='#000';c.beginPath();c.ellipse(128,190,120,13,0,0,T);c.fill();M()
   c.filter='none'
   B(c,[[20,206],[76,198],[134,204]],2,.24);B(c,[[150,214],[200,208],[240,212]],2,.2)
   ;[[100,200],[106,202],[198,196],[36,212]].map(([x,y],k)=>B(c,[[x,y],[x+2-k,y-7],[x+5-k*2,y-12]],1.6,.7))
@@ -117,20 +77,18 @@ export default(c,t)=>{
     c.arc(173+S(u*5+k)*5+u*u*20,106-u*56,3+u*9,0,T);c.fill()
   }
   c.filter='none'
-  // roof: one heavy thatch stroke, snow mound of bare paper above it, a thin shadow contour
+  // roof: one heavy thatch stroke, snow mound cut out above it, a thin shadow contour
   B(c,[[104,154],[128,146],[156,145],[184,148],[204,156]],11,.92,.7,u=>.35+S(PI*u)*.65)
-  O();c.fillStyle=pc;c.beginPath()
+  E();c.fillStyle='#000';c.beginPath()
   c.moveTo(106,149);c.quadraticCurveTo(116,138,128,120);c.quadraticCurveTo(152,104,178,120);c.quadraticCurveTo(190,138,201,150);c.quadraticCurveTo(154,138,106,149);c.fill()
   c.fillRect(166,107,11,6);M()
   B(c,[[176,120],[188,136],[199,148]],2,.4);B(c,[[130,118],[152,109],[172,115]],1.4,.3)
   pine(60,200,142,[[.93,1,12],[.86,-1,18],[.74,1,26],[.66,-1,30],[.52,1,36],[.44,-1,38],[.3,1,42],[.22,-1,34],[.1,1,26]])
   // sparse snowflakes drifting down across the wash
-  O()
+  E()
   for(let k=0;k<22;k++){
     const u=(t+k*.618)%1,x=40+r()*176+S(u*T+k)*5,y=52+u*128
-    c.fillStyle=`rgba(250,246,236,${min(1,u*7,(1-u)*5)})`
+    c.fillStyle=`rgba(0,0,0,${min(1,u*7,(1-u)*5)})`
     c.beginPath();c.arc(x,y,1.1+r()*1.2,0,T);c.fill()
   }
-  seal(c,216,214)
-  fix(c,pd)
 }

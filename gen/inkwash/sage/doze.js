@@ -1,27 +1,8 @@
-// ink wash old sage dozing under a pine tree on rice paper, head nodding over an open scroll, long white beard swaying, a steaming cup of tea beside him
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash old sage dozing under a pine tree, head nodding over an open scroll, long white beard swaying, a steaming cup of tea beside him
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
-rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),
-ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a})`,
+ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a*.85})`,
 // brush stroke with body: centerline f(u), width w(u), painted from u=a to u=e
 br=(c,f,w,col,e=1,a=0,n=40)=>{
   const L=[],Q=[]
@@ -51,34 +32,32 @@ bl=(c,x,y,rx,ry,col,sd=1,ro=0,wb=.12)=>{
   }
   c.fill()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=3)=>{
-  const r=rn(s),j=()=>r()*1.5-.75
-  c.save();c.globalCompositeOperation='source-over';c.filter='none';c.globalAlpha=1
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
+// soften anything that runs off the canvas
+fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.globalAlpha=1
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='butt'
-  ;[[.2,.24,.8,.22],[.5,.22,.5,.52],[.24,.5,.78,.52],[.3,.52,.2,.8],[.68,.52,.8,.8],[.42,.68,.42,.82],[.56,.66,.57,.8]]
-    .forEach(m=>{c.beginPath();c.moveTo(x+m[0]*z+j()/2,y+m[1]*z);c.lineTo(x+m[2]*z,y+m[3]*z+j()/2);c.stroke()})
   c.restore()
 },
-// keep the half-transparent deckle pixels identical on every frame (small webp)
-grab=c=>c.getImageData(0,0,256,256).data,
-keep=(c,pd)=>{
+// snap colour and alpha to coarser steps so the lossless webp stays small
+snap=c=>{
   const m=c.getImageData(0,0,256,256),e=m.data
-  for(let k=0;k<e.length;k+=4)if(pd[k+3]<255)for(let j=0;j<4;j++)e[k+j]=pd[k+j]
+  for(let k=0;k<e.length;k+=4){
+    const a=e[k+3]=min(255,e[k+3]+4>>3<<3)
+    for(let j=0;j<3;j++)e[k+j]=a?min(255,e[k+j]+8>>4<<4):0
+  }
   c.putImageData(m,0,0)
 }
-export const frames=32,delay=90
+export const dither=true,frames=32,delay=90
 export default(c,t)=>{
-  paper(c,97);const pd=grab(c);c.globalCompositeOperation='multiply'
-  const nd=.62*(ss(0,.68,t)-ss(.7,.8,t)),bw=S(t*T)*.5+S(t*T*2+1)*.25,br8=S(t*T),
+  c.globalCompositeOperation='multiply'
+  const nd=.62*(ss(0,.68,t)-ss(.7,.8,t)),bw=S(t*T)*.5+S(t*T*2+1)*.25,
   ln=(x,y,x2,y2,w,al=.9,v=13,b=1.5)=>br(c,u=>[x+(x2-x)*u,y+(y2-y)*u+S(u*PI)*b],u=>w*(.35+.65*S(u**.7*PI)),ink(al,v),1,0,14),
   pg=(P,k)=>{c.fillStyle=k;c.beginPath();P.forEach(q=>c.lineTo(...q));c.fill()},
-  pc=k=>{c.save();c.globalCompositeOperation='source-over';c.filter='none';k();c.restore()}
+  pc=k=>{c.save();c.globalCompositeOperation='destination-out';c.filter='none';k();c.restore()}
   // pine
   c.filter='blur(.7px)'
   const tr=u=>[26+u*40+20*S(u*2.6)+5*S(u*11),236-u*196],tw=u=>20-12*u+2*S(u*14)
@@ -102,8 +81,8 @@ export default(c,t)=>{
   // robe
   const X=146,Y=168
   c.filter='blur(1.6px)'
-  bl(c,X,Y+14+br8*.4,47,33-br8*.6,ink(.42,56),3,0,.08)
-  pg([[X-16,Y-30],[X+16,Y-31-br8*.5],[X+34,Y+8],[X-32,Y+8]],ink(.42,56))
+  bl(c,X,Y+14,47,33,ink(.42,56),3,0,.08)
+  pg([[X-16,Y-30],[X+16,Y-31],[X+34,Y+8],[X-32,Y+8]],ink(.42,56))
   bl(c,X+22,Y+22,22,22,ink(.3,34),5,.3,.2);bl(c,X-26,Y+30,16,12,ink(.25,34),2,0,.2)
   c.filter='blur(.6px)'
   br(c,u=>[X+C(-.5+u*2.2)*47,Y+14+S(-.5+u*2.2)*33],u=>.8+3.6*S(u**1.4*PI),ink(.9,13),1,0,30)
@@ -112,7 +91,7 @@ export default(c,t)=>{
   ln(X+10,Y+12,X+30,Y+40,2,.6);ln(X-8,Y+26,X-30,Y+40,1.8,.5);ln(X+2,Y+30,X+6,Y+45,1.6,.5)
   // open scroll across his lap
   const sy=Y+6+nd*4
-  pc(()=>pg([[X-36,sy-9],[X+30,sy-13],[X+32,sy+7],[X-34,sy+11]],'#f6f0e0'))
+  pc(()=>pg([[X-36,sy-9],[X+30,sy-13],[X+32,sy+7],[X-34,sy+11]],'#000'))
   c.filter='blur(.5px)'
   ln(X-36,sy-9,X+30,sy-13,1.3,.7,13,-1);ln(X-34,sy+11,X+32,sy+7,1.6,.8,13,1)
   bl(c,X-36,sy+1,4,11.5,ink(.8,24),1,-.05,.08);bl(c,X+32,sy-3,4,11.5,ink(.8,24),2,-.05,.08)
@@ -120,7 +99,7 @@ export default(c,t)=>{
   bl(c,X-25,sy+8,5.5,4,ink(.35,60),1);bl(c,X+22,sy+5,5.5,4,ink(.35,60),2)
   // head, nodding about the neck
   c.save();c.translate(X+2,Y-30);c.rotate(-nd);c.translate(0,-15)
-  pc(()=>{c.fillStyle='#f3ecdc';c.beginPath();c.ellipse(0,0,13,14,0,0,T);c.fill()})
+  pc(()=>{c.fillStyle='#000';c.beginPath();c.ellipse(0,0,13,14,0,0,T);c.fill()})
   c.filter='blur(1.4px)';bl(c,4,-4,9,8,ink(.14,50),2);bl(c,-6,3,3.5,2.5,'rgba(200,110,90,.22)',1)
   c.filter='blur(.5px)'
   br(c,u=>[C(-2.5+u*3.9)*13,S(-2.5+u*3.9)*14],u=>.8+2.4*S(u**1.3*PI),ink(.9,13),1,0,24)
@@ -134,7 +113,7 @@ export default(c,t)=>{
   // long white beard hanging from the chin, its tip lagging behind the nod
   const hx=X+2-4*C(nd)-5*S(nd),hy=Y-30+4*S(nd)-5*C(nd),ex=X-4+bw*3-nd*5,ey=Y+17+nd*5,
   bd=q=>u=>[hx+(ex-hx)*u+q*(1-u**1.6)*7+3*S(u*PI)*bw,hy+(ey-hy)*u]
-  pc(()=>{c.fillStyle='#f8f3e6';c.beginPath()
+  pc(()=>{c.fillStyle='#000';c.beginPath()
     for(let k=0;k<=10;k++)c.lineTo(...bd(-1)(k/10));for(let k=10;k>=0;k--)c.lineTo(...bd(1)(k/10));c.fill()})
   c.filter='blur(.5px)'
   br(c,bd(-1),u=>.5+1.6*S(u*PI),ink(.7,24),1,0,14);br(c,bd(1),u=>.5+2*S(u*PI),ink(.8,20),1,0,14)
@@ -151,5 +130,6 @@ export default(c,t)=>{
   bl(c,cx,cy+.5,8.5,2.2,ink(.6,30),1,0,.05)
   br(c,u=>[cx+C(u*T+2.6)*11,cy+S(u*T+2.6)*3.4],u=>.6+1.8*S(u*PI)**2,ink(.9,13),1,0,30)
   br(c,u=>[cx+C(.2+u*2.7)*11,cy+2+S(.2+u*2.7)*12],u=>.5+2*S(u**1.4*PI),ink(.85,13),.8,.05,16)
-  seal(c,210,36,15,15);keep(c,pd)
+  fade(c)
+  snap(c)
 }

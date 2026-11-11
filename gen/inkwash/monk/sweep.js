@@ -1,27 +1,9 @@
-// ink wash little bald monk sweeping a temple path with a broom on rice paper while red autumn leaves keep falling from a branch as fast as he sweeps, one landing on his head
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
+// ink wash little bald monk sweeping a temple path with a broom while red autumn leaves keep falling from a branch as fast as he sweeps, one landing on his head
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),
-ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a})`,
+ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a*.85})`,
 // brush stroke with body: centerline f(u), width w(u), painted from u=a to u=e
 br=(c,f,w,col,e=1,a=0,n=40)=>{
   const L=[],Q=[]
@@ -51,23 +33,28 @@ bl=(c,x,y,rx,ry,col,sd=1,ro=0,wb=.12)=>{
   }
   c.fill()
 },
-// vermilion seal with carved marks
-seal=(c,x,y,z=15,s=3)=>{
-  const r=rn(s),j=()=>r()*1.5-.75
-  c.save();c.globalCompositeOperation='source-over';c.filter='none';c.globalAlpha=1
-  c.fillStyle='rgba(184,50,42,.9)';c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6*z
-    c.lineTo(...[[x+f+j(),y+j()],[x+z+j(),y+f+j()],[x+z-f+j(),y+z+j()],[x+j(),y+z-f+j()]][e])
+// soften anything that runs off the canvas
+fade=(c,w=16)=>{
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.globalAlpha=1
+  for(const[x0,y0,x1,y1]of[[0,0,w,0],[256,0,256-w,0],[0,0,0,w],[0,256,0,256-w]]){
+    const g=c.createLinearGradient(x0,y0,x1,y1)
+    g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)')
+    c.fillStyle=g;c.fillRect(0,0,256,256)
   }
-  c.fill();c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='butt'
-  ;[[.2,.24,.8,.22],[.5,.22,.5,.52],[.24,.5,.78,.52],[.3,.52,.2,.8],[.68,.52,.8,.8],[.42,.68,.42,.82],[.56,.66,.57,.8]]
-    .forEach(m=>{c.beginPath();c.moveTo(x+m[0]*z+j()/2,y+m[1]*z);c.lineTo(x+m[2]*z,y+m[3]*z+j()/2);c.stroke()})
   c.restore()
+},
+// snap colour and alpha to coarser steps so the lossless webp stays small
+snap=c=>{
+  const m=c.getImageData(0,0,256,256),e=m.data
+  for(let k=0;k<e.length;k+=4){
+    const a=e[k+3]=min(255,e[k+3]+4>>3<<3)
+    for(let j=0;j<3;j++)e[k+j]=a?min(255,e[k+j]+8>>4<<4):0
+  }
+  c.putImageData(m,0,0)
 }
-export const frames=28,delay=90
+export const dither=true,frames=28,delay=90
 export default(c,t)=>{
-  paper(c,83);c.globalCompositeOperation='multiply'
+  c.globalCompositeOperation='multiply'
   const r=rn(21),sw=S(t*T*2),lift=max(0,C(t*T*2))*5,bob=sw*1.5,
   ln=(x,y,x2,y2,w,al=.9,v=13,b=1.5)=>br(c,u=>[x+(x2-x)*u,y+(y2-y)*u+S(u*PI)*b],u=>w*(.35+.65*S(u**.7*PI)),ink(al,v),1,0,14),
   lf=(x,y,a,z,al,k=0)=>br(c,u=>[x+C(a)*z*(u-.5),y+S(a)*z*(u-.5)],u=>z*.5*S(u**.8*PI)+.3,
@@ -109,7 +96,7 @@ export default(c,t)=>{
   ln(-34-sw*2,146,-30-sw*2,166,2.4,.9);ln(-30-sw*2,166,-12,172,2.2,.85);ln(-8,131,-34-sw*2,146,1.8,.8)
   bl(c,-13,211,7,3,ink(.92),1);bl(c,14,211,7.5,3,ink(.92),2)
   // head
-  c.save();c.globalCompositeOperation='source-over';c.fillStyle='#f3ecdc';c.beginPath();c.arc(-3,112,15,0,T);c.fill();c.restore()
+  c.save();c.globalCompositeOperation='destination-out';c.filter='none';c.fillStyle='#000';c.beginPath();c.arc(-3,112,15,0,T);c.fill();c.restore()
   c.filter='blur(1.5px)';bl(c,2,106,11,8,ink(.16,50),2);bl(c,-9,118,4,3,'rgba(200,110,90,.25)',1)
   c.filter='blur(.5px)'
   br(c,u=>[-3+C(2.2+u*4.6)*15,112+S(2.2+u*4.6)*15],u=>.8+2.6*S(u**1.3*PI),ink(.9,13),1,0,30)
@@ -131,5 +118,6 @@ export default(c,t)=>{
     const a=2.05+k*.13-sw*.22+C(t*T*2)*.12,l=17+k%3*3
     br(c,u=>[bx+C(a)*l*u-sw*3*u*u,by+S(a)*l*u*(1-lift/30)],u=>2.2*(1-u)+.4,ink(.78,18+k%2*20),1,0,8)
   }
-  seal(c,208,36,15,13)
+  fade(c)
+  snap(c)
 }

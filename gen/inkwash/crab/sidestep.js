@@ -1,23 +1,5 @@
-// ink wash crab with a wet blotchy shell and dry-brush legs scuttling sideways on rice paper, bubbles rising
-const paper=(c,s=7)=>{
-  const r=()=>(s=s*16807%2147483647)/2147483647,P=[...Array(160)].map((_,k)=>{
-    const e=k/40|0,f=k%40/40,d=9+r()*3.5,w=256-2*d
-    return[[d+f*w,d],[256-d,d+f*w],[256-d-f*w,256-d],[d,256-d-f*w]][e]
-  }),edge=()=>{c.beginPath();P.forEach(p=>c.lineTo(...p));c.closePath()}
-  c.save();edge();c.fillStyle='#f3ecdc';c.fill();c.clip()
-  for(let k=0;k<7;k++){
-    const x=r()*256,y=r()*256,g=c.createRadialGradient(x,y,0,x,y,40+r()*70)
-    g.addColorStop(0,'rgba(190,170,130,.07)');g.addColorStop(1,'rgba(190,170,130,0)')
-    c.fillStyle=g;c.fillRect(0,0,256,256)
-  }
-  for(let k=0;k<170;k++){
-    const x=r()*256,y=r()*256,a=r()*6.3,l=8+r()*24
-    c.strokeStyle=r()<.7?'rgba(150,128,95,.13)':'rgba(255,253,245,.6)';c.lineWidth=.5+r()*.7
-    c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+.5)*l/2,y+Math.sin(a+.5)*l/2,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke()
-  }
-  c.restore();edge();c.clip()
-}
-const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=['#141210','#3a3632','#6e6962','#a39d94','#cfc9be']
+// ink wash crab with a wet blotchy shell and dry-brush legs scuttling sideways, bubbles rising
+const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points
 const sp=(p,n=8)=>{
@@ -59,29 +41,12 @@ const W=(c,col,a=.5,b=3,rim=.4)=>{
   c.filter='blur(.7px)';c.globalAlpha=a*rim;c.lineWidth=1.1;c.stroke()
   c.restore()
 }
-// vermilion seal with carved marks
-const seal=(c,x,y,z=15)=>{
-  const r=R(z+x)
-  c.save();c.translate(x,y);c.filter='blur(.4px)';c.globalAlpha=.85;c.fillStyle='#b8322a'
-  c.beginPath()
-  for(let k=0;k<24;k++){
-    const e=k/6|0,f=k%6/6,d=z/2-r()*1.3,m=f*2-1
-    c.lineTo(...[[m*d,-d],[d,m*d],[-m*d,d],[-d,-m*d]][e])
-  }
-  c.fill();c.globalCompositeOperation='source-over';c.globalAlpha=.9
-  c.strokeStyle='#f3ecdc';c.lineWidth=z/11;c.lineCap='square'
-  c.beginPath()
-  ;[[-.28,-.3,.28,-.3],[0,-.3,0,.02],[-.3,.02,.3,.02],[-.2,.02,-.3,.32],[.2,.02,.3,.32],[-.08,.3,.08,.3]]
-    .forEach(([a,b,d,e])=>{c.moveTo(a*z,b*z);c.lineTo(d*z,e*z)})
-  c.stroke();c.restore()
-}
 const fin=u=>S(u*Math.PI)**.6,tip=u=>(1-u)**.8*Math.min(1,u*6)**.5
 export default(c,t)=>{
-  paper(c,23)
   c.globalCompositeOperation='multiply';c.filter='blur(.5px)'
   const xc=s=>126+30*S(s*T),x=xc(t),ph=(x-126)/7
   // sand: a few pale dry strokes under the crab
-  c.globalAlpha=.5
+  c.globalAlpha=.9
   B(c,[[40,196],[110,201],[190,197],[226,200]],3,K[4],fin,4)
   B(c,[[70,212],[120,214],[170,211]],2,K[4],fin,3)
   // bubbles rising from where the crab was when it let them go
@@ -111,13 +76,12 @@ export default(c,t)=>{
     // stalk eyes
     c.globalAlpha=1;B(c,[[s*8,-15],[s*9.5,-22]],1.8,K[0],u=>.5+u*.7)
   })
-  // shell: wet blotchy wash pooling dark, with paper showing between blots
+  // shell: wet blotchy wash pooling dark, with gaps left between blots
   blob(c,0,0,31,20,0,5,.1);W(c,K[2],.8,1.6,.7)
   c.filter='blur(2.6px)';c.globalAlpha=.9;c.fillStyle=K[0]
   blob(c,-13,-3,12,10,.3,8,.25);c.fill()
   blob(c,12,-5,13,9,-.2,9,.25);c.fill()
   blob(c,1,8,15,6,0,12,.25);c.fill()
   c.restore()
-  seal(c,218,222,15)
 }
-export const frames=24,delay=90
+export const dither=true,frames=24,delay=90
