@@ -41,15 +41,17 @@ section ul{padding-left:22px;margin-bottom:16px}
 <h2>the short version</h2>
 <ul>
 <li>no ads, no cookies from vibegif, nothing sold or handed to anyone outside the services named here.</li>
-<li>visits are counted and logged, IP addresses included, and the log is deleted after 90 days.</li>
-<li>hotlinking is not logged: when an animation shows up on another site, we don't log your IP address. only visits to vibegif's own pages are.</li>
+<li>visits to vibegif's pages are counted and logged without IP addresses, and the log is deleted after 90 days.</li>
+<li>hotlinking is not counted or logged: when an animation shows up on another site, we record nothing.</li>
+<li>the only IP address we keep is a newsletter one: where you signed up from, or unsubscribed from if you did.</li>
 <li>if you sign up for the newsletter your email address is kept until you ask for it to be deleted.</li>
 </ul>
 </section>
 <section id="visits">
 <h2>when you visit a page</h2>
-<p>visits are counted to know how many people use vibegif and to keep bots out of the numbers. a visit records the page, the page you came from, the time, your IP address, and what your browser says about itself: its name and version, your system, language, time zone, screen size and whether it is a touch screen.</p>
-<p>two counters see a visit. <a href="https://www.goatcounter.com/help/privacy">GoatCounter</a>, a privacy-focused counting service, uses your IP address to tell visits apart and to work out your country, and does not store it. c, a small counter on our own server at c.vibegif.direct-img.link, keeps a log of visits with everything listed above for 90 days, then deletes it. if your browser blocks GoatCounter, c passes your visit on to GoatCounter, IP address included, so an ad blocker does not stop the count. this button does, for this browser:</p>
+<p>visits are counted to know how many people use vibegif and to keep bots out of the numbers. a visit records the page, the page you came from, the time, and what your browser says about itself: its name and version, your system, language, time zone, screen size and whether it is a touch screen.</p>
+<p>two counters see a visit. <a href="https://www.goatcounter.com/help/privacy">GoatCounter</a>, a privacy-focused counting service, uses your IP address to tell visits apart and to work out your country, and does not store it. c, a small counter on our own server at c.vibegif.direct-img.link, keeps a log of visits with everything listed above for 90 days, then deletes it. c does not write your IP address into that log. it adds a visitor code instead, made from your IP address and browser with a key that is thrown away every day, so it can tell visitors apart within a day but can't be turned back into your address.</p>
+<p>if your browser blocks GoatCounter, c passes your visit on to GoatCounter, IP address included, so GoatCounter can tell visits apart. an ad blocker therefore does not stop the count. this button does, for this browser:</p>
 <p><button id="opt" type="button">don't count my visits</button><span id="said" aria-live="polite"></span></p>
 <p>the choice is saved in your browser, so it has to be made again on another device or after clearing this site's data.</p>
 </section>
@@ -72,7 +74,7 @@ section ul{padding-left:22px;margin-bottom:16px}
 </section>
 <section id="your-data">
 <h2>your data</h2>
-<p>write to <a href="mailto:vibegif@planetrenox.com">vibegif@planetrenox.com</a> to ask what we hold about you, or to have it deleted. for the visit log, send your IP address and roughly when you visited: that is all an entry can be looked up by.</p>
+<p>write to <a href="mailto:vibegif@planetrenox.com">vibegif@planetrenox.com</a> to ask what we hold about you, or to have it deleted. the visit log has no IP addresses or names in it, so we can't find your visits there.</p>
 <p>the count and the log rest on our legitimate interest in knowing how vibegif is used and keeping it free of abuse, and the newsletter on your consent. if you are in the EU or the UK you can also complain to your data protection authority.</p>
 <p style="color:var(--mute)">last updated November 14, 2026.</p>
 </section>
