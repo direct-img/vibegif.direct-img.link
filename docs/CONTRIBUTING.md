@@ -7,4 +7,4 @@ Got AI? Use them to make new items or whole new sections, then open a PR to add 
 - `npm run dev` to preview, the site builds with `npm run build` into `dist`
 - New section? Add its folder name to `pending` in `vite.config.js`, it shows on `/test` until it moves up into `sections`
 - Improve items in place rather than renaming them, people hotlink the URLs
-- Everything you add is released under [CC0](LICENSE)
+- Everything you add is released under [CC0](../LICENSE)
