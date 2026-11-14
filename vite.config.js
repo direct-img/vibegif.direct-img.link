@@ -41,7 +41,7 @@ const sitemap=all=>`<?xml version="1.0" encoding="UTF-8"?>
 <url><loc>${site}/</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod>
 ${all.map(t=>`<image:image><image:loc>${site+t.src}</image:loc></image:image>`).join('\n')}
 </url>
-${['faq/','newsletter/',...issues().map(n=>`newsletter/${n}/`)].map(p=>`<url><loc>${site}/${p}</loc></url>`).join('\n')}
+${['faq/','privacy/','newsletter/',...issues().map(n=>`newsletter/${n}/`)].map(p=>`<url><loc>${site}/${p}</loc></url>`).join('\n')}
 </urlset>
 `
 const issues=()=>rd('newsletter',{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name.startsWith('issue-')).map(e=>e.name).sort().reverse()
@@ -57,7 +57,7 @@ ${s.map((ts,k)=>`\n## ${sections[k]}\n`+ts.map(t=>[t.id,about(sections[k],t.id)]
 `
 const test=h=>h.replace('max-image-preview:large','noindex').replace(/<link rel="canonical".*\n/,'').replace('<!--ld-->','')
   .replace('vibegif ·','vibegif test ·').replace(/<h1>.*<\/h1>/,'<h1><!--count--> gifs waiting for approval</h1>').replace('feel free to hot link them','not on the main page yet')
-export default{build:{rolldownOptions:{input:['index.html','test.html','faq/index.html','newsletter/index.html','newsletter/unsubscribe/index.html',...issues().map(n=>`newsletter/${n}/index.html`)]}},plugins:[{name:'gallery',
+export default{build:{rolldownOptions:{input:['index.html','test.html','faq/index.html','privacy/index.html','newsletter/index.html','newsletter/unsubscribe/index.html',...issues().map(n=>`newsletter/${n}/index.html`)]}},plugins:[{name:'gallery',
   transformIndexHtml:(h,{path})=>{
     if(path=='/newsletter/index.html')return h.replace('<!--issues-->',issueList())
     if(path.startsWith('/newsletter/'))return h.replace(/<!--email-->[\s\S]*?<!--\/email-->/g,'').replace(/\{\{\{\w+\}\}\}/g,'')

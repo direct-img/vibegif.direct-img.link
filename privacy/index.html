@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vibegif privacy</title>
+<link rel="icon" type="image/webp" href="/favicon.webp">
+<link rel="canonical" href="https://vibegif.direct-img.link/privacy/">
+<meta name="description" content="what vibegif records when you visit, why, and for how long">
+<script>try{localStorage.bg&&document.documentElement.classList.add("dark")}catch{}</script>
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#888}
+.dark{--bg:#000;--fg:#fff;--mute:#777}
+@font-face{font-family:"Stain";src:url("https://cdn.jsdelivr.net/gh/PlanetRenox/StainFont@1.1.0/dist/Stain.woff2") format("woff2");font-display:swap}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:"Stain",sans-serif;text-align:center;padding:24px 16px;min-height:100dvh;display:flex;flex-direction:column}
+#page{flex:1 0 auto}
+h1{font-weight:400;font-size:clamp(22px,5vw,44px);line-height:1.2;margin:8px auto 12px;padding:0 40px}
+p{font-size:clamp(16px,3vw,22px);margin-bottom:16px}
+a{color:var(--fg)}
+section{max-width:640px;margin:32px auto;text-align:left}
+h2{font-weight:400;font-size:clamp(19px,3.6vw,28px);margin-bottom:10px}
+section p{font-size:clamp(16px,2.6vw,19px);line-height:1.5}
+#bg{position:absolute;top:16px;right:16px;width:28px;height:28px;padding:0;border:2px solid var(--fg);border-radius:50%;background:linear-gradient(90deg,var(--fg) 50%,var(--bg) 50%);cursor:pointer}
+footer{margin:40px -16px -24px;padding:5px 0;border-top:.5px solid color-mix(in srgb,var(--mute),transparent 45%);font-size:14px}
+footer a{color:var(--mute);text-decoration:none;margin:0 8px}
+footer a:hover{color:var(--fg);text-decoration:underline}
+section li{font-size:clamp(16px,2.6vw,19px);line-height:1.5;margin-bottom:8px}
+section ul{padding-left:22px;margin-bottom:16px}
+#opt{font:inherit;font-size:clamp(16px,2.6vw,19px);color:var(--fg);background:var(--bg);border:2px solid var(--fg);border-radius:8px;padding:6px 14px;cursor:pointer}
+#opt:hover{background:var(--fg);color:var(--bg)}
+#said{color:var(--mute);margin-left:10px}
+</style>
+</head>
+<body>
+<div id="page">
+<button id="bg" aria-label="black background" aria-pressed="false"></button>
+<h1>Privacy</h1>
+<p><a href="/">back to the gallery</a></p>
+<section id="short">
+<h2>the short version</h2>
+<ul>
+<li>no ads, no cookies from vibegif, nothing sold or handed to anyone outside the services named here.</li>
+<li>visits are counted and logged, IP addresses included, and the log is deleted after 90 days.</li>
+<li>if you sign up for the newsletter your email address is kept until you ask for it to be deleted.</li>
+</ul>
+</section>
+<section id="visits">
+<h2>when you visit a page</h2>
+<p>visits are counted to know how many people use vibegif and to keep bots out of the numbers. a visit records the page, the page you came from, the time, your IP address, and what your browser says about itself: its name and version, your system, language, time zone, screen size and whether it is a touch screen.</p>
+<p>two counters see a visit. <a href="https://www.goatcounter.com/help/privacy">GoatCounter</a>, a privacy-focused counting service, uses your IP address to tell visits apart and to work out your country, and does not store it. c, a small counter on our own server at c.vibegif.direct-img.link, keeps a log of visits with everything listed above for 90 days, then deletes it. if your browser blocks GoatCounter, c passes your visit on to GoatCounter, IP address included, so an ad blocker does not stop the count. this button does, for this browser:</p>
+<p><button id="opt" type="button">don't count my visits</button><span id="said" aria-live="polite"></span></p>
+<p>the choice is saved in your browser, so it has to be made again on another device or after clearing this site's data.</p>
+</section>
+<section id="hotlinks">
+<h2>animations on other sites</h2>
+<p>when another site shows a vibegif animation, your browser fetches it straight from our host like any image. vibegif doesn't count or log those, and the site showing it has its own privacy policy.</p>
+</section>
+<section id="browser">
+<h2>what stays in your browser</h2>
+<p>two settings, saved in your browser and never sent to us: whether you picked the black background, and the choice above if you make it.</p>
+</section>
+<section id="others">
+<h2>others who see your request</h2>
+<p>vibegif is hosted by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, which handles every request and so sees your IP address, as any host does. Cloudflare also shows us visit totals through Cloudflare Web Analytics, which uses no cookies. the font loads from <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net">jsDelivr</a> and the sponsor button on the gallery from <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>. each of them sees your IP address and has its own privacy policy.</p>
+</section>
+<section id="newsletter">
+<h2>newsletter</h2>
+<p>if you sign up, your email address, the date and the IP address you signed up from are stored in a database at Cloudflare. a Cloudflare check called Turnstile runs on the form to make sure a person is signing up. issues are sent through <a href="https://resend.com/legal/privacy-policy">Resend</a>, which gets your email address in order to deliver them.</p>
+<p>every issue has an unsubscribe link, and you can also <a href="/newsletter/unsubscribe/">unsubscribe here</a>. after that nothing more is sent, but your address stays on file marked as unsubscribed, with the date and the IP address used, until you ask for it to be deleted.</p>
+</section>
+<section id="your-data">
+<h2>your data</h2>
+<p>write to <a href="mailto:vibegif@planetrenox.com">vibegif@planetrenox.com</a> to ask what we hold about you, or to have it deleted. for the visit log, send your IP address and roughly when you visited: that is all an entry can be looked up by.</p>
+<p>the count and the log rest on our legitimate interest in knowing how vibegif is used and keeping it free of abuse, and the newsletter on your consent. if you are in the EU or the UK you can also complain to your data protection authority.</p>
+<p style="color:var(--mute)">last updated November 14, 2026.</p>
+</section>
+</div>
+<footer><a href="/faq/">FAQ</a><a href="/privacy/">privacy</a><a href="https://youtu.be/z6F5h7cks3w">YT</a></footer>
+<script>
+// "skipgc" is GoatCounter's own opt-out switch, and c obeys it too
+const o=document.getElementById("opt"),said=document.getElementById("said")
+let off=false;try{off=localStorage.skipgc=="t"}catch{}
+const show=()=>{o.textContent=off?"count my visits again":"don't count my visits";said.textContent=off?"visits from this browser are not counted":""}
+o.onclick=()=>{off=!off;try{off?localStorage.skipgc="t":localStorage.removeItem("skipgc")}catch{}show()}
+show()
+</script>
+<script>
+const d=document.documentElement,b=document.getElementById("bg"),sync=()=>b.setAttribute("aria-pressed",d.classList.contains("dark"))
+b.onclick=()=>{const v=d.classList.toggle("dark");try{localStorage.bg=v?1:""}catch{}sync()}
+sync()
+</script>
+<script data-goatcounter="https://vibegif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://c.vibegif.direct-img.link/c.js"></script>
+</body>
+</html>
