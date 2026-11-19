@@ -7,6 +7,7 @@
 // <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script, so people and AIs can grep for one to hotlink
+// and SKILL.md, a copy of skills/vibegif/SKILL.md, so the agent skill installs with one curl instead of a clone of this repo
 // /test is index.html again but with only the pending sections, unlisted, for approving new ones before they go live
 // <!--issues--> in newsletter/index.html lists every newsletter/issue-*/ newest first (title from its <title>, date from its folder name)
 // each issue is the email scripts/send-newsletter.js sends, also served as a web page minus its <!--email-->...<!--/email--> parts
@@ -70,5 +71,6 @@ export default{build:{rolldownOptions:{input:['index.html','test.html','faq/inde
     const s=tiles()
     this.emitFile({type:'asset',fileName:'sitemap.xml',source:sitemap(s.flat())})
     this.emitFile({type:'asset',fileName:'catalog.txt',source:catalog(s)})
+    this.emitFile({type:'asset',fileName:'SKILL.md',source:rf('skills/vibegif/SKILL.md')})
   }
 }]}
