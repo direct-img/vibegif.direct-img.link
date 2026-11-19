@@ -15,11 +15,7 @@ npm run build  # site goes to dist/
 
 Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Building a UI with an AI agent? Give it the [skill](../skills/vibegif/SKILL.md) and it finds and adds anims on its own:
-
-```sh
-mkdir -p ~/.claude/skills/vibegif && curl -fsS https://vibegif.direct-img.link/SKILL.md -o ~/.claude/skills/vibegif/SKILL.md
-```
+Building a UI with an AI agent? Give it the [skill](../skills/vibegif/SKILL.md) and it finds and adds anims on its own.
 
 <a href="https://starry.direct-img.link">
   <picture>
