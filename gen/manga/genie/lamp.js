@@ -1,4 +1,5 @@
 // manga genie girl with a high ink ponytail swirls up out of an oil lamp on a puffy smoke tail, arms crossed and smirking, bobs, then gets sucked back in
+// tags: playful, smug, fantasy, magic, smoke
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

@@ -1,4 +1,5 @@
 // cockatiel bobbing its crest: grey body, yellow head with orange cheeks, head tilting side to side, blinks
+// tags: playful, bird, animal, bob
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#8a94a6',L='#c5cad3',Y='#f4c03e',O='#ff9f43',D='#2b2633'

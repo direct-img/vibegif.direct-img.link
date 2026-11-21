@@ -1,4 +1,5 @@
 // baku asleep: slow breaths, a dream bubble above it with a star slowly turning and twinkling inside
+// tags: calm, tired, yokai, animal, sleep, star
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=90
 const B='#b48cff',L='#dac6ff',S='#4ea8de',Y='#f4c03e',D='#2b2633'

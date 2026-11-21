@@ -1,4 +1,5 @@
 // a thick green progress ring in a light grey track with a dark outline fills clockwise from the top to full with an eased pace, holds a beat, then its tail chases round until it is empty again
+// tags: progress, ring, minimal
 export const frames=48,delay=40
 const{cos,PI}=Math,T=2*PI
 // smooth ease-in-out, half cubic half sine so the ends don't drag

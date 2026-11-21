@@ -1,4 +1,5 @@
 // sea turtle seen from above, gliding: front flippers sweep together, back flippers steer, head sways
+// tags: calm, animal, ocean, glide, slow, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#2ec4b6',L='#96e1da',A='#8cc084',D='#2b2633'

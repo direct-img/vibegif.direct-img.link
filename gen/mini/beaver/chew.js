@@ -1,4 +1,5 @@
 // beaver gnawing a stick like corn on the cob: the stick slides side to side, its cheeks puff, wood chips spit out and it blinks
+// tags: playful, animal, food, cute
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

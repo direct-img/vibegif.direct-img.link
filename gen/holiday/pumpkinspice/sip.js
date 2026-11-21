@@ -1,4 +1,5 @@
 // pumpkin spice latte to-go cup lifted in a knit mitten and tipped for a sip, set back down steaming with a happy little heart
+// tags: happy, cozy, autumn, drink, latte, heart
 export const frames=36,delay=55,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,C=Math.cos
 const ss=(a,b,x)=>{x=Math.min(1,Math.max(0,(x-a)/(b-a)));return x*x*(3-2*x)}

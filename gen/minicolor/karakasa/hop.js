@@ -1,4 +1,5 @@
 // karakasa umbrella yokai hopping on its one leg: big single eye, long tongue flapping behind the hop
+// tags: playful, yokai, umbrella, fantasy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=75
 const B='#ff9f43',L='#ffcfa1',A='#ff85a8',G='#c9a27e',D='#2b2633'

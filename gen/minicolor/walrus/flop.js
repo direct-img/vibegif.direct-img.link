@@ -1,4 +1,5 @@
 // walrus sitting up: tusks and a whiskery muzzle, flopping both front flippers, head bobbing, a slow blink
+// tags: playful, happy, animal, bob
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#c9a27e',L='#e6d3bf',W='#fff',D='#2b2633'

@@ -1,4 +1,5 @@
 // buttered toast flipping through the air and landing butter side down with a splat, then just lying there deadpan, every single time
+// tags: funny, food, toast, bad-luck
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=30,delay=[...Array(29).fill(60),700],rim=4
 const CR='#c97a2b',CM='#ffdf9e',BK='#f2bd6b',BU='#ffe14d',FL=206,LY=.38,PF=3*PI+Math.acos(LY),F=.36

@@ -1,4 +1,5 @@
 // main character energy: shades on, scarf in the wind, strutting in his own spotlight with sparkles while grey extras drift past in the background
+// tags: proud, happy, confidence, sparkle
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=Array(12).fill(90),rim=4
 const K='#1b1b1f',B='#ff8787'

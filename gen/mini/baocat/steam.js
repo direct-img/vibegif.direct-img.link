@@ -1,4 +1,5 @@
 // bao bun cat: a soft steamed bun with cat ears and a pleated top, it squishes, blinks and puffs curls of steam
+// tags: calm, happy, bao, animal, food, cute
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

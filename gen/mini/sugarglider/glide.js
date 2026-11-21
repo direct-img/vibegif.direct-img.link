@@ -1,4 +1,5 @@
 // sugar glider sailing along: limbs spread wide, its skin flaps billow, it banks and bobs, its fluffy tail swishes and its big eyes blink
+// tags: happy, playful, animal, float
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

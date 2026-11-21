@@ -1,4 +1,5 @@
 // manga girl in a polka-dot yukata sets a glowing paper lantern on dark water, it drifts away bobbing with ripples while fireflies blink
+// tags: calm, hopeful, water, night, gentle, slow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

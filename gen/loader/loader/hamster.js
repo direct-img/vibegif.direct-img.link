@@ -1,4 +1,5 @@
 // round orange and cream hamster running flat out inside a mint exercise wheel on a grey stand, legs whirling, pink-blushed cheeks bouncing and body bobbing while the spokes spin, bold black outlines
+// tags: playful, animal, wheel, fast
 export const frames=24,delay=50
 const{sin,cos,PI}=Math,T=2*PI,X=128,Y=112,R=86
 export default(c,t)=>{

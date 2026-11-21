@@ -1,4 +1,5 @@
 // a little guy leans over a dark pit, two huge eyes blink open down in the dark and stare back, he backs away sweating, then creeps back for another look
+// tags: anxious, scary, eyes, dark
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=32,delay=90,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},bump=(t,a,w)=>cl(1-Math.abs(t-a)/w)

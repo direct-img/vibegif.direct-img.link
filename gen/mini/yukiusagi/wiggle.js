@@ -1,4 +1,5 @@
 // yukiusagi, a snow bunny mound with leaf ears and berry eyes: the leaves wiggle, it gives a little squish and blinks while snowflakes drift down
+// tags: happy, playful, snow-bunny, animal, winter, snow
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

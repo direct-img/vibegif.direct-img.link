@@ -1,4 +1,5 @@
 // a cream pen dot draws a thick seven-petal spirograph rosette in a stepped ribbon of terracotta, orange and amber over a faint peach guide line, then rubs it out from the tail end going the same way round
+// tags: calm, pattern, draw
 const{sin,cos,PI,floor,min,max}=Math,T=2*PI
 export const frames=60,delay=40
 const M=420,

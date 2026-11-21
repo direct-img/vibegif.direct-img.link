@@ -1,4 +1,5 @@
 // pika: a round little rock rabbit sits tight, then rears up with ears perked and mouth wide, sound lines popping out as it squeaks
+// tags: playful, animal, cute
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // girl with sleek ink hair kneeling at a low desk, writing the kanji 心 stroke by stroke with a big brush, a happy beat, then the ink fades for the next try
+// tags: calm, proud, japanese, writing, slow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=90,rim=4

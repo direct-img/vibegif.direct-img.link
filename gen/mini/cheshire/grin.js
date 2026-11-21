@@ -1,4 +1,5 @@
 // cheshire cat: it vanishes bit by bit, tail first, then body, then head, until only the grin floats there, then it comes back
+// tags: playful, cheshire-cat, animal, fantasy, fade
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const ss=x=>x<0?0:x>1?1:x*x*(3-2*x),k=(t,a,b,c,d)=>t<.5?1-ss((t-a)/(b-a)):ss((t-c)/(d-c))

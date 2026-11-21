@@ -1,4 +1,5 @@
 // round radar screen in a mid-green bezel: a bright green beam sweeps clockwise over a dark green grid, trailing a stepped fading wedge, and four blips flash pale green with a ping ring as it passes, then dim and shrink
+// tags: sweep, green, retro
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=36,delay=50
 const R=82,W=['#3ee08a','#2cc271','#22a35e','#1b874e','#166e41','#125936','#0f482d'],

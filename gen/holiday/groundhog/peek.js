@@ -1,4 +1,5 @@
 // groundhog popping out of its snowy burrow, looking left and right, spotting its shadow and ducking back down
+// tags: playful, anxious, animal, winter, shadow
 export const frames=48,delay=60,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),bp=(t,a,b)=>Math.sin(Math.PI*cl((t-a)/(b-a)))
 const bo=x=>(x=cl(x)-1,1+2.6*x**3+1.6*x*x),HX=128,HY=176

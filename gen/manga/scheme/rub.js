@@ -1,4 +1,5 @@
 // scheming girl with a hatched shadow over her eyes, glasses glaring white, grins wide and rubs her hands together
+// tags: smug, playful, scheming, glasses, funny
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=12,delay=90,rim=4

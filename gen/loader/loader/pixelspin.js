@@ -1,4 +1,5 @@
 // retro pixel spinner on a coarse 12x12 grid, a ring of slate blocks where a bright amber pixel arc chases round in crisp steps, stretching long then snapping short, with a blinking amber cursor block in the middle
+// tags: retro, pixel, game, spin
 const{atan2,hypot,PI}=Math,T=2*PI
 export const frames=64,delay=30
 const n=12,g=17,s=15,o=128-n*g/2,

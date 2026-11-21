@@ -1,4 +1,5 @@
 // glossy orange lava lamp goo with a dark maroon outline: three blobs peel off a pool at the bottom, rise, merge into a cap at the top and sink back, stretching gooey necks as they split and join
+// tags: calm, lava-lamp, blob, float, slow
 export const frames=36,delay=60
 const{sin,cos,PI,sqrt,max,min}=Math,T=2*PI,TH=.42,
 L=[-.45,-.6,.66],

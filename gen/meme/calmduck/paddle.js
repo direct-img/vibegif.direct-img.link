@@ -1,4 +1,5 @@
 // serene duck gliding along with its eyes closed humming a little tune, while under the water its legs are paddling like crazy
+// tags: calm, anxious, duck, animal, water, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=Array(12).fill(70),rim=4
 const W='#4dabf7',WD='#1c7ed6',WL='#a5d8ff',DU='#fff',DS='#dee2e6',BK='#ff922b',LG='#fd7e14',SY=126

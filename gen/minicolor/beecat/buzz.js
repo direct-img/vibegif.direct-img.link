@@ -1,4 +1,5 @@
 // bee-cat hovering: a striped cat body with buzzing wings, its tail curling and swaying, blinking
+// tags: playful, happy, bee, cat, animal, hover
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#f4c03e',L='#f9e09e',A='#5b4a3f',W='#a7d4ef',D='#2b2633'

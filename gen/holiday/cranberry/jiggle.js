@@ -1,4 +1,5 @@
 // canned cranberry sauce, can ridges and all, jiggling and wobbling on a plate being jostled, slices and berries alongside
+// tags: playful, thanksgiving, food, funny
 export const frames=32,delay=50,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,R=50,Q=.3,H=122,Y=184
 export default(c,t)=>{

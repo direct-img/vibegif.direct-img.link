@@ -1,4 +1,5 @@
 // scarecrow on its post waving one floppy arm, head tilting and straw tufts swaying
+// tags: friendly, playful, autumn, sway
 export const frames=24,delay=60,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,C=Math.cos
 export default(c,t)=>{

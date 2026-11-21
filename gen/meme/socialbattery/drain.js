@@ -1,4 +1,5 @@
 // social battery with a face draining from green to dead red as "hi!" "hey!" bubbles keep popping up, then it plugs in alone and recharges
+// tags: tired, anxious, introvert
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=32,delay=[...Array(31).fill(85),500],rim=4
 const G={S:'M3.8 .9Q3.1 0 2 0Q.2 0 .2 1.5Q.2 2.8 2 3Q3.9 3.2 3.9 4.5Q3.9 6 2 6Q.7 6 0 5.1',O:'M2 0Q0 0 0 3Q0 6 2 6Q4 6 4 3Q4 0 2 0',C:'M4 .9Q3.3 0 2.1 0Q0 0 0 3Q0 6 2.1 6Q3.3 6 4 5.1',I:'M2 0L2 6M.8 0L3.2 0M.8 6L3.2 6',A:'M0 6L2 0L4 6M.7 4L3.3 4',L:'M0 0L0 6L4 6',B:'M0 3L0 0L2.3 0Q3.7 0 3.7 1.5Q3.7 3 2.3 3L0 3L0 6L2.5 6Q4 6 4 4.5Q4 3 2.3 3',T:'M0 0L4 0M2 0L2 6',E:'M4 0L0 0L0 6L4 6M0 3L3.2 3',R:'M0 6L0 0L2.3 0Q4 0 4 1.7Q4 3.4 2.3 3.4L0 3.4M2 3.4L4 6',Y:'M0 0L2 3L4 0M2 3L2 6',H:'M0 0L0 6M4 0L4 6M0 3L4 3','!':'M2 0L2 3.8M2 5.9L2 6','?':'M.1 1.2Q.6 0 2 0Q4 0 4 1.7Q4 3 2 3.3L2 4M2 5.9L2 6',U:'M0 0L0 4Q0 6 2 6Q4 6 4 4L4 0',N:'M0 6L0 0L4 6L4 0',W:'M0 0L.9 6L2 2.4L3.1 6L4 0'}

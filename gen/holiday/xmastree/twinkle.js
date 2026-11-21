@@ -1,4 +1,5 @@
 // decorated Christmas tree with its string lights twinkling on and off, gold star on top sparkling
+// tags: happy, calm, christmas, tree, lights, sparkle
 export const frames=24,delay=80,rim=6
 const P=Math.PI*2,O='#1d1418',X=128
 const hx=s=>[1,3,5].map(j=>parseInt(s.substr(j,2),16))

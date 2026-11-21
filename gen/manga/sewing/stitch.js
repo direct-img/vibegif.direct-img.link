@@ -1,4 +1,5 @@
 // girl with round glasses and a white top bun sews a button on, the needle pulling thread up through the holes and back down, tongue out
+// tags: calm, craft, chores, slow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

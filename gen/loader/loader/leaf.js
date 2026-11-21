@@ -1,4 +1,5 @@
 // big orange maple leaf with a bold black outline drifting down from the top, swaying side to side and flipping over to show its paler back, landing with a bounce on a chunky rust-brown heap of big red, orange and yellow leaves and sinking into it as the next leaf pops in
+// tags: calm, autumn, nature, float, gentle
 export const frames=40,delay=60
 const{sin,cos,min,max,PI}=Math,T=2*PI
 const cl=x=>min(1,max(0,x)),io=x=>x<.5?2*x*x:1-2*(1-x)**2

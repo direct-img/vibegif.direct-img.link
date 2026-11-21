@@ -1,4 +1,5 @@
 // fired-up girl with an ink high ponytail: fighting-spirit flames roar up behind her, fist pumped, flames burning in her eyes, shouting
+// tags: proud, flame, fist, motivation
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=80,rim=4
 import{createCanvas}from'@napi-rs/canvas'

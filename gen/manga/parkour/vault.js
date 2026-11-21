@@ -1,4 +1,5 @@
 // chibi traceur in a dotted hoodie, hood up over white fluffy bangs, sprints past speed lines and speed-vaults a brick wall
+// tags: determined, excited, sports, chibi, fast
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,min,max,hypot}=Math,T=2*PI
 export const frames=16,delay=65,rim=4

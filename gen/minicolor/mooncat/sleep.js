@@ -1,4 +1,5 @@
 // moon-cat sleeping: a crescent moon curled like a cat, rocking and breathing, its tail swaying and z's floating up
+// tags: calm, tired, moon, animal, night, slow
 const{sin,cos,PI,atan2,sqrt,hypot}=Math,T=2*PI
 export const frames=24,delay=90
 const B='#f4c03e',L='#f9e09e',A='#b48cff',D='#2b2633'

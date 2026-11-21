@@ -1,4 +1,5 @@
 // striped tiger doing a big cat stretch, rump up and front paws out, eyes shut and a little yawn, then back to standing
+// tags: calm, tired, animal, yawn
 const{sin,cos,PI,hypot}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#ff9f43',L='#ffd2a6',A='#b5531c',D='#2b2633'

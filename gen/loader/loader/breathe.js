@@ -1,4 +1,5 @@
 // three nested rings, orange outside, coral middle and cream inside with a terracotta edge, around an amber dot, slowly breathe out from circles into rounded squares, hold, and sink back in to circles, each ring a beat behind the one inside it
+// tags: calm, rings, pulse, slow, gentle
 const{PI}=Math
 export const frames=40,delay=60
 const ss=x=>x*x*x*(x*(6*x-15)+10),

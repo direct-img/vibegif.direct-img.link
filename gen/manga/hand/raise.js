@@ -1,4 +1,5 @@
 // eager girl at her desk shooting her hand up and waving it, sparkly star eyes, bouncing in her seat
+// tags: excited, eager, school, hand-raise, sparkle, bounce
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

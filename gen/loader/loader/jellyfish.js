@@ -1,4 +1,5 @@
 // smiling pink jellyfish with a violet scalloped skirt and spotted dome, squeezing its bell to shoot upward with eyes squinting, springing back open and slowly sinking, violet tentacles and frilly pink arms trailing and waving behind, bold black outlines
+// tags: calm, animal, ocean, float, gentle
 export const frames=32,delay=60
 const{sin,cos,exp,min,max,PI}=Math,T=2*PI,Y0=108
 const cl=x=>min(1,max(0,x))

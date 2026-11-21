@@ -1,4 +1,5 @@
 // cricket: lifts its wings and buzzes them together to chirp, little music notes float off, antennae sway and it blinks
+// tags: calm, animal, insect, music, night
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 const note=(c,x,y,z)=>{c.save();c.translate(x,y);c.scale(z,z);c.beginPath();c.ellipse(0,0,8,6,-.4,0,T);c.fill();c.stroke()

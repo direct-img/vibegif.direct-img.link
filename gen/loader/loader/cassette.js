@@ -1,4 +1,5 @@
 // tomato-red cassette tape with a cream label, its two white toothed reels turning as brown tape winds from the left reel onto the right, then the cassette hops and flips over in 3D to play again
+// tags: retro, music, spin
 const{sin,cos,abs,max,PI}=Math,T=2*PI
 export const frames=48,delay=40
 const ink='#111',W=208,H=136,D=16,h=14,Rm=36,K=1.25*T/(Rm-h)

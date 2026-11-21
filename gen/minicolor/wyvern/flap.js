@@ -1,4 +1,5 @@
 // little wyvern hovering: bat wings beating twice a loop, tail curling below, tiny horns, blinks
+// tags: dragon, fantasy, hover
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#8cc084',L='#c6e0c2',A='#f4c03e',D='#2b2633'

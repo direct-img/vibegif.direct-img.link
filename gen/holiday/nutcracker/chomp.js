@@ -1,4 +1,5 @@
 // nutcracker soldier catching a walnut in his open jaw and chomping it, shell bits flying, eyes squeezing on the crack
+// tags: christmas, toy, funny
 export const frames=32,delay=55,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos,cl=x=>x<0?0:x>1?1:x,ez=x=>x*x*(3-2*x)
 const rr=(c,x,y,w,h,r)=>{c.beginPath();c.roundRect(x,y,w,h,r)}

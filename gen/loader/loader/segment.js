@@ -1,4 +1,5 @@
 // a ring of eight thick rainbow arc segments with dark outlines, each pops in one by one clockwise with a bouncy overshoot, then they pop out in the same order with a little anticipation swell
+// tags: rainbow, ring, bounce
 export const frames=48,delay=40
 const{sin,cos,PI,max,min}=Math,T=2*PI,r1=58,r2=102,g=7
 const cl=x=>max(0,min(1,x)),

@@ -1,4 +1,5 @@
 // deeply unimpressed cat rolls its eyes so hard the pupils spin all the way around twice, then sighs and goes back to the flat stare
+// tags: annoyed, funny, cat, animal
 const{sin,cos,PI,min,max}=Math,T=2*PI
 const U=[0,.15,.2,.25,...Array.from({length:12},(_,k)=>.27+k*.033),.68,.74,.8,.88]
 export const frames=U.length,delay=[700,70,70,70,...Array(12).fill(45),80,90,110,600],rim=4

@@ -1,4 +1,5 @@
 // cheerleader with an ink-black high ponytail shaking her pompoms, crouching and leaping into a spread jump, sparkles at the top
+// tags: happy, excited, cheerleader, sports, jump, sparkle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=75,rim=4

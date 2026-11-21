@@ -1,4 +1,5 @@
 // girl with short white bunches irons a wrinkled t-shirt flat, steam puffing, it sparkles, then she turns it over to do the other side
+// tags: calm, proud, chores, laundry, steam
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

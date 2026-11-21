@@ -1,4 +1,5 @@
 // band girl with long wavy white hair and a big bow playing a flute held off to the side, fingers lifting on the keys, notes drifting up
+// tags: calm, happy, music, band, gentle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,atan2,hypot}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

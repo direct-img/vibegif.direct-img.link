@@ -1,4 +1,5 @@
 // candy cane with its red and green stripes spinning up the stick like a barber pole, green bow tied on
+// tags: happy, christmas, candy, food, celebration
 export const frames=16,delay=70,rim=6
 const P=Math.PI*2,O='#1d1418',R=23,PIT=104,PER=52,sn=Math.sin,cs=Math.cos
 // centreline in local coords: shaft up, hook arcs over to the left and ends pointing down

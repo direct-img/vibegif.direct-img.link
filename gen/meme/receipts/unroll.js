@@ -1,4 +1,5 @@
 // fist holds up a receipt that drops and keeps unrolling until it heaps up in folds on the floor, gets a smug shake, then zips back up
+// tags: funny, money, long
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=32,delay=[...Array(31).fill(70),600],rim=4
 const SK='#ffd8b5',SL='#5c7cfa',PA='#fff',LN='#868e96',W=84,X=128-W/2,TOP=70,FLR=238

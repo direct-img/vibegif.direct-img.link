@@ -1,4 +1,5 @@
 // six-fold kaleidoscope in a dark hexagon window with an orange frame: mirrored amber, orange, terracotta and cream glass shards drift, spin and reshape while the whole pattern turns a sixth of a turn, symmetric every frame
+// tags: calm, kaleidoscope, pattern, spin
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=32,delay=70
 // each shard: color, sides, then (w)=>[radius, angle, size, spin, stretch]

@@ -1,4 +1,5 @@
 // a phone sends "hey :)", it gets marked read, then the contact's little avatar turns into a ghost that floats up out of the phone, waves bye and drifts away
+// tags: sad, lonely, texting
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=32,delay=90,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},pop=u=>(u=cl(u),u<.6?1.2*u/.6:1.2-.2*(u-.6)/.4)

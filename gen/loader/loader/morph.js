@@ -1,4 +1,5 @@
 // one solid blob with an amber-top to terracotta-bottom gradient fill, slowly turning while its outline morphs from a soft circle to a 4-point star, a 6-point star, an 8-point spark and back to the circle
+// tags: calm, blob, shape, slow
 const{sin,cos,abs,min,max,PI}=Math,T=2*PI
 export const frames=40,delay=60
 const ss=x=>(x=min(1,max(0,x)),x*x*x*(x*(6*x-15)+10)),

@@ -1,4 +1,5 @@
 // side view: girl on tiptoe stretching to write a cursive line high on the chalkboard, chalk squeaking, dust puffs, then the line dusts away
+// tags: calm, proud, school, chalkboard, writing
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

@@ -1,4 +1,5 @@
 // deadpan blob slowly raises a hand, plants it on its face with a smack, holds it there, then drags it down its face in despair
+// tags: tired, annoyed, funny, deadpan
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=80,rim=5
 const Y='#ffd43b',BL='#ff8787',YD='#f0b400'

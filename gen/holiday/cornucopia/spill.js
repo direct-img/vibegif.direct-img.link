@@ -1,4 +1,5 @@
 // cornucopia, a woven horn of plenty, with an apple, a pear and a corn cob tumbling out of its mouth and dropping into the harvest pile
+// tags: thanksgiving, autumn, harvest, food, fruit, celebration
 export const frames=36,delay=55,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,C=Math.cos
 const bz=(a,b,c,d,u)=>(1-u)**3*a+3*(1-u)**2*u*b+3*(1-u)*u*u*c+u**3*d

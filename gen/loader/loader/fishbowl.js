@@ -1,4 +1,5 @@
 // round glass fishbowl with light blue water, a gently rippling surface and a pebble floor with green weed on a wooden stand, an orange goldfish swimming laps and flipping around at each side while white bubbles rise to the top, bold black outlines
+// tags: calm, fish, animal, water, gentle
 export const frames=40,delay=60
 const{sin,cos,tanh,asin,max,PI}=Math,T=2*PI,X=128,Y=130,R=88
 const h=n=>Math.abs(sin(n*127.1+311.7)*43758.5%1)

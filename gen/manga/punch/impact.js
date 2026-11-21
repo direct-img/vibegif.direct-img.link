@@ -1,4 +1,5 @@
 // spiky-haired girl in a headband throws a punch straight at the viewer: the fist swells into a burst with focus lines
+// tags: angry, determined, action
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,hypot}=Math,T=2*PI
 export const frames=12,delay=80,rim=4

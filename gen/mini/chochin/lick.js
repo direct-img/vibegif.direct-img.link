@@ -1,4 +1,5 @@
 // chochin-obake, a paper lantern yokai swinging from its hook: its one big eye glances around and blinks, its long tongue licks out and wags
+// tags: playful, chochin-obake, yokai, lantern, fantasy, swing
 const{sin,cos,PI,sqrt,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

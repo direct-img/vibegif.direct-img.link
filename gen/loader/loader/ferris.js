@@ -1,4 +1,5 @@
 // ferris wheel turning clockwise on a slate-blue A-frame stand: white outlined rim, grey spokes and a red hub, eight hanging cabins alternating coral with a yellow roof and teal with a violet roof, staying upright and swaying gently as the wheel eases along
+// tags: playful, ferris-wheel, travel, spin
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=15,delay=60
 const X=128,Y=104,R=74,C=[['#ff6b5e','#ffc533'],['#25c2b0','#8c6cff']]

@@ -1,4 +1,5 @@
 // backyard kettle grill with sausages and a burger sizzling, flames licking up and smoke puffs rising
+// tags: summer, food, fire, smoke
 export const frames=24,delay=60,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // jerboa hopping in place: it crouches, springs up on its long kangaroo legs with ears swept back and tufted tail swinging, then lands and squashes
+// tags: playful, happy, animal, bounce, cute
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=75,rim=3,rimColor='#111'
 // leg pose e: -1 crouched, 1 fully pushed off. keys are [t,e], eased between

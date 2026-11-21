@@ -1,4 +1,5 @@
 // sea serpent: its humps roll up out of the water line and back under, tail fin flicks, head bobs
+// tags: fantasy, ocean, water, wave
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#2ec4b6',L='#97e2da',W='#4ea8de',D='#2b2633'

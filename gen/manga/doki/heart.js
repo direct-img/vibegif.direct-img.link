@@ -1,4 +1,5 @@
 // flustered girl with dotted low pigtails: her ink heart pops out in front of her chest and pounds doki-doki, beat lines flaring on each thump
+// tags: love, anxious, flustered, heartbeat, blush
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,exp}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

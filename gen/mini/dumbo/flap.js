@@ -1,4 +1,5 @@
 // dumbo octopus paddling: it flaps its ear fins, its webbed skirt puffs open and shut, it bobs and blinks
+// tags: calm, happy, animal, ocean, float, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

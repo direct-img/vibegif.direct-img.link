@@ -1,4 +1,5 @@
 // shoujo heroine with wavy screentone hair swoons backward, back of her hand to her forehead, as petals scatter
+// tags: love, shoujo, petals, drama
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

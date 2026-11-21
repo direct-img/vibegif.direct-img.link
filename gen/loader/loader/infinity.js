@@ -1,4 +1,5 @@
 // a pale peach figure-eight track with a bright orange comet racing along it, yellow-hot head and a tail of orange to red beads shrinking behind it, speeding up on the straights
+// tags: comet, glow, racing
 export const frames=36,delay=50
 const{sin,cos,PI}=Math,T=2*PI,
 // lemniscate of Bernoulli, stretched taller

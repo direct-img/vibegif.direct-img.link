@@ -1,4 +1,5 @@
 // kingfisher on a branch: bobs, tips forward and darts beak-first into the water, then pops back up to its perch
+// tags: bird, animal, water
 const{sin,PI,min,abs,atan2}=Math,T=2*PI
 export const frames=32,delay=70
 const B='#2ec4b6',L='#97e2da',O='#ff9f43',W='#c9a27e',K='#8a94a6',D='#2b2633'

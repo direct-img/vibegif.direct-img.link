@@ -1,4 +1,5 @@
 // menacing girl with crosshatched hair: her face sinks into shadow with glinting eyes, black aura flames rise behind her and menace symbols drift up
+// tags: angry, menacing, dark, flame
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

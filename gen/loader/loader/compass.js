@@ -1,4 +1,5 @@
 // brass pocket compass with a cream face and a red-and-white needle that gets knocked spinning, whirls a full turn, overshoots and wobbles to settle on north, the case jolting at each knock
+// tags: travel, spin, wobble
 const{sin,cos,exp,PI}=Math,T=2*PI
 export const frames=48,delay=40
 const ink='#111'

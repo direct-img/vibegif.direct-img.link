@@ -1,4 +1,5 @@
 // chibi kendo girl in full armor raises her shinai overhead, then stomps and strikes with a shout and an impact flash
+// tags: determined, martial-arts, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

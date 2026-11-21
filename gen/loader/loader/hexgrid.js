@@ -1,4 +1,5 @@
 // a honeycomb of seven dark-outlined hexagons, centre first then clockwise round the ring, each pops up and lights from dull brown to bright amber with a glowing core, then they shrink and dim back in the same spiral order
+// tags: hexagon, honeycomb, glow
 export const frames=40,delay=50
 const{sin,cos,PI,max,min,sqrt}=Math,T=2*PI,
 cl=x=>max(0,min(1,x)),

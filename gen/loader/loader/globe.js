@@ -1,4 +1,5 @@
 // dotted globe of blue ocean and green land dots spinning on a tilted axis, front dots big and bright, back dots small and dim showing through, a teal orbit ring with a white moon circling round it
+// tags: travel, space, spin
 const{sin,cos,PI,round,max,min}=Math,T=2*PI
 export const frames=40,delay=60
 const R=74,K=1.42*R

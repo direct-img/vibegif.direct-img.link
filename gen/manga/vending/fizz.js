@@ -1,4 +1,5 @@
 // manga girl with a short white bob presses a vending machine button, the can clunks out and flies to her hand, she cracks it and it fizzes all over her
+// tags: happy, playful, vending-machine, drink, soda
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

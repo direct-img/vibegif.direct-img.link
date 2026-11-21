@@ -1,4 +1,5 @@
 // freezing girl in a ribbed beanie with a dotted pompom hugging herself: shivering side to side, teeth chattering, shiver zigzags, little breath puffs
+// tags: tired, anxious, winter, beanie
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=70,rim=4

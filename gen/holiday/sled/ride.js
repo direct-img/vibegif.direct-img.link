@@ -1,4 +1,5 @@
 // a little bunny in a green scarf riding a red sled over snowy bumps, ears flopping, snow puffing up behind
+// tags: happy, playful, winter, bunny, animal, snow
 export const frames=32,delay=50,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

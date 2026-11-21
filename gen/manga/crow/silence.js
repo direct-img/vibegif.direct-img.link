@@ -1,4 +1,5 @@
 // deadpan girl with an ink-black pixie cut staring with dot eyes in awkward silence while ellipsis dots appear and a crow flaps across
+// tags: awkward, funny, deadpan, bird
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

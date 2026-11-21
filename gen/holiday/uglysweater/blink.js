@@ -1,4 +1,5 @@
 // an ugly Christmas sweater with a knitted tree whose lights blink on and off in turns, the star twinkling on top
+// tags: playful, funny, christmas, sweater, lights, twinkle
 export const frames=24,delay=110,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 const G=[[1,-1,0],[2,2,1],[4,0,2],[5,-2,1],[5,3,0],[7,1,0],[8,-3,2],[9,3,1],[10,-1,0],[11,2,2],[11,-4,1],[10,4,0],[6,0,1],[3,-1,0]]

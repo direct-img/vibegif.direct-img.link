@@ -1,4 +1,5 @@
 // bread-loaf corgi standing and wiggling its butt: nub tail wagging, back feet stepping, scored crust on its back
+// tags: happy, playful, dog, animal, bread, food
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#c9a27e',L='#ead7c3',D='#2b2633'

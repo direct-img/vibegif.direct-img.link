@@ -1,4 +1,5 @@
 // square of coral paper with a cream back and dark outlines folds its four corners into the center one after another, each flap lifting toward you in perspective and casting a shadow, the folded envelope pops and spins a quarter turn, then the corners unfold in reverse
+// tags: calm, origami, paper
 const{sin,cos,PI,round,abs,SQRT1_2}=Math
 export const frames=64,delay=40
 const cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),

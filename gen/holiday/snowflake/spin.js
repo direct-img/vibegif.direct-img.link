@@ -1,4 +1,5 @@
 // a big ice-blue snowflake slowly turning, a shine sweeping across it and sparkles glinting at its tips
+// tags: calm, winter, snow, slow, sparkle
 export const frames=36,delay=70,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

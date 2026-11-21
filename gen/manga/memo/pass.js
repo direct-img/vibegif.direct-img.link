@@ -1,4 +1,5 @@
 // glossy ink-haired girl with a side ponytail sneaking a folded note across the desk under her long sleeve, eyes darting, sweat drop, a hand snatches it, phew
+// tags: playful, school, note, sneaky, secret
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,floor}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

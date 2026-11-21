@@ -1,4 +1,5 @@
 // chibi with a sprout ponytail staggers under a tall stack of moving boxes, the stack swaying and the top box nearly sliding off
+// tags: anxious, tired, moving, chibi, wobble
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,exp}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

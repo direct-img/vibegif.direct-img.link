@@ -1,4 +1,5 @@
 // champagne bottle trembling, then popping its cork with a bang and a fountain of foam
+// tags: excited, celebration, new-year, drink, confetti
 export const frames=48,delay=55,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),rn=n=>(n=Math.sin(n*127.1+311.7)*43758.5453,n-Math.floor(n))
 const T=.24,A0=.47,K=.86,BX=82,BY=221

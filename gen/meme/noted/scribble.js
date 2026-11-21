@@ -1,4 +1,5 @@
 // judgy half-lidded blob scribbles in a little notepad, taps a period, NOTED. pops up over its head, then it flips to a fresh page
+// tags: annoyed, funny, notepad, judgy
 const{sin,cos,PI,max,min,floor}=Math,T=2*PI
 export const frames=24,delay=80,rim=5
 const Y='#ffd43b',BL='#ff8787',PD='#fff',LN='#a5d8ff',PN='#ffd43b',ER='#f783ac',INK='#364fc7'

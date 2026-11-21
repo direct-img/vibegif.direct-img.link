@@ -1,4 +1,5 @@
 // flustered girl with white space buns overheating: hatched blush across her face, hands on her cheeks, shaking while steam blasts out of her head
+// tags: flustered, shy, blush, shake
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70,rim=4
 const puff=(c,x,y,r)=>{const b=[[0,0,1],[-.8,.3,.7],[.8,.3,.7],[-.4,-.5,.75],[.45,-.45,.7]];c.lineWidth=7;for(const[a,e,k]of b)c.beginPath(),c.arc(x+a*r,y+e*r,k*r,0,T),c.stroke();c.fillStyle='#fff';for(const[a,e,k]of b)c.beginPath(),c.arc(x+a*r,y+e*r,k*r,0,T),c.fill()}

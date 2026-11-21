@@ -1,4 +1,5 @@
 // a blue 3D cube with dark outlines and lit top, light left and shaded right faces crouches, hops a quarter turn about its vertical axis, lands with a squash and a little twist overshoot, then rests
+// tags: playful, 3d, hop
 export const frames=34,delay=[...Array(34)].map((_,i)=>i>27?60:40)
 const{sin,cos,PI,max,min,hypot,exp}=Math,
 cl=x=>max(0,min(1,x)),

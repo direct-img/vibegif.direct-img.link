@@ -1,4 +1,5 @@
 // red glass bauble swinging like a pendulum from a ribbon tied to a pine twig, its shine staying put
+// tags: calm, christmas, sparkle, slow
 export const frames=24,delay=60,rim=6
 const P=Math.PI*2,O='#1d1418',R=58,sn=Math.sin,cs=Math.cos
 // twig centreline: left end -> right end, slightly rising

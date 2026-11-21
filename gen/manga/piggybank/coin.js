@@ -1,4 +1,5 @@
 // girl with a white curly bob drops a holed coin into her piggy bank, lifts it to her ear and shakes it to hear the jingle, then sparkles
+// tags: happy, hopeful, money, saving
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=4

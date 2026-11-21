@@ -1,4 +1,5 @@
 // librarian with a pencil through her top bun and round glasses, finger to her lips, shh arcs rolling out and a glint across the lenses
+// tags: calm, quiet, glasses
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

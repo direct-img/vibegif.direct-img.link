@@ -1,4 +1,5 @@
 // little blob sunk into a red cinema seat shoveling popcorn nonstop, eyes darting side to side following the drama
+// tags: playful, funny, gossip, watching
 const{sin,cos,PI,max,min,abs,floor}=Math,T=2*PI
 export const frames=24,delay=70,rim=5
 const Y='#ffd43b',BL='#ff8787',SR='#e03131',SD='#a61e4d',SC='#ff6b6b',PC='#fff3bf',PB='#fa5252'

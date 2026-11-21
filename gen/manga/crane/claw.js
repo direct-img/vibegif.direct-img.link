@@ -1,4 +1,5 @@
 // beanie girl at a claw machine: the claw drops, grabs a bear plush, lifts it, it slips back onto the pile and she groans
+// tags: sad, funny, game, arcade, claw-machine, groan
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=4

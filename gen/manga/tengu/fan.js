@@ -1,4 +1,5 @@
 // manga tengu girl with a white wolf cut, tokin cap and a crow mask on the side of her head, little black wings flapping as she waves her feather fan and gust curls blow off it
+// tags: playful, yokai, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

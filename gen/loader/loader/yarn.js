@@ -1,4 +1,5 @@
 // pink ball of yarn rolling in place to the right with its wound strands turning clockwise, a gentle bob, and a loose pink thread trailing off to the left along the floor, wiggling with a curl at its end
+// tags: calm, cozy, roll, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=70
 const R=62,X=152,Y=122,lam=Math.PI*2*R/3/2 // ball turns 1/3 per loop; two thread waves per roll

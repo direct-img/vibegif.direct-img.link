@@ -1,4 +1,5 @@
 // firework burst: a gold-hearted orange core squeezes and pops into a gold ring, twelve orange dashes with gold tips and twelve short gold dashes shoot out, thinning and shrinking as they slow, while eight gold sparks spiral back in to build the next core
+// tags: excited, celebration, burst
 const{sin,cos,min,max,PI}=Math,T=2*PI
 export const frames=40,delay=40
 const cl=x=>min(1,max(0,x)),

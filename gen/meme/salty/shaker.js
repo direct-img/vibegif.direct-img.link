@@ -1,4 +1,5 @@
 // a grumpy salt shaker with folded arms glares sideways, then furiously shakes itself, spraying salt everywhere, and huffs: SALTY
+// tags: angry, funny, salt, grumpy, food
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=30,delay=80,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)}

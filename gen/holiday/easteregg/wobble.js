@@ -1,4 +1,5 @@
 // decorated Easter egg wobbling side to side on its round bottom, nestled in a grass tuft
+// tags: happy, easter, egg, spring, gentle
 export const frames=28,delay=50,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // manga rokurokubi girl in a toned kimono: her neck stretches up into a playful loop, head tilting with a teehee wink, then it slurps back down
+// tags: playful, yokai, kimono
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

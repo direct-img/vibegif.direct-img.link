@@ -1,4 +1,5 @@
 // baby dragon peeking out of its cracked egg: it pops up wearing the top shell like a hat, flaps its little wings, looks left and right, blinks, then sinks back
+// tags: happy, playful, dragon, baby, egg, fantasy
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const ez=x=>(x=min(1,max(0,x)),x*x*(3-2*x))

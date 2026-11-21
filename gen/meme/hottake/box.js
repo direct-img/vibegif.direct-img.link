@@ -1,4 +1,5 @@
 // a smug takeout box smoulders, then flips its lid open and a huge flame roars out of it: HOT TAKE
+// tags: angry, funny, takeout, flame, opinion
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=24,delay=90,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},bk=u=>(u=cl(u),1+2.7*(u-1)**3+1.7*(u-1)**2)

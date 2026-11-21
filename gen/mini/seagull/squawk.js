@@ -1,4 +1,5 @@
 // seagull standing tall: it throws its head back and squawks with its beak wide open, sound lines pop out, then it blinks
+// tags: funny, animal, bird, beach
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

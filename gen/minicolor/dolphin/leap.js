@@ -1,4 +1,5 @@
 // dolphin leaping in a big arc out of a little rolling wave and diving back in, slowest at the top, quick under water
+// tags: happy, excited, animal, ocean, wave
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=32,delay=60
 const B='#4ea8de',L='#a7d4ef',A='#2ec4b6',AL='#96e1da',D='#2b2633'

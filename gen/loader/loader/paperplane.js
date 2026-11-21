@@ -1,4 +1,5 @@
 // white paper plane with a dark outline flying a loop-the-loop around the centre, slowing over the top and swooping through the bottom, banking harder as it speeds up, leaving a blue dashed trail whose dashes shrink away behind it
+// tags: playful, travel, loop-the-loop
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=40,delay=50
 const R=60,S=42,ND=24,a=.35,

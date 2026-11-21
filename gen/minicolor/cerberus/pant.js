@@ -1,4 +1,5 @@
 // three-headed puppy sitting, the heads pant one after another with tongues out, tail wagging
+// tags: happy, playful, puppy, dog, animal, fantasy
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#8a94a6',L='#c5cad3',A='#ff85a8',D='#2b2633'

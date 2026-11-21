@@ -1,4 +1,5 @@
 // dark outlined pill progress bar on a light track, a green to teal fill grows in uneven eased spurts with a glowing mint cap on its leading edge, gives a springy happy bump when full, then drains back left and starts over
+// tags: progress, bar, minimal
 const{sin,PI,exp,min,abs}=Math
 export const frames=60,delay=40
 const cl=x=>x<0?0:x>1?1:x,

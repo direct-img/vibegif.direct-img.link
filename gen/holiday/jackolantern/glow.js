@@ -1,4 +1,5 @@
 // carved jack-o'-lantern glowing, candlelight flickering through its face and warming the rind
+// tags: halloween, pumpkin, autumn, candle, flicker
 export const frames=24,delay=60,rim=5
 const K='#2a1810',P=Math.PI*2,S=Math.sin
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // platypus swimming along: duck bill, flat beaver tail beating up and down, webbed feet paddling in turn
+// tags: happy, playful, animal, water, swim
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#b5835a',L='#dcc0a6',A='#8a94a6',D='#2b2633'

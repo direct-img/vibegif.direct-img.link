@@ -1,4 +1,5 @@
 // chibi batter in a helmet with a dotted side ponytail waggles the bat, the pitch comes in, crack! the ball blasts off in a burst
+// tags: excited, sports, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=18,delay=70,rim=4

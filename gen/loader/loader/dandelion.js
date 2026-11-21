@@ -1,4 +1,5 @@
 // big dandelion seed head: eight chunky parachute seeds, each a terracotta stalk topped by a fan of thick light-amber strokes ending in cream puffs, outlined in dark brown around a dotted orange center; seeds on the top right let go one at a time and drift to the top right corner at full size, shrinking away only at the end, while a new seed springs back into each gap
+// tags: calm, hopeful, nature, wind, float, gentle
 const{sin,cos,PI,min,max,atan2}=Math,T=2*PI
 export const frames=40,delay=60
 const D='#5a2614',X=110,Y=146,

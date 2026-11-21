@@ -1,4 +1,5 @@
 // lemon-duck floating: a lemon-shaped duck bobbing and rocking over two ripples, the leaf on its head twitching
+// tags: calm, happy, lemon, animal, water, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#f4c03e',L='#f9e09e',O='#ff9f43',G='#8cc084',W='#4ea8de',D='#2b2633'

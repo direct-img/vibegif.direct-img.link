@@ -1,4 +1,5 @@
 // manga girl in a furisode nervously unrolls a shrine fortune slip, it reads 大吉 (great luck), her eyes turn to stars and sparkles burst
+// tags: hopeful, happy, shrine, luck, nervous
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

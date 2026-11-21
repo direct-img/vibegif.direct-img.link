@@ -1,4 +1,5 @@
 // arctic fox curled up asleep in its tail: it breathes slowly, twitches an ear, peeks with one eye and little z's float up
+// tags: calm, tired, animal, winter, sleep, slow
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // praying mantis: it sways, tilts its triangle head side to side, and gives its folded forearms a little pump
+// tags: calm, animal, insect, sway, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // white front-loading washing machine with a teal display, its round porthole showing a yellow shirt, red sock, green towel, purple shorts and orange cloth tumbling round the turning drum in sloshing blue water with rising bubbles, the machine thumping and shaking twice per spin
+// tags: home, laundry, washing-machine, spin
 const{sin,cos,max,PI}=Math,T=2*PI
 export const frames=40,delay=50
 const ink='#111',DY=14

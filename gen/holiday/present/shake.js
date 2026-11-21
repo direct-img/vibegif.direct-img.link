@@ -1,4 +1,5 @@
 // wrapped present rattling and shaking, then its lid and bow pop up as golden light and sparkles burst out
+// tags: excited, christmas, gift, birthday, sparkle
 export const frames=32,delay=50,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos,cl=x=>x<0?0:x>1?1:x
 const star=(c,x,y,r)=>{c.beginPath();for(let k=0;k<10;k++){const a=k*P/10-P/4,d=k%2?r*.45:r;c.lineTo(x+d*cs(a),y+d*sn(a))}c.closePath()}

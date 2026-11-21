@@ -1,4 +1,5 @@
 // a little guy sits resigned in a simmering pot, a parsley sprig lands on his head as garnish and he blows it off with a sigh: WE'RE COOKED
+// tags: sad, funny, resigned, food
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=28,delay=90,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)}

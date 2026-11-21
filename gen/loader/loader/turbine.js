@@ -1,4 +1,5 @@
 // white wind turbine with bold black outlines on a tapered grey-blue tower and a little green hill, its three long blades turning in gentle gusts that speed up and ease off, a red light blinking on top of the nacelle
+// tags: calm, wind-turbine, nature, spin, slow, gentle
 export const frames=36,delay=50
 const{sin,cos,PI}=Math,T=2*PI,X=128,Y=104
 // blade pointing up from the hub: rounded root, wide leading edge, tapering tip

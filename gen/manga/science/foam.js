@@ -1,4 +1,5 @@
 // lab coat girl with crosshatched messy hair and goggles; her flask foams up and over, she goes white-eyed with a sweat drop, then the foam sinks back
+// tags: anxious, funny, lab, flask
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

@@ -1,4 +1,5 @@
 // ghost cat floating: a cat head on a sheet-like body that trails off into a curling tail, it bobs, dangles its droopy paws, the hem ripples and it blinks
+// tags: calm, ghost, cat, animal, spooky, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

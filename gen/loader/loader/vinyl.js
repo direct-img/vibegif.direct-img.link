@@ -1,4 +1,5 @@
 // black vinyl record spinning on a tan wooden turntable, its coral-and-yellow split label turning, grey glints on the grooves with a white twinkle, the silver tone arm resting on it and bobbing gently
+// tags: calm, music, retro, spin
 const{sin,cos,max,abs,PI}=Math,T=2*PI
 export const frames=36,delay=40
 const ink='#111',X=-18,Y=6

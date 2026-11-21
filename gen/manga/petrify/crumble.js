@@ -1,4 +1,5 @@
 // chibi girl turns to stone from the feet up, cracks spread, she crumbles into a pile, then rewinds back together and the stone fades off
+// tags: anxious, stone, funny, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

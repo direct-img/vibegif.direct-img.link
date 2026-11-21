@@ -1,4 +1,5 @@
 // shy girl with an ink-black bob holding her umbrella out to share the dry side, a little heart under it, rain bouncing off the canopy
+// tags: love, shy, calm, rain, heart, gentle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,atan2,abs,min}=Math,T=2*PI
 export const frames=12,delay=90,rim=4

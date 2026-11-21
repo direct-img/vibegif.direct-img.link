@@ -1,4 +1,5 @@
 // Nowruz sabzeh: a turquoise dish of sprouted wheat grass tied with a red ribbon, the blades swaying in a spring breeze and the bow's tails fluttering
+// tags: calm, hopeful, nowruz, spring, plant, gentle
 export const frames=16,delay=110,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const hs=n=>{n=S(n*127.1+311.7)*43758.5453;return n-Math.floor(n)}

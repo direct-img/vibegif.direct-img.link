@@ -1,4 +1,5 @@
 // possum hanging by its tail from a branch: it swings slowly, its little arms dangle a beat behind, its ear twitches and it blinks
+// tags: playful, animal, swing
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

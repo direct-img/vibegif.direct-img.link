@@ -1,4 +1,5 @@
 // eight-arm spark with four long terracotta arms and four short amber arms round a rust hub with a gold pin, it ticks clockwise an eighth of a turn like a clock hand, winding back a hair, snapping over with bent arms, overshooting and settling
+// tags: clock, spin, steady
 const{sin,cos,atan2,PI}=Math,T=2*PI
 // per tick: anticipation, two snap frames, overshoot, settle, long hold
 const P=[-.05,.5,1.1,.96,1.01,1],D=[40,30,30,40,40,300]

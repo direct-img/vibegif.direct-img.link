@@ -1,4 +1,5 @@
 // quail bobbing along: its black topknot nods and springs with every head bob, its little legs step and it blinks
+// tags: playful, animal, bird, cute
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

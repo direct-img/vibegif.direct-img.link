@@ -1,4 +1,5 @@
 // sunny day except for one guy's personal raincloud; he opens an umbrella, the cloud just shrinks and sneaks under it to keep raining on him
+// tags: sad, funny, weather
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=36,delay=80,rim=3
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),lp=(a,b,u)=>a+(b-a)*u

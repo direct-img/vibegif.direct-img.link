@@ -1,4 +1,5 @@
 // girl in a hoodie with screentone twin tails suddenly gets it: focus lines rush in, a "!" pops over her head and her eyes go wide
+// tags: excited, realization, aha, focus-lines
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

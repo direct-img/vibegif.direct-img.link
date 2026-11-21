@@ -1,4 +1,5 @@
 // blob back from vacation opens the laptop, 999+ pops up and an avalanche of envelopes piles up over it until a white flag pokes out, then poof, back to the start
+// tags: anxious, funny, email, work, overwhelmed
 const{sin,cos,PI,max,min,abs,sqrt}=Math,T=2*PI
 export const frames=24,delay=100,rim=5
 const Y='#ffd43b',BL='#ff8787',LG='#ced4da',LD='#868e96',EC=['#fff','#d0ebff','#fff','#fff3bf','#fff','#ffdeeb'],RD='#fa5252'

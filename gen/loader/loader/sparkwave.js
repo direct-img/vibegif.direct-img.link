@@ -1,4 +1,5 @@
 // twelve tapered terracotta rays round a small amber dot, a wave sweeps clockwise round the ring so each ray in turn shoots long and turns gold, then dips short and darker before settling
+// tags: rays, wave, burst
 const{exp,acos,min,round,PI}=Math,T=2*PI,N=12
 export const frames=32,delay=40
 const mix=(a,b,f)=>`rgb(${a.map((v,k)=>round(v+(b[k]-v)*f))})`,

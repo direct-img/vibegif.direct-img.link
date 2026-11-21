@@ -1,4 +1,5 @@
 // sea bunny inching along: a fluffy sea slug wiggles its dark-tipped bunny ears, sways its little gill flower and blinks
+// tags: happy, playful, animal, ocean, cute
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const D=[[150,136],[178,148],[124,128],[202,166],[162,172],[136,156],[190,130],[112,180],[184,186],[214,146]]

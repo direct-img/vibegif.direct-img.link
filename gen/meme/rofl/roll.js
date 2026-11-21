@@ -1,4 +1,5 @@
 // round-bottomed blob laughing so hard it keeps rolling over backwards, feet kicking in the air, tears spraying, HA HA popping out
+// tags: happy, funny, laugh, tears
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=12,delay=90,rim=5
 const Y='#ffd43b',BL='#ff8787',MO='#c92a2a',TG='#ff8fab',TR='#74c0fc',HC=['#ff6b6b','#4dabf7','#51cf66']

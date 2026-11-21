@@ -1,4 +1,5 @@
 // will-o-wisp floating: a round flame spirit bobbing and tilting, its flame tips flicker, embers drift up beside it, it blinks
+// tags: calm, fantasy, flame, flicker, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

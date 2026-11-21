@@ -1,4 +1,5 @@
 // impossible triangle of three teal beams with light, mid and dark shaded faces and dark outlines, a coral ball with a cream spot rolls endlessly round and round along its beams, easing at each corner
+// tags: optical-illusion, 3d, hypnotic
 const{sin,cos,PI,sqrt,min}=Math,T=2*PI,h=sqrt(3)/2
 export const frames=54,delay=40
 const n=6,U=30,cx=128-2.5*U,cy=128+2.165*U

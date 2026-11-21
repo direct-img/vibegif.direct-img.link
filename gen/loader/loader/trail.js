@@ -1,4 +1,5 @@
 // 4x4 grid of chunky slate dots, a rainbow snake of five bigger beads with little eyes slithers through every cell along a winding loop, the body bunching and stretching as it goes
+// tags: playful, snake, rainbow, grid
 const{sin,cos,PI,atan2,floor}=Math,T=2*PI
 export const frames=64,delay=40
 // winding loop through all 16 cells

@@ -1,4 +1,5 @@
 // a calm paper plate smiley held over a face, it slips for a second and shows the frantic scream underneath, then gets slapped back up: I'M FINE
+// tags: anxious, sad, funny, smiley, denial
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=28,delay=85,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)}

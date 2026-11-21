@@ -1,4 +1,5 @@
 // chunky cartoon flame with a dark brown outline: orange outer tongues, an amber middle and a pale gold core lick and flicker side to side, the flame bobs with a little lift and squash and two orange embers float up
+// tags: fire, flicker, warm
 const{sin,PI,min}=Math,T=2*PI
 export const frames=36,delay=40
 // teardrop: round base (x,y,r) pulled up to a tip (tx,ty), b bends the tip

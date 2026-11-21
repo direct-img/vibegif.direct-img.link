@@ -1,4 +1,5 @@
 // chibi fencer with a screentone bun lunges from en garde, her foil bending into the hanging target with a touche spark
+// tags: determined, sports, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

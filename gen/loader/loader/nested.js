@@ -1,4 +1,5 @@
 // blue hexagon holding a yellow pentagon holding a pink square holding a green triangle, all with dark outlines, each turns its own way at its own pace with a springy settle and they all click back into line pointing up once per loop
+// tags: shapes, spin, colorful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=48,delay=40
 // sides, radius, color, symmetry steps turned per loop (sign is direction), active window

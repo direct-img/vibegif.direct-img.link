@@ -1,4 +1,5 @@
 // Newton's cradle: a slate-blue frame with a dark outline holding five shiny silver balls on grey strings, the left end ball swings out and clicks back, then the right one does, with real pendulum timing and shadows sliding on the base
+// tags: calm, newtons-cradle, pendulum, swing
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=48,delay=30
 const R=14,L=90,PY=58,A=.31,X=k=>72+k*28

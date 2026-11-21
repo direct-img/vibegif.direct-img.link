@@ -1,4 +1,5 @@
 // stork flying with a bundle in its beak: its wings flap, it bobs, the bundle swings and the baby inside blinks
+// tags: happy, hopeful, animal, bird, baby, fly
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

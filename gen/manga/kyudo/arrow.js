@@ -1,4 +1,5 @@
 // archer with a screentone bob draws a tall kyudo bow to her cheek, lets the arrow streak off, and the string twangs
+// tags: calm, determined, archery, focus
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,exp}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

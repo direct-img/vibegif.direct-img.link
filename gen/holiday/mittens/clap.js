@@ -1,4 +1,5 @@
 // a pair of knitted mittens on a string clapping together twice, little bursts on each clap
+// tags: happy, playful, winter, cozy
 export const frames=32,delay=55,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

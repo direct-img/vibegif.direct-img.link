@@ -1,4 +1,5 @@
 // screen-pale hoodie gremlin with its phone slowly reaches out and pokes a tuft of grass, jolts back in shock, then works up the nerve to try again
+// tags: awkward, funny, phone, grass, outdoors, gremlin
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=80,rim=5
 const HD='#5c5f66',HL='#3d4045',SK='#dbe9f6',BAG='#b197fc',GR='#51cf66',GD='#2f9e44',DT='#a9744f',PH='#74c0fc'

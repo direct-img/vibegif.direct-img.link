@@ -1,4 +1,5 @@
 // an upright DNA double helix spinning about its axis, a pink strand and a cyan strand of beads on twisting backbones joined by two-tone rungs, beads behind shrink and darken and pass correctly behind the front ones
+// tags: dna, science, spin
 export const frames=26,delay=70
 const{sin,cos,PI}=Math,T=2*PI,N=9,R=56,
 mix=(a,b,k)=>a.map((v,j)=>v+(b[j]-v)*k),

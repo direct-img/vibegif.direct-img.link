@@ -1,4 +1,5 @@
 // a proud chef presents a charred, still-burning roast under a blaring smoke alarm and blows a chef's kiss
+// tags: proud, funny, chef, fail, smoke-alarm, fire
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),lp=(a,b,u)=>a+(b-a)*u

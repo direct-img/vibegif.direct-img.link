@@ -1,4 +1,5 @@
 // sports day tug of war: side-view girl with short hatched hair and a headband leaning way back on the rope, heels dug in, yanking twice with dust puffs
+// tags: determined, sports, teamwork
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

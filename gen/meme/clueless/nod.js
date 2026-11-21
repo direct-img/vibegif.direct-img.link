@@ -1,4 +1,5 @@
 // someone off-screen explains charts and jargon while a guy smiles politely and nods along, his thought bubble pure tv static
+// tags: awkward, funny, confused, work
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=16,delay=90,rim=3
 const BG='#fff0f6',SKIN='#ffd3b0',HAIR='#e8590c',SH='#20c997',SB='#fff',TX='#868e96'

@@ -1,4 +1,5 @@
 // ostrich running in place: long pink legs cycling, fluffy body bouncing, neck bobbing with each stride
+// tags: playful, bird, animal, bounce
 const{sin,cos,PI,sqrt,max,min,hypot}=Math,T=2*PI
 export const frames=24,delay=60
 const B='#b48cff',L='#dac6ff',P='#ff85a8',Q='#ffc2d4',D='#2b2633'

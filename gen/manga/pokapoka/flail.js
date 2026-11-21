@@ -1,4 +1,5 @@
 // chibi with hatched high pigtails throwing a poka-poka tantrum: both little arms windmill-punching, tears at her squeezed eyes, steam puffs and an anger mark
+// tags: angry, playful, tantrum, chibi, funny
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=60,rim=4
 const hatch=(c,x0,x1,y0,y1,s=5)=>{c.lineWidth=1.6;c.beginPath();for(let x=x0-(y1-y0);x<x1;x+=s)c.moveTo(x,y1),c.lineTo(x+(y1-y0),y0);c.stroke()}

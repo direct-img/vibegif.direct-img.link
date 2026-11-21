@@ -1,4 +1,5 @@
 // goose honking: long neck stretches up and forward, beak honks twice, tail wags while it waits
+// tags: funny, bird, animal
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#4ea8de',L='#a7d4ef',O='#ff9f43',D='#2b2633'

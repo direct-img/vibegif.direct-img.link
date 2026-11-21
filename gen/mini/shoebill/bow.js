@@ -1,4 +1,5 @@
 // shoebill: stands stock-still and deadpan, gives one slow blink, then a stiff little bow of its giant clog bill and straightens back up
+// tags: calm, funny, animal, bird, deadpan
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // jelly-cat drifting: a cat-eared jellyfish bell that pulses as it bobs, tentacles waving behind
+// tags: calm, jellyfish, animal, ocean, float, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ff85a8',L='#ffc2d3',D='#2b2633'

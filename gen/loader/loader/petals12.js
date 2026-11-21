@@ -1,4 +1,5 @@
 // twelve rounded mid-grey capsule ticks with dark outlines around a circle, a white highlight sweeps clockwise with a little outward stretch and leaves a stepped trail fading from light grey back to mid grey
+// tags: spinner, ticks, minimal
 export const frames=36,delay=40
 const{sin,cos,PI,floor}=Math,T=2*PI
 const C=['#ffffff','#e4e4e4','#cbcbcb','#b1b1b1','#979797','#808080']

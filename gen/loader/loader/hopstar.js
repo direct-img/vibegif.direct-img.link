@@ -1,4 +1,5 @@
 // chunky orange six-arm asterisk with a dark brown outline hops on the spot, squashing down, stretching up and turning a sixth of a turn in the air, over a soft brown shadow that shrinks as it rises
+// tags: playful, star, hop, bounce
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=36,delay=30
 const G=208,Rc=60,H=62,

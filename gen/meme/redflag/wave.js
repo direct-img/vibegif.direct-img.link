@@ -1,4 +1,5 @@
 // heart-eyed little guy happily hops and waves red flags while more and more red flags spring up all around him
+// tags: love, playful, funny, heart-eyes
 const{sin,PI,min,max,abs}=Math,T=2*PI
 export const frames=12,delay=Array(12).fill(100),rim=4
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u*u*(3-2*u)),bk=u=>(u=cl(u),1+2.7*(u-1)**3+1.7*(u-1)**2)

@@ -1,4 +1,5 @@
 // the white rabbit running late: he frets over his pocket watch as its hand whirls, taps his foot, an ear twitches, a sweat drop slides
+// tags: anxious, animal, fantasy, clock, hurry
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // dove cooing with an olive sprig: it puffs out its round chest, bobs its little head, lifts its slender tail and blinks
+// tags: calm, love, hopeful, animal, bird, peace
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

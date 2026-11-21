@@ -1,4 +1,5 @@
 // chibi volleyball girl with hatched hair and a headband crouches, leaps, cocks her arm and spikes the ball away in a burst
+// tags: determined, excited, sports, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,hypot}=Math,T=2*PI
 export const frames=18,delay=70,rim=4

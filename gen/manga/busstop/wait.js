@@ -1,4 +1,5 @@
 // chibi in a bucket hat and long coat waits at a bus stop: taps her foot, checks her wristwatch, sighs as a leaf blows past
+// tags: tired, lonely, calm, sigh, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=4

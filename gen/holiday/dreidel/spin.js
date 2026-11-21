@@ -1,4 +1,5 @@
 // a blue dreidel spinning on its point and wobbling round, Hebrew letters sweeping past on its sides
+// tags: playful, hanukkah, game, celebration
 export const frames=36,delay=50,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 // letters nun, gimel, hei, shin as strokes in a 28x40 box, y down

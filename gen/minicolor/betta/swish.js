@@ -1,4 +1,5 @@
 // betta fish swishing: small red body trailing big pink fins whose wavy edges ripple
+// tags: calm, fish, animal, water, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ee5a5a',A='#ff85a8',L='#ffc2d4',D='#2b2633'

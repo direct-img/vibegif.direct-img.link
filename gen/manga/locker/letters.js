@@ -1,4 +1,5 @@
 // flustered girl at her open shoe locker while love letters keep pouring out onto a pile
+// tags: flustered, love, school, love-letters
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

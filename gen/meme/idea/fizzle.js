@@ -1,4 +1,5 @@
 // lightbulb gets a brilliant idea and blazes on with a "!", then flickers, fizzles out with a puff of smoke and is left with a blank "?"
+// tags: sad, funny, lightbulb
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=[...Array(23).fill(90),700],rim=4
 const G={'!':'M2 0L2 3.8M2 5.9L2 6','?':'M.1 1.2Q.6 0 2 0Q4 0 4 1.7Q4 3 2 3.3L2 4M2 5.9L2 6'}

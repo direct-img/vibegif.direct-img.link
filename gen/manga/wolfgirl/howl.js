@@ -1,4 +1,5 @@
 // manga wolf girl with shaggy crosshatched hair: ears perk, she tips her head back and howls at a toned crescent moon, sound arcs rolling up, fluffy tail swishing
+// tags: wolf, animal, moon, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=110,rim=4

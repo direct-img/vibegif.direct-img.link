@@ -1,4 +1,5 @@
 // chibi girl in a dark hakama with white low braids twirls a naginata overhead like a propeller, blade trailing motion arcs
+// tags: determined, martial-arts, chibi, spin
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,atan2,hypot}=Math,T=2*PI
 export const frames=16,delay=60,rim=4

@@ -1,5 +1,5 @@
 // acorn bouncing with squash and stretch, its cap hopping off on each landing and plopping back on
-// tags: happy, autumn, acorn, bounce
+// tags: happy, playful, autumn
 export const frames=24,delay=45,rim=5
 const K='#2a1810',P=Math.PI*2,a=.07,G=226
 export default(c,t)=>{

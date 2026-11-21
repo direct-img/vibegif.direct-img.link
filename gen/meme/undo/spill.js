@@ -1,4 +1,5 @@
 // a hand bumps a coffee mug, it tips and floods the laptop, the screen dies, then the whole thing rewinds like ctrl+z
+// tags: anxious, funny, coffee, laptop
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=40,delay=70,rim=3
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2)

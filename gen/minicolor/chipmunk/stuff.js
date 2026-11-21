@@ -1,4 +1,5 @@
 // chipmunk sitting up with an acorn, stuffs it in its mouth and its cheeks balloon out, blinks, then grabs another
+// tags: playful, animal, acorn, food, cheeks
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=32,delay=70
 const B='#e8955a',L='#f8d1b0',A='#8c4f2c',N='#f4c03e',D='#2b2633'

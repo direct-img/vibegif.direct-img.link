@@ -1,4 +1,5 @@
 // koi-dragon swimming in place, seen from above: its body waves in an S, whiskers and fins trail, little horns on its head
+// tags: calm, fish, fantasy, water, gentle
 const{sin,cos,PI,hypot,atan2}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ff7a5c',L='#ffbcad',A='#f4c03e',D='#2b2633'

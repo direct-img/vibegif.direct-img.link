@@ -1,4 +1,5 @@
 // Kwanzaa kinara lighting its seven candles one by one (black, then red and green from the outside in), then puffing out
+// tags: calm, hopeful, kwanzaa, candle, celebration
 export const frames=48,delay=60,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x))
 const bo=x=>(x=cl(x)-1,1+3.2*x**3+2.2*x*x)

@@ -1,4 +1,5 @@
 // meerkat on sentry duty: standing tall on its mound with paws held up, it snaps its pointed snout left, front, right, stretches up and blinks
+// tags: anxious, animal, alert
 const{sin,cos,PI,min,max,abs,floor,atan2}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const K=[0,0,-1,-1,0,0,1,1]

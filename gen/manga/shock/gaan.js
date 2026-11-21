@@ -1,4 +1,5 @@
 // sailor-uniform girl hit by a shock: lightning cracks open behind her, her eyes go blank and gloom lines run down her face, then she blinks back
+// tags: anxious, sad, lightning, drama
 const{min,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4
 const face=c=>{c.beginPath();c.moveTo(74,96);c.bezierCurveTo(70,152,100,184,128,186);c.bezierCurveTo(156,184,186,152,182,96);c.bezierCurveTo(182,44,74,44,74,96)}

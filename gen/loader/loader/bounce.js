@@ -1,4 +1,5 @@
 // glossy coral-red ball bouncing on the spot, falling and rising on a gravity curve, stretching in flight and squashing flat on impact with little grey bump ticks, over a grey oval shadow that widens as it lands and shrinks as it rises
+// tags: playful, ball, squash
 const{sin,PI}=Math,T=2*PI
 export const frames=30,delay=40
 const r=34,G=206,H=116,cw=.11 // radius, ground, jump height, contact window

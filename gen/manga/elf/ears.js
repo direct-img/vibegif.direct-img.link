@@ -1,4 +1,5 @@
 // manga elf girl with wavy white hair: long ears twitch twice, droop as she blushes hard, then spring back up
+// tags: shy, flustered, fantasy, blush
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

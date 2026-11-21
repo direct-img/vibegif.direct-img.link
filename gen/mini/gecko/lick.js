@@ -1,4 +1,5 @@
 // leopard gecko: it grins, flicks its tongue up to lick its own eyeball shut, curls its chubby tail and blinks
+// tags: playful, animal, funny
 const{sin,cos,PI,max,atan2,hypot}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 const bz=(p,q,r,s)=>[(1-s)**2*p[0]+2*(1-s)*s*q[0]+s*s*r[0],(1-s)**2*p[1]+2*(1-s)*s*q[1]+s*s*r[1]]

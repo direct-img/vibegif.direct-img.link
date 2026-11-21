@@ -1,4 +1,5 @@
 // a Hanukkah menorah: a spark from the shamash lights the eight candles one after another, then they puff out together and it starts again
+// tags: calm, hopeful, hanukkah, candle, celebration
 export const frames=48,delay=75,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

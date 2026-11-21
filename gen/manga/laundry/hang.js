@@ -1,4 +1,5 @@
 // manga girl in a bandana and apron pins a bedsheet to the clothesline while gusts of wind billow it, then smiles at the job done
+// tags: calm, happy, chores, wind, sunny
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

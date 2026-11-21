@@ -1,4 +1,5 @@
 // bunny-bird hopping: round flat-color body, long ears that lag behind the hop, wings flapping in the air, blinks while resting
+// tags: happy, playful, bunny, bird, animal, fantasy
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#7b8cff',L='#c3cbff',A='#f4c03e',D='#2b2633'

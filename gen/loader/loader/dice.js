@@ -1,4 +1,5 @@
 // pink-red die with white pips seen in 3D from above, crouching then hopping and tumbling end over end toward you, landing with a squash and a little bounce on its grey shadow, showing a different face each landing (1-2-3 corner, then 6-4-5)
+// tags: playful, game, tumble
 const{sin,cos,min,PI,SQRT1_2:Q}=Math,T=2*PI
 export const frames=48,delay=40
 const ink='#111',h=43,H=46

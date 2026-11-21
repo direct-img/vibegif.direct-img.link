@@ -1,4 +1,5 @@
 // a mug of hot cocoa with marshmallows bobbing on top, steam curling up out of it
+// tags: calm, cozy, winter, food, drink, steam
 export const frames=36,delay=60,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

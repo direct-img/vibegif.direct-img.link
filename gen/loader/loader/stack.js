@@ -1,4 +1,5 @@
 // three thick dark outlined slabs in coral amber and teal stacked on a slate shelf pop away top-down, each squashing, stretching and vanishing in a burst of colored dots, then they drop back in one by one and land with a jelly squash
+// tags: blocks, pop, playful
 const{sin,cos,PI,exp,min}=Math,T=2*PI
 export const frames=64,delay=40
 const cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),

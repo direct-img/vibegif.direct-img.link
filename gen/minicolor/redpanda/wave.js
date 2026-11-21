@@ -1,4 +1,5 @@
 // red panda sitting up and waving a paw, ringed tail swishing behind it, blinks
+// tags: happy, friendly, animal, cute
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ff7a5c',L='#ffc4b5',A='#b84a32',D='#2b2633'

@@ -1,4 +1,5 @@
 // a trefoil knot drawn as a thick rainbow ribbon with dark edges and true over-under crossings, parts passing underneath shaded darker, while a bright white glint races all the way along it
+// tags: rainbow, ribbon, twisting
 export const frames=48,delay=50
 const{sin,cos,PI,hypot,max,min,abs,round}=Math,T=2*PI,N=480,S=31,W=19,
 K=s=>[128+S*(sin(s)+2*sin(2*s)),128+S*(cos(s)-2*cos(2*s)+.47),-sin(3*s)],

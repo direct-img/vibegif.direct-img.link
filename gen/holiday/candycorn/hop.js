@@ -1,4 +1,5 @@
 // three candy corns hopping one after another in a wave, squashing on takeoff and landing
+// tags: playful, halloween, candy, food, bounce, wave
 export const frames=30,delay=45,rim=5
 const K='#2a1810',PI=Math.PI,H=86,W=31,G=206
 // one candy corn standing on the origin
