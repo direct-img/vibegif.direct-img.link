@@ -1,4 +1,5 @@
 // arcade cabinet whose screen shows a blinking pixel face, joystick wiggling, buttons pressing, marquee lights chasing
+// tags: playful, game, retro, excited, blink
 const{sin,cos,PI,floor}=Math,T=2*PI
 export const frames=16,delay=90
 const CAB='#9775fa',CD='#7048e8',MQ='#ffd43b',BUL='#ffa94d',BEZ='#495057',SCR='#212529',PX='#69db7c',HT='#ff6b6b',PANEL='#4dabf7',PD='#1c7ed6',BTN=['#ffd43b','#69db7c'],COIN='#ffa94d'
