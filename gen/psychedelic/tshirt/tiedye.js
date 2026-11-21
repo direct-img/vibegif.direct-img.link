@@ -1,4 +1,5 @@
 // rainbow spiral tie-dye t-shirt hanging from a clothesline by two wooden pegs, the dye spiral slowly spinning while the shirt flutters in the breeze
+// tags: retro, rainbow, spiral, flutter, trippy
 export const frames=18,delay=80
 const T=Math.PI*2,{sin,cos,atan2,hypot,floor}=Math
 const P=[[255,46,147],[255,122,26],[255,210,31],[61,220,106],[30,200,255],[123,92,255]]

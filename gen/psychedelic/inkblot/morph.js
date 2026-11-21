@@ -1,4 +1,5 @@
 // mirror symmetric Rorschach inkblot that keeps morphing and splitting off droplets, filled with neon rainbow contour bands flowing outward from its center
+// tags: rorschach, symmetry, rainbow, neon, trippy
 export const frames=32,delay=70
 const S=256,TAU=Math.PI*2,P=['#ff2d6f','#ff8a00','#ffd500','#3ddc4a','#00b7ff','#8b4dff'].map(h=>[1,3,5].map(k=>parseInt(h.slice(k,k+2),16)))
 // blobs on the right half: x, y, sigma x, sigma y, weight, wander x/y, freq, phase (negative weight punches holes)

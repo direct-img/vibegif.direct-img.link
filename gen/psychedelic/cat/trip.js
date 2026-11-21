@@ -1,4 +1,5 @@
 // cat face with undulating rainbow chevron tabby stripes flowing down its fur, spinning kaleidoscope-flower eyes, wavy whiskers, head gently rocking
+// tags: animal, rainbow, kaleidoscope, stripes, playful
 import{createCanvas}from'@napi-rs/canvas'
 export const frames=24,delay=80
 const T=Math.PI*2,C=['#ff2e63','#ff8a00','#ffe600','#3ddc5a','#00c2ff','#3b5bff','#b03bff']

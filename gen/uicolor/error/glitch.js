@@ -1,4 +1,5 @@
 // computer monitor glitching out, RGB bars tearing across it and slices jumping sideways, spiral dizzy eyes and little stars circling overhead
+// tags: monitor, rgb-split, dizzy, stars
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=80
 const CS='#b197fc',SC='#e7f5ff',G=['#ff6b6b','#51cf66','#4dabf7','#ffd43b','#f783ac','#3bc9db'],BL='#ffa8a8',GS='0011010000111010'

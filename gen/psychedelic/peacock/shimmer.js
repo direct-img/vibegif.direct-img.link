@@ -1,4 +1,5 @@
 // blue peacock with its tail fanned out wide, every eyespot feather pulsing with rainbow rings that ripple outward across the fan
+// tags: bird, animal, rainbow, ripple, calm
 export const frames=20,delay=75
 const P=['#ff2d6f','#ff8a00','#ffd500','#3ddc4a','#00c8ff','#8b4dff'],X=128,Y=176,TAU=Math.PI*2,A0=-.34,AW=Math.PI+.68
 // eyespot rows: radius, count, size

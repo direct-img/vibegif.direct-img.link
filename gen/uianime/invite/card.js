@@ -1,4 +1,5 @@
 // curly peach haired girl warmly holding out an envelope with a heart wax seal, the invitation card slides up out of it as she smiles and little hearts float, then tucks back in
+// tags: anime, heart, warm, happy, love, hopeful
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=95
 const SKIN='#ffe3d1',HAIR='#ffb38a',HD='#e8835a',HL='#ffe8d6',EYE='#20c997',ED='#087f5b',DR='#d0bfff',BL='#ff8fab',EN='#ffdeeb',END='#fcc2d7',CD='#fff',SL='#e03131',SLD='#a51111',HT=['#ff6b6b','#f783ac','#ffa8a8'],FL='#ffd43b'

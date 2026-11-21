@@ -1,4 +1,5 @@
 // gold pocket watch with a wobbling case whose face is a spinning rainbow-and-black spiral vortex, curved hands whirling around and upright roman numerals bobbing and tilting in a wave
+// tags: pocket-watch, spiral, rainbow, wave, spin, trippy
 export const frames=18,delay=80
 const P=Math.PI*2,R=84,cx=128,cy=140
 const G={I:[[[0,0],[0,1]]],V:[[[0,0],[.33,1],[.66,0]]],X:[[[0,0],[.66,1]],[[.66,0],[0,1]]]}

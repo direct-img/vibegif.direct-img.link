@@ -1,4 +1,5 @@
 // boxy grey robot head on an accordion neck, a row of red LEDs in its black visor lights up in a back-and-forth scanning sweep with a fading trail, glow reflecting on its face, antenna bulb blinks
+// tags: leds, sweep, visor, sci-fi
 export const frames=24,delay=60
 const P=Math.PI*2
 export default(c,t)=>{

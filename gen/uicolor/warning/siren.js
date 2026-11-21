@@ -1,4 +1,5 @@
 // alarmed red siren on a hazard-striped base, its light spinning inside the dome, sweeping beams side to side and flashing bright when it faces you
+// tags: alarm, anxious, flash, red, spin
 const{sin,cos,PI,max,abs,sign}=Math,T=2*PI
 export const frames=20,delay=50
 const RD='#fa5252',RB='#ff8787',GL='#fff3bf',BM='#ffc9c9',HZ='#ffd43b',KN='#868e96'

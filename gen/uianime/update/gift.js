@@ -1,4 +1,5 @@
 // sky blue bob haired girl in a party hat hugging a pink present that rattles, the lid pops off and a big green update arrow bursts out in sparkles, then sinks back as the lid drops on
+// tags: anime, party, surprise, happy, excited, arrow
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#74c0fc',HD='#339af0',HL='#e7f5ff',EYE='#f06595',ED='#a61e4d',SW='#d0bfff',SWD='#9775fa',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',HAT='#ffd43b',HS='#ff6b6b',BOX='#fcc2d7',BXD='#f783ac',RIB='#ffd43b',GR='#51cf66',GRL='#b2f2bb',SP=['#ffd43b','#74c0fc','#ff8fab','#ffd43b','#b197fc']

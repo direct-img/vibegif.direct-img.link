@@ -1,4 +1,5 @@
 // close-up of a cyborg's mechanical eye: steel bezel with bolts, seven aperture iris blades snap shut and dilate open around a glowing red lens
+// tags: iris, mechanical, sci-fi, red
 export const frames=24,delay=70
 const{PI,sin,cos,atan2,hypot,sqrt}=Math,T=PI*2
 // keyframed value, cosine eased, wraps at t=1

@@ -1,4 +1,5 @@
 // cheerful support girl with light blue low twintails and a headset mic, nodding along as she talks with a hand on her earcup while a typing bubble bounces its dots and a pink heart bubble pops up
+// tags: anime, nod, helpful, cheerful, happy
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#a5d8ff',HD='#5fa8ea',HL='#eef8ff',EYE='#9775fa',ED='#5f3dc4',PO='#748ffc',PD='#4c6ef5',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',HS='#e9ecef',HSD='#495057',PAD='#ff8fab',SC='#ffd43b',PK='#ff8fab',DOT=['#ff8787','#ffd43b','#69db7c']

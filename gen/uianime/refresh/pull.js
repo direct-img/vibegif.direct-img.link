@@ -1,4 +1,5 @@
 // chestnut haired girl in a track jacket yanking the pull cord of a big green refresh arrow, it whirls around and the cord springs back up
+// tags: anime, arrow, spin, playful
 const{cos,PI,exp}=Math,T=2*PI
 export const frames=13,delay=95
 const SKIN='#ffe3d1',HAIR='#c0805a',HD='#8d5a3a',HL='#f3d9c7',EYE='#fab005',ED='#e67700',JK='#ffa94d',BL='#ffa8a8',GR='#51cf66',RP='#ffe8cc',HN='#ff6b6b',CLIP='#74c0fc'

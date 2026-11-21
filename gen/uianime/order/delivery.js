@@ -1,4 +1,5 @@
 // brown haired delivery girl in a blue cap hugging a parcel under one arm and snapping a crisp salute to her brim, a twinkle popping off it
+// tags: anime, parcel, salute, proud, twinkle
 const{sin,cos,PI,max,min,atan2}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#8d5a3b',HD='#6b3f26',HL='#e0b08f',EYE='#fab005',ED='#e67700',CAP='#339af0',CD='#1971c2',BOX='#e8b07a',BD='#c47f45',TAPE='#fff3bf',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab'

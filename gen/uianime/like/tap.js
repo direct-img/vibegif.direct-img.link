@@ -1,4 +1,5 @@
 // coral haired girl with a side ponytail double tapping a photo card with her finger, ripples ring out and a big red heart pops and bounces over the photo as she beams
+// tags: anime, heart, happy, love, ripple
 const{sin,PI,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#ff8a80',HD='#f0605a',HL='#fff0ee',EYE='#4dabf7',ED='#1864ab',TOP='#96f2d7',TD='#20c997',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',SCR='#ffd43b',SKY='#a5d8ff',SUN='#ffd43b',G1='#8ce99a',G2='#51cf66',HR='#ff6b6b',GRY='#ced4da'

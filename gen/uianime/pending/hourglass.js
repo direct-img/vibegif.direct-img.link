@@ -1,4 +1,5 @@
 // sandy haired girl with a side braid flips a big hourglass over with both hands, then sways her head tick-tock and blinks while she watches the sand trickle down
+// tags: anime, wait, sway, calm, patient
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100
 const SKIN='#ffe3d1',HAIR='#ecd2a2',HD='#c9a066',HL='#fdf6e8',EYE='#20c997',ED='#087f5b',SW='#d0bfff',BL='#ffa8a8',MO='#c92a2a',WD='#c0805a',WDD='#8d5a3a',GL='#e7f5ff',SA='#ffc078',SAD='#e8590c',RIB='#ff8787'

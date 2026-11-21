@@ -1,4 +1,5 @@
 // retro red tin toy robot waddling side to side on the spot, a brass wind-up key in its side turning, accordion arms with pincer hands swinging, chest gauge needle twitching, springy antenna
+// tags: toy, retro, waddle, playful
 export const frames=24,delay=70
 const P=Math.PI*2
 export default(c,t)=>{

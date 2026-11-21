@@ -1,4 +1,5 @@
 // chunky 404 digits stand in the desert like rocks under a hot sun while a tumbleweed bounces across in front, kicking up dust puffs
+// tags: desert, empty, lonely, error, dust
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=18,delay=70
 const X=t=>-46+348*t

@@ -1,4 +1,5 @@
 // electric guitar whose rainbow-swirled body melts into gooey drips that stretch and fall, strings vibrating and wavy rainbow sound waves pulsing out from both sides
+// tags: music, rainbow, vibrate, trippy
 import{createCanvas}from'@napi-rs/canvas'
 export const frames=32,delay=70
 const T=Math.PI*2,C=['#ff2e63','#ff8a00','#ffe600','#3ddc5a','#00c2ff','#3b5bff','#b03bff']

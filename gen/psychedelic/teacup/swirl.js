@@ -1,4 +1,5 @@
 // pink polka-dot teacup on a saucer, a rainbow whirlpool spinning in the tea, three wavy rainbow-striped steam ribbons rising, sparkles twinkling
+// tags: home, rainbow, steam, sparkle, calm
 export const frames=24,delay=70
 const P=Math.PI*2,K='#111',rb=['#ff2e63','#ff8c1a','#ffd400','#25d962','#1ea7ff','#9b4dff']
 const el=(c,x,y,rx,ry)=>{c.beginPath();c.ellipse(x,y,rx,ry,0,0,P)}

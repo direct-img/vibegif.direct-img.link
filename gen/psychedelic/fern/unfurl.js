@@ -1,4 +1,5 @@
 // three fern fiddleheads taking turns uncoiling into tall fronds of bumpy rainbow leaflets, colors flowing up them, then rolling back into spirals
+// tags: plant, nature, rainbow, gentle, calm
 export const frames=22,delay=85
 const P=Math.PI*2,N=64
 const sm=(a,b,x)=>(x=Math.min(1,Math.max(0,(x-a)/(b-a))),x*x*(3-2*x))

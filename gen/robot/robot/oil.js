@@ -1,4 +1,5 @@
 // mint green robot lifts a red oil can to its mouth grille and gulps down golden oil, then blushes, its heart light glows and happy puffs of steam shoot from its ear vents
+// tags: drink, happy, blush, steam, cute, love
 export const frames=36,delay=70
 const P=Math.PI,MI='#9fe0c8',SH='#6fbfa5',DK='#2d3b40'
 const cl=k=>Math.max(0,Math.min(1,k)),ez=k=>k*k*(3-2*k),lerp=(a,b,k)=>a+(b-a)*k

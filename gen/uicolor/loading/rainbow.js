@@ -1,4 +1,5 @@
 // rainbow loader between two smiling clouds: the empty arch fills in band by band from red to violet, sparkles when complete, then wipes clear to start over
+// tags: cloud, weather, happy, sparkle, hopeful, gentle
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const C=['#ff6b6b','#ffa94d','#ffd43b','#69db7c','#4dabf7','#b197fc'],X=128,Y=182,RO=114,RI=42,BW=(RO-RI)/6

@@ -1,4 +1,5 @@
 // 3D Mobius strip spinning in space with rainbow stripes flowing endlessly along its single twisted side, bright where it faces you and pastel where it turns away
+// tags: math, 3d, rainbow, spin, trippy
 import{createCanvas}from'@napi-rs/canvas'
 const P=Math.PI*2,C=[[255,45,85],[255,138,0],[255,225,0],[46,224,90],[30,155,255],[122,60,255]]
 export const frames=36,delay=55

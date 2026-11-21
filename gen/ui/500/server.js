@@ -1,4 +1,5 @@
 // overheated server tower with dizzy x eyes, its lights blinking erratically, trembling while puffs of smoke rise from the top
+// tags: error, dizzy, smoke, tremble, anxious
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=90
 export default(c,t,i)=>{

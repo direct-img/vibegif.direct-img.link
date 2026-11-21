@@ -1,4 +1,5 @@
 // a folded thank-you card swings open, a smiling heart pops out and floats up, bursts into lines, and the card closes again
+// tags: heart, love, grateful, happy, float, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),ease=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),back=u=>(u=cl(u),1+3*(u-1)**3+2*(u-1)**2)

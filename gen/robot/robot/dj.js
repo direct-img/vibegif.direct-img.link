@@ -1,4 +1,5 @@
 // robot DJ in sunglasses and pink headphones nodding to the beat behind a purple deck, scratching a spinning vinyl record with one hand and the other fist pumping in the air, chest speaker thumping and music notes floating up
+// tags: music, vinyl, headphones, excited, playful, party
 export const frames=32,delay=60
 const T=Math.PI*2,{sin:S,cos:C,max,min,abs}=Math
 const P=(c,f,s=1)=>{f&&(c.fillStyle=f,c.fill());s&&c.stroke()}

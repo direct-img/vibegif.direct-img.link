@@ -1,4 +1,5 @@
 // a closed door chained shut with a big padlock, it rattles as someone tries it but the lock just swings and holds
+// tags: forbidden, padlock, error, rattle, angry
 const{sin,cos,PI,min,max,exp,hypot,atan2}=Math,T=2*PI
 export const frames=20,delay=70
 const chain=(c,x0,y0,x1,y1,j)=>{

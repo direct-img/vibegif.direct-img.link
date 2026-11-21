@@ -1,4 +1,5 @@
 // long deep purple haired girl rocking happily while hugging an open book to her chest, its long red ribbon bookmark flutters up beside her and a little star twinkles at the tip
+// tags: anime, happy, love, calm, rock
 const{sin,cos,PI,max,hypot}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#845ef7',HD='#5f3dc4',HL='#e5dbff',EYE='#fab005',ED='#e67700',TOP='#fff3bf',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',RB='#ff6b6b',RD='#c92a2a',CV='#63e6be',PG='#fffdf5',LN='#ced4da',ST='#ffd43b'

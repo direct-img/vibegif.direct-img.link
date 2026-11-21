@@ -1,4 +1,5 @@
 // lavender twintailed girl in a pink cardigan who jumps in surprise with a "!" when a golden bell beside her dings and a red count badge pops onto it, then beams up at it
+// tags: anime, bell, surprise, badge
 const{sin,cos,PI,max,min,exp}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#b197fc',HD='#7048e8',HL='#f3f0ff',EYE='#f783ac',ED='#c2255c',CAR='#ffdeeb',CD='#f783ac',BL='#ffa8a8',BELL='#ffd43b',BD='#f59f00',RD='#fa5252',RB='#ffd43b',MO='#c92a2a'

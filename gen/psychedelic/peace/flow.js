@@ -1,4 +1,5 @@
 // peace sign filled with swirling marbled liquid-light rainbow colors, white daisies spinning as they ride around the ring
+// tags: hippie, retro, rainbow, daisy, swirl, trippy
 export const frames=20,delay=80
 const P=Math.PI*2,C=128,R=98,hw=15,bw=12.5,S=Math.SQRT1_2
 const pal=[[255,43,214],[255,70,50],[255,160,0],[255,232,0],[80,240,70],[0,215,255],[110,80,255]]

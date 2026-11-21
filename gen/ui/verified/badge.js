@@ -1,4 +1,5 @@
 // scalloped seal badge with a big check, gently wobbling, a shine sweeps across it and little sparkles twinkle
+// tags: check, shine, sparkle, proud, wobble
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=20,delay=80

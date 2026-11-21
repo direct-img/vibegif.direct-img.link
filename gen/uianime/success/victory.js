@@ -1,4 +1,5 @@
 // red haired girl with a side ponytail flashing a sideways V sign over her eye, winking with a big grin while sparkles pop all around
+// tags: anime, peace, wink, happy, sparkle, proud
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ff6b6b',HD='#e03131',HL='#ffe3e3',EYE='#4dabf7',ED='#1864ab',TOP='#ffe066',TD='#fab005',SCR='#74c0fc',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',SP=['#ffd43b','#ff8fab','#74c0fc','#ffd43b','#b2f2bb']

@@ -1,4 +1,5 @@
 // leaf green haired girl in a straw hat tracks a little buzzing red bug looping figure eights, swoops her butterfly net and bags it with a cheer, then it wriggles free and buzzes off again
+// tags: anime, catch, nature, playful, focus
 const{sin,cos,PI,max,min,atan2}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#94d82d',HD='#5c940d',HL='#f4fce3',EYE='#ff922b',ED='#d9480f',SH='#ffd8a8',SHD='#f08c00',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',HAT='#ffe066',HTD='#e8b93c',RIB='#4dabf7',POLE='#c0805a',RIM='#ff8787',BUG='#ff6b6b',SP='#ffe066'

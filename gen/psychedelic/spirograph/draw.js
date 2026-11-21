@@ -1,4 +1,5 @@
 // spirograph toy: a pink gear rolls inside a violet toothed ring on a dark blacklight disc while three pens in its holes trace a 15-point neon rainbow star rosette that builds up, then gets eaten back from the tail
+// tags: toy, neon, rainbow, trippy
 export const frames=40,delay=60
 const R=100,r=40,k=(R-r)/r,T=4*Math.PI,P=Math.PI*2,N=240
 const H=j=>[j<6?30:15,j*Math.PI/3+(j>5)*.5],pens=[0,2,4].map((j,n)=>[H(j)[0],n*120,H(j)[1]])

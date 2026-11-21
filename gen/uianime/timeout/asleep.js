@@ -1,4 +1,5 @@
 // periwinkle haired girl fast asleep with her cheek on her arms at a desk, drooling, Zzz floating up while a red alarm clock ticks its hand around
+// tags: anime, desk, tired, zzz, alarm-clock, drool
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#91a7ff',HD='#5c7cfa',HL='#edf2ff',SWT='#ffd8a8',SD='#ffa94d',DESK='#e8b07a',DD='#c47f45',BL='#ffa8a8',CLK='#ff6b6b',CD='#e03131',BELL='#ffd43b',ZC='#91a7ff'

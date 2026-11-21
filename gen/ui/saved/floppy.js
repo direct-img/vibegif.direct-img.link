@@ -1,4 +1,5 @@
 // a floppy disk squishes as it saves, then a check badge pops onto its corner, the check draws itself and the disk smiles
+// tags: retro, check, happy, squish, success
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),bk=u=>(u=cl(u),1+2.7*(u-1)**3+1.7*(u-1)**2)

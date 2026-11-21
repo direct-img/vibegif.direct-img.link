@@ -1,4 +1,5 @@
 // blonde girl with her arms up catching a falling file box with a down arrow, oof squash, a happy beam, then the box poofs into sparkles and she looks up for the next one
+// tags: anime, file, happy, sparkle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f59f00',HL='#fff9db',EYE='#20c997',ED='#087f5b',TEE='#b2f2bb',TD='#40c057',BL='#ffa8a8',BAND='#ff6b6b',BOX='#e8b07a',BD='#c47f45',AR='#4dabf7',SP='#ffd43b'

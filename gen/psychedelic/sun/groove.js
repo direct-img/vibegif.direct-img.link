@@ -1,4 +1,5 @@
 // groovy 70s sun with a blissed-out smiling face, closed eyes and rosy cheeks, ringed by wavy nested flame rays whose rainbow bands cycle through every color while they wiggle and slowly turn
+// tags: weather, retro, happy, calm, rainbow, wiggle
 export const frames=20,delay=80
 const P=Math.PI*2,n=12
 export default(c,t)=>{

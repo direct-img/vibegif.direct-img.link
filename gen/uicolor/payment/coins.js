@@ -1,4 +1,5 @@
 // spinning gold coins dropping one after another into a happy purple wallet that gulps and bounces with each one
+// tags: wallet, money, happy, bounce, gold
 const{sin,cos,PI,abs,max,min}=Math,T=2*PI
 export const frames=24,delay=60
 const G='#ffd43b',GD='#f59f00',WF='#b197fc',WB='#7950f2',WT='#9775fa',BILL='#8ce99a',BL='#ffa8a8'

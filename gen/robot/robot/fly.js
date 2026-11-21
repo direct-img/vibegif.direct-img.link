@@ -1,4 +1,5 @@
 // cream and red retro robot hovering on rocket boots, flickering orange flames and dripping embers below, bobbing and wobbling with arms out for balance, happy arc eyes and a swaying antenna
+// tags: retro, rocket, hover, wobble, happy, playful
 export const frames=20,delay=60
 const P=Math.PI*2
 const h=n=>{n=Math.sin(n*127.1+311.7)*43758.5453;return n-Math.floor(n)}

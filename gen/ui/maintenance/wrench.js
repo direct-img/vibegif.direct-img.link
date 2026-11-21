@@ -1,4 +1,5 @@
 // a ring wrench cranks a hex bolt a sixth of a turn and ratchets back for another go, while a big gear turns behind them
+// tags: bolt, gear, ratchet, work
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

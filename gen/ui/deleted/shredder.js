@@ -1,4 +1,5 @@
 // a sheet of paper pops up and feeds into a chomping shredder, and thin wavy strips stream out the bottom into the bin
+// tags: paper, office, chomp
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const back=u=>(u=min(1,max(0,u)),1+2.7*(u-1)**3+1.7*(u-1)**2)

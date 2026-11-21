@@ -1,4 +1,5 @@
 // small gray robot standing in a puddle in the rain, getting wet and smiling while it holds a yellow umbrella out over a little orange kitten to keep it dry, raindrops splashing
+// tags: rain, kitten, kindness, weather, happy, hopeful
 export const frames=24,delay=70
 const P=Math.PI,{sin,cos,min}=Math
 let s=7

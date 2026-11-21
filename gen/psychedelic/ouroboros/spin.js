@@ -1,4 +1,5 @@
 // ouroboros: a green-headed serpent biting its own tail in a ring, rainbow scale bands sliding around its body into its mouth forever
+// tags: snake, animal, rainbow, trippy
 export const frames=20,delay=70
 const P=Math.PI*2,X=128,Y=132,Rr=88,am=-1.38,bw=10
 const C=['#ffd60a','#ff8a1a','#ff2d75','#c33cff','#3f5bff','#00c8ff','#24e06a']

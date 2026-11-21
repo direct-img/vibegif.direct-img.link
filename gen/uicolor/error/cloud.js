@@ -1,4 +1,5 @@
 // grumpy gray storm cloud with an anger mark, blue rain pouring down and a yellow lightning bolt cracking out as it shudders
+// tags: storm, rain, lightning, angry, weather, shudder
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=80
 const CL='#ced4da',CD='#adb5bd',RN='#4dabf7',BT='#ffd43b',AN='#ff6b6b'

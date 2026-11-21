@@ -1,4 +1,5 @@
 // orange two-jointed robot arm on a turret base, seen from above, holding a blue marker and tracing an endless figure-eight on graph paper, the fresh ink tapering away behind the pen
+// tags: marker, figure-eight, industrial
 export const frames=32,delay=50
 const P=Math.PI,K='#111',Z=34,B=[128,226],L1=104,L2=92
 const pt=th=>[124+76*Math.sin(th),90+38*Math.sin(2*th)]

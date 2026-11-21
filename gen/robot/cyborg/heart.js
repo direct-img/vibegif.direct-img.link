@@ -1,4 +1,5 @@
 // mechanical copper heart beating lub-dub: riveted plates swell, two pistons on top pump, steam puffs from the pipe, ratchet gears tick round in a porthole glowing red with each beat
+// tags: mechanical, steam, gears, pulse, steampunk
 export const frames=20,delay=60
 const P=Math.PI*2
 const B=(t,c,w)=>{let x=Math.abs(((t-c)%1+1.5)%1-.5)/w;return x<1?(1+Math.cos(Math.PI*x))/2:0}

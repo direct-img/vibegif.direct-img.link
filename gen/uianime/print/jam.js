@@ -1,4 +1,5 @@
 // chestnut haired office girl with a messy side bun and a pencil in it, her printer spits pages flying wildly then jams with a crumpled sheet, rattles and puffs smoke while she pats it all flustered
+// tags: anime, paper, office, anxious
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#9c5b35',HD='#663818',HL='#ecc9ac',EYE='#40c057',ED='#2b8a3e',CAR='#fcc2d7',CAD='#f06595',BL='#ffa8a8',MO='#c92a2a',PR='#e9ecef',PRD='#adb5bd',SLT='#343a40',SCR='#a5d8ff',PEN='#ffd43b',SM='#ced4da',SW='#a5d8ff',LN='#a5d8ff'

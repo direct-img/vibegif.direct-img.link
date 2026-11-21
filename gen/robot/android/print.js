@@ -1,4 +1,5 @@
 // 3D printer building a gray android bust layer by layer, the blue print head sweeping back and forth laying a hot orange layer as the gantry climbs; when finished the android's eyes light up cyan and blink, then the print slides off the bed and it starts over
+// tags: build, sci-fi, maker
 const NL=16,H=10,Y0=214,PR=NL*2
 export const frames=PR+14
 export const delay=[...Array(frames)].map((_,i)=>i<PR?70:i<PR+8?120:70)

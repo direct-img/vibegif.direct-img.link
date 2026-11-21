@@ -1,4 +1,5 @@
 // blue-haired girl in a hard hat and overalls straining with gritted teeth to shove a long heavy progress bar along the ground, its striped fill crawling, sweat flying
+// tags: anime, progress-bar, strain, work
 const{sin,cos,PI,min,max,round}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#5c7cfa',HD='#3b5bdb',HL='#dbe4ff',HAT='#ffd43b',HTD='#f59f00',OV='#ff922b',OD='#e8590c',SHOE='#845ef7',BLK='#fff',FILL='#69db7c',FD='#2f9e44',BL='#ffa8a8',SW='#a5d8ff'

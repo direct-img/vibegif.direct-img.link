@@ -1,4 +1,5 @@
 // a big scribbly tumbleweed bounces and spins along empty desert ground in the wind, puffing dust on each landing while pebbles and sand dashes scroll past
+// tags: desert, empty, lonely, wind, bounce, dust
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=75
 let sd=53;const rn=()=>(sd=sd*16807%2147483647)/2147483647

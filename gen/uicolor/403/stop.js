@@ -1,4 +1,5 @@
 // red stop sign on a pole with a big white hand wagging no-no inside it, stern little face on the palm
+// tags: forbidden, hand, no, angry, error
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const RD='#ff6b6b',PL='#adb5bd',BL='#ffa8a8'

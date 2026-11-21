@@ -1,4 +1,5 @@
 // messy lilac haired scientist girl in a lab coat with goggles on her head holding up a bubbling "β" flask with a gleeful grin, bubbles rise out of it and pop into little puffs
+// tags: anime, scientist, bubbles, excited, playful
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#d0a8f5',HD='#9c6ade',HL='#f3e8ff',EYE='#ff922b',ED='#d9480f',CT='#fff',CTD='#dee2e6',SH='#63e6be',SHD='#20c997',BL='#ffa8a8',LQ='#69db7c',BB='#d3f9d8',GL='#e7f5ff',GF='#fab005',GS='#495057',LB='#fff',BT='#9c6ade'

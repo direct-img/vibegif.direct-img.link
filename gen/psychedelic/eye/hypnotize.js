@@ -1,4 +1,5 @@
 // staring almond eye with a spinning rainbow spiral iris and pulsing pupil, framed by wavy rainbow sunburst rays that slowly turn the other way
+// tags: body, spiral, rainbow, spin, hypnotic, trippy
 export const frames=24,delay=70
 const T=Math.PI*2,{sin,cos}=Math,P=['#ff2e93','#ff7a1a','#ffd21f','#3ddc6a','#1ec8ff','#7b5cff']
 export default(c,t)=>{

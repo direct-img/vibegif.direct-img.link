@@ -1,4 +1,5 @@
 // chameleon gripping a branch with a curled spiral tail, its skin rippling head to tail through neon stripes, polka dots and a spinning swirl while its turret eye rolls around
+// tags: animal, rainbow, spiral, trippy, playful
 export const frames=30,delay=80
 const T=Math.PI*2,E=[198,112]
 // tapered tube along a centerline -> closed polygon

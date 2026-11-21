@@ -1,4 +1,5 @@
 // rose pink haired girl in an apron tips a bowl of mixed shapes into a big filter funnel, squares triangles and circles tumble in but only little hearts drip out the bottom into a jar
+// tags: anime, shapes, sort, playful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#f783ac',HD='#c2255c',HL='#fff0f6',EYE='#7950f2',ED='#4c2fb0',BLZ='#fff',AP='#96f2d7',BL='#ffa8a8',MO='#c92a2a',FU='#d0bfff',FUD='#9775fa',IN='#5f3dc4',BW='#ffd8a8',BWD='#f59f00',GLS='#e7f5ff',HB='#fff',CS=['#4dabf7','#ffd43b','#69db7c','#ff6b9d'],HRT='#ff6b9d'

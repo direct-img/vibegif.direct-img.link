@@ -1,4 +1,5 @@
 // round microscope view inside a blood vessel: a silver medical nanobot capsule with a glowing cyan band and a spinning corkscrew tail swims right while tumbling red blood cells stream past
+// tags: medical, microscope, blood, sci-fi
 export const frames=24,delay=60
 const P=Math.PI,K='#111',X=128,Y=128,R=110
 const rng=s=>()=>(s=s*1664525+1013904223>>>0)/4294967296

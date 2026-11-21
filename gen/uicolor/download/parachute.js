@@ -1,4 +1,5 @@
 // smiling cardboard box drifting down under a striped parachute, swaying gently as little clouds float up past it
+// tags: box, drift, float, happy, gentle, calm
 const{sin,PI,round}=Math,T=2*PI
 export const frames=12,delay=110
 const P=['#4dabf7','#fff','#ff6b6b','#fff','#4dabf7'],BX='#e0a96d',BXD='#c08552',TP='#ffd8a8',BL='#ff8787'

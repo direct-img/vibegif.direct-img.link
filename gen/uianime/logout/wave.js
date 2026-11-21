@@ -1,4 +1,5 @@
 // silver haired girl in a beret and red scarf by an open door, smiling and waving goodbye, a wink and little hearts as she heads out
+// tags: anime, goodbye, wink, hearts, happy, love
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#e9ecef',HD='#adb5bd',EYE='#4dabf7',ED='#1864ab',BER='#ff6b6b',BD='#c92a2a',COAT='#e8b07a',CD='#b9773f',SCF='#fa5252',BL='#ffa8a8',DR='#96f2d7',DD='#20c997',IN='#495057',HT='#ff8fab'

@@ -1,4 +1,5 @@
 // glass cookie jar with nothing but crumbs at the bottom, its lid rattling and hopping, the jar peering down sadly
+// tags: cookie, sad, rattle, food, lonely
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=70
 const GL='#e7f5ff',GS='#a5d8ff',LD='#ff8787',LK='#ffd43b',CR='#e0a96d',CH='#8b5a3c',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // smiling coffee machine drips coffee into a glass mug that fills up bit by bit, steams when full, then empties to brew again
+// tags: machine, mug, steam, food, happy, calm
 const{sin,PI,min}=Math,T=2*PI
 export const frames=24,delay=80
 const BO='#ff8787',BD='#fa5252',RC='#495057',GL='#d0ebff',CO='#a9744f',CR='#e8b27a',BL='#ffc9c9',ME='#ced4da'

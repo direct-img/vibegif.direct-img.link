@@ -1,4 +1,5 @@
 // black hime cut girl in a sailor uniform between two speech bubbles that flip to swap "あ" and "A" while swap arrows spin overhead, eyes following the bubbles, finger raised like a tiny teacher
+// tags: anime, speech-bubble, language, sailor, swap
 const{sin,PI,max}=Math,T=2*PI
 export const frames=16,delay=95
 const SKIN='#ffe3d1',HAIR='#3d3b52',HD='#1f1d30',HL='#8f8bb3',EYE='#cc5de8',ED='#862e9c',SL='#364fc7',SC='#ff6b6b',BL='#ffa8a8',RB='#f03e3e',JP='#ff6b9d',EN='#4dabf7',AR='#ffd43b'

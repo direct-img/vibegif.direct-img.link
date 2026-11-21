@@ -1,4 +1,5 @@
 // binoculars with big worried eyes in the lenses sweep left and right looking for something, find nothing, and break a sweat
+// tags: no-results, binoculars, worried, anxious, sweat
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=90
 const cl=u=>min(1,max(0,u))

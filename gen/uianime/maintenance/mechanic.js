@@ -1,4 +1,5 @@
 // sky blue haired mechanic girl in goggles and coveralls, wrench in hand, wiping the sweat off her brow with a phew while gears keep turning behind her
+// tags: anime, wrench, gears, relief, work
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#74c0fc',HD='#339af0',HL='#e7f5ff',EYE='#51cf66',ED='#2b8a3e',BL='#ffa8a8',JS='#ff922b',JSD='#e8590c',GG='#ffd43b',GR='#ced4da',GD='#868e96',GY='#ffe066',WR='#dee2e6',SW='#a5d8ff',GRS='#868e96'

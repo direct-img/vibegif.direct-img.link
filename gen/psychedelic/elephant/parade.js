@@ -1,4 +1,5 @@
 // pink elephant in a little red fez marching in place, rainbow-striped trunk raised, wavy psychedelic rings rippling over its body and flapping ear
+// tags: animal, rainbow, march, playful, happy, trippy
 import{createCanvas}from'@napi-rs/canvas'
 const P=Math.PI*2,hex=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16))
 const A=['#ff6ec7','#ffb0de','#ff3d9a','#b47cff','#ff6ec7','#ffd166'].map(hex)

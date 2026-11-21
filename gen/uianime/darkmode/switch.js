@@ -1,4 +1,5 @@
 // silver haired girl flicking a big dark mode toggle, the backdrop fades from a sunny sky to a starry night with a moon and she drowses in a striped nightcap, then flicks it back to day
+// tags: anime, night-sky, moon, sleepy, calm, gentle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=95
 const SKIN='#ffe3d1',HAIR='#e9ecef',HD='#adb5bd',HL='#fff',EYE='#4dabf7',ED='#1864ab',PJ='#ffc9de',PD='#f06595',BL='#ffa8a8',SKY='#a5d8ff',NT='#25285a',SUN='#ffd43b',SD='#fab005',MN='#ffec99',TK='#fff',TD='#5c7cfa',CAP='#748ffc',SP='#ffe066'

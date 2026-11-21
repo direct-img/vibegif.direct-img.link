@@ -1,4 +1,5 @@
 // magenta twintailed chibi girl crouches and jumps to stomp a giant Z key next to a little Ctrl key, both keys clunk down and a big orange undo arrow swings back around
+// tags: anime, chibi, keyboard, stomp, jump, playful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#e64fc0',HD='#a61e8d',HL='#fde4f7',EYE='#7950f2',ED='#4c2a9e',TEE='#63e6be',TD='#0ca678',SHO='#5c7cfa',SN='#ff6b6b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',KT='#f3f0ff',KB='#b197fc',KC='#f1f3f5',KCB='#adb5bd',AR='#ffa94d',SP='#ffd43b'

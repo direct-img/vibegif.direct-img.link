@@ -1,4 +1,5 @@
 // yellow excavator digging into a dirt pile, lifting a full bucket and dumping it back, exhaust puffing, smiling as it works
+// tags: digging, work, happy, yellow, puff
 const{sin,cos,PI,round}=Math,T=2*PI
 export const frames=20,delay=90
 const Y='#ffd43b',YD='#fab005',TR='#495057',WH='#ced4da',GL='#a5d8ff',DI='#c08552',DD='#8d6346',BL='#ffa8a8',EX='#868e96'

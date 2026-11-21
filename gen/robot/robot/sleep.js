@@ -1,4 +1,5 @@
 // sleeping robot sitting slumped on the floor, head drooped with closed eyes on its visor, slow breathing, droopy antenna, low battery light blinking red on its chest and Zzz floating up
+// tags: tired, slow, battery, zzz, calm, gentle
 export const frames=24,delay=100
 const T=Math.PI*2
 const LT='#b4cdea',SH='#84a5cc',DK='#1b2433'

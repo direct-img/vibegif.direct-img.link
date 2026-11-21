@@ -1,4 +1,5 @@
 // cherry red twintail girl winds up and slaps a big red play button, it squashes and flips to a gray subscribed check while a gold notification bell pops out swinging with a ding
+// tags: anime, bell, play, excited, cheer
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=14,delay=90
 const SKIN='#ffe3d1',HAIR='#f03e3e',HD='#b02525',HL='#ffe3e3',EYE='#22b8cf',ED='#0b7285',TOP='#364fc7',TD='#748ffc',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',BT='#ff3b3b',BD='#a61e1e',GY='#adb5bd',GD='#495057',BE='#ffd43b',TIE='#ffd43b',SP='#ffe066'

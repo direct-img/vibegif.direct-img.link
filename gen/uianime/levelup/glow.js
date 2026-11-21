@@ -1,4 +1,5 @@
 // electric blue girl with a spiky high ponytail clenching her fists and powering up in a flickering aura as her XP bar fills, then a LV UP sign with up arrows bursts out and she cheers before the bar resets
+// tags: anime, aura, power-up, excited, proud, game
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#339af0',HD='#1864ab',HL='#d0ebff',EYE='#fab005',ED='#e67700',TOP='#fa5252',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',AU='#fff3bf',AD='#ffd43b',XP='#69db7c',XD='#2f9e44',UP='#ffd43b',SP='#ffe066'

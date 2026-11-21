@@ -1,4 +1,5 @@
 // little tread-based robot juggling three colored hex nuts in a cascade with telescoping arms, glowing eyes following the nuts, chest lights blinking
+// tags: playful, tread, cascade, happy
 export const frames=24,delay=70
 const P=Math.PI,C=128,cols=['#f5c242','#f06a5a','#53c0ea']
 const lerp=(a,b,k)=>a+(b-a)*k,ez=k=>k*k*(3-2*k)

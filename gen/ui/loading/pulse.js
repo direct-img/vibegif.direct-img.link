@@ -1,4 +1,5 @@
 // a dot sends out radar ripple rings that grow wider and thinner until they fade away
+// tags: ripple, radar, calm, gentle
 const{cos,PI}=Math,T=2*PI
 export const frames=15,delay=80
 export default(c,t)=>{

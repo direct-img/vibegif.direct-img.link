@@ -1,4 +1,5 @@
 // a heart outline gets tapped, squashes, then pops big and fills in while a ring of tiny hearts and dots bursts out, settles, and drains back to an outline
+// tags: love, burst, pop, happy
 const{sin,cos,PI,min,max,exp}=Math,T=2*PI
 export const frames=24,delay=60
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

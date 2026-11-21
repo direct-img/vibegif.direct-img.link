@@ -1,4 +1,5 @@
 // blushing girl with long sakura pink hair and a mint headband covering her eyes with both hands, then parting two fingers to peek up at a password field of bouncing dots with a lock icon
+// tags: anime, blush, shy, hide, cute
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ffa8c5',HD='#e64980',HL='#fff0f6',EYE='#ffa94d',ED='#e8590c',CAR='#a5d8ff',CD='#4dabf7',BL='#ff8787',HB='#63e6be',FLD='#fff',DOT='#343a40',GD='#ffd43b',GDD='#f59f00',SW='#a5d8ff',Z=.8

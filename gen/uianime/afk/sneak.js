@@ -1,4 +1,5 @@
 // caramel ponytail girl in a mint hoodie tiptoeing away from her desk with sneaky paws, glancing back nervously at her laptop that reads "AFK" while an idle clock ticks over it
+// tags: anime, tiptoe, playful, laptop
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#d4a373',HD='#9c6644',HL='#faedcd',EYE='#4dabf7',ED='#1864ab',HO='#96f2d7',HOD='#20c997',SHT='#748ffc',SHO='#ff922b',BL='#ffa8a8',DK='#e8b07a',DKD='#c47f45',LP='#ced4da',LPD='#868e96',SCR='#364fc7',AF='#ffd43b',CK='#fff3bf',CKD='#f59f00',SW='#a5d8ff',SCR2='#5c7cfa'

@@ -1,4 +1,5 @@
 // patient green-haired girl in a straw hat fishing from the shore, her bobber bobbing on the pond with spreading ripples while she waits for a bite
+// tags: anime, pond, ripple, patient, calm, nature
 const{sin,cos,PI,max,min,exp}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#69db7c',HD='#2f9e44',HL='#d3f9d8',EYE='#a9744f',ED='#6f4518',HAT='#ffe066',HTD='#e8b93c',RIB='#fa5252',TOP='#ff8fab',TD='#f06595',WAT='#a5d8ff',WD='#74c0fc',ROD='#a9744f',BL='#ffa8a8',Z=.8

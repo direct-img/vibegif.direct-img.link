@@ -1,4 +1,5 @@
 // little yellow robot on tank treads tilting a green watering can over a drooping potted pink flower, water drops raining down until the flower perks up with sparkles and the robot smiles
+// tags: flower, plant, garden, nurture, happy, gentle
 export const frames=24,delay=70
 const T=Math.PI*2,{sin:S,cos:C,max,min}=Math
 const P=(c,f,s=1)=>{f&&(c.fillStyle=f,c.fill());s&&c.stroke()}

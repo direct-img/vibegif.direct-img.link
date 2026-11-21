@@ -1,4 +1,5 @@
 // four-legged robot dog trotting side-on in a diagonal gait, white armored body with orange stripe, jointed legs with rubber feet, cyan visor head and antenna tail, ground scrolling under it
+// tags: dog, animal, walk, sci-fi
 export const frames=16,delay=55
 const P=Math.PI*2,S=40,B=.5,G=196,L1=46,L2=48
 const ik=(h,f,k)=>{

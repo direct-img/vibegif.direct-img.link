@@ -1,4 +1,5 @@
 // hippie camper van with wavy rainbow side stripes, daisies and a peace sign, bouncing as it cruises right with flower hubcaps spinning and hearts puffing from the exhaust
+// tags: hippie, retro, travel, peace, happy, trippy
 export const frames=20,delay=70
 const T=Math.PI*2,{sin,cos,PI}=Math,P=['#ff2e93','#ff7a1a','#ffd21f','#3ddc6a','#1ec8ff','#7b5cff']
 const heart=(c,x,y,s)=>{

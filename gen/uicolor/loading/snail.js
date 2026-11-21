@@ -1,4 +1,5 @@
 // a snail slowly crawls along a progress bar dragging the slimy fill along behind it, at the end it ducks into its shell and rolls back to the start
+// tags: animal, progress-bar, slow, crawl, calm, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=90
 const SH='#b197fc',SD='#7950f2',BD='#ffd8a8',FL='#63e6be',BL='#ff8787'

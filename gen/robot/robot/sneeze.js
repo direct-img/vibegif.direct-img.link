@@ -1,4 +1,5 @@
 // red retro tin robot head goes cross-eyed at a floating dust bunny, winds up "ah... ah..." and sneezes so hard its eyes, antenna and ear bolts boing out on springs in a puff of dust, then snap back and it blushes
+// tags: retro, tin, surprise, playful, springs
 export const frames=30,rim=3
 export const delay=[120,120,120,120,100,100,100,110,100,100,110,240,150,60,60,60,60,60,60,60,60,60,60,50,50,110,110,110,110,520]
 const P=Math.PI,{sin,cos,exp,max,min,hypot}=Math

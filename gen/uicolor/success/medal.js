@@ -1,4 +1,5 @@
 // gold medal with a star swinging on its red and blue ribbon, a glint sliding across it and sparkles popping around
+// tags: achievement, gold, proud, sparkle, glint
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=14,delay=90
 const G='#ffd43b',GD='#fab005',GE='#f59f00',RB=['#ff6b6b','#4dabf7']

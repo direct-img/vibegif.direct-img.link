@@ -1,4 +1,5 @@
 // teal ponytailed girl in a yellow hoodie with her tongue out in concentration sliding the knob of a three slider settings panel, the other knobs bobbing like an equalizer and a little gear spinning on the corner
+// tags: anime, sliders, focus, hoodie, work
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#1fb5a5',HD='#0b7a6e',HL='#c3fae8',EYE='#9775fa',ED='#5f3dc4',HO='#ffe066',HOD='#fab005',BL='#ffa8a8',PN='#f8f9fa',GV='#495057',GR='#ced4da',KC=['#ff8fab','#ffd43b','#74c0fc'],TG='#ff8fab',CLIP='#ff8787',Z=.62

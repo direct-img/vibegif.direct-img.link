@@ -1,4 +1,5 @@
 // sunflower twintail girl frozen mid disco pose on one leg next to a big pulsing pause button, music notes stuck in the air, only her eyes dart around while a sweatdrop slides and she trembles
+// tags: anime, dance, music, pose, playful
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ffd43b',HD='#f08c00',HL='#fff9db',EYE='#4dabf7',ED='#1864ab',TOP='#ff8787',SK='#4dabf7',SKD='#1c7ed6',SH='#ff6b6b',RB='#4dabf7',BL='#ffa8a8',PA='#9775fa',PAD='#7048e8',NT='#ff922b',SW='#a5d8ff'

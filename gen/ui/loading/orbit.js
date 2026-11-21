@@ -1,4 +1,5 @@
 // a little smiling planet while two moons circle it at different speeds along dashed orbit paths
+// tags: planet, space, moon, happy, calm
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const O=[[72,38,-.42,2,12],[102,58,.3,1,15]]

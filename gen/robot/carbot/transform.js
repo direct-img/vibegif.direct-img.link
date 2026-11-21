@@ -1,4 +1,5 @@
 // little blue car transforms into a standing robot: wheels fly up to the shoulders and legs, doors swing down into arms, the cabin flips into a chest, the head pops up and the visor lights, then it folds back into the car
+// tags: playful, sci-fi, blue
 export const frames=40,delay=60
 const P=Math.PI,G=230
 const cl=k=>Math.max(0,Math.min(1,k)),ez=k=>k*k*(3-2*k),lerp=(a,b,k)=>a+(b-a)*k

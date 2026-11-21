@@ -1,4 +1,5 @@
 // teal braided girl in a yellow hard hat and safety vest hammering a nail into a striped under construction sign, tongue out, sparks on every bonk
+// tags: anime, hammer, work, playful
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=75
 const SKIN='#ffe3d1',HAIR='#38d9a9',EYE='#20c997',ED='#087f5b',BL='#ffa8a8',HAT='#ffd43b',HTD='#f59f00',VS='#ff922b',SH='#74c0fc',RF='#e9ecef',WD='#c98a52',ST='#ff922b',MT='#adb5bd',TG='#ff8fab',SP='#ffd43b'

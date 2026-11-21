@@ -1,4 +1,5 @@
 // mint haired chibi girl in a pink dress jumping for joy with both arms up, eyes squeezed happy, while confetti rains down around her
+// tags: anime, chibi, happy, excited, confetti, celebration
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#8ce99a',HD='#37b24d',HL='#ebfbee',DR='#ffa8c5',DD='#f06595',SH='#ff6b6b',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',RB='#ffd43b',CF=['#ff6b6b','#ffd43b','#4dabf7','#b197fc','#69db7c','#ff922b']

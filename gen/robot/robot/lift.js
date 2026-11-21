@@ -1,4 +1,5 @@
 // stocky yellow robot weightlifter dips and presses a heavy red-plated barbell overhead, bar flexing, squinting with effort, chest pressure gauge maxing out, steam puffing from its head vents at lockout, then lowers it
+// tags: strong, effort, proud, steam, yellow
 export const frames=24,delay=70
 const P=Math.PI*2,Y='#f4c430',YD='#cf9c18',G='#a3adb7',D='#2b2f36'
 const S=x=>x<0?0:x>1?1:x*x*(3-2*x)

@@ -1,4 +1,5 @@
 // DNA double helix twisting in 3D, two rainbow backbone strands with colors flowing along them, neon base-pair rungs
+// tags: body, rainbow, spin, neon, trippy
 export const frames=18,delay=85
 const P=Math.PI*2,cx=128,A=64,per=150,dd=P*.37
 let s=11

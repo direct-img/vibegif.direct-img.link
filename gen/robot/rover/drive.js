@@ -1,4 +1,5 @@
 // six-wheeled planetary rover driving right across scrolling rocky tan ground, rocker-bogie suspension flexing as its wheels climb over rocks, camera mast scanning, dust kicking up behind
+// tags: space, planet, rocks, dust, travel
 export const frames=32,delay=60
 const P=Math.PI*2,r=17.46
 const rocks=[[70,46,21,[[-.5,0],[-.38,.62],[-.12,1],[.18,.92],[.4,.48],[.5,0]]],[196,30,12,[[-.5,0],[-.25,.85],[.1,1],[.36,.6],[.5,0]]]]

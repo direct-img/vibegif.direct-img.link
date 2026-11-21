@@ -1,4 +1,5 @@
 // worried satellite dish sweeping back and forth hunting for a signal, its little signal waves breaking up into dots and fizzling out
+// tags: signal, worried, anxious, search, sweep
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=100
 const DS='#74c0fc',DI='#e7f5ff',ST='#adb5bd',BA='#868e96',FE='#ff6b6b',WV='#ffd43b',BL='#ffa8a8'

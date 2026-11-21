@@ -1,4 +1,5 @@
 // steel blue haired girl in a sweater vest shoves a yellow file folder into a little safe, swings the heavy door shut, spins the dial and a green check pops with sparkles before the door swings open again
+// tags: anime, safe, folder, secure, proud
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#94a9c0',HD='#5a7088',HL='#eef3f8',EYE='#4dabf7',ED='#1864ab',VS='#5c7cfa',VSD='#3b5bdb',TIE='#ff8787',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',SF='#38d9a9',SFD='#0ca678',IN='#343a40',DL='#e9ecef',FD='#ffd43b',FDD='#f59f00',OK='#51cf66',SP='#ffe066',CL='#ffa8a8'

@@ -1,4 +1,5 @@
 // lost explorer girl with honey pigtails and a safari hat holding her map upside down, looking left and right in confusion while question marks pop up
+// tags: anime, map, confused, explorer
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=12,delay=120
 const SKIN='#ffe3d1',HAIR='#ffd43b',HD='#f08c00',HL='#fff9db',EYE='#a9744f',ED='#6f4518',HAT='#e9cf96',HB='#a9744f',SH='#8ce99a',SD='#40c057',MAP='#fff3bf',MP='#ffe699',MT='#91a7ff',PINE='#51cf66',BL='#ffa8a8',SW='#a5d8ff',QC=['#ff8787','#74c0fc','#b197fc'],Z=.84

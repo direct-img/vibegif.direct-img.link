@@ -1,4 +1,5 @@
 // sporty blonde girl in a red headband grinning ear to ear and pumping a big thumbs up, a gleam pinging off her teeth
+// tags: anime, grin, proud, happy, sporty
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffd43b',HD='#f59f00',HL='#fff9db',JK='#4dabf7',JD='#1c7ed6',BAND='#fa5252',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',GL='#fff9db'

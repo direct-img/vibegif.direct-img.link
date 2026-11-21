@@ -1,4 +1,5 @@
 // two smiling phones tossing a file back and forth in a high arc, each one hopping as it catches, sync arrows spinning between them
+// tags: file, happy, toss, hop, playful
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const PL='#9775fa',PR='#ff8787',SC='#e7f5ff',FL='#fff',FC='#ffd43b',AR='#51cf66',BL='#ffa8a8'

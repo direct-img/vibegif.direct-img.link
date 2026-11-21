@@ -1,4 +1,5 @@
 // friendly little silver robot with a round head and glowing cyan eyes waving hello with one arm raised, three-finger hand wiggling, antenna bobbing, blinks once
+// tags: hello, friendly, happy, cute, cyan
 export const frames=16,delay=70
 const P=Math.PI,K='#111',M='#dfe5ea',D='#aab6c0',A='#f39a2b'
 const tube=(c,pts,w,f)=>{

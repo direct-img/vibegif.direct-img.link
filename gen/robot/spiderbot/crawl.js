@@ -1,4 +1,5 @@
 // top-down view of a six-legged silver hexapod spider robot crawling forward with a tripod gait, three legs lifting and swinging while the other three push, servo joints, amber sensor eyes blinking, glowing core on its back
+// tags: animal, hexapod, sci-fi
 export const frames=20,delay=60
 const P=Math.PI*2
 const L=[[-27,-26,-96,-84,-1],[-34,0,-116,-2,-.3],[-27,26,-98,80,1]]

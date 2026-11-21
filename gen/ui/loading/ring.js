@@ -1,4 +1,5 @@
 // material style spinner: one thick arc spins round, stretching long and then shrinking short as it goes
+// tags: spinner, spin, material
 const{PI,min,max,floor}=Math,T=2*PI
 export const frames=30,delay=50
 const e=u=>(u=min(1,max(0,u)),u<.5?4*u**3:1-4*(1-u)**3)

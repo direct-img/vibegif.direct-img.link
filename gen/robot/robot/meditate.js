@@ -1,4 +1,5 @@
 // lavender robot sitting cross-legged in a lotus pose with eyes closed, levitating and gently bobbing above cyan ripple rings as hex nuts, a bolt, a gear, a washer and a battery orbit around it and its chest core glows with each breath
+// tags: meditation, calm, float, lotus, ripple, orbit
 export const frames=30,delay=75,rim=3
 const P=Math.PI,{sin,cos}=Math
 const L='#d3cdf5',S='#a89fe0',J='#7a70b8'

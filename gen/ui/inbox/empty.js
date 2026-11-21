@@ -1,4 +1,5 @@
 // empty inbox tray looking bored while a fly buzzes loop-de-loops around it, leaving a dotted trail
+// tags: bored, fly, lonely
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=24,delay=70
 const F=u=>{const a=T*u;return[128+80*cos(a)+16*cos(4*a),116+60*sin(a)+18*sin(4*a)]}

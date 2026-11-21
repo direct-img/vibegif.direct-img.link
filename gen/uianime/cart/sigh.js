@@ -1,4 +1,5 @@
 // brown-haired girl with a side braid leaning on an empty shopping cart, peering in and letting out a long gloomy sigh
+// tags: anime, shopping, empty, sad
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#b5835a',HD='#8d5a3b',HL='#f1d2b6',EYE='#3bc9db',ED='#0b7285',CD='#fab005',BL='#ffa8a8',GL='#9775fa',CW='#e7f5ff',WR='#74c0fc',HN='#fa5252',Z=.72

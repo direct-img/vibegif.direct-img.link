@@ -1,4 +1,5 @@
 // black haired girl with a purple streak peeking over a laptop eyes the live webcam suspiciously, slides the privacy cover shut so the screen flips to camera off, then gives a sly wink
+// tags: anime, webcam, privacy, suspicious, laptop
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#3b3f45',HD='#212529',HL='#868e96',ST='#b197fc',STD='#7950f2',EYE='#9775fa',ED='#5f3dc4',BL='#ffa8a8',LP='#dee2e6',LPD='#adb5bd',SCR='#a5d8ff',OFF='#ced4da',RED='#ff6b6b',CV='#b197fc',SP='#ffd43b'

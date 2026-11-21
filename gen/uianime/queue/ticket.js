@@ -1,4 +1,5 @@
 // plum bob girl waiting in line with ticket 42, glancing up as the hanging counter dings 39 40 41, then it hits 42, the display turns green and she lights up waving her ticket
+// tags: anime, wait, counter, happy, hopeful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100
 const SKIN='#ffe3d1',HAIR='#b565bd',HD='#7e3a8c',HL='#f6e3f8',EYE='#fab005',ED='#e67700',CA='#96f2d7',CD='#20c997',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',TK='#ffc9c9',TKD='#fa5252',BOX='#495057',SCR='#212529',RD='#ff6b6b',GR='#69db7c',SP='#ffe066'

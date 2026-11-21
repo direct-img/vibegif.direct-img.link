@@ -1,4 +1,5 @@
 // robot head thinking: brass gears mesh and turn inside its glass brain dome, eyes roll up in thought, mouth LEDs flicker, antenna bulb blinks
+// tags: gears, brain, face, retro, blink
 export const frames=24,delay=70
 const P=Math.PI*2
 const gear=(c,x,y,n,a,col)=>{

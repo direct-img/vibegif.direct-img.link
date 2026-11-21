@@ -1,4 +1,5 @@
 // a signpost whose arrow boards keep swinging round to point every which way, while a question mark bobs on top
+// tags: lost, confused, error, question, sway
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const bk=u=>(u=min(1,max(0,u)),1+2.7*(u-1)**3+1.7*(u-1)**2)

@@ -1,4 +1,5 @@
 // navy haired security guard girl in a peaked cap squinting at an ID badge she holds up, shaking her head, then a red X stamps down onto the badge
+// tags: anime, guard, no, stamp
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#3b5bdb',HD='#2a3a96',HL='#bac8ff',EYE='#fcc419',ED='#e67700',SHT='#a5d8ff',CAP='#343a40',CL='#868e96',GD='#ffd43b',BL='#ffa8a8',HDR='#4dabf7',PH='#d0ebff',SIL='#adb5bd',RD='#fa5252',Z=.7

@@ -1,4 +1,5 @@
 // pink-bob girl saying thanks with a heart made of her hands, a red heart beating inside it while little hearts float up
+// tags: anime, grateful, love, happy, float, pulse
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#faa2c1',HD='#e64980',HL='#fff0f6',EYE='#9775fa',ED='#5f3dc4',SW='#a5d8ff',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',HR='#fa5252',HT=['#ff6b6b','#f06595','#ffa8a8'],CL='#ffd43b'

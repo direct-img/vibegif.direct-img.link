@@ -1,4 +1,5 @@
 // cute steel robot head with a glowing LED dot-matrix screen face cycling expressions: blink, glance left and right, happy ^^ smile, pulsing pink heart eyes, surprised O mouth, wink, antenna light blinking
+// tags: emotions, happy, love, surprised, blink, cute
 const G={
   o:'.###. ##### ##### ##### .###.',
   b:'..... ..... ##### ..... .....',

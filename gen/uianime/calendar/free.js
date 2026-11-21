@@ -1,4 +1,5 @@
 // mint side-ponytail girl beaming and bouncing as she holds up a totally blank calendar, flipping to yet another empty page, peace sign and sparkles
+// tags: anime, happy, excited, peace, bounce
 const{sin,cos,PI,abs,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#8ce99a',HD='#40c057',HL='#ebfbee',BL='#ffa8a8',TOP='#ffe066',TD='#fab005',CAL='#ff6b6b',CD='#e03131',GR='#dee2e6',RG='#adb5bd',MO='#c92a2a',TG='#ff8fab',SP='#ffd43b'

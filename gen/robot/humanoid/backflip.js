@@ -1,4 +1,5 @@
 // sleek white humanoid robot seen side-on crouches, swings its arms, springs into a tucked backflip, spins a full turn in the air and sticks the landing, cyan visor glowing
+// tags: jump, athletic, sci-fi, proud
 export const frames=36,delay=[420,...Array(35).fill(55)]
 // t, torso, hip, knee, ankle, shoulder, elbow, head (deg, clockwise, 0 = upright/hanging)
 const K=[

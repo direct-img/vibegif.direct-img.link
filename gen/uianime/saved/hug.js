@@ -1,4 +1,5 @@
 // pink haired girl with low pigtails squeezing a yellow folder tight to her chest, eyes shut in bliss, blush glowing as hearts float up
+// tags: anime, folder, blush, hearts, happy, love
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#faa2c1',HD='#e64980',HL='#fff0f6',TOP='#a5d8ff',TD='#4dabf7',SCR='#ffd43b',FO='#ffd43b',FD='#fab005',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',HT=['#ff6b9d','#f06595','#ff8787']

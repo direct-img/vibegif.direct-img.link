@@ -1,4 +1,5 @@
 // recursive fractal tree whose branch angles breathe and morph its whole shape, rainbow colors flowing up from the trunk to glowing dot tips
+// tags: nature, plant, rainbow, breathe, gentle, calm
 export const frames=18,delay=90
 const P=Math.PI*2,D=7
 export default(c,t)=>{

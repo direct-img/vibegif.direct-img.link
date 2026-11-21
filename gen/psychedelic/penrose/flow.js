@@ -1,4 +1,5 @@
 // impossible Penrose triangle made of three square beams, rainbow stripes flowing endlessly around the beams in a loop, each face shaded, black outline
+// tags: impossible, math, rainbow, trippy
 export const frames=24,delay=70
 const S=256,Q=3,N=S*Q,L=1,w=.2,c=Math.sqrt(3)/2,F=2*w/Math.PI
 // boxes [lo,hi] + s(x,y,z) = distance along the loop

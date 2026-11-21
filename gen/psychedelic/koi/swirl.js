@@ -1,4 +1,5 @@
 // two koi chasing each other's tails around a dark round pond like a yin-yang, their bodies shifting color and leaving rainbow ripple rings in their wake, rainbow striped pond rim
+// tags: fish, animal, pond, rainbow, calm, ripple
 export const frames=20,delay=80
 const TAU=Math.PI*2,R=70,L=1.95,D=Math.PI/12,P=['#ff2d6f','#ff8a00','#ffd500','#3ddc4a','#00b7ff','#8b4dff']
 const hsl=(h,s,l)=>`hsl(${(h%360+360)%360},${s}%,${l}%)`

@@ -1,4 +1,5 @@
 // retro robot head talking, its mouth a green oscilloscope screen whose waveform wiggles with each word, antenna bulb flashing and eyes blinking
+// tags: retro, speech, oscilloscope, blink, face
 export const frames=24,delay=70
 const T=Math.PI*2,S=Math.sin
 const P=(c,f,s=1)=>{f&&(c.fillStyle=f,c.fill());s&&c.stroke()}

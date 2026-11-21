@@ -1,4 +1,5 @@
 // clean empty trash bin flipping its lid open and shut with a big grin, sparkles popping out of it and twinkling all around
+// tags: bin, happy, clean, sparkle, playful
 const{sin,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const BN='#63e6be',BD='#20c997',RM='#38d9a9',IN='#c3fae8',BL='#ffa8a8',TG='#ff8787'

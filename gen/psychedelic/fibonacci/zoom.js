@@ -1,4 +1,5 @@
 // golden ratio spiral of dark squares, each holding a rainbow-banded quarter-circle fan, endlessly shrinking and turning into its center inside a round portal
+// tags: golden-ratio, spiral, rainbow, math, trippy
 export const frames=20,delay=80
 const P=Math.PI*2,f=(1+Math.sqrt(5))/2,k=1/f,b=(1-k)/(1+k*k),a=1+k*b,W=58
 export default(c,t)=>{

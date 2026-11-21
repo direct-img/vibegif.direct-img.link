@@ -1,4 +1,5 @@
 // side-view retro teal robot winds up, its chest hatch flips open and a red boxing glove on a coiled spring punches out with a yellow POW burst, then boings back and forth and reels back in
+// tags: boxing, retro, pow, spring, playful, angry
 // spring length, hatch open 0..1, lean deg, eye, arm swing, glove dy, ms
 const K=[
   [0,0,0,'o',0,0,360],[0,0,-3,'s',-.1,0,110],[0,0,-6,'s',-.25,0,110],[0,1,-6,'s',-.3,0,80],[40,1,2,'w',.5,0,50],

@@ -1,4 +1,5 @@
 // a tower crane lowers a content block into the empty slot of a half-built web page, the page scrolls down to make room and a fresh block pops onto the hook
+// tags: web-page, build, lowering, work
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=28,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

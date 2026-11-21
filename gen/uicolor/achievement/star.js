@@ -1,4 +1,5 @@
 // star badge levels up, a green arrow shoots up from behind it, the badge hops and its happy star flips while sparkles burst
+// tags: level-up, proud, happy, sparkle, hop
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=18,delay=90
 const BG='#9775fa',BI='#b197fc',ST='#ffd43b',AR='#51cf66',RB='#ff6b6b',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // chrome robot skull front-on, angry glowing red eyes flaring, metal teeth chattering as its piston-hinged jaw clacks open and shut, head bobbing like it's cackling
+// tags: chrome, angry, cackle, teeth, sci-fi
 export const frames=20,delay=60
 const P=Math.PI*2,A=[1,.55,.85,.45]
 const teeth=(c,y,h,dn)=>{

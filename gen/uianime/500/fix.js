@@ -1,4 +1,5 @@
 // red-haired mechanic girl in a bandana whacking a broken 500 server with a big wrench, sparks flying off it
+// tags: anime, server, repair, wrench, sparks, work
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=10,delay=80
 const SKIN='#ffe3d1',HAIR='#ff8787',HD='#e03131',EYE='#fab005',ED='#e67700',OV='#4dabf7',TS='#ffe066',BN='#ffd43b',BL='#ffa8a8',SV='#ced4da',SD='#868e96',RD='#fa5252',SP='#ffd43b',Z=.72

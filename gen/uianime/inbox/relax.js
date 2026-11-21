@@ -1,4 +1,5 @@
 // mint haired girl with an ahoge in a comfy sweater doing a big happy stretch with her hands clasped overhead, swaying beside an empty inbox tray with a bobbing green check while sparkles twinkle
+// tags: anime, stretch, happy, calm
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=95
 const SKIN='#ffe3d1',HAIR='#8ce99a',HD='#2f9e44',HL='#ebfbee',SWT='#d0bfff',SD='#9775fa',BL='#ffa8a8',TR='#a5d8ff',TB='#e7f5ff',TD='#4dabf7',GR='#51cf66',SP='#ffe066',CLIP='#ffd43b',MO='#c92a2a',Z=.66

@@ -1,4 +1,5 @@
 // honey blonde detective girl in a deerstalker sweeping a magnifying glass around, peering through it with a giant eye, then finding nothing: sweatdrop and a ?
+// tags: anime, detective, magnifying-glass, no-results, playful
 const{sin,cos,PI,max,min,hypot,sqrt}=Math,T=2*PI
 export const frames=20,delay=85
 const SKIN='#ffe3d1',HAIR='#ffd43b',HD='#f59f00',EYE='#4dabf7',ED='#1864ab',BL='#ffa8a8',CT='#e0a96d',CTD='#c08552',HAT='#a9744f',HATD='#7f5539',TIE='#fa5252',RIM='#fcc419',GL='#d0ebff',SW='#a5d8ff'

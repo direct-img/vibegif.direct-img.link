@@ -1,4 +1,5 @@
 // long hot pink haired girl in big mint headphones bobbing her head to the beat with eyes closed, a speaker icon blasts pulsing sound waves, eq bars bounce and music notes float up
+// tags: anime, headphones, music, sound-waves, happy, excited
 const{sin,cos,PI,min,abs}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#f06595',HD='#c2255c',HL='#ffdeeb',TEE='#d0bfff',TD='#9775fa',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',MN='#63e6be',MD='#12b886',CU='#495057',NT=['#f783ac','#b197fc','#4dabf7'],EQ=['#ff8fab','#ffa94d','#ffd43b','#8ce99a','#74c0fc']

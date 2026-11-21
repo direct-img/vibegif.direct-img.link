@@ -1,4 +1,5 @@
 // green-haired girl in a beret shaking her empty wallet upside down with teary eyes, only dust puffs and specks falling out
+// tags: anime, empty, sad, tears, money, dust
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#8ce99a',HD='#2f9e44',HL='#ebfbee',EYE='#f76707',ED='#c2410c',BR='#c2255c',SW='#d0bfff',SWD='#9775fa',BL='#ffa8a8',WA='#a5d8ff',WL='#e8590c',WLD='#b35400',DU='#ced4da',Z=.8

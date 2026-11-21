@@ -1,4 +1,5 @@
 // lemon haired girl with odango buns pumping her fist and cheerfully shouting into a red megaphone, sound arcs blast out toward a pulsing share icon badge
+// tags: anime, shout, excited, happy, cheer
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f59f00',HL='#fff9db',TOP='#4dabf7',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',MG='#ff8787',MGD='#e03131',HN='#495057',BOW='#ff8fab',SH='#4dabf7',SC=['#ff8fab','#69db7c','#ffd43b']

@@ -1,4 +1,5 @@
 // lilac-haired shop girl in a frilly headband bowing politely in welcome, hands folded in front, sparkles twinkling around her
+// tags: anime, polite, sparkle, happy, calm, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=12,delay=120

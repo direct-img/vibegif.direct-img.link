@@ -1,4 +1,5 @@
 // lavender haired office girl in round glasses flips open an old folder, a cloud of dust bursts out and she squeezes her eyes shut coughing
+// tags: anime, cough, old, office
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=85
 const SKIN='#ffe3d1',HAIR='#b197fc',HD='#845ef7',HL='#e5dbff',EYE='#845ef7',ED='#5f3dc4',BL='#ffa8a8',JK='#748ffc',TIE='#fa5252',FD='#ffd8a8',FDD='#e0a96d',DU='#e9ecef',MO='#c92a2a'

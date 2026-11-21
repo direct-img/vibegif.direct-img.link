@@ -1,4 +1,5 @@
 // inbox tray at zero turned into a tiny island: palm tree swaying, a cool sun in shades, the tray smiling with relaxed closed eyes
+// tags: island, palm-tree, sun, calm, relaxed, happy
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=100
 const TY='#b197fc',TD='#7950f2',WA='#74c0fc',SA='#ffe066',TK='#c08457',LF='#51cf66',CO='#8b5a3c',SU='#ffd43b',SR='#ffa94d',BL='#ffa8a8'

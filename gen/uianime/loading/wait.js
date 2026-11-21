@@ -1,4 +1,5 @@
 // impatient office girl with a brown bun tapping her foot and glaring at her ticking wristwatch, then letting out a long sigh
+// tags: anime, impatient, sigh, watch
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#a9744f',HD='#7f5539',HL='#e6c9a8',EYE='#e8590c',ED='#a33c08',BZ='#748ffc',BD='#4c6ef5',SK='#364fc7',SHOE='#495057',BAND='#ff8787',BL='#ffa8a8',Z=.66
