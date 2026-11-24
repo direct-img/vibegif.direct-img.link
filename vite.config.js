@@ -1,6 +1,6 @@
 // fills <!--gallery--> in index.html from whatever is in public/, and every <!--count--> with how many tiles that is
 // one tile per name: shows the .webp (or the .gif if that's all there is) and links every format
-// tiles are split into sections by the gen/<section>/ folder they come from, with a divider between
+// tiles are split into sections by the anims-src/<section>/ folder they come from, with a divider between
 // hand-made files that have no gen file go in the first section
 // only files inside a subject folder are tiles, so root files like favicon.webp stay out
 // tile images use the plain url, no ?v= cache buster, so copying the image address gives the clean hotlink (a changed file may show stale until caches expire)
@@ -21,7 +21,7 @@ const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/$
 const dims=(b,x)=>x=='gif'?[b.readUInt16LE(6),b.readUInt16LE(8)]:[b.readUIntLE(24,3)+1,b.readUIntLE(27,3)+1]
 const tiles=(list=sections)=>{
   const sec={},g=Object.fromEntries(list.map(s=>[s,{}]))
-  for(const f of walk('gen').filter(f=>f.endsWith('.js'))){const[,s,...r]=f.split('/');sec[r.join('/').slice(0,-3)]=s}
+  for(const f of walk('anims-src').filter(f=>f.endsWith('.js'))){const[,s,...r]=f.split('/');sec[r.join('/').slice(0,-3)]=s}
   for(const f of walk('public').filter(f=>/^public\/[^/]+\/.+\.(webp|gif)$/.test(f)).sort()){
     const p=f.slice(7),x=p.split('.').pop(),id=p.slice(0,-x.length-1)
     const s=g[sec[id]??sections[0]]
@@ -51,8 +51,8 @@ const issueList=()=>issues().map(n=>{
   const t=rf(`newsletter/${n}/index.html`,'utf8').match(/<title>([^<]*)<\/title>/i)?.[1].trim()||n,d=n.slice(6).replaceAll('.','-')
   return`<li><a href="/newsletter/${n}/">${t}</a><time datetime="${d}">${d}</time></li>`
 }).join('\n')||'<li>no issues yet</li>'
-const about=(s,id)=>{try{return rf(`gen/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
-const own=(s,id)=>{try{return rf(`gen/${s}/${id}.js`,'utf8').split('\n')[1].match(/^\/\/ ?tags:(.*)/i)[1].split(',').map(t=>t.trim().toLowerCase().replace(/\s+/g,'-')).filter(Boolean)}catch{return[]}}
+const about=(s,id)=>{try{return rf(`anims-src/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
+const own=(s,id)=>{try{return rf(`anims-src/${s}/${id}.js`,'utf8').split('\n')[1].match(/^\/\/ ?tags:(.*)/i)[1].split(',').map(t=>t.trim().toLowerCase().replace(/\s+/g,'-')).filter(Boolean)}catch{return[]}}
 const items=s=>s.flatMap((ts,k)=>ts.map(t=>({id:t.id,section:sections[k],description:about(sections[k],t.id)??'',tags:[...new Set([...t.id.split('/'),...own(sections[k],t.id)])]})))
 const catalog=s=>`# vibegif: ${s.flat().length} public domain (CC0) animations, hotlink ${site}/<id>.webp (or .gif)
 # transparent background, most are 256x256

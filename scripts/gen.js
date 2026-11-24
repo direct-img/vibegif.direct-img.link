@@ -1,4 +1,4 @@
-// renders gen/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
+// renders anims-src/<section>/<subject>/<action>.js into public/<subject>/<action>.{webp,gif}
 // the section folder (bw, color, ui, ...) only picks where it shows in the gallery, it isn't part of the url
 // npm run gen                 renders only what's missing (published files never change by accident)
 // npm run gen -- cat/blink    renders only the named ones, even if they already exist
@@ -14,7 +14,7 @@ import{pathToFileURL as url}from'url'
 const S=256,redo=process.argv.slice(2)
 const B=[0,32,8,40,2,34,10,42,48,16,56,24,50,18,58,26,12,44,4,36,14,46,6,38,60,28,52,20,62,30,54,22,3,35,11,43,1,33,9,41,51,19,59,27,49,17,57,25,15,47,7,39,13,45,5,37,63,31,55,23,61,29,53,21]
 const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):`${d}/${e.name}`)
-const files=walk('gen').filter(f=>f.endsWith('.js')).sort(),ids=files.map(f=>f.split('/').slice(2).join('/').slice(0,-3))
+const files=walk('anims-src').filter(f=>f.endsWith('.js')).sort(),ids=files.map(f=>f.split('/').slice(2).join('/').slice(0,-3))
 const dup=ids.find((d,i)=>ids.indexOf(d)!=i)
 if(dup)throw Error(`${dup} is in more than one section`)
 for(const[k,f]of files.entries()){

@@ -9,7 +9,7 @@ Every anim is CC0, hotlink away.
 ```sh
 npm i
 npm run dev    # preview the gallery
-npm run gen    # render new gen/ scripts into public/
+npm run gen    # render new anims-src/ scripts into public/
 npm run build  # site goes to dist/
 ```
 
