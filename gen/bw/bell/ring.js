@@ -1,5 +1,6 @@
 // bell swinging back and forth, clapper lagging behind, ring lines on each swing
 // tags: sound, swing, celebration
+// ---
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=60
 export default(c,t)=>{

@@ -1,5 +1,6 @@
 // spider bouncing on its thread like a bungee cord, legs wiggling
 // tags: animal, bounce, halloween
+// ---
 // legs and body get their white rims in one pass first, so they read on black
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=70

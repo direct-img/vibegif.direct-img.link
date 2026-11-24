@@ -1,5 +1,6 @@
 // video player stuck buffering: a ring of dots spins where the play button would be while the scrubber sits frozen partway
 // tags: loading, spinner, wait
+// ---
 const{cos,sin,PI}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

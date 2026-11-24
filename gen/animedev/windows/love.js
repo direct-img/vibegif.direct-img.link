@@ -1,5 +1,6 @@
 // girl with a sky-blue wolf cut in a cosy yellow sweater nuzzling a big blue four-pane window, clouds drifting past the glass, hearts popping
 // tags: anime, coding, hug, hearts, clouds
+// ---
 export const frames=18,delay=100,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

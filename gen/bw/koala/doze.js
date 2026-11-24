@@ -1,5 +1,6 @@
 // koala hugging a branch and dozing off, its head slowly nodding while Z's drift up
 // tags: tired, calm, animal, sleep, zzz, slow
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=90
 export default(c,t)=>{

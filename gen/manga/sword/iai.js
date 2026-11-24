@@ -1,5 +1,6 @@
 // white-ponytailed swordswoman waits eyes shut as a petal falls, then a quick draw flashes and the petal drops in two halves
 // tags: calm, determined, swordswoman, petal, focus
+// ---
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=70,rim=4

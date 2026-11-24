@@ -1,5 +1,6 @@
 // frog hopping in place: squashes on the ground, stretches on takeoff and landing, kicks up dust
 // tags: happy, playful, animal, bounce
+// ---
 const{sin,PI}=Math,T=2*PI
 export const delay=60
 export default(c,t)=>{

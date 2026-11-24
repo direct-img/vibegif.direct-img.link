@@ -1,5 +1,6 @@
 // basketball bouncing: squashes on the floor, stretches as it flies, seams turning as it spins
 // tags: sport, game, spin
+// ---
 const{PI,abs}=Math,T=2*PI
 export const frames=20,delay=60
 export default(c,t)=>{

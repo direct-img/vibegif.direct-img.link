@@ -1,5 +1,6 @@
 // penguin waddling in place, rocking side to side and lifting each foot in turn
 // tags: happy, playful, animal, winter
+// ---
 // the black body gets a white rim so it doesn't vanish on dark backgrounds
 const{sin,max,PI}=Math,T=2*PI
 export default(c,t)=>{

@@ -1,5 +1,6 @@
 // manga girl dozing on the train, swaying from a hanging strap, nodding off then jerking awake, window streaks sliding past
 // tags: tired, calm, commute, doze, sway
+// ---
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

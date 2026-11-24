@@ -1,5 +1,6 @@
 // tiny chibi with a dotted top bun running in a panicked circle: arms flailing overhead, wailing, sweat flying off, a dust trail puffing behind her
 // tags: anxious, funny, chibi, run
+// ---
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=70,rim=4

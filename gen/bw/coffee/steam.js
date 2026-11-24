@@ -1,5 +1,6 @@
 // happy coffee mug rocking a little while steam curls up out of it
 // tags: happy, calm, food, morning, gentle
+// ---
 const{sin,PI}=Math,T=2*PI
 export const delay=90
 export default(c,t)=>{

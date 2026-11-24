@@ -1,5 +1,6 @@
 // bunny sitting still, one ear stays up while the other keeps flopping over, nose twitching
 // tags: calm, animal, gentle
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export default(c,t)=>{
   const ear=(x,y,a,b)=>{

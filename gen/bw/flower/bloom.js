@@ -1,5 +1,6 @@
 // potted flower swaying while its petals open wide and close back into a bud
 // tags: calm, happy, nature, sway, gentle
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=90
 export default(c,t)=>{

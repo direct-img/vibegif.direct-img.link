@@ -1,5 +1,6 @@
 // side-view chibi with long black-brown hair and a white bow playing an upright piano, hands taking turns on the keys, swaying, notes floating up
 // tags: calm, music, notes, gentle
+// ---
 // the dark hair gets a white rim so it doesn't vanish on black
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=110

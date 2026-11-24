@@ -1,5 +1,6 @@
 // warning triangle with a big "!" wobbling on its corner, the "!" jiggling along, alert lines flashing on both sides
 // tags: triangle, alert, anxious, wobble, flash
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t,i)=>{

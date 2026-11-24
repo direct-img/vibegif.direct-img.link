@@ -1,5 +1,6 @@
 // teal desk fan on a stand, its round head swinging left and right in 3D while three coral oval blades whirl behind a black wire grille
 // tags: home, spin, cooling
+// ---
 const{sin,cos,abs,PI}=Math,T=2*PI
 export const frames=30,delay=60
 const ink='#111',R=60,HY=-30,D=19

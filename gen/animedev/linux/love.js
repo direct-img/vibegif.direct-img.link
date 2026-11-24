@@ -1,5 +1,6 @@
 // girl with light-brown shoulder-length hair, blunt bangs and a green hoodie squeezing a chubby penguin, terminal prompt blinking, hearts popping
 // tags: anime, coding, penguin, hug, hearts
+// ---
 export const frames=16,delay=110,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

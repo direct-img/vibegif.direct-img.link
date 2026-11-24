@@ -1,5 +1,6 @@
 // clipboard checklist: the three boxes get ticked one by one, the clipboard does a happy hop, then the ticks pop away
 // tags: proud, happy, hop
+// ---
 const{sin,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),L=hypot(9,10)+hypot(21,27)

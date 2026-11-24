@@ -1,5 +1,6 @@
 // manga knight girl raising her sword to her face in salute with a glint, then sweeping it down; cape and helm plume blowing
 // tags: proud, fantasy, sword
+// ---
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

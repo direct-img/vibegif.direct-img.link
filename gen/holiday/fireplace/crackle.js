@@ -1,5 +1,6 @@
 // a brick fireplace with a crackling fire, sparks popping, two stockings swaying on the mantel
 // tags: calm, cozy, winter, home, fire, christmas
+// ---
 export const frames=36,delay=65,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

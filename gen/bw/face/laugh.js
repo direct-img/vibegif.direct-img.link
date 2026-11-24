@@ -1,5 +1,6 @@
 // face laughing so hard it shakes, with tears of joy squirting out both sides
 // tags: happy, tears, shake
+// ---
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=18,delay=60
 export default(c,t)=>{

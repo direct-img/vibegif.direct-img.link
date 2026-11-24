@@ -1,5 +1,6 @@
 // red battery nearly drained, its last little bar blinking, wobbling tiredly with a worried sweaty face and drops sliding down
 // tags: tired, worried, anxious, sweat, red
+// ---
 const{sin,PI,floor}=Math,T=2*PI
 export const frames=16,delay=90
 const R='#ff6b6b',RD='#fa5252',CAP='#ced4da',DR='#a5d8ff',BL='#ffa8a8'

@@ -1,5 +1,6 @@
 // little robot dancing: bouncing on its knees, swaying, swinging its arms, antenna blinking on the beat
 // tags: happy, playful, bounce, beat
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=70
 export default(c,t)=>{

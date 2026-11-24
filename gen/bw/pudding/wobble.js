@@ -1,5 +1,6 @@
 // custard pudding on a plate wobbling and jiggling, the caramel on top shining
 // tags: happy, food, dessert, jiggle
+// ---
 // the whole pudding gets a white rim so the black caramel shows on dark backgrounds
 const{sin,exp,PI}=Math,T=2*PI
 export const frames=16,delay=70

@@ -1,5 +1,6 @@
 // two cherries on joined stems swinging like a pendulum, each lagging a little, the leaf flapping along
 // tags: happy, food, fruit
+// ---
 // the black cherries get a white rim so they show on dark backgrounds
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=70

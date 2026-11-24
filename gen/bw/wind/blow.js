@@ -1,5 +1,6 @@
 // puffy-cheeked wind cloud blowing, its cheeks swelling as dashed gusts stream out to the right
 // tags: calm, weather, gusts, cloud
+// ---
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

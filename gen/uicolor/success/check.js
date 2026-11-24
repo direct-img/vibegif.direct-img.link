@@ -1,5 +1,6 @@
 // green badge pops in, a white check mark draws itself, a burst of colorful rays and sparkles goes off, then it shrinks away
 // tags: badge, sparkle, burst, happy, proud
+// ---
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=60
 const GR='#51cf66',GD='#37b24d',CF=['#ffd43b','#ff6b6b','#4dabf7','#f783ac']

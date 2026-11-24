@@ -1,5 +1,6 @@
 // looking into a kaleidoscope: 12-fold mirrored pattern of colored glass beads and shards tumbling and turning inside a knurled brass tube rim
 // tags: glass, symmetry, spin, color, trippy
+// ---
 import{createCanvas}from'@napi-rs/canvas'
 export const frames=32,delay=70
 const T=Math.PI*2,W=T/12
