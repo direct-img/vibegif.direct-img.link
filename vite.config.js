@@ -1,4 +1,5 @@
-// fills <!--gallery--> in index.html from whatever is in public/, and every <!--count--> with how many tiles that is
+// the pages live in site/ (vite's root), public/ is copied as is and the build goes to dist/
+// fills <!--gallery--> in site/index.html from whatever is in public/, and every <!--count--> with how many tiles that is
 // one tile per name: shows the .webp (or the .gif if that's all there is) and links every format
 // tiles are split into sections by the anims-src/<section>/ folder they come from, with a divider between
 // hand-made files that have no gen file go in the first section
@@ -10,7 +11,7 @@
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script | its tags line, so people and AIs can grep for one to hotlink
 // and SKILL.md, a copy of skills/vibegif/SKILL.md, so the agent skill installs with one curl instead of a clone of this repo
 // /test is index.html again but with only the pending sections, unlisted, for approving new ones before they go live
-// <!--issues--> in newsletter/index.html lists every newsletter/issue-*/ newest first (title from its <title>, date from its folder name)
+// <!--issues--> in site/newsletter/index.html lists every site/newsletter/issue-*/ newest first (title from its <title>, date from its folder name)
 // each issue is the email scripts/send-newsletter.js sends, also served as a web page minus its <!--email-->...<!--/email--> parts
 import{readdirSync as rd,readFileSync as rf}from'fs'
 const site='https://vibegif.direct-img.link',cc0='https://creativecommons.org/publicdomain/zero/1.0/'
@@ -46,9 +47,9 @@ ${all.map(t=>`<image:image><image:loc>${site+t.src}</image:loc></image:image>`).
 ${['faq/','privacy/','newsletter/',...issues().map(n=>`newsletter/${n}/`)].map(p=>`<url><loc>${site}/${p}</loc></url>`).join('\n')}
 </urlset>
 `
-const issues=()=>rd('newsletter',{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name.startsWith('issue-')).map(e=>e.name).sort().reverse()
+const issues=()=>rd('site/newsletter',{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name.startsWith('issue-')).map(e=>e.name).sort().reverse()
 const issueList=()=>issues().map(n=>{
-  const t=rf(`newsletter/${n}/index.html`,'utf8').match(/<title>([^<]*)<\/title>/i)?.[1].trim()||n,d=n.slice(6).replaceAll('.','-')
+  const t=rf(`site/newsletter/${n}/index.html`,'utf8').match(/<title>([^<]*)<\/title>/i)?.[1].trim()||n,d=n.slice(6).replaceAll('.','-')
   return`<li><a href="/newsletter/${n}/">${t}</a><time datetime="${d}">${d}</time></li>`
 }).join('\n')||'<li>no issues yet</li>'
 const about=(s,id)=>{try{return rf(`anims-src/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
@@ -61,12 +62,12 @@ ${s.map((ts,k)=>`\n## ${sections[k]}\n`+ts.map(t=>[t.id,about(sections[k],t.id),
 `
 const test=h=>h.replace('max-image-preview:large','noindex').replace(/<link rel="canonical".*\n/,'').replace('<!--ld-->','')
   .replace('vibegif ·','vibegif test ·').replace(/<h1>.*<\/h1>/,'<h1><!--count--> gifs waiting for approval</h1>').replace('feel free to hot link them','not on the main page yet')
-export default{build:{rolldownOptions:{input:['index.html','test.html','faq/index.html','privacy/index.html','newsletter/index.html','newsletter/unsubscribe/index.html',...issues().map(n=>`newsletter/${n}/index.html`)]}},plugins:[{name:'gallery',
+export default{root:'site',publicDir:'../public',build:{outDir:'../dist',emptyOutDir:true,rolldownOptions:{input:['index.html','test.html','faq/index.html','privacy/index.html','newsletter/index.html','newsletter/unsubscribe/index.html',...issues().map(n=>`newsletter/${n}/index.html`)]}},plugins:[{name:'gallery',
   transformIndexHtml:(h,{path})=>{
     if(path=='/newsletter/index.html')return h.replace('<!--issues-->',issueList())
     if(path.startsWith('/newsletter/'))return h.replace(/<!--email-->[\s\S]*?<!--\/email-->/g,'').replace(/\{\{\{\w+\}\}\}/g,'')
     const t=path=='/test.html',s=tiles(t?pending:sections),all=s.flat()
-    if(t)h=test(rf('index.html','utf8'))
+    if(t)h=test(rf('site/index.html','utf8'))
     return h.replace('<!--gallery-->',s.map(ts=>ts.map(figure).join('\n')).filter(Boolean).join('\n<hr>\n'))
       .replace('<!--ld-->',ld(all)).replaceAll('<!--count-->',all.length)
   },

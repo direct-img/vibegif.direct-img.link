@@ -4,7 +4,7 @@ Got AI? Use them to make new items or whole new sections, then open a PR to add 
 
 - Each item is one script, `anims-src/<section>/<subject>/<action>.js`, served as `/<subject>/<action>.webp` and `.gif`
 - `npm run gen` renders new scripts into `public/`, `npm run gen -- cat/blink` re-renders one you changed
-- `npm run dev` to preview, the site builds with `npm run build` into `dist`
+- `npm run dev` to preview, the site builds with `npm run build` into `dist`, its pages are in `site/`
 - New section? Add its folder name to `pending` in `vite.config.js`, it shows on `/test` until it moves up into `sections`
 - Line 1 of a script is a comment describing it. Optional line 2 is `// tags: happy, calm, balloon`: lowercase, comma-separated, multiword tags hyphenated (`night-sky`), 3-6 tags. Line 3 under the tags is `// ---`, separating that header from any notes and the code. Tags are words a client would search for (feelings, themes, objects, motion). Don't repeat the subject and action, they're already in the id (`catalog.json` adds them as the first tags, `arcade/blink` gets `arcade, blink`), or the section name, every item already has a section. The build puts the tags in `catalog.txt` as a third column and in `catalog.json` (`{"id","section","description","tags"}`)
 - Starter tags, reuse these before inventing new ones:

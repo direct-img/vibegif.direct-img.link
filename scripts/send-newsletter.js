@@ -1,4 +1,4 @@
-// gets POOL's active subscribers from newsletter.planetrenox.com (/api/list) and emails them newsletter/<ISSUE>/index.html, resend only does the sending (batch api)
+// gets POOL's active subscribers from newsletter.planetrenox.com (/api/list) and emails them site/newsletter/<ISSUE>/index.html, resend only does the sending (batch api)
 // subject is the html <title>, {{{EMAIL}}} becomes the recipient's address and {{{POOL}}} the pool (both url-encoded), for the unsubscribe link:
 // <!--email--><a href="https://vibegif.direct-img.link/newsletter/unsubscribe/?pool={{{POOL}}}&email={{{EMAIL}}}">unsubscribe</a><!--/email-->
 // <!--email-->...<!--/email--> parts only go out by email, the web copy at /newsletter/<ISSUE>/ drops them (see vite.config.js)
@@ -11,7 +11,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms)),scrub=s=>String(s).replace(/[^\
 const die=m=>{console.error(`✖ ${scrub(m)}`);process.exit(1)}
 if(!/^issue-[\w.-]+$/.test(ISSUE))die(`invalid issue dir "${ISSUE}", want issue-YYYY.MM.DD`)
 for(const[k,v]of Object.entries({POOL,RESEND_API_KEY,NEWSLETTER_SEND_KEY,NEWSLETTER_FROM}))if(!v)die(`${k} is not set`)
-const f=`newsletter/${ISSUE}/index.html`,html=await readFile(f,'utf8').catch(()=>die(`${f} not found`))
+const f=`site/newsletter/${ISSUE}/index.html`,html=await readFile(f,'utf8').catch(()=>die(`${f} not found`))
 // the <title> is html, the subject is plain text: decode its entities so &amp; doesn't show up as is
 const ent={amp:'&',lt:'<',gt:'>',quot:'"',apos:"'",nbsp:'\u00a0'},un=s=>s.replace(/&(#x[\da-f]+|#\d+|\w+);/gi,(m,c)=>
   c[0]=='#'?String.fromCodePoint(c[1]=='x'||c[1]=='X'?parseInt(c.slice(2),16):+c.slice(1)):ent[c.toLowerCase()]??m)

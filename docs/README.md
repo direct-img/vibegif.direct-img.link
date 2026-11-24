@@ -10,7 +10,7 @@ Every anim is CC0, hotlink away.
 npm i
 npm run dev    # preview the gallery
 npm run gen    # render new anims-src/ scripts into public/
-npm run build  # site goes to dist/
+npm run build  # site/ pages + public/ go to dist/
 ```
 
 Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
