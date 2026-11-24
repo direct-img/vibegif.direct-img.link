@@ -18,4 +18,4 @@ On each push Pages clones the repo, runs `npm clean-install`, then `npm run buil
 - The renders in `public/` are committed, so the build doesn't run `npm run gen`.
 - There's no wrangler config, the settings live in the Pages dashboard under Settings, Build.
 - Node isn't pinned, so the build image picks its default. To pin it, set a `NODE_VERSION` environment variable or add a `.node-version` file.
-- Pages allows 20,000 files per site on the Free plan (100,000 on paid plans). A build is about 2,600 files now, two per animation (webp and gif).
+- Pages allows 20,000 files per site on the Free plan (100,000 on paid plans). A build is about 2,800 files now, two per animation (webp and gif).

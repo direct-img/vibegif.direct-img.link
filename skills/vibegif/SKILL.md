@@ -1,6 +1,6 @@
 ---
 name: vibegif
-description: Add small animations to a UI from vibegif, a public domain (CC0) collection of 1300+ animated webp/gifs about almost everything, hotlinked from vibegif.direct-img.link. Use whenever building or changing a UI to add animations anywhere that feels flat or could use one.
+description: Add small animations to a UI from vibegif, a public domain (CC0) collection of 1400+ animated webp/gifs about almost everything, hotlinked from vibegif.direct-img.link. Use whenever building or changing a UI to add animations anywhere that feels flat or could use one.
 ---
 
 # vibegif
