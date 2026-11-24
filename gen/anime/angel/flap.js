@@ -1,4 +1,5 @@
 // little angel with long platinum hair and a side braid floating with her hands clasped, wings flapping, halo bobbing, a feather drifting down
+// tags: calm, wings, float, gentle
 const{sin,cos,PI,round}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#f8f9fa',HD='#dee2e6',HS='#adb5bd',EYE='#3bc9db',ED='#0b7285',DR='#d0ebff',DD='#74c0fc',GOLD='#ffd43b',GD='#f59f00',BL='#ffa8a8',WL='#ced4da'

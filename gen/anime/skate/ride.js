@@ -1,4 +1,5 @@
 // skater girl with a gold side ponytail and a backwards cap rolls along and pops an ollie, wheels spinning, speed lines streaming behind
+// tags: excited, sport, speed, jump
 const{sin,cos,PI,min,max,hypot,sqrt}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#fab005',HD='#e67700',HL='#fff3bf',EYE='#12b886',ED='#087f5b',CAP='#fa5252',HOOD='#3bc9db',HOD='#1098ad',SHO='#4263eb',DECK='#845ef7',DL='#d0bfff',WH='#fff',BL='#ffa8a8'

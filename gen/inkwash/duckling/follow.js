@@ -1,4 +1,5 @@
 // ink wash mother duck paddling across water with three fluffy ducklings bobbing in a line behind her
+// tags: happy, animal, duck, family, water
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

@@ -1,4 +1,5 @@
 // full-body chibi with apricot pigtails hiccuping twice per loop: a little hop, wide eyes, a hand over her mouth and a tiny hic bubble popping out
+// tags: playful, chibi, hop, surprise
 const{sin,PI,max,min,exp}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#ffb87a',HD='#f0883e',HL='#ffe8cc',EYE='#f59f00',ED='#b35900',DR='#38d9a9',DRD='#0ca678',SHOE='#8d6346',BOB='#ffd43b',BL='#ffa8a8',HIC=[.1,.6]

@@ -1,4 +1,5 @@
 // mint-haired girl with a soft-serve cone that tilts and starts to drip, she licks the drip up the side and beams with happy eyes
+// tags: happy, food, summer, drip
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#96f2d7',HD='#20c997',HL='#e6fcf5',EYE='#ff922b',ED='#d9480f',TEE='#fff',STR='#f783ac',VAN='#fff9db',VD='#ffe8a3',CONE='#e0a96d',CD='#b07d4f',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',HT='#ff6b9d'

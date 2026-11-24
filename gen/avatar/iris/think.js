@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye thinking: the lid half lowers, the eye rolls up to the right and the pupil circles slowly while three violet thought dots pop up beside it
+// tags: calm, eye, slow, ball, blue
 const{sin,cos,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

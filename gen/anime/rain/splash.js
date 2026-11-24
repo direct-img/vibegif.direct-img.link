@@ -1,4 +1,5 @@
 // chibi girl in a yellow raincoat and red boots jumping into a puddle, splash flying out, rain falling
+// tags: happy, playful, chibi, puddle, jump
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffc078',HD='#f08c00',EYE='#40c057',ED='#2b8a3e',COAT='#ffd43b',CD='#fab005',BOOT='#ff6b6b',WA='#a5d8ff',WL='#e7f5ff',BL='#ffa8a8',Z=.7

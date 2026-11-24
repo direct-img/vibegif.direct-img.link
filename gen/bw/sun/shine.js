@@ -1,4 +1,5 @@
 // sun in sunglasses, rays slowly turning and pulsing, a glint sliding across the lenses
+// tags: happy, weather, sunglasses, glint
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 export default(c,t)=>{

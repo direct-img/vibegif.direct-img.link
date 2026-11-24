@@ -1,4 +1,5 @@
 // sloth hanging from a branch by its arms, slowly swaying and taking a long sleepy blink
+// tags: calm, tired, animal, slow, sway, sleepy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=100
 export default(c,t)=>{

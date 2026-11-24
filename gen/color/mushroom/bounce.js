@@ -1,4 +1,5 @@
 // red spotted mushroom hopping in place with squash and stretch, grass tuft waving below
+// tags: happy, playful, nature, hop
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=60
 const CAP='#fa5252',ST='#fff4e6',GR='#69db7c',BL='#ffa8a8'

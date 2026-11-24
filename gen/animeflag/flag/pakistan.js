@@ -1,4 +1,5 @@
 // Pakistan flag waving on a flagpole, dark green field with the white crescent and star, and standing in the white hoist band a smiling chibi anime girl in a green kameez with gold trim, white shalwar and a mint dupatta fluttering in the wind, holding jasmine flowers with jasmine in her hair
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const T=Math.PI*2,W=231,H=154,X=15,Y=30
 const P=(c,s)=>{c.beginPath();let a=s.match(/[MLQCZ]|-?\d*\.?\d+/g),k,j=0

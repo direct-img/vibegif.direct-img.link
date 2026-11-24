@@ -1,4 +1,5 @@
 // ink wash dragon weaving through clouds, body appearing and vanishing in wet mist, claws and whiskers, chasing a pale vermilion pearl
+// tags: mist, clouds, myth
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

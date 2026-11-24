@@ -1,4 +1,5 @@
 // round yellow avatar ball talking nonstop: a black mouth with a coral tongue flaps through fast syllables while the ball bounces along, turns from one side to the other, blinks, and squints happily on the last word
+// tags: bounce, fast, ball, yellow
 export const frames=60,delay=40
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

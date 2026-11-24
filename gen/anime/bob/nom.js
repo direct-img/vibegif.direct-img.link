@@ -1,4 +1,5 @@
 // chibi girl with a blue bob munching a rice ball: bite, then happy chewing with puffed cheeks, twice
+// tags: happy, chibi, food, rice, eat
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#4dabf7',HD='#1c7ed6',HL='#d0ebff',EYE='#9775fa',ED='#5f3dc4',HOOD='#ffd43b',HDK='#fab005',NORI='#2b3a2f',BL='#ffa8a8',CLIP='#ff6b6b'

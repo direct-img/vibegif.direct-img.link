@@ -1,4 +1,5 @@
 // tornado of stacked swirl bands twisting and swaying, marks sliding round each band, debris whirling and dust puffing at the base
+// tags: weather, storm, dust
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

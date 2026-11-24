@@ -1,4 +1,5 @@
 // two meshing gears turning against each other, the small one spinning faster
+// tags: machine, spin, mechanical, fast
 // the small gear's angle comes from rolling contact, offset half a tooth so its gap meets the big gear's tooth
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=70

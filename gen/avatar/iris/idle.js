@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye idling: it breathes slowly and watches, the pupil darting in small quick glances left, up and right, then blinks
+// tags: calm, eye, slow, gentle, ball, blue
 const{sin,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

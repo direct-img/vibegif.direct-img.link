@@ -1,4 +1,5 @@
 // pencil writing endless cursive loops while the paper slides along under it
+// tags: calm, cursive, paper
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=24,delay=60
 const PAPER='#fff9db',RULE='#a5d8ff',INK='#364fc7',Y='#ffd43b',YD='#fab005',WD='#ffd8a8',ER='#faa2c1',FE='#ced4da'

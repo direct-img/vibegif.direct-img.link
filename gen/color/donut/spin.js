@@ -1,4 +1,5 @@
 // pink frosted donut turning on the spot like it's on a turntable, sprinkles riding around with it
+// tags: happy, food, dessert, sprinkles
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=60
 const DO='#e8a15a',IC='#f783ac',SPR=['#ffd43b','#4dabf7','#fff','#69db7c','#b197fc','#ffd43b','#4dabf7','#fff','#69db7c','#b197fc','#ff922b','#fff']

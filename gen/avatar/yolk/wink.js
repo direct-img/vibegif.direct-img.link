@@ -1,4 +1,5 @@
 // round yellow avatar ball giving a cheeky wink: it crouches, hops up, snaps one black eye shut into a chevron with a lopsided grin while a violet sparkle pops beside its head, then lands with a squish and settles
+// tags: playful, hop, ball, yellow
 export const frames=44,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,E=Math.exp,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // Ethiopia flag: green-yellow-red horizontal tricolor with the central blue disc and yellow star with rays, waving on a flagpole, with a bright-smiling anime girl printed on the fly side, cornrow shuruba braids with gold beads, yellow Adey Abeba daisies in her hair and a white habesha kemis with a green-yellow-red tibeb border; she blinks and her braids sway as the flag ripples, while Adey Abeba daisies sway at the foot of the pole
+// tags: anime, wave, country, pride
 export const frames=16,rim=3
 const W=236,H=118,X=14,Y=52,T=Math.PI*2
 const P=(c,s)=>{c.beginPath();for(const[,k,a]of s.matchAll(/([MLCQZ])([^MLCQZ]*)/g)){

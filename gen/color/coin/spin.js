@@ -1,4 +1,5 @@
 // gold coin spinning on the spot, star on one face and a heart on the other, glints popping off it
+// tags: happy, gold, heart, star, glint
 const{sin,cos,PI,abs,max}=Math,T=2*PI
 export const frames=24,delay=50
 const G='#ffd43b',GD='#f59f00',GE='#fab005'

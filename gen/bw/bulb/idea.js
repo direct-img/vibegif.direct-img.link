@@ -1,4 +1,5 @@
 // sleepy light bulb flickers on, wakes up with a grin and shines, then dozes off again
+// tags: happy, hopeful, light, sleepy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 export default(c,t,i)=>{

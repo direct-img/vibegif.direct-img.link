@@ -1,4 +1,5 @@
 // ink wash maple branch, translucent red-orange leaves letting go one by one and spinning down
+// tags: calm, nature, autumn, leaves, fall
 export const frames=30,delay=80,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

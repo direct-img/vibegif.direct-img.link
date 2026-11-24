@@ -1,4 +1,5 @@
 // mirror disco ball spinning on its chain, tiles catching the light, colored light spots blinking around it
+// tags: excited, music, party, lights, retro
 // the tile colors repeat every 4 columns and the ball turns 4 columns per loop, so the loop is seamless
 const{sin,cos,PI,max,min,floor}=Math,T=2*PI
 export const frames=16,delay=90

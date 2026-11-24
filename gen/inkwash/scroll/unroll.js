@@ -1,4 +1,5 @@
 // ink wash hanging scroll unrolling downward to reveal a small mountain landscape with a pine, a boat and a red sun, holding, then rolling back up
+// tags: calm, mountain, landscape
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),

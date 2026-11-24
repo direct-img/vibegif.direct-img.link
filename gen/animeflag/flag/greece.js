@@ -1,4 +1,5 @@
 // Greece flag waving on a flagpole, nine blue and white stripes with the white cross canton, and on the stripes an anime girl with long wavy brown hair blowing in the sea breeze, an olive leaf wreath, blue eyes and a white dress with blue trim, blinking and smiling
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const T=Math.PI*2,W=231,H=154,X=15,Y=30
 const P=(c,s)=>{c.beginPath();let a=s.match(/[MLQCZ]|-?\d*\.?\d+/g),k,j=0

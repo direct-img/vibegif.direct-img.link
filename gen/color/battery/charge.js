@@ -1,4 +1,5 @@
 // battery charging up bar by bar from red to green, sparks running down the cable, happy when full
+// tags: hopeful, energy, happy, progress
 const{sin,cos,PI,floor,max}=Math,T=2*PI
 export const frames=25,delay=110
 const LV=['#ff6b6b','#ffa94d','#ffd43b','#51cf66'],CB='#495057'

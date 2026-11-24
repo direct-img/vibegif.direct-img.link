@@ -1,4 +1,5 @@
 // pink-ponytailed girl in a safari vest watching an uptime graph through binoculars, flinching back when it spikes
+// tags: anxious, anime, coding, binoculars, graph, flinch
 export const frames=20,delay=75,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#1e1a22',sk='#b9805a',ss='#9a6442',hr='#ff5fa8',hs='#c8337a',hl='#ffb0d6',vs='#a89a5e',vd='#7d7140'

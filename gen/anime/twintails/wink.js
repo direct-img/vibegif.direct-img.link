@@ -1,4 +1,5 @@
 // chibi idol with pink twin tails, holding up a peace sign and winking a star out
+// tags: happy, playful, chibi, idol, peace-sign, sparkle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#f783ac',HD='#e64980',HL='#ffdeeb',EYE='#4dabf7',ED='#1864ab',RB='#f06595',CLIP='#ffd43b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab'

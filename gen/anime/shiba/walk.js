@@ -1,4 +1,5 @@
 // girl with teal twin braids walking her shiba inu on a red leash, both trotting along, the shiba's curly tail wagging
+// tags: happy, dog, animal
 const{sin,cos,PI,abs,max,hypot,sqrt}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#a61e4d',HD='#7a1638',HL='#fcc2d7',EYE='#a9744f',ED='#5c3d2e',SW='#fcc419',SWD='#f08c00',SK='#4263eb',SHOE='#a9744f',DOG='#ffa94d',DD='#e8590c',CR='#fff4e6',RED='#fa5252',BL='#ffa8a8'

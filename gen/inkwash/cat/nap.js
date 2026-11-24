@@ -1,4 +1,5 @@
 // ink wash cat curled up asleep, body rising and falling with each breath, an ear flicking and the tail tip twitching
+// tags: calm, tired, animal, sleep, breathe, slow
 const{sin,cos,PI,abs,min,max,hypot,floor,round}=Math,T=2*PI
 // seeded random, ink colour, smoothstep, pulse (0→1→0 between a and b)
 const R=n=>(n=sin(n*91.7+7.3)*43758.5)-floor(n)

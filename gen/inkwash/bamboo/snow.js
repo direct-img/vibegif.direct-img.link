@@ -1,4 +1,5 @@
 // ink wash bamboo leaves bowed under snow, the snow sliding off in a spray of flecks and the leaves springing back up
+// tags: calm, nature, winter
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`
 const rnd=s=>()=>(s=s*16807%2147483647)/2147483647

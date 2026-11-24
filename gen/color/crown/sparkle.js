@@ -1,4 +1,5 @@
 // golden crown bobbing on a velvet cap, its jewels glinting one after another with little sparkles popping off
+// tags: proud, happy, gold, glint, bob
 const{sin,cos,PI,max,round}=Math,T=2*PI
 export const frames=20,delay=80
 const G='#ffd43b',GD='#fab005',VEL='#9775fa',PE='#fff'

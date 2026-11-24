@@ -1,4 +1,5 @@
 // peacock fanning its tail open into a ring of eye feathers, shimmying, then folding it back up
+// tags: proud, animal, bird, tail, shimmy
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=12,delay=100
 const TL='#38d9a9',TD='#12b886',GO='#ffd43b',EB='#4dabf7',ED='#1864ab',BD='#4dabf7',BK='#1c7ed6',OR='#ffa94d',BL='#ffa8a8'

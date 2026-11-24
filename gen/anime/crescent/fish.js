@@ -1,4 +1,5 @@
 // little girl in a nightcap sitting on a crescent moon, swinging her legs and fishing a wriggling star up on her line
+// tags: calm, hopeful, moon, night-sky, stars, swing
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=110
 const SKIN='#ffe3d1',HAIR='#74c0fc',HD='#339af0',HL='#e7f5ff',EYE='#fcc419',ED='#e67700',PJ='#748ffc',PD='#4c6ef5',MOON='#ffe066',MD='#fab005',STAR='#ffd43b',BL='#ffa8a8',Z=.55

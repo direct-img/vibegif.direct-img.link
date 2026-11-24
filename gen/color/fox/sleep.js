@@ -1,4 +1,5 @@
 // fox curled up asleep on its own tail, breathing slowly, a sleep bubble swelling and shrinking at its nose
+// tags: calm, tired, animal, breathe, slow, bubble
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=90
 const O='#ff922b',W='#fff',IN='#ffd8a8',BU='#d0ebff',BL='#ffa8a8'

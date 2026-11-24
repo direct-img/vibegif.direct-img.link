@@ -1,4 +1,5 @@
 // a sleepy silver-haired girl coding at 3am lit by her laptop, coffee cups piled up, her head slipping off her hand until her eyes snap open
+// tags: tired, anime, laptop, coffee, night, anxious
 const P=Math.PI,O='#2b1d2e'
 const el=(c,x,y,a,b=a,r=0)=>{c.beginPath();c.ellipse(x,y,a,b,r,0,2*P)}
 const rr=(c,x,y,w,h,r)=>{c.beginPath();c.roundRect(x,y,w,h,r)}

@@ -1,4 +1,5 @@
 // big smiley maple leaf rocking side to side like a pendulum as it floats, two little leaves fluttering down beside it
+// tags: calm, happy, nature, autumn, leaf, sway
 const{sin,cos,PI,abs,min}=Math,T=2*PI
 export const frames=20,delay=90
 const LEAF=[[0,-1],[.16,-.58],[.42,-.74],[.36,-.36],[.84,-.48],[.6,-.1],[.76,.08],[.4,.14],[.52,.42],[.12,.28],[0,.44]]

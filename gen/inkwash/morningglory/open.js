@@ -1,4 +1,5 @@
 // ink wash morning glory vine twining up a bamboo stake, an indigo trumpet flower opening as a tendril curls
+// tags: calm, hopeful, nature, flower, bloom
 export const frames=30,delay=85,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

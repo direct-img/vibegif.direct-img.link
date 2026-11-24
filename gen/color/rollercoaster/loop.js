@@ -1,4 +1,5 @@
 // coaster car with a cheering rider racing around a loop-the-loop on a track held up by striped supports
+// tags: excited, fair, fast, cheer
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const RA='#ff6b6b',SU='#4dabf7',CA='#ffd43b',CD='#fab005',SKIN='#ffd8a8',HAIR='#a9744f',GR='#69db7c',BL='#ffa8a8'

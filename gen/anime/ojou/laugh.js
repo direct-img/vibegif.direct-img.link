@@ -1,4 +1,5 @@
 // ojou-sama with golden drill curls laughing "ohohoho" behind the back of her hand, curls bouncing, sparkles and rose petals drifting
+// tags: playful, happy, sparkle, roses, bounce
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#fcc419',HD='#f08c00',HL='#fff3bf',DRESS='#e64980',DD='#a61e4d',BL='#ffa8a8',ROSE='#e03131',RD='#a51111',LEAF='#40c057',MO='#c92a2a',TG='#ff8fab',GEM='#4dabf7'

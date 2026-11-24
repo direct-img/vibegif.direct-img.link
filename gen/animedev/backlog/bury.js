@@ -1,4 +1,5 @@
 // pink twin-tailed anime girl getting buried under a growing pile of backlog tickets until only one hand waves out, then she bursts free
+// tags: anxious, anime, work, overwhelmed, pile, relief
 export const frames=26,delay=100,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

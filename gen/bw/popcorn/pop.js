@@ -1,4 +1,5 @@
 // striped popcorn bucket with kernels popping up out of the pile and dropping back in
+// tags: excited, food, snack
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=60
 const kernel=(c,x,y,a,s=1)=>{

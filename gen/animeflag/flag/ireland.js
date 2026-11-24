@@ -1,4 +1,5 @@
 // Ireland flag (green, white and orange vertical tricolour) waving, with a cheerful anime girl printed in the white band: long wavy chestnut hair with a braided crown and a shamrock hair clip, green eyes, cream Aran cable-knit sweater, winking with a little pink heart as her hair blows in the wind
+// tags: anime, wave, country, pride, happy
 export const frames=16,delay=80,rim=3
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const pth=(c,a)=>{c.beginPath();c.moveTo(a[0],a[1]);for(let k=2;k<a.length;k+=4)c.quadraticCurveTo(a[k],a[k+1],a[k+2],a[k+3])}

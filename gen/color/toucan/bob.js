@@ -1,4 +1,5 @@
 // toucan perched on a branch, bobbing its huge colorful beak up and down and blinking
+// tags: happy, playful, animal, bird, beak
 // the black body gets a white rim so it doesn't vanish on dark backgrounds
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80

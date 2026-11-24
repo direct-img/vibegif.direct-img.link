@@ -1,4 +1,5 @@
 // ink wash lotus pad and pink-tinted bud in the rain, a drop gathering and rolling off the leaf, rings on the water
+// tags: calm, nature, flower, drop, ripple
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
 // five tones of one warm black ink, as see-through washes
 K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),

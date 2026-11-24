@@ -1,4 +1,5 @@
 // anime girl in a teal hoodie leaning back against a cabinet and shoving its overstuffed "stash" drawer shut as messy changes keep bursting out
+// tags: playful, anime, coding, git, drawer, mess
 export const frames=20,delay=75,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d',a=T*t

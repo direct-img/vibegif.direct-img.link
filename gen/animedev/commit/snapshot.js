@@ -1,4 +1,5 @@
 // anime girl in a beret snapping a photo with an instant camera, the flash fires and a polaroid of her code slides out and drops onto a pile of snapshots
+// tags: happy, anime, coding, git, camera, proud
 export const frames=18,delay=85,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d'

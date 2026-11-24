@@ -1,4 +1,5 @@
 // ink wash sea wave, a few big dark brushstrokes rising into a curl that rolls forward and breaks, spray of dry-brush flecks and ink dots scattering, then the swell re-forms
+// tags: ocean, brush, foam
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

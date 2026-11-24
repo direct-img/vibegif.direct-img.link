@@ -1,4 +1,5 @@
 // ink wash peony unfolding from a tight bud into a full ruffled rose bloom, leaves in wet dabs, then closing again
+// tags: calm, nature, flower
 export const frames=30,delay=85,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

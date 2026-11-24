@@ -1,4 +1,5 @@
 // round violet avatar blip loading: a glossy violet ball whose two white square pixel eyes merge into one wide progress bar that empties, fills up from left to right in steps, pops when complete and splits back into two eyes
+// tags: robot, progress, pixel, ball, violet
 export const frames=72,delay=40
 const{sin,PI:P,min,max}=Math,
 k=x=>max(0,min(1,x)),

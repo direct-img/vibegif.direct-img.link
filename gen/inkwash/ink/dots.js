@@ -1,4 +1,5 @@
 // three ink wash dots blooming one after another and fading, typing or loading indicator
+// tags: typing, loading, ui, icon
 export const frames = 24, delay = 70, dither = true
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2
 const I = (a, k) => `rgba(${k || '20,18,16'},${a})`

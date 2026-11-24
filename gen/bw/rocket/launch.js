@@ -1,4 +1,5 @@
 // rocket blasting along with its flame flickering, body rattling and speed lines streaking past
+// tags: excited, space, fast
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=50
 export default(c,t,i)=>{

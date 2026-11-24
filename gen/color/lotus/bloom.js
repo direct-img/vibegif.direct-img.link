@@ -1,4 +1,5 @@
 // pink lotus on a lily pad opening into full bloom and closing back to a bud, ripples spreading on the pond
+// tags: calm, nature, flower, pond, ripple
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100
 const W='#74c0fc',WL='#d0ebff',PAD='#51cf66',PD='#2f9e44',P1='#fcc2d7',P2='#f783ac',PV='#fff0f6',POD='#ffd43b',PDK='#f59f00'

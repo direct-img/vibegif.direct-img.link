@@ -1,4 +1,5 @@
 // french fries in a red carton bobbing and wiggling one after another like a wave, salt specks drifting down
+// tags: happy, playful, food, wave
 const{sin,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const FY='#ffd43b',FD='#f59f00',CA='#ff6b6b',CB='#e03131',BL='#ffc9c9',PK='#ff8fab'

@@ -1,4 +1,5 @@
 // potted sunflower turning its smiley face to follow a little sun swinging across the sky, petals swaying
+// tags: happy, calm, nature, flower, sun
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=100
 const PT='#ff922b',PD='#e8590c',ST='#51cf66',SD='#2f9e44',PE=['#fcc419','#ffd43b'],CE='#a9744f',CD='#7f5539',BL='#ff8787'

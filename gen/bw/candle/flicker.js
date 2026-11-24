@@ -1,4 +1,5 @@
 // sleepy candle in a little holder, its flame flickering and leaning while glow lines pulse around it
+// tags: calm, fire, glow, sleepy, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 export default(c,t)=>{

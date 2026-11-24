@@ -1,4 +1,5 @@
 // cotton candy on a paper cone, its fluffy tufts swirling round and puffing while sparkles twinkle around it
+// tags: happy, food, candy, swirl, sparkle
 // all tufts are stroked wide in black first and filled after, so the cloud keeps a single outline
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80

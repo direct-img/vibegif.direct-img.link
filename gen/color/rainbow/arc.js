@@ -1,4 +1,5 @@
 // rainbow paints itself across between two smiling clouds, shines for a bit, then wipes away
+// tags: happy, hopeful, weather, clouds, paint
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const C=['#ff6b6b','#ffa94d','#ffd43b','#69db7c','#4dabf7','#b197fc']

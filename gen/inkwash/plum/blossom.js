@@ -1,4 +1,5 @@
 // ink wash gnarled plum branch, pale rose blossoms opening one by one with dark stamens, petals drifting down
+// tags: calm, hopeful, nature, flower
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
 // five tones of one warm black ink, as see-through washes
 K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),

@@ -1,4 +1,5 @@
 // ink wash hen pecking at the ground while three fluffy chicks scurry and peck around her, soft vermilion comb
+// tags: happy, animal, family, peck
 export const frames=28,delay=85,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

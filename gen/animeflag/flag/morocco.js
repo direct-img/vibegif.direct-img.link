@@ -1,4 +1,5 @@
 // Morocco's flag waving on a silver pole: red field with the green interlaced pentagram in the centre, and a smiling anime girl printed on the fly side clear of the star, wavy dark hair blowing out in the wind, pink Damask rose in her hair, emerald top with gold trim, blinking while rose petals drift off the flag's edge
+// tags: anime, wave, country, pride, smile
 export const frames=16
 const P=Math.PI
 const p=(c,d)=>{

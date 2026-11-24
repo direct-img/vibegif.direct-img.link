@@ -1,4 +1,5 @@
 // plum-haired girl tucked into a kotatsu peeling a mikan strip by strip, tea steaming beside her
+// tags: calm, cozy, winter, food, tea, steam
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#be4bdb',HD='#862e9c',HL='#f3d9fa',EYE='#fcc419',ED='#e67700',SW='#96f2d7',SD='#38d9a9',WOOD='#d9a066',WD='#a9744f',QU='#ff8787',QD='#fa5252',MI='#ff922b',MD='#e8590c',PITH='#ffe8cc',BL='#ffa8a8',Z=.74

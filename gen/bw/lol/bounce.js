@@ -1,4 +1,5 @@
 // chunky bubble letters "lol" hopping one after another like a wave
+// tags: happy, playful, text, wave
 const{sin,max}=Math,T=2*Math.PI
 export const frames=20,delay=60
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // ink wash little bald monk sweeping a temple path with a broom while red autumn leaves keep falling from a branch as fast as he sweeps, one landing on his head
+// tags: calm, temple, autumn, leaves
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),

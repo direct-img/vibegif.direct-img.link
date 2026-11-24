@@ -1,4 +1,5 @@
 // striped hot-air balloon with a happy face bobbing up and down, burner flame puffing, little clouds drifting by
+// tags: happy, calm, travel, float, clouds
 const{sin,PI,round}=Math,T=2*PI
 export const frames=20,delay=80
 const ST=['#ff6b6b','#ffd43b','#4dabf7','#fff'],SK='#fa5252',BK='#a9744f',BKD='#7f5539',FO='#ff922b',FY='#ffd43b',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye looking around: a small yellow firefly lights up beside it and orbits all the way around while the eye and pupil follow it across the ball, then it winks out
+// tags: playful, eye, firefly, ball, blue
 const{sin,cos,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

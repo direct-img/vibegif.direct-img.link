@@ -1,4 +1,5 @@
 // Taiwan flag (red field, blue canton with the twelve-rayed white sun) waving, with a smiling anime girl printed on the red field: long black hair with plum blossom hairpins, blue and white outfit, blinking beside a blossoming plum branch whose petals drift across the flag
+// tags: anime, wave, country, pride, smile
 export const frames=16,delay=80,rim=3
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const pth=(c,a)=>{c.beginPath();c.moveTo(a[0],a[1]);for(let k=2;k<a.length;k+=4)c.quadraticCurveTo(a[k],a[k+1],a[k+2],a[k+3])}

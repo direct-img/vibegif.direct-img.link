@@ -1,4 +1,5 @@
 // honey-blonde anime girl with a pencil in her messy bun leaning over a giant open MANUAL, reading line by line until the pages flip on their own and her eyes turn to spirals
+// tags: calm, anime, coding, reading, book, focus
 export const frames=28,delay=85,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

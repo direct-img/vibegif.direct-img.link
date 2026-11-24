@@ -1,4 +1,5 @@
 // ink wash tiger prowling through grass, bold wet-stroke stripes over an ochre wash, tail swishing
+// tags: animal, grass, stripes, calm, slow
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

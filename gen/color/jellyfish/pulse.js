@@ -1,4 +1,5 @@
 // pink jellyfish pulsing its bell, drifting up on each squeeze, tentacles trailing and bubbles rising
+// tags: calm, animal, ocean, bubbles, drift
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const PK='#faa2c1',LT='#ffdeeb',DK='#f06595',BU='#d0ebff'

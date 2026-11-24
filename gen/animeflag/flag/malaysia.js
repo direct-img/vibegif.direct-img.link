@@ -1,4 +1,5 @@
 // Malaysia's flag (Jalur Gemilang) waving on a silver pole: 14 red and white stripes, blue canton with the yellow crescent and 14-point star, and a smiling anime girl printed on the fly side, long dark hair streaming in the wind, red hibiscus (bunga raya) behind her ear, royal yellow top with a navy collar, waving hello and blinking while hibiscus petals drift away
+// tags: anime, wave, country, pride
 export const frames=16
 const P=Math.PI
 const p=(c,d)=>{

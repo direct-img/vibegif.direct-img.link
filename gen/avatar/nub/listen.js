@@ -1,4 +1,5 @@
 // round mint green avatar listening: a sleepy jelly ball tilts toward blue sound waves coming from the upper right, opens both eyes softly and nods along
+// tags: calm, jelly, sound, ball, mint
 const{sin,cos,asin,atan2,abs,exp,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

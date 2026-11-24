@@ -1,4 +1,5 @@
 // violet twin-tailed girl in a pink hoodie gleefully flinging console.log sticky notes everywhere like confetti
+// tags: playful, anime, coding, confetti, excited, fast
 export const frames=14,delay=105,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

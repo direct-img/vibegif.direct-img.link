@@ -1,4 +1,5 @@
 // hearts of different colors floating up and swaying, swelling in and shrinking away as they rise
+// tags: love, happy, sway, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const H=[[60,0,'#ff6b6b',34],[128,.5,'#f783ac',44],[196,.25,'#b197fc',30],[96,.75,'#ffa94d',24],[168,.85,'#ff8787',26],[40,.4,'#faa2c1',22]]

@@ -1,4 +1,5 @@
 // purple crayon with a face scribbling a rainbow loop-de-loop, lifting off, then the line wipes away as it floats back
+// tags: happy, playful, art, rainbow
 const{sin,cos,PI,min,max,floor}=Math,T=2*PI
 export const frames=24,delay=80
 const RB=['#ff6b6b','#ffa94d','#ffd43b','#69db7c','#4dabf7','#b197fc'],CR='#9775fa',CL='#d0bfff',CD='#7048e8',BL='#faa2c1'

@@ -1,4 +1,5 @@
 // Nigeria flag (green, white, green vertical bands) rippling on a flagpole, with a joyful anime girl personifying Nigeria printed in the white center band: dark brown skin, two bouncy afro puffs tied with green and white beads, gold hoop earrings, green patterned top, bobbing her head and singing as white music notes float up the green bands
+// tags: anime, wave, country, pride, joyful
 export const frames=16,delay=80,rim=3
 const W=236,H=118,X=16,Y=69,P=Math.PI*2,K='#111',G='#008751'
 const sh=(c,f,s=K,w=3.5)=>{c.fillStyle=f;c.fill();c.strokeStyle=s;c.lineWidth=w;c.stroke()}

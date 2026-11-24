@@ -1,4 +1,5 @@
 // unicorn prancing in place, front hooves lifting in turn, rainbow mane and tail flowing, a sparkle off the horn
+// tags: happy, proud, animal, rainbow, myth, sparkle
 const{sin,cos,PI,abs,max}=Math,T=2*PI
 export const frames=16,delay=80
 const RB=['#ff6b6b','#ffa94d','#ffd43b','#69db7c','#4dabf7','#b197fc'],HN='#ffd43b',HO='#b197fc',FAR='#e9ecef',PK='#faa2c1'

@@ -1,4 +1,5 @@
 // a girl with curly puffs coding next to a little AI robot buddy, a green check pops up and they high-five
+// tags: happy, anime, robot, friendship, celebration, playful
 const P=Math.PI,O='#2b1d2e'
 const el=(c,x,y,a,b=a,r=0)=>{c.beginPath();c.ellipse(x,y,a,b,r,0,2*P)}
 const rr=(c,x,y,w,h,r)=>{c.beginPath();c.roundRect(x,y,w,h,r)}

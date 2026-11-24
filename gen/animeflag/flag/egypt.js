@@ -1,4 +1,5 @@
 // Egypt flag (red-white-black with the gold Eagle of Saladin in the centre) waving on a pole, with a black-haired anime girl at the hoist side wearing a gold circlet and a beaded gold collar, resting her hands on the black stripe and holding a blue lotus flower; she blinks and the lotus sways
+// tags: anime, wave, country, pride
 export const frames=16,delay=85,rim=3
 const T=Math.PI*2,X=24,W=224,H=150,Y=54,A=6,KW=1.1
 const N={M:2,L:2,Q:4,C:6}

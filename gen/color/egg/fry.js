@@ -1,4 +1,5 @@
 // egg sizzling in a pan: the white wobbles, bubbles pop around its edge, the yolk bobs, steam curls up
+// tags: food, pan, sizzle, breakfast, steam
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const PAN='#868e96',IN='#495057',YK='#ffd43b',BL='#ffa8a8'

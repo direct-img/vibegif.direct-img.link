@@ -1,4 +1,5 @@
 // ink wash whale rising from the sea, arching over and diving back flukes last, spray and foam flying, rings left on the water
+// tags: excited, animal, ocean, splash
 export const frames=30,delay=90,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

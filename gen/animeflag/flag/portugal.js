@@ -1,4 +1,5 @@
 // Portugal flag: green hoist and red fly with the gold armillary sphere and the national shield (seven gold castles on a red border, five blue quinas) waving on a flagpole, with a gentle anime girl printed in the red field beside it, long dark wavy hair with a green ribbon, a blue-and-white azulejo tile shawl and a gold filigree heart pendant; she blinks and her ribbon flutters as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=16,rim=3
 const W=236,H=157,X=14,Y=30,T=Math.PI*2
 const P=(c,s)=>{c.beginPath();for(const[,k,a]of s.matchAll(/([MLCQZ])([^MLCQZ]*)/g)){

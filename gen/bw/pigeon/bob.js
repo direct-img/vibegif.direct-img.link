@@ -1,4 +1,5 @@
 // pigeon walking in place: its head jerks forward and holds while the body catches up, feet stepping in turn
+// tags: animal, bird, walk
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=60
 export default(c,t)=>{

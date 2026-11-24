@@ -1,4 +1,5 @@
 // Israel flag waving on a pole: white field with two blue stripes and the blue Star of David kept clear in the center, and an anime girl printed in the white field at the hoist side, long dark-brown hair with a blue Alice band, hazel eyes glancing toward the star, white top with a blue collar, blinking and smiling as the cloth ripples
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const P=Math.PI*2,W=232,H=169,X=17,Y=40,N={M:2,L:2,Q:4,C:6},G={M:'moveTo',L:'lineTo',Q:'quadraticCurveTo',C:'bezierCurveTo'}
 let c,t

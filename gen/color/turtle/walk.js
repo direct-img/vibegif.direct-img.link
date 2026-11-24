@@ -1,4 +1,5 @@
 // turtle plodding along in place: legs stepping in diagonal pairs, head bobbing, shell rocking
+// tags: calm, animal, slow
 const{sin,cos,PI,abs,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SH='#51cf66',RIM='#2f9e44',SK='#ffe066',BL='#ffa8a8'

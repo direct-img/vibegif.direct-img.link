@@ -1,4 +1,5 @@
 // pink axolotl waving a little hand, its feathery gill fronds wiggling, bubbles drifting up
+// tags: happy, animal, hello, bubbles
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const PK='#faa2c1',PD='#f06595',PL='#ffdeeb',BL='#ff8fab',BU='#a5d8ff'

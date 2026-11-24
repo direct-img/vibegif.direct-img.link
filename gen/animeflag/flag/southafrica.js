@@ -1,4 +1,5 @@
 // South Africa flag waving on a pole: the red, blue, green Y with gold and white borders and black hoist triangle, with an anime girl peeking up from behind the green band at the fly, big curly dark hair with a gold beaded headband popping out over the top edge, gold hoop earrings, waving hello and blinking as the cloth ripples
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const P=Math.PI*2,W=232,H=W*2/3,X=17,Y=62,N={M:2,L:2,Q:4,C:6},G={M:'moveTo',L:'lineTo',Q:'quadraticCurveTo',C:'bezierCurveTo'}
 let c,t

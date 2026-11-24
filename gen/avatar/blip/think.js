@@ -1,4 +1,5 @@
 // round violet avatar blip thinking and processing: a glossy violet ball looks up while its two white square pixel eyes swap places and then orbit each other with fading trails like a tiny spinner, before settling back with a blink
+// tags: robot, processing, pixel, ball, violet
 export const frames=72,delay=40
 const{sin,cos,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

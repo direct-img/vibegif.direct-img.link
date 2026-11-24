@@ -1,4 +1,5 @@
 // round violet avatar blip idle and standing by: a glossy violet ball with two white square pixel eyes hovers gently, blinks, snaps a glance to the left and scans across to the right in tidy steps
+// tags: calm, robot, float, gentle, ball, violet
 export const frames=72,delay=50
 const{sin,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

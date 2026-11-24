@@ -1,4 +1,5 @@
 // smiling clam opens up to show off a shining pearl, then shuts again, bubbles rising behind it
+// tags: happy, calm, animal, ocean, bubbles
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=24,delay=70
 const SH='#faa2c1',SHD='#f783ac',IN='#e64980',PL='#f3f0ff',BL='#ff8787',BU='#e7f5ff'

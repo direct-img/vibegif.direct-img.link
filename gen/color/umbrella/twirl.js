@@ -1,4 +1,5 @@
 // umbrella twirling in the rain, colored panels sweeping round, raindrops splashing off the top
+// tags: happy, playful, rain, splash
 const{sin,cos,PI,asin,max}=Math,T=2*PI
 export const frames=24,delay=60
 const COL=['#ff6b6b','#ffd43b','#4dabf7','#ff6b6b','#ffd43b','#4dabf7'],BU='#a5d8ff'

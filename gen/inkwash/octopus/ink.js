@@ -1,4 +1,5 @@
 // ink wash octopus drifting in, then jetting away and leaving a blooming cloud of ink that slowly disperses
+// tags: animal, ocean, jet
 export const frames=30,delay=85,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

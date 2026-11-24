@@ -1,4 +1,5 @@
 // ink wash mushrooms pushing up from the ground after rain, caps unfurling, a drop falling from the biggest cap
+// tags: calm, nature, rain, grow
 import{createCanvas}from'@napi-rs/canvas'
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

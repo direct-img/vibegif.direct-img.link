@@ -1,4 +1,5 @@
 // taco dancing side to side, lettuce flapping and its fillings jiggling
+// tags: happy, playful, food
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=70
 const SH='#ffd43b',SD='#f59f00',LT='#69db7c',TM='#fa5252',MT='#8b5a3c',CH='#fff3bf',BL='#ffa8a8'

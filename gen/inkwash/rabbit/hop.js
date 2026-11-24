@@ -1,4 +1,5 @@
 // ink wash hare hopping through grass tufts under a pale full moon
+// tags: calm, animal, moon, night-sky
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

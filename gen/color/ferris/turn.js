@@ -1,4 +1,5 @@
 // ferris wheel slowly turning, its candy-colored gondolas hanging upright, a smiling hub
+// tags: calm, happy, fair, slow
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=100
 const G=['#ff6b6b','#ffd43b','#4dabf7','#69db7c'],RIM='#b197fc',LEG='#f783ac',BASE='#a9744f',HUB='#ffd43b',BL='#ffa8a8'

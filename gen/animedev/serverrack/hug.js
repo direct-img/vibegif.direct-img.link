@@ -1,4 +1,5 @@
 // mint-haired girl bundled in a beanie and scarf hugging a warm blinking server rack, nuzzling it as hearts float up
+// tags: love, anime, coding, hearts, cozy
 export const frames=14,delay=100,rim=3
 export default(c,t,i)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#211a20',sk='#eec9a0',ss='#d6a87c',hr='#7fd6b0',hs='#4fa688',hl='#c8f5e2',jk='#f58fb0',jd='#d0688e'

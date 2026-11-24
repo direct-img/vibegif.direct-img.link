@@ -1,4 +1,5 @@
 // ink wash lone fisherman in a straw hat sitting in a small boat on wide empty water, boat bobbing gently, fishing line in the water with ripples spreading
+// tags: calm, lonely, water, float, slow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
 // brush stroke through points p: width w, alpha (or colour) a, dry-brush hairlines from fraction d, pressure profile f

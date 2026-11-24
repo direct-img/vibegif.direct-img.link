@@ -1,4 +1,5 @@
 // pup sitting and panting with its tail going and ears bouncing
+// tags: happy, animal, pup, playful
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=60
 export default(c,t)=>{

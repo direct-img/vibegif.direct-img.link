@@ -1,4 +1,5 @@
 // carrot tugged at in its soil mound, then pops up out of the ground happy with dirt flying, and sinks back down
+// tags: playful, food, garden, vegetable, pop
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

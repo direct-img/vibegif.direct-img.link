@@ -1,4 +1,5 @@
 // little car driving along, bouncing on its springs, wheels spinning, road dashes and exhaust puffs rolling past
+// tags: happy, travel, bounce, wheels
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=60
 const BODY='#ff6b6b',WIN='#a5d8ff',TIRE='#343a40',HUB='#ced4da',LIGHT='#ffd43b',SMK='#dee2e6',BL='#ffa8a8'

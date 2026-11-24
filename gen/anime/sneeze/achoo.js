@@ -1,4 +1,5 @@
 // navy-haired girl with a cold: her nose tickles, she tips back "ah... ah..." and a big achoo burst jerks her forward, then a sniffle
+// tags: cold, sick, surprise
 const{sin,cos,PI,min,round}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#0c8599',HD='#0b7285',HL='#c5f6fa',EYE='#40c057',ED='#2b8a3e',SW='#d0ebff',SWD='#74c0fc',SC='#ff6b6b',NOSE='#ff8787',DROP='#a5d8ff',BURST='#fff3bf',MO='#c92a2a',BL='#ffa8a8'

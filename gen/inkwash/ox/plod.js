@@ -1,4 +1,5 @@
 // ink wash herd boy riding a water buffalo and playing a bamboo flute, the ox plodding in a slow walk cycle, notes drifting off as tiny ink dots
+// tags: calm, animal, flute, music, slow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

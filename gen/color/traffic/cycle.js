@@ -1,4 +1,5 @@
 // traffic light cycling green, yellow, red, the lit lamp has a face that grins, panics, then glares
+// tags: anxious, face, grin, panic, glare
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=90
 const HOUSE='#495057',HD='#343a40',POLE='#adb5bd',L=[['#ff6b6b','#6b3434'],['#ffd43b','#6b5f2c'],['#51cf66','#2c5a37']],DROP='#a5d8ff'

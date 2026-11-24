@@ -1,4 +1,5 @@
 // silver-haired captain girl steering a blue seven-spoke helm wheel through rolling waves, hair streaming in the wind
+// tags: proud, anime, coding, ship, ocean, wind
 export const frames=11,delay=100,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#1c1a26',sk='#ffe9e0',ss='#f2c6b8',hr='#e6e9f2',hs='#aab2c8',hl='#ffffff',nv='#24345e',nd='#16213f',gd='#f2c14e'

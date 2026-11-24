@@ -1,4 +1,5 @@
 // girl with a sunflower ponytail and visor tosses the ball up, swings the racket over her head and serves it streaking away
+// tags: sport, speed, ball, excited, racket
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#fcc419',HD='#f08c00',HL='#fff3bf',EYE='#20c997',ED='#087f5b',VIS='#51cf66',VD='#2f9e44',RQ='#ff6b6b',BAND='#ffd43b',BALL='#d8f5a2',BL='#ffa8a8'

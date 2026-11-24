@@ -1,4 +1,5 @@
 // ink wash pheasant strutting with a long barred tail and a muted red face, head bobbing with each step
+// tags: proud, animal, bird
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

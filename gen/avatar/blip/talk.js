@@ -1,4 +1,5 @@
 // round violet avatar blip talking: a glossy violet ball speaks as its two white square pixel eyes split into four equaliser bars that jump with the rhythm of speech, while the ball bops and yellow sound arcs pulse out on both sides
+// tags: robot, equalizer, pixel, ball, violet
 export const frames=72,delay=40
 const{sin,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

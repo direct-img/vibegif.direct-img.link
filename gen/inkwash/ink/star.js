@@ -1,4 +1,5 @@
 // ink wash five-pointed star painted in one confident brush stroke, a soft gold wash blooming inside, then fading (favourite, rating, bookmark state)
+// tags: happy, gold, brush, icon
 import{createCanvas}from'@napi-rs/canvas'
 const K='20,18,16',{PI:P,sin,cos,min,max,abs,hypot}=Math,T=P*2
 const cl=(x,a=0,b=1)=>min(b,max(a,x)),ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),mx=(a,b,f)=>a+(b-a)*f

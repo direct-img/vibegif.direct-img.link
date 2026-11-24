@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye playing peekaboo: it sinks out of sight below the bottom edge, cautiously peeks its eye back up over the edge, glances left and right, then rises back up and blinks
+// tags: playful, peekaboo, eye, shy, ball, blue
 const{sin,PI,min,max,abs,atan2,sqrt,exp}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye rolling over in place: it winds up, then the eye rolls down around the ball out of sight and comes back over the top, overshoots, settles and blinks
+// tags: playful, eye, ball, blue
 const{sin,cos,PI,min,max,hypot,atan2,exp}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

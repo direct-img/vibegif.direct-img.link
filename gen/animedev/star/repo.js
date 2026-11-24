@@ -1,4 +1,5 @@
 // anime girl with long gold-cuffed box braids worn half-up pokes a repo's Star button and a big gold star pops out and twinkles while her eyes sparkle
+// tags: happy, anime, coding, sparkle, twinkle, github
 export const frames=24,delay=90,rim=3
 const P=Math.PI,{sin,cos,min,max,abs}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

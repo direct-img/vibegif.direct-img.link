@@ -1,4 +1,5 @@
 // snowman waving a twig arm and tipping its top hat while snowflakes drift past
+// tags: happy, winter, snow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const flake=(c,x,y,r)=>{for(const[w,s]of[[9,'#111'],[3,'#fff']]){c.lineWidth=w;c.strokeStyle=s;c.beginPath();for(let k=0;k<3;k++){const a=k*PI/3;c.moveTo(x-cos(a)*r,y-sin(a)*r);c.lineTo(x+cos(a)*r,y+sin(a)*r)}c.stroke()}}

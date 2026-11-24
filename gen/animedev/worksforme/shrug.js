@@ -1,4 +1,5 @@
 // curly-puff girl hugs her sticker-covered laptop and gives a smug shrug: works on my machine
+// tags: playful, anime, coding, laptop, smug
 export const frames=20,delay=90,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

@@ -1,4 +1,5 @@
 // round mint green avatar being shy: a bashful jelly ball blushes with pink cheeks, shrinks and turns its face away, sneaks one peek back, then hides again and relaxes
+// tags: blush, jelly, peek, ball, mint
 const{sin,cos,asin,atan2,abs,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

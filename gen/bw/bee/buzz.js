@@ -1,4 +1,5 @@
 // bee buzzing around a figure eight, wings flapping every frame, dotted trail behind it
+// tags: playful, animal, insect, fast
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=50
 const Z=1.45,pos=t=>[128+52*sin(t*T),128+32*sin(2*t*T)]

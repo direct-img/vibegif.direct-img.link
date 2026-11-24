@@ -1,4 +1,5 @@
 // easter chibi with bunny-ear headband and a basket: spots a painted egg in the grass, pulls it out, holds it up sparkling, drops it in her basket
+// tags: happy, egg, bunny, sparkle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=20,delay=80

@@ -1,4 +1,5 @@
 // campfire: three flame tongues flickering on two crossed logs, little face in the flame, sparks floating up
+// tags: flicker, sparks, warm, calm
 // the black flame gets a white rim so it still shows on dark backgrounds
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=70

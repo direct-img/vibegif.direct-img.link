@@ -1,4 +1,5 @@
 // instant camera fires its flash, a photo with a heart on it slides out the bottom and drops away
+// tags: happy, photo, heart, instant
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const BODY='#fff4e6',TOP='#ced4da',LENS='#343a40',GLASS='#74c0fc',STR=['#ff6b6b','#ffa94d','#ffd43b','#51cf66','#4dabf7'],PIC='#a5d8ff'

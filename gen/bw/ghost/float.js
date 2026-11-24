@@ -1,4 +1,5 @@
 // ghost bobbing in place, hem rippling, little arms flapping, blinks once per loop
+// tags: playful, halloween, blink
 const{sin,PI}=Math,T=2*PI
 export default(c,t,i)=>{
   const y=sin(t*T)*8,L=66,R=190,hem=x=>196+y+7*sin((x-L)/(R-L)*3*T-t*T)

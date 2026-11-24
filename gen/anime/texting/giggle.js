@@ -1,4 +1,5 @@
 // baby-blue haired girl lying on her tummy on a bed, giggling at her phone and kicking her feet while hearts pop out of the screen
+// tags: happy, playful, phone, hearts
 const{sin,cos,PI,abs,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#a5d8ff',HD='#4dabf7',HL='#e7f5ff',PJ='#ffd43b',PD='#fab005',BED='#eebefa',BD='#cc5de8',PH='#f783ac',SCR='#e3fafc',SOCK='#b197fc',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',HT='#ff6b9d'

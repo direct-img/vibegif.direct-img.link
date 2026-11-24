@@ -1,4 +1,5 @@
 // round ocean badge: curling waves rolling past under a sun, spray flicking off the crests
+// tags: calm, ocean, sun, summer, spray, badge
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const SKY='#d0ebff',SUN='#ffd43b',W1='#74c0fc',W2='#228be6'

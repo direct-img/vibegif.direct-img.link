@@ -1,4 +1,5 @@
 // ink wash bamboo shoot pushing up from the ground, its sheaths peeling open as it grows into a young stalk
+// tags: calm, hopeful, nature, grow
 import{createCanvas}from'@napi-rs/canvas'
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

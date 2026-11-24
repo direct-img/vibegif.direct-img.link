@@ -1,4 +1,5 @@
 // chibi jiangshi with dark violet hair and a qing hat hopping with stiff arms held out, long sleeves swinging, the paper talisman fluttering up on each fall
+// tags: playful, chibi, halloween
 const{sin,cos,PI,max,round}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#e9f5e1',HAIR='#5f3dc4',HD='#3b2a8c',HL='#b197fc',EYE='#fcc419',ED='#e67700',ROBE='#3bc9db',RD='#1098ad',GO='#ffd43b',HAT='#7048e8',HTD='#4c2fb0',RED='#fa5252',PAP='#ffe066',SH='#845ef7',BL='#ffc9c9'

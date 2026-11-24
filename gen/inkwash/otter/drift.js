@@ -1,4 +1,5 @@
 // ink wash sea otter floating on its back, cracking a shell against a stone on its chest, gently rocking with ripples spreading around it
+// tags: calm, happy, animal, ocean, float
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

@@ -1,4 +1,5 @@
 // red haired girl sprawled over a manga, eyes following the panels, flipping a page and gasping at every turn
+// tags: happy, book, gasp, story
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#a68a7b',HD='#7d6355',HL='#e6d5cc',EYE='#20c997',ED='#087f5b',BL='#ffa8a8',TEE='#fff',STR='#74c0fc',COV='#ffd43b',INK='#495057'

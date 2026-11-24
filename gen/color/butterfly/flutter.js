@@ -1,4 +1,5 @@
 // butterfly fluttering in a little loop, purple and pink wings with yellow spots
+// tags: calm, happy, animal, insect
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=60
 const UP='#b197fc',LO='#faa2c1',SP='#ffd43b',BD='#7048e8'

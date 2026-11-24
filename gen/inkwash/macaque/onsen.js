@@ -1,4 +1,5 @@
 // ink wash snow monkey soaking in a steaming hot spring with eyes closed, snow on its head, snowflakes drifting down
+// tags: calm, happy, animal, hot-spring, snow, steam
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

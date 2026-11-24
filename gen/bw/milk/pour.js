@@ -1,4 +1,5 @@
 // milk carton tipping to pour into a glass that fills up, then a straw sips it back down for the loop
+// tags: calm, food, drink
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

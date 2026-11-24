@@ -1,4 +1,5 @@
 // spring toy squashes down, boings up into the air stretched and wobbling, then lands and settles
+// tags: playful, bounce, wobble
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=60
 const N=4,R=40,E=11

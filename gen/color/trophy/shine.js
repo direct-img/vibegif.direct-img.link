@@ -1,4 +1,5 @@
 // gold trophy with a star on it, a glint sweeping across the cup and sparkles popping around
+// tags: proud, happy, gold, glint, win
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const G='#ffd43b',GD='#fab005',WD='#a9744f',PL='#ffe8cc'

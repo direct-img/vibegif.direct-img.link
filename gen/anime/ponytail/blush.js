@@ -1,4 +1,5 @@
 // chibi girl with a brown ponytail getting shy: head tilting, blush pulsing, little hearts floating up
+// tags: shy, love, chibi, hearts
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#a9744f',HD='#8d6346',HL='#e8c39e',EYE='#51cf66',ED='#2b8a3e',CARD='#fff3bf',TIE='#fa5252',BL='#ff8fab',HT='#f06595',SW='#a5d8ff'

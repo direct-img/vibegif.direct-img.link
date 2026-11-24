@@ -1,4 +1,5 @@
 // gift box rattles, the lid pops off and confetti bursts out, then the lid drops back on
+// tags: excited, happy, celebration, confetti, surprise
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const C=[[-90,-150,0],[-50,-190,1],[-10,-200,2],[40,-185,0],[85,-140,1],[-120,-90,2],[115,-100,0],[20,-150,1],[-70,-120,1],[60,-210,2]]

@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye focusing like a camera: it squints while the pupil hunts in and out inside yellow viewfinder corners, then locks with a crisp snap as the corners clamp in and turn mint, and blinks once like a shutter
+// tags: calm, eye, camera, ball, blue
 const{sin,cos,PI,min,max,atan2,sqrt,exp}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

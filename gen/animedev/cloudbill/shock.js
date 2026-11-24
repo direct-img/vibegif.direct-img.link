@@ -1,4 +1,5 @@
 // auburn-haired girl in glasses frozen in shock as an endless cloud invoice full of $ charges unrolls and piles up
+// tags: anxious, anime, cloud, money, coding, work
 export const frames=16,delay=80,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#211a1e',sk='#d9a374',ss='#b98256',hr='#b5512e',hs='#80341a',hl='#ec9068',gr='#2f6b4f',gd='#1f4a36'

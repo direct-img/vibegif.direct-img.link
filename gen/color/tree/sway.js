@@ -1,4 +1,5 @@
 // round apple tree leaning in the wind, leaves blowing off and tumbling away to the side
+// tags: calm, nature, apple, wind, leaves
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const LF='#51cf66',LD='#2f9e44',TR='#a9744f',AP='#fa5252',GR='#8ce99a'

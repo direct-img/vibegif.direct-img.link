@@ -1,4 +1,5 @@
 // vampire girl with a purple hime cut and a high-collared cape that billows, flashing a fang smile while three bats flap around her
+// tags: playful, halloween, cape
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#fff0f0',HAIR='#7048e8',HD='#5f3dc4',HL='#d0bfff',EYE='#fa5252',ED='#a51111',CAPE='#495057',CL='#868e96',LIN='#e03131',DRS='#5c5f66',BL='#ffa8a8',BAT='#5c5f66',BW='#868e96'

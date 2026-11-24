@@ -1,4 +1,5 @@
 // violinist with an auburn side braid playing with her eyes closed, the bow sawing across the strings, swaying gently, notes drifting up
+// tags: calm, music, gentle, sway
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#a0442a',HD='#7a2f1c',HL='#e3a08a',BL='#ffa8a8',DRS='#20c997',DRD='#0ca678',VIO='#e8590c',VIL='#ffa94d',FB='#495057',BOW='#a9744f',HAIRB='#fff',RIB='#ffd43b'

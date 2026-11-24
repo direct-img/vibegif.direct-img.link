@@ -1,4 +1,5 @@
 // ink wash checkmark painted in one confident brush stroke with a wet start and dry-brush tail, holds then fades, success state
+// tags: happy, success, ui, brush, icon
 export const frames = 20, dither = true
 export const delay = [...Array(20)].map((_, i) => i < 9 ? 45 : i == 9 ? 1200 : 70)
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2

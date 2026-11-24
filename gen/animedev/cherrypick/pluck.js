@@ -1,4 +1,5 @@
 // anime girl with twin braids hopping up to pluck the one shiny cherry off a git branch of commit cherries and dropping it into her "main" basket
+// tags: playful, anime, git, cherry, hop, proud
 export const frames=20,delay=95,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d',a=T*t

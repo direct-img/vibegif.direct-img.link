@@ -1,4 +1,5 @@
 // cupcake with a swirl of pink frosting, sprinkles raining down onto it and the cherry on top wobbling
+// tags: happy, food, dessert, celebration
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=70
 const WR='#38d9a9',WD='#0ca678',FR='#faa2c1',CH='#ff6b6b',STEM='#a9744f',BL='#ffa8a8',SP=['#ffd43b','#4dabf7','#fff','#69db7c','#b197fc','#ff922b']

@@ -1,4 +1,5 @@
 // ink wash waterfall, tall fall pouring between dark cliffs with flowing dry strokes, spray mist rising at the base, leaning pine
+// tags: calm, nature, water, mist, flow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

@@ -1,4 +1,5 @@
 // Colombia flag: yellow-blue-red horizontal bands (yellow top half) waving on a flagpole, with a cheerful anime girl printed in the middle, long wavy dark-brown hair with a purple Cattleya orchid behind her ear and a white ruffled blouse trimmed in yellow, blue and red; she blinks as the flag ripples and three yellow butterflies flutter out below it
+// tags: anime, wave, country, pride, happy
 export const frames=16,rim=3
 const W=236,H=157,X=14,Y=26,T=Math.PI*2
 const P=(c,s)=>{c.beginPath();for(const[,k,a]of s.matchAll(/([MLCQZ])([^MLCQZ]*)/g)){

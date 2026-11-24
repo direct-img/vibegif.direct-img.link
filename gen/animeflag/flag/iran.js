@@ -1,4 +1,5 @@
 // Iran's flag waving on a silver pole: green-white-red horizontal bands with the red emblem in the centre and the white Kufic takbir bands along the stripe edges, with a smiling anime girl standing in front of its lower edge (clear of the emblem and text), long dark hair with a turquoise hairpin, rose-pink top and turquoise shawl dotted with gold, holding up a pink Persian rose, hair and shawl fluttering in the wind as she blinks
+// tags: anime, wave, country, pride
 export const frames=16
 const P=Math.PI
 const p=(c,d)=>{

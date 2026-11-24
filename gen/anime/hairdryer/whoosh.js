@@ -1,4 +1,5 @@
 // butter-blonde girl in a bathrobe blow-drying her hair, long locks whooshing and fluttering in the air stream, eyes squinting, droplets flying off
+// tags: calm, hair, wind, bath
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f2b705',HL='#fff9db',ROBE='#ffa8a8',RD='#fa5252',DRY='#9775fa',DD='#7048e8',BL='#ff8fab',MO='#c92a2a',DROP='#a5d8ff'

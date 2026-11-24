@@ -1,4 +1,5 @@
 // slime blob jiggling: squashes and stretches, a ripple rolls over its top, mouth goes "o"
+// tags: playful, slime, wobble, bounce
 const{sin,cos,PI}=Math,T=2*PI
 export default(c,t)=>{
   const q=sin(2*T*t),rx=80*(1+.07*q),ry=92*(1-.09*q),cy=212

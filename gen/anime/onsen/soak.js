@@ -1,4 +1,5 @@
 // green-haired girl soaking shoulder-deep in a rocky hot spring, towel folded on her head, steam drifting up and a rubber duck bobbing
+// tags: calm, happy, hot-spring, bath, steam, relax
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=110
 const SKIN='#ffe3d1',SK2='#ffd0b8',HAIR='#2f9e44',HD='#2b8a3e',HL='#b2f2bb',WA='#99e9f2',WL='#e3fafc',ROCK='#ced4da',RD='#adb5bd',BL='#ff8fab',TW='#fff',TS='#74c0fc',WOOD='#d9a066',WD='#a9744f',Z=.8

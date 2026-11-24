@@ -1,4 +1,5 @@
 // Vietnam flag (red field with a large yellow five-pointed star) rippling on a flagpole, with a gentle anime girl personifying Vietnam printed beside the star: long black hair swaying in the wind, a yellow apricot blossom hairpin, dark eyes, yellow ao dai with a high collar, blinking and smiling as little sparkles twinkle
+// tags: anime, wave, country, pride, gentle
 export const frames=16,delay=80,rim=3
 const W=236,H=157,X=16,Y=50,P=Math.PI*2,K='#111',RD='#DA251D',YL='#FFFF00'
 const sh=(c,f,s=K,w=3.5)=>{c.fillStyle=f;c.fill();c.strokeStyle=s;c.lineWidth=w;c.stroke()}

@@ -1,4 +1,5 @@
 // ink wash archer in a wide stance drawing a long bow and loosing an arrow that leaves a fading dry-brush streak
+// tags: bow, arrow, focus, person
 import{createCanvas}from'@napi-rs/canvas'
 const K='20,18,16',{PI:P,sin,cos,min,max,abs,hypot}=Math,T=P*2
 const cl=(x,a=0,b=1)=>min(b,max(a,x)),ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),mx=(a,b,f)=>a+(b-a)*f

@@ -1,4 +1,5 @@
 // magenta haired idol singing into her mic with her eyes closed, side ponytail bouncing to the beat, notes floating up, fans waving glow sticks
+// tags: happy, music, notes, bounce
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#e64980',HD='#c2255c',HL='#ffdeeb',BL='#ffa8a8',DR='#3bc9db',BOW='#ffd43b',MIC='#ced4da',GRIP='#f06595'

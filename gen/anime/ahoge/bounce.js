@@ -1,4 +1,5 @@
 // full-body chibi with ginger hair whose single ahoge strand boings and wobbles wildly, then curls into a heart and springs loose
+// tags: playful, chibi, hair, love, hearts
 const{sin,PI,exp}=Math,T=2*PI
 export const frames=24,delay=70
 const SKIN='#ffe3d1',HAIR='#8c5a3c',HD='#6b4226',HL='#d9b38c',EYE='#15aabf',ED='#0b7285',DRESS='#8ce99a',DD='#40c057',SHOE='#e03131',BL='#ffa8a8',MO='#c92a2a',CLIP='#fff',SP='#ffd43b'

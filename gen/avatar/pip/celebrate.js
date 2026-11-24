@@ -1,4 +1,5 @@
 // round coral avatar mascot ball celebrating: crouches, leaps high and spins in the air with its white dot eyes curved into happy arcs, while a burst of colourful confetti flies out from behind it and flutters down
+// tags: excited, happy, celebration, leap, ball, coral
 export const frames=72,delay=40
 const{PI,sin,cos,min,exp,abs}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

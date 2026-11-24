@@ -1,4 +1,5 @@
 // fireworks shooting up and bursting into colored sparks, one after another
+// tags: excited, celebration, sparks, night-sky
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=24,delay=70
 const F=[[80,70,'#ff6b6b',0,52],[180,90,'#4dabf7',.33,46],[128,52,'#ffd43b',.66,58]]

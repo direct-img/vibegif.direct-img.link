@@ -1,4 +1,5 @@
 // coral-haired girl swaying dizzy with spinning swirl eyes, a wobbly mouth and little stars orbiting her head
+// tags: spiral, stars, wobble
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#ff8787',HD='#f06565',HL='#ffe3e3',TOP='#96f2d7',TD='#38d9a9',PIN='#ffd43b',BL='#ffa8a8',ST='#ffd43b'

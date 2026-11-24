@@ -1,4 +1,5 @@
 // ink wash squirrel perched on a grapevine nibbling a grape, bushy dry-brush tail flicking, a translucent purple-grey grape cluster and vine leaves swaying
+// tags: happy, animal, fruit, nibble
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),

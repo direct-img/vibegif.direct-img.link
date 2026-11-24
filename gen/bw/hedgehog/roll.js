@@ -1,4 +1,5 @@
 // hedgehog curls into a spiky ball, rolls with speed lines, then uncurls and sniffs
+// tags: playful, animal, curl, sniff
 // the spiky coat is a zigzag band whose sweep grows from its back to all the way round
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70

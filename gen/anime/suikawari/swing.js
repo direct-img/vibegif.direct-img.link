@@ -1,4 +1,5 @@
 // blindfolded chibi playing suikawari on the beach: wobbles around with her stick raised, swings it down onto the watermelon with a bonk, raises it again
+// tags: playful, summer, beach, game, watermelon, blindfold
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffa94d',HD='#f76707',HL='#ffe8cc',TEE='#fff',TS='#ff6b6b',SHORT='#4dabf7',SD='#1c7ed6',BAND='#fff',STICK='#c08a5e',SAND='#ffe8a3',SAND2='#f5d27a',TOWEL='#74c0fc',MEL='#51cf66',MD='#2b8a3e',BL='#ffa8a8',MO='#c92a2a'

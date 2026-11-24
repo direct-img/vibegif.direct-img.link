@@ -1,4 +1,5 @@
 // chocolate chip cookie dunking itself in a glass of milk, splashing drops each time
+// tags: happy, food, milk, splash
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const GL='#e7f5ff',CK='#e0a96d',CH='#5c3d2e',BL='#ffa8a8'

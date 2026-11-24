@@ -1,4 +1,5 @@
 // girl with split-dye black and white hair and round glasses earnestly explaining code to a rubber duck, which tilts its head in confusion
+// tags: playful, anime, coding, duck, glasses, confused
 export const frames=24,delay=90,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,
 B=c=>c.beginPath(),

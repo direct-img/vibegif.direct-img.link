@@ -1,4 +1,5 @@
 // nervous anime girl with pink hair buns pulling the bottom commit block out of a wobbly tower and restacking it on top
+// tags: anxious, anime, coding, git, blocks, tower
 export const frames=20,delay=90,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d',a=T*t

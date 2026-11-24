@@ -1,4 +1,5 @@
 // Bangladeshi flag waving on a silver pole: bottle green field with the red disc set toward the hoist, and an anime girl printed on the fly side - long black hair rippling in the wind with a white shapla water lily, red blouse and a red-bordered white sari over her shoulder - who blinks and glances at the red sun as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=20,delay=70
 const P=Math.PI*2,W=232,H=W*.6,K=2,X0=14,Y0=28
 const GR='#006747',RD='#da291c',D='#21141a',SK='#f7d6bf',SK2='#e6b193'

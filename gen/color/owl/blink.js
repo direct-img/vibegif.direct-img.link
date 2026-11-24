@@ -1,4 +1,5 @@
 // owl perched on a branch, rocking its head side to side and blinking its big eyes
+// tags: calm, animal, bird, branch
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=90
 const BR='#9c6644',BE='#f3d5b5',FA='#ede0d4',WG='#7f5539',Y='#ffd43b',O='#ff922b',BRANCH='#8d6346',LF='#69db7c'

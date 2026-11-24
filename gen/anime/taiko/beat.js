@@ -1,4 +1,5 @@
 // festival girl in a happi coat and hachimaki pounding a big taiko drum with two bachi, sticks alternating, impact rings on the drumhead
+// tags: excited, festival, music, drum, japan
 const{sin,cos,PI,max,min,hypot}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#c92a2a',HD='#8f1d1d',HL='#ffa8a8',EYE='#fd7e14',ED='#d9480f',HAPPI='#364fc7',HP='#fff',BAND='#fff',KNOT='#e03131',DRUM='#a9744f',DD='#7f5539',HEAD='#fff4e6',RIV='#ffd43b',BACHI='#e9c46a',BL='#ffa8a8',MO='#c92a2a',TOM=['#e03131','#ffd43b','#4dabf7']

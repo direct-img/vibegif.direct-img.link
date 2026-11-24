@@ -1,4 +1,5 @@
 // caramel-braided girl bawling waterfall tears, two streams arcing out of her shut eyes and splashing into puddles
+// tags: sad, cry, waterfall
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=70
 const SKIN='#ffe3d1',HAIR='#f4b860',HD='#d4892a',HL='#fff0d4',TOP='#ffc078',TIE='#4dabf7',BL='#ffa8a8',WA='#74c0fc',WD='#339af0',MO='#c92a2a',TG='#ff8fab'

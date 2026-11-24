@@ -1,4 +1,5 @@
 // ink wash mountain landscape, layered ridges fading pale into the distance, bands of mist drifting across, tiny pavilion and pines on a near crag
+// tags: calm, nature, landscape, slow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
 // brush stroke through points p: width w, alpha (or colour) a, dry-brush hairlines from fraction d, pressure profile f

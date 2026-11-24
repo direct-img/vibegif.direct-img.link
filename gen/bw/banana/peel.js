@@ -1,4 +1,5 @@
 // banana peel opening flap by flap to show the happy curved fruit inside, then folding shut again in reverse
+// tags: happy, food, fruit, playful
 // each flap is a quadratic center line widened along its normal, so it can bend from hugging the fruit to drooping open
 // flap roots and the peel's top edge aren't outlined while shut, so the closed banana reads as one piece
 const{sin,PI,min,max,hypot}=Math,T=2*PI

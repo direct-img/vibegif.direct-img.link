@@ -1,4 +1,5 @@
 // fluffy light-brown haired girl getting head pats, squishing down with happy ^^ eyes while flowers and sparkles float up
+// tags: happy, love, comfort, flowers, sparkle, gentle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#d4a373',HD='#b07d4f',HL='#f3dcc0',TOP='#a5d8ff',TD='#74c0fc',RIB='#f06595',BL='#ff8fab',MO='#c92a2a',TG='#ff8fab',HAND='#f8d0b0',SL='#748ffc'

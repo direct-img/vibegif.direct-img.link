@@ -1,4 +1,5 @@
 // yellow submarine bobbing underwater, periscope turning, propeller spinning, bubbles rising past swaying seaweed
+// tags: happy, calm, ocean, bubbles, bob
 const{sin,cos,PI,abs,min,max,round}=Math,T=2*PI
 export const frames=20,delay=80
 const Y='#ffd43b',YD='#fab005',GL='#a5d8ff',PR='#ced4da',SW='#51cf66',SA='#ffd8a8',BU='#d0ebff',BL='#ffa8a8'

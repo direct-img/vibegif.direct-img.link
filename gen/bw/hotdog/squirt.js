@@ -1,4 +1,5 @@
 // hot dog getting a zigzag of mustard squirted along it as the bottle slides across, then the line wipes off for the loop
+// tags: playful, food, mustard
 // the black sausage gets a white rim so it shows on dark backgrounds
 const{sin,PI,min,max,abs}=Math,T=2*PI
 export const frames=24,delay=70

@@ -1,4 +1,5 @@
 // diamond kite dancing in the wind with its bow tail waving, clouds drifting past
+// tags: happy, calm, wind, sky, clouds
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=24,delay=70
 const Q=['#ff6b6b','#ffd43b','#4dabf7','#69db7c'],BOWS=['#f783ac','#b197fc','#ffa94d','#38d9a9']

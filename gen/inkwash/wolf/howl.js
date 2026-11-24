@@ -1,4 +1,5 @@
 // ink wash wolf sitting on a rocky rise, lifting its head to howl as breath mist curls from its muzzle
+// tags: lonely, animal, night, mist
 const{sin,cos,PI,abs,min,max,hypot,floor,round}=Math,T=2*PI
 // seeded random, ink colour, smoothstep, pulse (0→1→0 between a and b)
 const R=n=>(n=sin(n*91.7+7.3)*43758.5)-floor(n)

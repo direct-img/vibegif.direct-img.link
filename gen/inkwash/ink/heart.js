@@ -1,4 +1,5 @@
 // ink wash heart painted in two brush strokes with a soft rose wash, pulses once then fades, like or favourite state
+// tags: love, pulse, brush, icon
 export const frames = 25, dither = true
 export const delay = [...Array(25)].map((_, i) => i < 11 ? 45 : i == 11 ? 260 : i < 18 ? 55 : i == 18 ? 900 : 70)
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2

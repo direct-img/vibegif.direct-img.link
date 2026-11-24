@@ -1,4 +1,5 @@
 // grumpy storm cloud that zaps a lightning bolt twice and shakes when it does
+// tags: angry, weather, storm, cloud, zap, shake
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 export default(c,t,i)=>{

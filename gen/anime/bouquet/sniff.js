@@ -1,4 +1,5 @@
 // close-up of a girl with long wavy ash-blonde hair breathing in a bouquet with her eyes shut, then sighing dreamily, petals drifting by
+// tags: calm, love, flowers, dreamy, sigh
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#d8cbb0',HD='#a99c80',HL='#f4efe3',EYE='#b197fc',ED='#7048e8',BL='#ffa8a8',DR='#b2d8a8',WR='#faa2c1',WRD='#f06595',ROSE='#ff8787',RD='#e03131',DAI='#fff',YEL='#ffd43b',LEAF='#69db7c',PET='#ffc9de'

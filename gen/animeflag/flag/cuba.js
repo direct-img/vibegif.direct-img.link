@@ -1,4 +1,5 @@
 // Cuba flag waving on a flagpole, five blue and white stripes with the red triangle and white star, and on the stripes a laughing anime girl with big dark curls, a white mariposa flower in her hair and a ruffled white blouse, with a little tocororo bird hopping on her shoulder
+// tags: anime, wave, country, pride, laughing
 export const frames=16,delay=80,rim=2
 const T=Math.PI*2,W=231,H=116,X=15,Y=36
 const P=(c,s)=>{c.beginPath();let a=s.match(/[MLQCZ]|-?\d*\.?\d+/g),k,j=0

@@ -1,4 +1,5 @@
 // capybara soaking in a hot spring with a yuzu on its head, eyes shut in bliss, bobbing gently as steam curls up
+// tags: calm, happy, animal, hot-spring, bath, bliss
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=100
 const SN='#d9a77a',BR='#c08552',BD='#8d6346',WA='#74c0fc',WL='#d0ebff',ST='#ced4da',SD='#adb5bd',YZ='#ffd43b',YD='#fab005',LF='#51cf66',BL='#ffa8a8'

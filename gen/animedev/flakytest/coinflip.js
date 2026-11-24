@@ -1,4 +1,5 @@
 // space-bun girl in a dealer visor flips a pass/fail coin for a flaky test: it lands PASS, she cheers, flips again, FAIL, she deadpans
+// tags: playful, anime, coding, testing, luck, deadpan
 export const frames=28,delay=75,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

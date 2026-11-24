@@ -1,4 +1,5 @@
 // round violet avatar blip listening: a glossy violet ball leans toward mint sound arcs arriving from the upper right while its two white square pixel eyes join into one waveform line that ripples with each incoming sound, then it nods
+// tags: calm, robot, sound, ball, violet
 export const frames=72,delay=40
 const{sin,exp,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

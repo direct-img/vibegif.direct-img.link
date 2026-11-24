@@ -1,4 +1,5 @@
 // calm girl with long navy-to-teal half-up hair and a ribbon sipping tea with eyes closed while the PROD server rack behind her burns, this is fine
+// tags: calm, anime, coding, tea, deadpan, chaos
 export const frames=16,delay=90,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,T=2*P*t,K='#24191c',sk='#fff0e6',ss='#f3cbbb',hs='#162050',hl='#7f9be0'

@@ -1,4 +1,5 @@
 // India flag waving on a pole: saffron-white-green tricolor with the navy 24-spoke Ashoka Chakra kept clear in the center, and an anime girl printed at the hoist side with long black hair in a side braid with white jasmine flowers, brown eyes, a navy kurta with gold trim and a pink dupatta, blinking and smiling as the cloth ripples
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const P=Math.PI*2,W=232,H=155,X=17,Y=46,N={M:2,L:2,Q:4,C:6},G={M:'moveTo',L:'lineTo',Q:'quadraticCurveTo',C:'bezierCurveTo'}
 let c,t

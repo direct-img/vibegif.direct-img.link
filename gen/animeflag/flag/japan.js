@@ -1,4 +1,5 @@
 // Japan flag waving on a flagpole, white field with the red sun disc, and inside the disc an anime girl with long black hime-cut hair, a sakura hairpin and a sailor collar who smiles and blinks while cherry blossom petals drift past
+// tags: anime, wave, country, pride, sun
 export const frames=16,delay=80,rim=2
 const T=Math.PI*2,W=231,H=154,X=15,Y=30
 const P=(c,s)=>{c.beginPath();let a=s.match(/[MLQCZ]|-?\d*\.?\d+/g),k,j=0

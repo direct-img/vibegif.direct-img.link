@@ -1,4 +1,5 @@
 // ink wash thatched hut under snow-laden pines, snow cut out as empty space against a soft grey wash, sparse snowflakes falling, warm orange glow in the window, chimney smoke curling up
+// tags: calm, lonely, winter, pine, slow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

@@ -1,4 +1,5 @@
 // ink wash white swan gliding on still water, neck in a graceful S, its open body shaped by a few contour strokes and the dark water washed around it, with a rippling reflection
+// tags: calm, animal, bird, water, gentle
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

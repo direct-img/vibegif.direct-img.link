@@ -1,4 +1,5 @@
 // egg wobbles, then the top pops up and a chick peeks out, blinks, and ducks back in
+// tags: happy, animal, egg, peek, easter
 const{sin,cos,PI,max,min,asin}=Math,T=2*PI
 export const frames=24,delay=70
 const X=128,Y=150,RX=62,RY=78,CY=140,a0=asin((CY-Y)/RY),L=X-RX*cos(a0),W=2*RX*cos(a0)

@@ -1,4 +1,5 @@
 // girl with a scarlet bob and sweatband leaps and smashes a falling shuttlecock, which rockets off with speed lines
+// tags: excited, sport, speed, jump
 const{sin,cos,PI,max,min,hypot,sqrt,atan2}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#f03e3e',HD='#c92a2a',HL='#ffc9c9',EYE='#fab005',ED='#e67700',JER='#9775fa',JD='#7048e8',SH='#364fc7',BAND='#fff',RQ='#fcc419',BL='#ffa8a8'

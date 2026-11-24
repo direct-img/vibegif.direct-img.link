@@ -1,4 +1,5 @@
 // round mint green avatar sleeping: a jelly ball fast asleep with closed eyes, breathing deep and slow, head drooping on each exhale while blue z's drift up
+// tags: tired, calm, jelly, slow, ball, mint
 const{sin,cos,asin,atan2,abs,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

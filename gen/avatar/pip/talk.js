@@ -1,4 +1,5 @@
 // round coral avatar mascot ball talking: pulses taller in an uneven speech rhythm, its two white dot eyes lively and glancing about, while mint sound waves pop out beside it on every syllable
+// tags: pulse, ball, coral
 export const frames=64,delay=50
 const{PI,sin,cos,min}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

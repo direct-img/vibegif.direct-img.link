@@ -1,4 +1,5 @@
 // nervous olive-skinned anime girl with a brown pixie cut and an oversized sweater hiding behind a giant SENIOR DEV badge, peeking over the top with darting eyes, then ducking down
+// tags: anxious, anime, coding, shy, nervous
 export const frames=28,delay=80,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

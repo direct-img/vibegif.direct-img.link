@@ -1,4 +1,5 @@
 // fluffy sheep hopping in place, its wool squashing on landing and stretching in the air
+// tags: happy, playful, animal, farm, bounce
 // the wool is one outline: every puff is stroked wide first, then all of them are filled
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=60

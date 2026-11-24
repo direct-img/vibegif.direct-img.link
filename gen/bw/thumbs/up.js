@@ -1,4 +1,5 @@
 // thumbs up bouncing on the beat while little sparkles pop around it
+// tags: happy, proud, approval, bounce, sparkle
 const{sin,cos,PI,max}=Math,T=2*PI
 export const delay=70
 const star=(c,x,y,s)=>{c.beginPath();for(let k=0;k<8;k++){const r=k%2?s*.32:s,a=k*PI/4;c.lineTo(x+r*cos(a),y+r*sin(a))}c.closePath();c.fill();c.stroke()}

@@ -1,4 +1,5 @@
 // dj girl with copper hair and big headphones scratching a record back and forth, nodding to the beat, light beams behind her
+// tags: excited, music, headphones, beat
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#e07a3a',HD='#b0561e',HL='#f8c9a0',EYE='#15aabf',ED='#0b7285',BL='#ffa8a8',HOOD='#9775fa',HOD='#7048e8',PH='#38d9a9',PHD='#0ca678',LED='#f783ac',DECK='#e9ecef',DKD='#adb5bd',REC='#495057',LAB='#ffd43b',B1='#faa2c1',B2='#74c0fc'

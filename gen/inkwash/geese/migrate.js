@@ -1,4 +1,5 @@
 // ink wash skein of wild geese flying in a loose V across a pale full moon in a soft night sky, wings beating out of step
+// tags: calm, animal, bird, moon, night-sky, flight
 const{sin,cos,PI,abs,min,max,hypot,floor,round}=Math,T=2*PI
 // seeded random, ink colour, smoothstep, pulse (0→1→0 between a and b)
 const R=n=>(n=sin(n*91.7+7.3)*43758.5)-floor(n)

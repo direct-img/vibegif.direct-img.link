@@ -1,4 +1,5 @@
 // watering can with a face tips forward and sprinkles a droopy sprout in a pot, which perks up, then gets thirsty again
+// tags: happy, hopeful, nature, sprout, garden, grow
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const CAN='#4dabf7',CD='#1c7ed6',POT='#ff922b',PD='#e8590c',SOIL='#a9744f',LF='#69db7c',LD='#2f9e44',DROP='#a5d8ff',BL='#faa2c1'

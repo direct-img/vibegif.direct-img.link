@@ -1,4 +1,5 @@
 // two dice bouncing and tumbling, landing on a new number every bounce
+// tags: playful, game, tumble, luck
 const{sin,cos,PI,abs,floor}=Math,T=2*PI
 export const frames=24,delay=60
 const PIPS={1:[[0,0]],2:[[-1,-1],[1,1]],3:[[-1,-1],[0,0],[1,1]],4:[[-1,-1],[1,-1],[-1,1],[1,1]],5:[[-1,-1],[1,-1],[0,0],[-1,1],[1,1]],6:[[-1,-1],[1,-1],[-1,0],[1,0],[-1,1],[1,1]]}

@@ -1,4 +1,5 @@
 // bat flapping its wings and bobbing up and down
+// tags: animal, halloween, float
 // every dark part gets its white rim in one pass first, so the bat reads as one silhouette on black
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=60

@@ -1,4 +1,5 @@
 // loading ring of dots with a fading trail, and a little face in the middle watching it go round
+// tags: dots, spin, circle, wait
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=60
 export default(c,t)=>{

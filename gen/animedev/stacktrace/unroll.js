@@ -1,4 +1,5 @@
 // pink-haired girl unrolls an error scroll, a long red stack trace spills to the floor and she goes pale, then she rolls it back up
+// tags: anxious, anime, coding, error, scroll, red
 export const frames=30,delay=70,rim=4
 const P=Math.PI,O='#2b2135',S=Math.sin,C=Math.cos,
 B=c=>c.beginPath(),

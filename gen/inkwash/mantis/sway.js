@@ -1,4 +1,5 @@
 // ink wash praying mantis clinging to a grass stalk that sways in the breeze, forelegs unfolding and folding, head turning
+// tags: animal, insect, grass
 const{sin,cos,PI,abs,min,max,hypot,floor,round}=Math,T=2*PI
 // seeded random, ink colour (J swaps in an accent), smoothstep, pulse (0→1→0 between a and b)
 const R=n=>(n=sin(n*91.7+7.3)*43758.5)-floor(n)

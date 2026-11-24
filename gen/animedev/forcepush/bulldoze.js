@@ -1,4 +1,5 @@
 // anime girl in a hard hat grinning wildly as she drives a tiny bulldozer marked --force, its blade scattering commit blocks
+// tags: excited, anime, coding, git, chaos
 export const frames=15,delay=75,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d',a=T*t

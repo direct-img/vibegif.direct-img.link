@@ -1,4 +1,5 @@
 // round yellow avatar ball with two black oval eyes idling restlessly: it breathes, glances left then up to the right, blinks, and does a tiny fidgety hop
+// tags: calm, blink, ball, yellow
 export const frames=72,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // potted cactus swaying to music, arms waving, pink flower bobbing on its head
+// tags: happy, playful, nature, flower, music
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const G='#51cf66',GD='#2f9e44',POT='#ff922b',PD='#e8590c',FL='#f783ac',FC='#ffd43b',BL='#ffa8a8'

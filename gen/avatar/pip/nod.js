@@ -1,4 +1,5 @@
 // round coral avatar mascot ball nodding yes: its two white dot eyes dip down the ball and bounce back up three times, quick and eager, flattening at the bottom of each nod as the whole ball bobs along
+// tags: happy, yes, bounce, ball, coral
 export const frames=52,delay=40
 const{PI,sin,cos}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

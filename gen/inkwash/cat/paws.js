@@ -1,4 +1,5 @@
 // ink wash cat pawprints walking across the page from a spilled ink dish, each print appearing step by step and then drying and fading, the cat's tail tip flicking past the edge
+// tags: playful, animal, pawprints, ink, walk
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),

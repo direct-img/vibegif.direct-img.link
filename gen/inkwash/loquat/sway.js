@@ -1,4 +1,5 @@
 // ink wash loquat branch, a cluster of apricot fruit and big veined leaves swaying
+// tags: calm, nature, fruit
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`
 const rnd=s=>()=>(s=s*16807%2147483647)/2147483647

@@ -1,4 +1,5 @@
 // Philippines flag: blue over red with the white hoist triangle, golden eight-rayed sun and three gold stars, waving on a flagpole, with a warm-smiling anime girl printed in the fly, glossy black hair in a side bun ringed with white sampaguita jasmine flowers, pearl earrings and a white Filipiniana terno with tall butterfly sleeves; she blinks as the flag ripples
+// tags: anime, wave, country, pride, sun
 export const frames=16,rim=3
 const W=236,H=118,X=14,Y=52,T=Math.PI*2
 const P=(c,s)=>{c.beginPath();for(const[,k,a]of s.matchAll(/([MLCQZ])([^MLCQZ]*)/g)){

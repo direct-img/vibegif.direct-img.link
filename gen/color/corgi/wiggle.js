@@ -1,4 +1,5 @@
 // corgi seen from behind, fluffy heart-shaped butt wiggling side to side on stubby trotting legs, smiling back over its shoulder
+// tags: happy, playful, animal, dog, trot
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const OR='#ffa94d',OD='#f08c00',PK='#faa2c1',TG='#ff8fab',BL='#ffa8a8'

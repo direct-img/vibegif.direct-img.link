@@ -1,4 +1,5 @@
 // moon viewing: silver-haired girl in a kimono sits on the veranda with a tri-color dango skewer under a huge full moon, susuki swaying, the moon rabbit pounding mochi
+// tags: calm, moon, night-sky, food, autumn, kimono
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=110
 const SKIN='#ffe3d1',HAIR='#e9ecef',HD='#adb5bd',HL='#fff',EYE='#fab005',ED='#e67700',KIM='#7048e8',KD='#5f3dc4',OBI='#ffd43b',MOON='#fff3bf',MD='#ffe066',RAB='#fcc419',WOOD='#c08a5e',WD='#8d6346',SUS='#e8c99b',SUD='#c9a46a',STEM='#94d82d',D1='#faa2c1',D2='#fff',D3='#8ce99a',BL='#ffa8a8',MO='#c92a2a'

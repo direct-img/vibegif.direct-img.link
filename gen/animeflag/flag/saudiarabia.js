@@ -1,4 +1,5 @@
 // Saudi Arabia flag (green field, white Shahada inscription above a white sword pointing to the hoist) waving, with a gentle anime girl standing in front of its lower fly corner, well clear of the inscription and sword: white headscarf with gold trim, rose-pink dress, holding a pink Taif rose, blinking as her scarf flutters
+// tags: anime, wave, country, pride, gentle
 export const frames=16,delay=80,rim=3
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const pth=(c,a)=>{c.beginPath();c.moveTo(a[0],a[1]);for(let k=2;k<a.length;k+=4)c.quadraticCurveTo(a[k],a[k+1],a[k+2],a[k+3])}

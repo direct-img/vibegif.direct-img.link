@@ -1,4 +1,5 @@
 // girl with dark brown half-up hair folding a pink paper square, poof, it becomes a paper crane that flaps up out of her hands while she watches in delight
+// tags: calm, happy, paper, craft
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#6b4a35',HD='#4f3526',HL='#b8927a',EYE='#9c36b5',ED='#5f1f6e',BL='#ffa8a8',CAR='#96f2d7',CAD='#38d9a9',PAP='#faa2c1',PAD='#f06595',TIE='#fa5252',STK='#ffd43b'

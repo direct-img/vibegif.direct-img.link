@@ -1,4 +1,5 @@
 // ink wash pomegranate hanging on a twig, splitting open to show translucent red seeds, leaves swaying
+// tags: nature, fruit, seeds
 import{createCanvas}from'@napi-rs/canvas'
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

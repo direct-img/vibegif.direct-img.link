@@ -1,4 +1,5 @@
 // seal balancing a ball on its nose, the ball rolling side to side while its flippers clap
+// tags: happy, playful, animal, ball, ocean
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

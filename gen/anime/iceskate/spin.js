@@ -1,4 +1,5 @@
 // figure skater with a sky-blue bun spinning on the ice, arms joined overhead, skirt flaring, a sparkle trail circling her
+// tags: calm, winter, sparkle
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#8ec5fc',HD='#4dabf7',HL='#e7f5ff',DR='#cc5de8',DD='#9c36b5',SK=['#e599f7','#f783ac'],RIB='#f783ac',BL='#ffa8a8',ICE='#e7f5ff',IL='#a5d8ff'

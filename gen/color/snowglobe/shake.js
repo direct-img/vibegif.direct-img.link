@@ -1,4 +1,5 @@
 // snow globe gets a shake, snow swirls around a tiny house and pine inside, then drifts down and settles
+// tags: calm, winter, snow, house, pine, gentle
 // each flake lifts off its resting spot, swirls, and lands back on the same spot, so the loop is seamless
 const{sin,cos,PI,abs,min}=Math,T=2*PI
 export const frames=24,delay=70

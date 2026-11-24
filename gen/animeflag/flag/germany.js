@@ -1,4 +1,5 @@
 // Germany flag (black, red and gold horizontal bands) rippling on a flagpole, with a confident anime girl personifying Germany printed across the bands: long golden hair with a black-red-gold ribbon, amber eyes, black blazer with a red tie, giving a thumbs up and a wink as her hair sways in the wind
+// tags: anime, wave, country, pride, confident
 export const frames=16,delay=80,rim=3
 const W=236,H=142,X=16,Y=57,P=Math.PI*2,K='#111',RD='#DD0000',GD='#FFCE00'
 const sh=(c,f,s=K,w=3.5)=>{c.fillStyle=f;c.fill();c.strokeStyle=s;c.lineWidth=w;c.stroke()}

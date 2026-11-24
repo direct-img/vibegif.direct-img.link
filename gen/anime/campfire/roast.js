@@ -1,4 +1,5 @@
 // girl with emerald braids and a knit beanie roasts a marshmallow on a stick over a crackling campfire, it puffs up golden
+// tags: calm, happy, camping, fire, food, marshmallow
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#12b886',HD='#087f5b',HL='#c3fae8',EYE='#a9744f',ED='#5c3d2e',BEAN='#ff922b',BND='#e8590c',JK='#e64980',JD='#a61e4d',LOG='#a9744f',LD='#7c5236',F1='#ff6b6b',F2='#ffa94d',F3='#ffe066',ST='#ced4da',MAL='#fff',TOAST='#f4b860',BL='#ff8787'

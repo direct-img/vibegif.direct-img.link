@@ -1,4 +1,5 @@
 // cute skull bobbing along while its jaw chatters open and shut
+// tags: playful, halloween, bob
 const{sin,PI,abs}=Math,T=2*PI
 export const frames=16,delay=70
 const D=(c,f,a=11,b=4)=>{for(const[l,s]of[[a,'#111'],[b,'#fff']])c.lineWidth=l,c.strokeStyle=s,c.beginPath(),f(),c.stroke();c.lineWidth=7;c.strokeStyle='#111'}

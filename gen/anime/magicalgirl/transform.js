@@ -1,4 +1,5 @@
 // magical girl with violet twin tails raising her heart wand while a pink ribbon spirals up around her skirt, sparkles popping
+// tags: excited, magic, sparkle, ribbon, heart
 const{sin,cos,PI,max,round}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#9775fa',HD='#7048e8',HL='#e5dbff',EYE='#f783ac',ED='#c2255c',DR='#fff',PK='#faa2c1',PD='#f06595',GO='#ffd43b',GD='#f59f00',BL='#ffa8a8'

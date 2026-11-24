@@ -1,4 +1,5 @@
 // potter girl with a mahogany ponytail and a clay smudge on her cheek coning clay up into a tall pot and pressing it back down on a spinning wheel
+// tags: calm, craft, clay, focus
 // the dark back hair gets a white rim so it doesn't vanish on black
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90

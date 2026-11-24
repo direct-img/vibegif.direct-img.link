@@ -1,4 +1,5 @@
 // cowgirl with chestnut braids riding a blue whale stacked with shipping containers through the waves, waving yeehaw
+// tags: excited, anime, coding, whale, ocean, playful
 export const frames=12,delay=100,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#1f1a24',sk='#f4c9a4',ss='#dda27c',hr='#8a4b2a',hs='#5e301a',hl='#c98a5e',wb='#2496ed',wd='#1673c2'

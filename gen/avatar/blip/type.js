@@ -1,4 +1,5 @@
 // round violet avatar blip typing: a glossy violet ball whose two white square pixel eyes round off and bud a third dot, then the three dots hop one after another like a typing indicator before merging back into two eyes
+// tags: robot, dots, pixel, ball, violet
 export const frames=72,delay=40
 const{sin,cos,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

@@ -1,4 +1,5 @@
 // round violet avatar blip success and done: a glossy violet ball crouches, then hops up as its two white square pixel eyes swing together into one big white check mark with a burst of mint and yellow sparks, lands with a satisfied bounce and settles back to its eyes
+// tags: happy, robot, hop, pixel, ball, violet
 export const frames=64,delay=40
 const{sin,cos,PI:P,min,max}=Math,
 k=x=>max(0,min(1,x)),

@@ -1,4 +1,5 @@
 // ink wash orchid, long thin-thick-thin leaves swaying and pale flowers nodding in a breeze
+// tags: calm, nature, flower, gentle
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
 // five tones of one warm black ink, as see-through washes
 K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),

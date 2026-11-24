@@ -1,4 +1,5 @@
 // chibi in a pumpkin dress and cat-ear headband shaking her jack-o-lantern candy bucket, candies hopping out and dropping back in
+// tags: playful, happy, chibi, halloween, candy
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#862e9c',HD='#5f1f6e',HL='#e5c4ee',EYE='#94d82d',ED='#5c940d',PUMP='#ff922b',PD='#e8590c',STEM='#51cf66',SD='#2f9e44',EAR='#495057',PINK='#faa2c1',SOCK='#b197fc',BL='#ffa8a8',MO='#c92a2a',CANDY=['#f783ac','#4dabf7','#ffd43b','#69db7c']

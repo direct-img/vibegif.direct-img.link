@@ -1,4 +1,5 @@
 // mermaid with sea green hair lifts her purple tail out of the water and slaps it down, splash and ripples, bubbles rising
+// tags: happy, playful, ocean, bubbles
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#38d9a9',HD='#0ca678',HL='#c3fae8',EYE='#f06595',ED='#a61e4d',TL='#9775fa',TD='#6741d9',FIN='#d0bfff',SH='#faa2c1',SEA='#4dabf7',SL='#d0ebff',BL='#ffa8a8',STAR='#ffd43b'

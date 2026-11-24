@@ -1,4 +1,5 @@
 // chibi with short orange hair sprinting late for school, toast in her mouth, scarf and bag flapping, dust puffs and speed lines behind
+// tags: anxious, playful, chibi, school, food, run
 const{sin,cos,PI,max,min,sqrt,round,abs}=Math,T=2*PI
 export const frames=12,delay=60
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#e8590c',HL='#ffd8a8',EYE='#845ef7',ED='#5f3dc4',NAVY='#4263eb',ND='#364fc7',SCARF='#fa5252',SOCK='#fff',SOCKB='#dee2e6',SHOE='#a0522d',BAG='#a9744f',BAGD='#7f5539',CRUST='#d9822b',BREAD='#ffe8a3',BUTTER='#fff3bf',BL='#ffa8a8'

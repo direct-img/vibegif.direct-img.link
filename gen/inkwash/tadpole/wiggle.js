@@ -1,4 +1,5 @@
 // ink wash tadpoles wiggling through water, dark round heads with quick dry-flick tails, one sprouting tiny legs, beside a swaying water weed
+// tags: playful, animal, water
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

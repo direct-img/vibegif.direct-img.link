@@ -1,4 +1,5 @@
 // mouse sitting up and sniffing: nose twitching, whiskers wiggling, an ear flicking and its tail curling
+// tags: curious, animal, whiskers, twitch
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=70
 export default(c,t)=>{

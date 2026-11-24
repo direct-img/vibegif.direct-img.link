@@ -1,4 +1,5 @@
 // silver-haired anime girl clinging to her desk while a swirling node_modules black hole sucks in package boxes, papers and her coffee, hair and legs streaming toward it
+// tags: anxious, anime, coding, chaos, space, spin
 export const frames=20,delay=90,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t)

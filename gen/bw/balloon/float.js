@@ -1,5 +1,5 @@
 // two balloons tied together bobbing and swaying out of step, strings waving
-// tags: calm, balloon, float, gentle
+// tags: calm, gentle, sway
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const balloon=(c,x,y,r,a)=>{

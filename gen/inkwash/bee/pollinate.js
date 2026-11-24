@@ -1,4 +1,5 @@
 // ink wash bee hovering down to land on a wild flower, wings a translucent blur, a dusting of muted gold pollen
+// tags: calm, animal, flower, insect, gentle
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

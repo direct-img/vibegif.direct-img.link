@@ -1,4 +1,5 @@
 // ink wash monkey hanging from a branch, reaching down for the moon's reflection; ripples break it apart and it reforms
+// tags: animal, reflection, fable, ripple
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

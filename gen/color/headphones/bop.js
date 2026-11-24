@@ -1,4 +1,5 @@
 // headphones bopping to the beat, ear cups thumping, music notes popping out the sides
+// tags: happy, music, notes, beat
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=16,delay=70
 const BAND='#4dabf7',CUP='#f783ac',CUSH='#ffd43b',NOTES=['#b197fc','#69db7c','#ffa94d']

@@ -1,4 +1,5 @@
 // round coral avatar mascot ball startled in surprise: flinches, then jumps K with its two white dot eyes stretched huge and tall while yellow startle marks pop above it, trembles, blinks twice and settles
+// tags: excited, surprise, jump, ball, coral
 export const frames=60,delay=50
 const{PI,sin,cos,min,exp}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // cute helicopter hovering and gently tilting, main rotor whirring, tail rotor spinning, downwash puffs below
+// tags: happy, tilt, travel, spin
 const{sin,cos,PI,abs,round}=Math,T=2*PI
 export const frames=16,delay=70
 const B='#ff6b6b',BD='#e03131',GL='#a5d8ff',SK='#868e96',RT='#dee2e6',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // girl with a dark-plum high ponytail in a trench coat going shh as she turns her gold private key in a padlock sealing a -----BEGIN PGP letter, the matching public key glows and verifies
+// tags: calm, anime, coding, key, secret, shh
 export const frames=16,delay=85,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#22182a',sk='#ffe6d6',ss='#f4c6b2',hr='#4f2148',hs='#331430',hl='#9a5a8f',tc='#cfa56c',td='#a9834e',gd='#f2c14e',gs='#c8902a'

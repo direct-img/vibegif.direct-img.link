@@ -1,4 +1,5 @@
 // hamster running flat out in a spinning wheel
+// tags: playful, animal, wheel, fast
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=50
 const RIM='#4dabf7',ST='#adb5bd',HB='#ffc078',BE='#fff4e6',PK='#faa2c1'

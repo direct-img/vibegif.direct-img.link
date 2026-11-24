@@ -1,5 +1,5 @@
 // northern lights ripple over snowy hills inside a rounded night-sky sticker, stars twinkling
-// tags: calm, night-sky, aurora, ripple, slow
+// tags: calm, night-sky, stars, snow, slow
 // the dark sky gets a white rim so it doesn't vanish on dark backgrounds
 const{sin,max}=Math,T=2*Math.PI
 export const frames=16,delay=90

@@ -1,4 +1,5 @@
 // paper ball tossed in an arc into a happy trash bin, the lid flips open to catch it and the bin bounces
+// tags: playful, bin, bounce
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

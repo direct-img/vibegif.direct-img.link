@@ -1,4 +1,5 @@
 // an emerald-haired girl with a low side bun holding down a giant Ctrl key and tapping C, then V three times as copies of a code card pop out
+// tags: playful, anime, coding, keyboard, copy, bounce
 const P=Math.PI,O='#2b1d2e'
 const el=(c,x,y,a,b=a,r=0)=>{c.beginPath();c.ellipse(x,y,a,b,r,0,2*P)}
 const rr=(c,x,y,w,h,r)=>{c.beginPath();c.roundRect(x,y,w,h,r)}

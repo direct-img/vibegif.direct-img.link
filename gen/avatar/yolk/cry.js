@@ -1,4 +1,5 @@
 // round yellow avatar ball crying its eyes out: its black eyes well up with blue tears and its lip trembles, then it throws its head back bawling with a huge open mouth while fountains of blue teardrops fly out both sides, and finally sniffles back to calm
+// tags: sad, tears, ball, yellow
 export const frames=72,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

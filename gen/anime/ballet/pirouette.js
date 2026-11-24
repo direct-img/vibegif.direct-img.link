@@ -1,4 +1,5 @@
 // ballerina with a coral bun rises on pointe and pirouettes twice, spotting her head front, tutu bouncing, then lands in plié
+// tags: calm, spin, gentle
 const{sin,cos,PI,max,min,abs,round}=Math,T=2*PI
 export const frames=20,delay=75
 const SKIN='#ffe3d1',HAIR='#ff7f6e',HD='#f0564a',HL='#ffd6cf',EYE='#40c057',ED='#2b8a3e',LEO='#b197fc',LD='#7950f2',TU='#e5dbff',TD='#b197fc',SHOE='#faa2c1',FL='#ffd43b',BL='#ffa8a8',WOOD='#e0a96d',WD='#b07d4f',SPOT='#fff3bf'

@@ -1,4 +1,5 @@
 // round violet avatar blip rebooting: a glossy violet ball powers down as its two white square pixel eyes droop, collapse into a flat line, shrink to a dot and switch off while the ball dims and sags, then the dot comes back, stretches into a line and opens into two eyes that glance left and right as it boots up bright again
+// tags: tired, robot, power, pixel, ball, violet
 export const frames=72,delay=50
 const{sin,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

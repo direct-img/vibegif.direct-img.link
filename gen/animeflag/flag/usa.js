@@ -1,4 +1,5 @@
 // United States flag (13 red and white stripes, blue canton with 50 white stars) rippling on a flagpole, with a cheerful anime girl personifying the USA printed in the stripes: auburn ponytail with a white star clip, blue eyes, navy jacket, blinking and waving hello
+// tags: anime, wave, country, pride, happy
 export const frames=16,delay=80,rim=3
 const W=236,H=124,X=16,Y=52,P=Math.PI*2,R='#B22234',B='#3C3B6E',K='#111'
 const star=(c,x,y,r)=>{c.beginPath();for(let k=0;k<10;k++){const q=-Math.PI/2+k*Math.PI/5,s=k%2?r*.4:r;c.lineTo(x+s*Math.cos(q),y+s*Math.sin(q))}c.closePath()}

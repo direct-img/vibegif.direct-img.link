@@ -1,4 +1,5 @@
 // ink wash old sage dozing under a pine tree, head nodding over an open scroll, long white beard swaying, a steaming cup of tea beside him
+// tags: calm, tired, pine, sleep, scroll
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),
