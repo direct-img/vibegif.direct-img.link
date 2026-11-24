@@ -1,4 +1,5 @@
 // party popper wobbles, then bangs out confetti and curly streamers that drift down
+// tags: excited, celebration, party, confetti, streamers
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const STRIPES=['#4dabf7','#ffd43b','#ff6b6b'],CF=['#ff6b6b','#ffd43b','#4dabf7','#69db7c','#b197fc','#f783ac','#ffa94d']

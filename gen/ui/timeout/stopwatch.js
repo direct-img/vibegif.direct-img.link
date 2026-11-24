@@ -1,4 +1,5 @@
 // a stopwatch hand ticks round to zero as the time left shrinks away, then it rings and shakes, and winds back for another go
+// tags: clock, anxious, ring, shake
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

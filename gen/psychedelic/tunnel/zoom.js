@@ -1,4 +1,5 @@
 // round portal into an endless rainbow tunnel: nested wavy seven-lobed rings rush outward toward the viewer, twisting and swaying, colors cycling
+// tags: portal, rainbow, twist, fast, trippy
 export const frames=20,delay=70
 const T=Math.PI*2,{sin,cos,max}=Math
 export default(c,t)=>{

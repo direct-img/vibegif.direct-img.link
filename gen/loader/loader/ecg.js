@@ -1,4 +1,5 @@
 // heartbeat monitor: a coral-red ECG line with a white sticker rim sweeps left to right drawing two beats with sharp pulse spikes, a bright glowing dot at the head, the old darker-red trace erased just ahead of it
+// tags: anxious, heartbeat, body, pulse, medical
 const{sin,PI,floor,min,max}=Math,T=2*PI
 export const frames=48,delay=40,rim=5
 const X0=26,W=204,M=36,P=W+M,Y=150,GAP=34, // the head wraps through an off-screen margin M so the loop is seamless

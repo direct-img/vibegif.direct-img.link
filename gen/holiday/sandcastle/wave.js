@@ -1,4 +1,5 @@
 // sandcastle with a little pennant flag waving on top while a foamy wave laps up the beach and slides back
+// tags: calm, happy, summer, beach, gentle
 export const frames=30,delay=60,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const SA='#f5c86e',SD='#d9a046'

@@ -1,4 +1,5 @@
 // a turtle pokes its head out, spots something off screen, NOPE pops up and it slams back into its shell to shiver
+// tags: anxious, funny, animal, hide
 import{Path2D}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 const U=[.03,.08,.13,.18,.23,.27,.33,.385,.42,.46,.5,.56,.62,.66,.7,.75,.8,.88,.92,.97]

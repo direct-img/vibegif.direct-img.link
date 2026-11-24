@@ -1,4 +1,5 @@
 // lunch rush winner: spiky white-haired girl with a cheek bandage hoisting the last yakisoba bread, star eyes, fang grin, victory lines, classmates' hands still grabbing from the corners
+// tags: excited, proud, playful, food, school, lunch
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=12,delay=90,rim=4

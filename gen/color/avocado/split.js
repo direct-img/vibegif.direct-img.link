@@ -1,4 +1,5 @@
 // avocado halves rocking apart and back together while the pit hops out of its half and lands again
+// tags: playful, food, fruit, rock, hop
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const SK='#2f9e44',FL='#c0eb75',IN='#e9fac8',PIT='#a9744f',BL='#ffa8a8'

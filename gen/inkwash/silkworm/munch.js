@@ -1,4 +1,5 @@
 // ink wash silkworms munching a mulberry leaf, pale segmented bodies undulating, the leaf edge eaten away bite by bite and then growing back
+// tags: animal, insect, leaf
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

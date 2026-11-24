@@ -1,4 +1,5 @@
 // ring-tailed lemur sitting with big amber eyes, its long striped tail curling and uncurling over its head, blinks
+// tags: calm, animal, curl, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#8a94a6',L='#e2e6ed',A='#3d4352',Y='#f4c03e',D='#2b2633'

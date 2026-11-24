@@ -1,4 +1,5 @@
 // Newton's cradle: the end balls take turns swinging out and clacking back while the middle three stay still
+// tags: calm, game, pendulum
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=60
 const D=(c,f,a=11,b=4)=>{for(const[l,s]of[[a,'#111'],[b,'#fff']])c.lineWidth=l,c.strokeStyle=s,c.beginPath(),f(),c.stroke();c.lineWidth=7;c.strokeStyle='#111'}

@@ -1,4 +1,5 @@
 // jackalope hopping in place: little antlers, ears trailing the hop, stretched in the air, squashed on landing
+// tags: playful, happy, animal, fantasy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=75
 const B='#c9a27e',L='#ead8c4',A='#8f6b4c',D='#2b2633'

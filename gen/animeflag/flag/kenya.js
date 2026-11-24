@@ -1,4 +1,5 @@
 // Kenya flag waving on a pole: black, red and green horizontal stripes with white borders and the red Maasai shield with two crossed white spears in the center, and a laughing anime girl on the fly side with deep brown skin, two bouncy black hair puffs tied with red and green scrunchies, white top and a bead necklace in flag colors, blinking
+// tags: anime, wave, country, pride, shield
 import{createCanvas as cc}from'@napi-rs/canvas'
 export const frames=16,delay=75,rim=3
 const Q=2,X=19,Y=44,W=228,H=152,A=6,L=190,T=Math.PI*2,{sin,cos,pow,abs,PI}=Math

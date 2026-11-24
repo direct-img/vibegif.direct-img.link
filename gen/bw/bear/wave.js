@@ -1,4 +1,5 @@
 // bear sitting and waving hello with one paw
+// tags: happy, animal, hello, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=70
 export default(c,t)=>{

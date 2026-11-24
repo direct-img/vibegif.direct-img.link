@@ -1,4 +1,5 @@
 // Mexico flag waving on a pole: green, white and red vertical tricolor with the Mexican coat of arms (golden eagle on a prickly pear cactus eating a snake, oak and laurel wreath) centered in the white band, and an anime girl on the green hoist side presenting it with an open palm, long black hair with a pink dahlia flower, green blouse with a flower-embroidered white neckline, gold sparkles, blinking and smiling
+// tags: anime, wave, country, pride
 import{createCanvas as cc}from'@napi-rs/canvas'
 export const frames=16,delay=75,rim=3
 const Q=2,X=19,Y=46,W=228,H=130,A=7,L=180,T=Math.PI*2,{sin,cos,pow,abs,PI}=Math

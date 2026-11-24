@@ -1,4 +1,5 @@
 // ink wash village of thatched roofs in a valley, chimney smoke rising and drifting, mist between the houses
+// tags: calm, valley, mist, landscape
 const{sin,cos,PI,abs,min,max,floor,hypot,atan2,exp}=Math,T=2*PI
 const K=(a,r=20,g=18,b=16)=>`rgba(${r},${g},${b},${a})`
 const R=s=>(s=sin(s*127.1+3.7)*43758.5453)-floor(s)

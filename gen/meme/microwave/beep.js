@@ -1,4 +1,5 @@
 // microwave counting down, a hand sneaks in and pops the door open at 0:01 right before it can beep, then the door swings shut and it starts over
+// tags: playful, funny, food, sneaky
 const{sin,cos,PI,max,min,floor}=Math,T=2*PI
 export const frames=32,delay=90,rim=5
 const BODY='#e9ecef',DK='#adb5bd',WIN='#343a40',LIT='#ffe066',CAV='#fff3bf',SEG='#69db7c',MUG='#4dabf7',SK='#ffd43b',SL='#9775fa',BTN='#ff8787'

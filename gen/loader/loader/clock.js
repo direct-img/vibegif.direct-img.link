@@ -1,4 +1,5 @@
 // round teal desk clock on two little feet with a cream face: the coral minute hand whirls once round with a pale motion wedge and springs to a stop at twelve, the dark hour hand creeps an hour then eases back while the clock rocks and settles
+// tags: time, spin, steady
 const{sin,cos,exp,PI,min}=Math,T=2*PI
 export const frames=32,delay=60
 const z=.72,w=7.5,wd=w*Math.sqrt(1-z*z)

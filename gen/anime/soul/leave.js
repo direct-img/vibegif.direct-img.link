@@ -1,4 +1,5 @@
 // worn-out auburn-haired girl slumped over her desk with blank eyes, her little ghost soul drifting out of her mouth and getting sucked back in
+// tags: tired, exhausted, ghost, desk, overwhelmed
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#c8642c',HD='#9c4a1c',HL='#f5c29f',HOOD='#dee2e6',HDK='#adb5bd',DESK='#e8b07a',DD='#c47f45',BAG='#d0bfff',PAPER='#fff'

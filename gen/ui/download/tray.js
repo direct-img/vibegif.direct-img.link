@@ -1,4 +1,5 @@
 // a down arrow pops up and drops into a smiling tray, which squashes and bounces as it catches it
+// tags: arrow, happy, bounce
 const{sin,cos,PI,min,max,exp}=Math,T=2*PI
 export const frames=18,delay=70
 const back=u=>(u=min(1,max(0,u)),1+2.7*(u-1)**3+1.7*(u-1)**2)

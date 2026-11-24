@@ -1,4 +1,5 @@
 // toaster pops two slices of toast that hop up and drop back in, the lever snapping up then pushed down again
+// tags: happy, food, hop
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=70
 const ease=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

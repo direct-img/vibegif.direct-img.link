@@ -1,4 +1,5 @@
 // red sleigh piled with presents flying through a swoop, nose dipping and climbing, speed lines and magic sparkles trailing behind
+// tags: excited, christmas, presents, magic, sparkle, fast
 export const frames=24,delay=65,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos
 // sleigh centre + tilt along the loop: one big dive and climb

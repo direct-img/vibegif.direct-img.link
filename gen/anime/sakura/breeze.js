@@ -1,4 +1,5 @@
 // silver-haired girl in the spring wind: long hair and hair ribbon streaming sideways while cherry petals drift past
+// tags: calm, spring, cherry-blossom, wind, petals, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#dee2e6',HD='#adb5bd',HL='#fff',EYE='#f06595',ED='#a61e4d',COAT='#4c6ef5',CD='#364fc7',RB='#ff6b6b',BL='#ffa8a8',PET='#ffc9de'

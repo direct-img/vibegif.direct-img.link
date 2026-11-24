@@ -1,4 +1,5 @@
 // girl with neon pink hair watching her jelly slime pet bounce on top of her head, both grinning, boing lines on each landing
+// tags: happy, playful, bounce
 const{sin,cos,PI,max,round,pow}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#f06595',HD='#c2255c',HL='#ffdeeb',EYE='#94d82d',ED='#5c940d',TOP='#ffec99',TD='#fab005',SL='#99e9f2',SD='#3bc9db',BL='#ffa8a8'

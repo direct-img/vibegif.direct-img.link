@@ -1,4 +1,5 @@
 // stack of pancakes on a plate, the butter pat softening on top while blobs of syrup run down the sides
+// tags: happy, food, breakfast, butter
 const{sin,PI,min,max,sqrt}=Math,T=2*PI
 export const frames=20,delay=80
 const PC='#ffc078',PT='#ffd8a8',SY='#b5651d',SL='#e8a35a',BU='#ffe066',BS='#fcc419',PL='#e7f5ff',BL='#ffa8a8'

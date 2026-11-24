@@ -1,4 +1,5 @@
 // solid black disc with sixteen thin needle spikes and a white sticker rim, the spike ring snaps in to about sixty percent and springs back past rest twice in a quick lub-dub heartbeat, then holds still
+// tags: needle, pulse, minimal
 const{sin,cos,exp,PI}=Math,T=2*PI,N=16
 // 22 motion frames at 30ms, then one held rest frame: 1.2s loop
 export const frames=23,delay=[...Array(22).fill(30),540],rim=5

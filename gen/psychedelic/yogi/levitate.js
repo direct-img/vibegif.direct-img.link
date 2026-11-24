@@ -1,4 +1,5 @@
 // cross-legged meditating figure levitating up and down while its seven chakra dots light up in a wave from root to crown and wobbly rainbow aura rings ripple outward behind it
+// tags: yoga, meditation, chakra, calm, rainbow, aura
 export const frames=24,delay=80
 const T=Math.PI*2,C=['#ff2e4d','#ff8a00','#ffe600','#2fdc5a','#00c2ff','#4b4bff','#b43bff']
 const P=[...C,'#111111','#ffffff','#2a1466','#c02a8a','#ff4fa8','#ff8ac8','#ffc2e2'].map(h=>[1,3,5].map(k=>parseInt(h.slice(k,k+2),16)))

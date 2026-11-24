@@ -1,4 +1,5 @@
 // an empty wishlist heart drawn as a chunky dashed outline, gently breathing in and out
+// tags: heart, hopeful, breathe, gentle, calm
 const{sin,cos,PI,hypot}=Math,T=2*PI
 export const frames=16,delay=80
 const P=[...Array(161)].map((_,k)=>{const s=k/160*T;return[16*sin(s)**3,-(13*cos(s)-5*cos(2*s)-2*cos(3*s)-cos(4*s))]})

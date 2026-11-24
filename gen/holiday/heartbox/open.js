@@ -1,4 +1,5 @@
 // heart-shaped chocolate box: the lid lifts off and stands up behind it to show the chocolates, then closes again
+// tags: love, valentines, chocolate, gift, heart, food
 export const frames=30,delay=60,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos,cl=v=>v<0?0:v>1?1:v,ez=v=>v*v*(3-2*v)
 const L=(a,b,k)=>a.map((v,i)=>v+(b[i]-v)*k)

@@ -1,4 +1,5 @@
 // empty shopping cart rolling back and forth on its own, wheels spinning, leaving little dust puffs behind its wheels
+// tags: shopping, lonely, roll, dust
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=20,delay=80
 export default(c,t)=>{

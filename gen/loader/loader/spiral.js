@@ -1,4 +1,5 @@
 // a hypnotic black and white two-armed spiral on a white disc inside a thick dark ring with a thin white rim, turning steadily so the stripes seem to flow endlessly inward
+// tags: hypnotic, optical-illusion, spin
 export const frames=30,delay=40,rim=5
 const{atan2,sqrt,max,min,PI}=Math,T=2*PI,P=35,RD=86
 export default(c,t)=>{

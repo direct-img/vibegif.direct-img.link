@@ -1,4 +1,5 @@
 // silver bob haired girl in a polka dot headscarf humming as she sweeps, a crumpled paper ball drops in and her broom flicks it into a green trash can whose lid flips open and claps shut
+// tags: anime, broom, clean, humming, happy, calm
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#ced4da',HD='#868e96',HL='#f8f9fa',EYE='#4dabf7',ED='#1864ab',SC='#ff8787',SH='#ffe066',AP='#74c0fc',APD='#1c7ed6',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',WD='#e8b07a',ST='#ffd43b',SD='#e67700',BD='#ff6b6b',CN='#8ce99a',CND='#37b24d',NT='#b197fc'

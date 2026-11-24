@@ -1,4 +1,5 @@
 // periwinkle haired streamer with a side ponytail chatting excitedly into a desk mic while a red muted icon blinks, she notices, freezes in panic with gloom lines and a sweatdrop, then slaps the mic and the icon pops away
+// tags: anime, streamer, embarrassed, excited
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=18,delay=90
 const SKIN='#ffe3d1',HAIR='#91a7ff',HD='#5c7cfa',HL='#edf2ff',EYE='#f06595',ED='#c2255c',HO='#96f2d7',HOD='#20c997',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',MIC='#495057',GR='#ced4da',ST='#adb5bd',RED='#ff6b6b',WOOD='#e8b07a',WD='#c47f45',SW='#a5d8ff',SC='#ffd43b',GL='#748ffc'

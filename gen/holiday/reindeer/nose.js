@@ -1,4 +1,5 @@
 // reindeer face with its big red nose blinking on and glowing, ears twitching, eyes blinking
+// tags: happy, playful, christmas, animal, glow, blink
 export const frames=24,delay=60,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos
 // one antler as polylines (left side; mirrored for the right)

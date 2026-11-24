@@ -1,4 +1,5 @@
 // psychedelic matryoshka (russian nesting doll) with a rippling rainbow apron rocks, cracks open, its halves fly off in a burst of sparkles and the smaller color-shifting doll inside hops out and grows into its place, nesting forever
+// tags: doll, rainbow, surprise, sparkle, playful, trippy
 export const frames=24,delay=70
 const{PI,sin,cos,sqrt,exp,log,max,min,floor}=Math,TAU=2*PI
 const H=224,hs=100,e=7,r=.6,b=8,G=246

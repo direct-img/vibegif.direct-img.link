@@ -1,4 +1,5 @@
 // manga girl with messy white hair squeezes a pillow over her blushing face and rocks side to side kicking her feet, hearts popping
+// tags: love, shy, happy, blush, hearts, cute
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=12,delay=80,rim=4

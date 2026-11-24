@@ -1,4 +1,5 @@
 // ink wash cicada clinging to a bold willow branch, body pulsing as it sings, faint brushed arcs of sound fading outward
+// tags: animal, insect, summer, pulse
 const T=Math.PI*2,S=Math.sin,C=Math.cos,H=Math.hypot,K=[.93,.79,.58,.38,.21].map(a=>`rgba(20,18,16,${a})`)
 const R=s=>(s=(s*7919+12345)*16807%2147483647,()=>(s=s*16807%2147483647)/2147483647)
 // catmull-rom samples through points

@@ -1,4 +1,5 @@
 // chocolate haired maid girl with twin braids holding out a plate of choc chip cookies with a hopeful smile, a cursor clicks the pulsing green accept button and she lights up
+// tags: anime, maid, food, hopeful, offer, cute
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#8d5b3c',HD='#5c3a22',HL='#e9cbb1',EYE='#20c997',ED='#087f5b',DR='#91a7ff',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',RB='#ff6b6b',CK='#e8b07a',CD='#c47f45',CH='#5c3a22',RIM='#a5d8ff',OK='#51cf66',OD='#2f9e44',SP='#ffd43b'

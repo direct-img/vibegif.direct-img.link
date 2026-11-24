@@ -1,4 +1,5 @@
 // ink wash red-crowned crane dancing, lifting its wings and stepping, vermilion crown dab
+// tags: calm, animal, bird, gentle
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

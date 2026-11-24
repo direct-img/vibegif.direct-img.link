@@ -1,4 +1,5 @@
 // shy girl with platinum hime-cut hair peeking out from behind a shoji door, leaning out to blink at you, then hiding again
+// tags: door, blush, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#f1f3f5',HD='#ced4da',HL='#fff',EYE='#9775fa',ED='#6741d9',WOOD='#c98a52',PAPER='#fff9f0',BL='#ffa8a8',DRESS='#a5d8ff',RB='#f783ac'

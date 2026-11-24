@@ -1,4 +1,5 @@
 // little astronaut with short crimson hair drifting in her bubble helmet, waving on a wavy tether while stars twinkle around her
+// tags: calm, space, stars, float, wave
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=110
 const SKIN='#ffe3d1',HAIR='#e03131',HD='#c92a2a',HL='#ffc9c9',EYE='#51cf66',ED='#2b8a3e',SUIT='#fff',SS='#dee2e6',ACC='#ff922b',GL='#a5d8ff',BL='#ffa8a8',FR='#e8590c',PL='#b197fc',PD='#7950f2',ST='#ffd43b'

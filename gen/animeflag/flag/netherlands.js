@@ -1,4 +1,5 @@
 // Netherlands flag waving on a silver pole: red-white-blue horizontal bands, with a cheerful anime girl printed across the middle, golden blonde ponytail with an orange bow streaming in the wind, blue eyes, cream sweater with an orange neckerchief, holding up a red tulip that sways as she winks
+// tags: anime, wave, country, pride, happy
 export const frames=16
 const P=Math.PI
 const p=(c,d)=>{

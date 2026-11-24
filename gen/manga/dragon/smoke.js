@@ -1,4 +1,5 @@
 // manga dragon girl with screentone twin buns and curled horns blowing smoke rings that drift off and break up, scaly tail swishing
+// tags: playful, fantasy, smoke-rings, cute
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=100,rim=4

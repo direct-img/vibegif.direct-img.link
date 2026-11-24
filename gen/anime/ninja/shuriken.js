@@ -1,4 +1,5 @@
 // masked kunoichi pops out of a smoke puff, throws a spinning shuriken that zips off to the right, then vanishes in smoke again
+// tags: playful, smoke, fast
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#495057',HD='#343a40',HL='#adb5bd',EYE='#ff922b',ED='#d9480f',GI='#3b5bdb',GD='#364fc7',SC='#e03131',WR='#e9ecef',MET='#ced4da',SM='#f1f3f5'

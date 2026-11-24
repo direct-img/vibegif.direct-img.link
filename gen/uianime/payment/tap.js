@@ -1,4 +1,5 @@
 // magenta haired girl taps her card on a payment terminal, contactless waves ripple out, the screen flips green and a big check pops up as she beams
+// tags: anime, card, terminal, contactless, check, success
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#da77f2',HD='#ae3ec9',HL='#f8f0fc',EYE='#51cf66',ED='#2b8a3e',SWT='#ff8787',SD='#fa5252',BAND='#ffd43b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',TER='#ced4da',TD='#868e96',SCR='#364fc7',OK='#51cf66',CARD='#4dabf7',CHIP='#ffd43b'

@@ -1,4 +1,5 @@
 // white haired catgirl hiding in an empty cardboard box: ears poke out, she peeks left and right, pops up with a cat smile, then ducks back in
+// tags: anime, catgirl, cat, peek, playful, cute
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#f8f9fa',HD='#ced4da',EAR='#ffc9d6',EYE='#4dabf7',ED='#1864ab',BL='#ffa8a8',BX='#e0a96d',BXD='#c08552',BXL='#f1c48a',IN='#8d6346',TP='#ffe8cc'

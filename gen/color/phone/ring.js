@@ -1,4 +1,5 @@
 // phone buzzing with an incoming call from a smiley, ring waves on each side, green button pulsing
+// tags: happy, call, buzz, pulse
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=60
 const BODY='#9775fa',SCR='#e7f5ff',AV='#ffd43b',GO='#51cf66',NO='#ff6b6b'

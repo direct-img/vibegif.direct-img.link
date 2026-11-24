@@ -1,4 +1,5 @@
 // ink wash teapot tilting to pour a stream of tea into a small cup, steam curling up from the cup, then tilting back
+// tags: calm, food, teapot, steam
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),
 ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),

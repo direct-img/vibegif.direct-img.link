@@ -1,4 +1,5 @@
 // calm girl in a kimono whisks matcha in a tea bowl with a bamboo chasen, foam bubbling up, eyes serene
+// tags: calm, tea, kimono, serene, slow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

@@ -1,4 +1,5 @@
 // cream-haired hime-cut girl nibbling a chocolate stick snack bite by bite until it's gone, then pulling a fresh one out of the box
+// tags: happy, food, snack, chocolate, eat
 const{sin,cos,PI,min,max,floor}=Math,T=2*PI
 export const frames=24,delay=80
 const SKIN='#ffe3d1',HAIR='#fff1c9',HD='#e8c98f',HL='#fff',EYE='#a9744f',ED='#6b4226',SW='#ff8787',SD='#e03131',COL='#fff',RIB='#4dabf7',BIS='#f0c27b',CHO='#7b4a2e',BOX='#fa5252',BL='#ffa8a8',MO='#c92a2a'

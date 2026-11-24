@@ -1,4 +1,5 @@
 // mint haired girl with hair clips flashing a V sign, the copy icon duplicates and an identical clone pops in beside her with a poof, both wink in sync, then the clone poofs away
+// tags: anime, clone, peace, happy, playful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#63e6be',HD='#0ca678',HL='#e6fcf5',EYE='#f06595',ED='#a61e4d',TOP='#ffc9c9',TD='#fa5252',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',CL=['#ffd43b','#74c0fc'],CP='#74c0fc',CPD='#1c7ed6'

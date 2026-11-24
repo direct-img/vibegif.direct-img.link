@@ -1,4 +1,5 @@
 // otter floating on its back, banging a clam on the stone on its tummy while it bobs on the waves
+// tags: calm, happy, animal, ocean, waves
 const{sin,cos,PI,abs,max}=Math,T=2*PI
 export const frames=16,delay=80
 const BR='#a9744f',BD='#8d6346',BE='#ffd8a8',WA='#4dabf7',WL='#a5d8ff',ST='#ced4da',SD='#868e96',CL='#faa2c1',CD='#f06595',BL='#ffa8a8'

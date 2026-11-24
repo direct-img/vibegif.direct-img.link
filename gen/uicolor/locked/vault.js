@@ -1,4 +1,5 @@
 // blue vault with its gold wheel spun hard by a straining face, then jammed and rattling, locked tight as a padlock badge pops up
+// tags: padlock, strain, rattle, stuck, anxious
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=85
 const BX='#4dabf7',DR='#ced4da',DRD='#adb5bd',G='#ffd43b',GD='#fab005',BL='#ffa8a8',SH='#868e96'

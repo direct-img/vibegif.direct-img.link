@@ -1,4 +1,5 @@
 // manga zashiki-warashi: chibi child with an ink okappa bob and a flower-print kimono, bouncing an embroidered temari ball twice per loop
+// tags: happy, playful, ball, kimono
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,max,min}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

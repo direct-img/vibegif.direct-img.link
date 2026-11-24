@@ -1,4 +1,5 @@
 // hermit crab: eyes peek out of its shell, it climbs half out waving both claws, ducks back in and the shell wobbles
+// tags: shy, playful, animal, ocean
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=32,delay=70
 const B='#f4c03e',L='#f9e0a0',A='#ee5a5a',D='#2b2633'

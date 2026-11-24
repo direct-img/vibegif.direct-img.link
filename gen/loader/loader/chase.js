@@ -1,4 +1,5 @@
 // one thick black arc with a white sticker rim spinning clockwise, its head surges ahead until the arc covers most of the ring then its tail catches up so it shrinks back to a short stub
+// tags: arc, spin, minimal, fast
 export const frames=60,delay=30,rim=6
 const{PI}=Math,T=2*PI
 // ease-in-out cubic, clamped

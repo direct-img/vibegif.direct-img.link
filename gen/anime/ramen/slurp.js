@@ -1,4 +1,5 @@
 // girl with ginger space buns slurping a big bowl of ramen, noodles zipping up into her puffed cheeks, steam curling up
+// tags: happy, food, noodles, steam, eat
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#3bc9db',HD='#1098ad',HL='#c5f6fa',BL='#ffa8a8',TOP='#74c0fc',BOWL='#fa5252',BR='#ffc078',ND='#ffe066',WOOD='#e0a96d',NORI='#2f9e44',ONI='#8ce99a'

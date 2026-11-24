@@ -1,4 +1,5 @@
 // graduating girl with light screentone hair and a big bow pulls the cap off her diploma tube, pop, cherry petals burst out
+// tags: happy, proud, celebration, graduation, petals, school
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

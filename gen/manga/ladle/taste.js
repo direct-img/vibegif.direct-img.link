@@ -1,4 +1,5 @@
 // girl in an apron dips a ladle into a steaming pot, blows on it, sips, and melts into a happy ^^ with flowers
+// tags: happy, calm, food, cooking, soup, steam
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version

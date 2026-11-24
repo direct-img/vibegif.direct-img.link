@@ -1,4 +1,5 @@
 // cuttlefish hovering with neon rainbow color waves rippling across its body toward its head, fins undulating, arms curling, W-shaped pupil
+// tags: sea, animal, rainbow, neon, trippy
 import{createCanvas}from'@napi-rs/canvas'
 const P=Math.PI*2,hex=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16))
 const C=['#ff2bd6','#9b5cff','#2f7bff','#00e5ff','#3dff8a','#fff23d','#ff8a2b'].map(hex)

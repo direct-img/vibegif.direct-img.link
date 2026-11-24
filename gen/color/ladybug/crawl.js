@@ -1,4 +1,5 @@
 // ladybug crawling on a leaf, legs stepping, antennae twitching, wings peeking open now and then
+// tags: calm, animal, insect, leaf
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const LF='#69db7c',VN='#2f9e44',R='#fa5252',WG='#e7f5ff'

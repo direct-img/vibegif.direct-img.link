@@ -1,4 +1,5 @@
 // flustered red haired girl with a side ponytail holding her palm out as a flurry of little envelopes fly in and bounce off it, sweating under a red "429" badge
+// tags: anime, flustered, anxious, envelopes
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=15,delay=90
 const SKIN='#ffe3d1',HAIR='#fa5252',HD='#c92a2a',HL='#ffc9c9',EYE='#4dabf7',ED='#1864ab',TOP='#96f2d7',TD='#20c997',BL='#ff8787',RD='#fa5252',SW='#a5d8ff',CLIP='#ffd43b',EN=['#ffe066','#a5d8ff','#fcc2d7','#b2f2bb','#d0bfff'],Z=.62

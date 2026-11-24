@@ -1,4 +1,5 @@
 // coral ponytail girl in a paper hat and splattered overalls rolling fresh paint up and down a wall, stripe by stripe
+// tags: anime, wall, work, calm
 const{cos,PI,max,min,hypot}=Math,T=2*PI
 export const frames=20,delay=85
 const SKIN='#ffe3d1',HAIR='#ff8787',HD='#f03e3e',EYE='#339af0',ED='#1864ab',BL='#ffa8a8',OV='#f8f9fa',OVD='#ced4da',TS='#ffd43b',PA='#fff3bf',PB='#a5d8ff',PBD='#74c0fc',HN='#ff922b',MT='#868e96'

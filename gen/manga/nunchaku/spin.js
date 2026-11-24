@@ -1,4 +1,5 @@
 // chibi in a striped jumpsuit with an inky braid holds a cool wide stance while her nunchaku whirls in blurred circles at her side
+// tags: proud, martial-arts, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=50,rim=4

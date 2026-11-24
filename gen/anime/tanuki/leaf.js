@@ -1,4 +1,5 @@
 // tanuki girl with silver-blue hair, round ears and a ringed tail wagging, then the leaf on her head spins and she vanishes in a puff of smoke and pops back
+// tags: playful, animal, magic, tail, vanish
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#a5b4cb',HD='#748ba8',HL='#e7ecf5',DK='#5c677d',EYE='#a9744f',ED='#6b4226',TOP='#ffa94d',TD='#e8590c',OBI='#38d9a9',LF='#51cf66',LD='#2f9e44',BL='#ffa8a8',SM='#f1f3f5'

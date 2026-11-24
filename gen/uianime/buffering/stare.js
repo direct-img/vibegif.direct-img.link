@@ -1,4 +1,5 @@
 // periwinkle haired girl in round glasses staring blankly at her laptop, a buffering ring spinning in both lenses while three dots pile up above her
+// tags: anime, laptop, glasses, spinner, blank, tired
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=12,delay=85
 const SKIN='#ffe3d1',HAIR='#748ffc',HD='#4c6ef5',HL='#dbe4ff',SWT='#ffd8a8',SWD='#ffa94d',LAP='#ced4da',LD='#868e96',LENS='#e7f5ff',RING='#4dabf7',BL='#ffc9c9'

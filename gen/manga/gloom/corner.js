@@ -1,4 +1,5 @@
 // chibi with ink-black braids sulking with her knees hugged, gloom lines on her face, a dark aura wavering up and mushrooms sprouting beside her
+// tags: sad, lonely, chibi, sulk
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=12,delay=100,rim=4

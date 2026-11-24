@@ -1,4 +1,5 @@
 // pendulum wave seen from above and to one side, six rainbow balls on dark strings hang from a slate bar and swing toward and away from you at slightly different rates, drifting out of phase into waves and zigzags and all lining up again at the loop point
+// tags: calm, rainbow, wave
 const{sin,cos,PI,round}=Math,T=2*PI
 export const frames=56,delay=50
 const N=6,Y=58,A=.5,

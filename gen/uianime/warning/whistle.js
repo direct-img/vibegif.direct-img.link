@@ -1,4 +1,5 @@
 // aqua-haired crossing guard in a cap blowing her whistle with puffed cheeks and holding up a stop palm, a warning sign flashing beside her
+// tags: anime, crossing-guard, stop, alert
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#66d9e8',HD='#1098ad',EYE='#7950f2',ED='#4c2fa8',SH='#364fc7',VS='#ff922b',CAP='#364fc7',GD='#ffd43b',BL='#ffa8a8',WY='#ffd43b',WO='#ff922b',WH='#fcc419',Z=.76

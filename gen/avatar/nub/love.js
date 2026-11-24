@@ -1,4 +1,5 @@
 // round mint green avatar in love: a smitten jelly ball melts and sways with blissful smiling closed eyes and pink blush while pink hearts float up and pop
+// tags: hearts, jelly, blush, gentle, ball, mint
 const{sin,cos,asin,atan2,abs,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

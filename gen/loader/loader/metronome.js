@@ -1,4 +1,5 @@
 // wooden pyramid metronome with a dark outline, cream scale plate and brass weight, its steel arm swings side to side with pendulum easing and the body gives a tiny squash bounce at each tick
+// tags: calm, music, swing, slow
 const{sin,PI,max}=Math,T=2*PI
 export const frames=40,delay=40
 const A=.45, // swing amplitude (rad)

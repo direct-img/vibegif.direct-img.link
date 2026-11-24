@@ -1,4 +1,5 @@
 // a penguin in a red scarf ice skating in a loop on a patch of ice, leaning into the turns, scarf streaming behind
+// tags: happy, playful, winter, animal, glide
 export const frames=40,delay=55,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

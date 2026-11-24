@@ -1,4 +1,5 @@
 // girl praying under the teru teru bozu she hung in the window: the rain stops, clouds roll away, the sun comes out and she cheers, then the clouds return
+// tags: hopeful, weather, rain, sun, clouds, prayer
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#69db7c',HD='#2f9e44',HL='#d3f9d8',EYE='#5c7cfa',ED='#364fc7',SHIRT='#fff',STR='#74c0fc',WOOD='#c08a5e',WD='#8d6346',RAIN=[159,179,200],SUN=[116,192,252],CLOUD='#dee2e6',CD='#adb5bd',SUNC='#ffd43b',DOLL='#fff',TIE='#fa5252',CLIP='#ffd43b',BL='#ffa8a8',MO='#c92a2a'

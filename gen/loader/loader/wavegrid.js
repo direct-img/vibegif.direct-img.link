@@ -1,4 +1,5 @@
 // a drop falls into an 11x11 grid of chunky dots seen in perspective and a circular ripple rolls out across it like a pond, dots shade from teal in the troughs to violet on the crests
+// tags: calm, ripple, grid, water, wave
 const{sin,cos,exp,PI,max,min,round,hypot}=Math,T=2*PI
 export const frames=48,delay=50
 const N=5,C=['#127a80','#159a96','#22b5a8','#3fa6d6','#5a86e8','#7468ea','#9256e0','#ad48d6']

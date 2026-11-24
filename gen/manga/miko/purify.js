@@ -1,4 +1,5 @@
 // shrine maiden with long ink-black hair waves her gohei side to side, paper streamers fluttering and sparkles popping
+// tags: calm, shrine, ritual, sparkle, gentle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

@@ -1,4 +1,5 @@
 // broken robot slumped on the floor: head drooping, bent antenna sparking, one eye flickering, a loose spring boinging out of its head
+// tags: broken, sad, sparks, boing
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const FL=[1,1,0,1,0,0,1,1,1,1,0,1,1,0,1,1],SP=[1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0]

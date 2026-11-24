@@ -1,4 +1,5 @@
 // lion dance head swaying and shaking, blinking its big lidded eyes and snapping its jaw open
+// tags: excited, lunar-new-year, celebration
 export const frames=48,delay=55,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),bp=(t,a,b)=>Math.sin(Math.PI*cl((t-a)/(b-a)))
 const K=.84

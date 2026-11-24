@@ -1,4 +1,5 @@
 // dodo waddling in place: its round body rocks side to side as its big feet step, its head bobs, the tail tuft wobbles and it blinks
+// tags: happy, playful, animal, bird
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

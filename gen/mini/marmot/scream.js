@@ -1,4 +1,5 @@
 // marmot standing on its hind legs: it tips its head back and screams with its mouth wide open, shaking all over, then blinks
+// tags: funny, animal, surprised
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

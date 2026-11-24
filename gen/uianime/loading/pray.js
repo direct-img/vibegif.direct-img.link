@@ -1,4 +1,5 @@
 // purple haired shrine maiden squeezing her eyes shut and praying hard while a ring of loading dots spins around her and sparkles twinkle
+// tags: anime, shrine-maiden, hopeful, sparkle, hope
 const{sin,cos,PI,min}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=12,delay=80

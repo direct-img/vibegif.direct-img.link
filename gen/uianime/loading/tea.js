@@ -1,4 +1,5 @@
 // calm sky-blue haired girl in a cardigan sipping from a steaming teacup with her eyes closed while loading dots bounce in a little thought cloud
+// tags: anime, sip, calm, steam, gentle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#74c0fc',HD='#339af0',HL='#e7f5ff',CAR='#ffec99',CD='#fcc419',CUP='#fcc2d7',CPD='#f06595',TEA='#c77c3a',BL='#ffa8a8',RB='#b197fc',DOT=['#ff8787','#ffd43b','#69db7c'],Z=.88

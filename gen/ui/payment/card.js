@@ -1,4 +1,5 @@
 // a credit card pops in and swipes down the side slot of a card terminal, the screen thinks, then a check pops up with a beep
+// tags: terminal, check, beep, success
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),ease=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),back=u=>(u=cl(u),1+3*(u-1)**3+2*(u-1)**2)

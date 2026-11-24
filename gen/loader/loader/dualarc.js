@@ -1,4 +1,5 @@
 // a teal arc on an outer ring and a coral arc on an inner ring spin in opposite directions, each surging and easing off out of step so they whip past each other
+// tags: arc, spin, minimal
 export const frames=40,delay=40
 const{sin,PI}=Math,T=2*PI
 export default(c,t)=>{

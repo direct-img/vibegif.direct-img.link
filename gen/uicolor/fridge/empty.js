@@ -1,4 +1,5 @@
 // fridge door swings open to show nothing but one lonely shivering egg, the light inside flickering, then it shuts again
+// tags: egg, lonely, shiver, home, food
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=90
 const BD='#99e9f2',LN='#e3fafc',LIT='#fff3bf',DIM='#5c6670',SH='#d0ebff',BY='#ffd43b',BL='#ffa8a8',FL='000101110110101111010000'

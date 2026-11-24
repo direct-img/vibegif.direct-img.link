@@ -1,4 +1,5 @@
 // round mint green avatar yawning: a sleepy jelly ball stretches tall with a big slow open-mouthed yawn and a tiny tear, then sinks back, smacks its lips and settles
+// tags: tired, jelly, slow, ball, mint
 const{sin,cos,asin,atan2,abs,exp,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

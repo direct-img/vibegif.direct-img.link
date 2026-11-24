@@ -1,4 +1,5 @@
 // record player spinning a vinyl whose label has a little face, tonearm riding the grooves, notes floating up
+// tags: happy, calm, music, record-player, retro, notes
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const BASE='#ffa94d',BD='#e8590c',REC='#343a40',GR='#5c636a',SH='#868e96',LAB='#ff6b6b',ARM='#dee2e6',HEAD='#ffd43b',NOTE=['#4dabf7','#b197fc']

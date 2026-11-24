@@ -1,4 +1,5 @@
 // flying saucer hovering with its lights chasing and a tractor beam pulling rings upward
+// tags: playful, space, alien, lights
 const{sin,PI,floor}=Math,T=2*PI
 export const frames=20,delay=70
 export default(c,t)=>{

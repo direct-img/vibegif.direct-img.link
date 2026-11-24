@@ -1,4 +1,5 @@
 // flamingo standing on one leg, wobbling to keep its balance while its neck sways the other way
+// tags: calm, playful, animal, bird, wobble
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const PK='#f783ac',PL='#faa2c1',PD='#e64980',LG='#ff8fab',WA='#74c0fc',WL='#d0ebff',BL='#ff6b6b'

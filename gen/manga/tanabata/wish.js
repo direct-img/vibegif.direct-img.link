@@ -1,4 +1,5 @@
 // manga girl with a screentone side tail ties her wish strip to a bamboo branch, then clasps her hands and wishes while the strips flutter and stars twinkle
+// tags: hopeful, calm, festival, bamboo
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=100,rim=4

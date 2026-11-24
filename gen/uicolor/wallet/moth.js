@@ -1,4 +1,5 @@
 // open wallet with nothing in it, a dusty moth flutters up out of the money pocket while the wallet sweats nervously
+// tags: empty, money, anxious, sweat, lonely
 const{sin,cos,PI,abs,min}=Math,T=2*PI
 export const frames=24,delay=80
 const WB='#c08457',WF='#e0a96d',WI='#5c3d2e',ST='#ffe8cc',MW='#ffe8cc',MS='#e0a96d',MB='#ced4da',BL='#ffa8a8',DU='#e9ecef',SW='#74c0fc'

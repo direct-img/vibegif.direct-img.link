@@ -1,4 +1,5 @@
 // manga kappa girl with messy screentone hair, the water dish on her head sloshing and a turtle-shell backpack, munching a cucumber with webbed hands: bite, chew, chew
+// tags: playful, yokai, food, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

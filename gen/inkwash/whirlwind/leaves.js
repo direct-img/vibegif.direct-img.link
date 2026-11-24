@@ -1,4 +1,5 @@
 // ink wash whirlwind, a gust swirling autumn leaves up in a spiral of dry brush strokes and scattering them
+// tags: weather, wind, autumn, spiral
 const K=a=>`rgba(20,18,16,${a})`,{sin,cos,PI,min,max,abs,hypot,atan2}=Math,T=PI*2,
 R=s=>()=>{let z=s+=0x6D2B79F5;z=Math.imul(z^z>>>15,z|1);z^=z+Math.imul(z^z>>>7,z|61);return((z^z>>>14)>>>0)/2**32},
 // brush: dabs stamped along f(u) with radius w(u)

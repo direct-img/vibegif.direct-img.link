@@ -1,4 +1,5 @@
 // macaw standing tall: long red tail, spreads blue-and-yellow wings and flaps twice, head bobbing
+// tags: proud, happy, bird, animal, colorful
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ee5a5a',L='#f6adad',S='#4ea8de',Y='#f4c03e',D='#2b2633'

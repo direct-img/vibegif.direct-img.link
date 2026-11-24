@@ -1,4 +1,5 @@
 // blue-haired girl in glasses and a lab coat coughing into her fist as gray smoke billows out of her crashed computer
+// tags: anime, cough, computer, crash
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#5c7cfa',HD='#3b5bdb',HL='#dbe4ff',CO='#fff',SH='#a5d8ff',BL='#ffa8a8',PC='#e9d8a6',PD='#c9b37e',SC='#495057',SM='#ced4da',SMD='#adb5bd',SW='#a5d8ff',SP='#ffd43b',Z=.76

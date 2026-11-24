@@ -1,4 +1,5 @@
 // white robot dog sitting in side view, happily wagging a curled segmented metal tail with a glowing tip, pointy ears twitching, cyan LED eye blinking, tag jingling on its orange collar
+// tags: dog, animal, happy, playful
 export const frames=24,delay=50
 const P=Math.PI*2
 export default(c,t)=>{

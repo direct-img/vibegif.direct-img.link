@@ -1,4 +1,5 @@
 // braided navy haired girl in a cram headband scribbling furiously at her desk, steam puffing from her head, finished pages flying off
+// tags: anxious, desk, school, focus, steam
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=14,delay=85
 const SKIN='#ffe3d1',HAIR='#4263eb',HD='#364fc7',EYE='#4dabf7',ED='#1864ab',BL='#ffa8a8',JS='#fa5252',WD='#e0a96d',WDD='#c08552',BK=['#69db7c','#ffd43b','#b197fc','#ff8787','#74c0fc'],TIE='#e03131'

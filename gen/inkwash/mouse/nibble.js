@@ -1,4 +1,5 @@
 // ink wash little mouse sitting up holding and nibbling a chestnut, whiskers twitching and tail curling
+// tags: calm, animal, chestnut
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

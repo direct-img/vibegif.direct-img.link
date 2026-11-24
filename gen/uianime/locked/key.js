@@ -1,4 +1,5 @@
 // red haired girl straining to turn a giant gold key in a big padlock, the shackle clicks shut and she beams as sparkles pop
+// tags: anime, padlock, proud, sparkle, happy
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#ff8787',HD='#e03131',HL='#ffe3e3',EYE='#845ef7',ED='#5f3dc4',TOP='#d0bfff',TD='#9775fa',BL='#ffa8a8',LK='#74c0fc',SH='#dee2e6',GD='#ffd43b',GDD='#f59f00',SP='#ffe066',SW='#a5d8ff'

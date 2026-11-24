@@ -1,4 +1,5 @@
 // a big snowball rolling through bumpy snow, a twig turning round with it, puffs of snow kicked up behind
+// tags: playful, winter, snow
 export const frames=30,delay=50,rim=6
 const K='#1b1a2b',T=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

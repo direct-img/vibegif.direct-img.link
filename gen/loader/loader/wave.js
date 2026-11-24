@@ -1,4 +1,5 @@
 // five dots in a row colored blue, violet, magenta, coral and orange (cool to warm), riding a traveling sine wave left to right, each dot squashing flat at the bottom of its dip
+// tags: calm, dots, colorful
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=40,delay=30
 const C=['#3a7bff','#7b5cff','#c04fd8','#ff5a78','#ff8c2e']

@@ -1,4 +1,5 @@
 // ball-balancing robot rolling back and forth on one big panelled sphere, its tall body and domed head leaning into the motion, arms and antenna swinging for balance, cyan eye looking where it goes
+// tags: balance, sway, gentle
 export const frames=24,delay=60
 const T=Math.PI*2
 const tube=(c,pts,w,col)=>{

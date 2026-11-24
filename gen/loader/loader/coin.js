@@ -1,4 +1,5 @@
 // thick gold coin spinning on its edge in 3D over a grey shadow, lingering on each face (a raised star on the front, a heart on the back) and showing its ridged rim as it turns edge-on, with a white twinkle when the star faces you
+// tags: money, spin, heart
 const{sin,cos,abs,sign,max,PI}=Math,T=2*PI
 export const frames=36,delay=50
 const ink='#111',R=76,D=18

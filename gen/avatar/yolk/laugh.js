@@ -1,4 +1,5 @@
 // round yellow avatar ball cracking up laughing: its black eyes squeeze shut into chevrons, a big mouth with a coral tongue flaps open, and the whole ball bounces, throws its head back and doubles over
+// tags: happy, playful, bounce, ball, yellow
 export const frames=72,delay=40
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // silver haired girl with low pigtails posing for a selfie with a peace sign, the bunny phone flashes and she squints, sparkles after
+// tags: happy, playful, phone, peace-sign
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#d0bfff',HD='#9775fa',HL='#f3f0ff',EYE='#f06595',ED='#a61e4d',BL='#ffa8a8',SWT='#fff3bf',HRT='#ff8787',CASE='#faa2c1',SCR='#cc5de8'

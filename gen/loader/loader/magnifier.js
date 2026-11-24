@@ -1,4 +1,5 @@
 // big magnifying glass with a chunky orange rim and red handle circling over a 3x3 grid of fat outlined coral, gold, teal and purple circles, each circle ballooning to fill the pale blue lens as it slides over it
+// tags: search, grid, curious
 const{sin,cos,hypot,PI}=Math,T=2*PI
 export const frames=32,delay=50
 const ink='#111',R=52,G=-8,cols=['#ff6b6b','#ffb627','#2ec4b6','#8b6cf6']

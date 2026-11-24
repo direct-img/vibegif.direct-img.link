@@ -1,4 +1,5 @@
 // tangerine pigtailed girl with a squeaky toy mallet, a giant red map pin drops onto a little folded map and bounces, she bonks it in with a pop and ripples spread, then it hops away to drop again
+// tags: anime, mallet, bounce, playful
 const{sin,cos,PI,max,min,acos}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#d9480f',HL='#fff4e6',EYE='#4dabf7',ED='#1864ab',TEE='#fff',OV='#748ffc',OVD='#4c6ef5',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',PIN='#ff6b6b',PD='#e03131',M1='#d3f9d8',M2='#b2f2bb',RV='#74c0fc',RT='#f03e3e',MH='#ffd43b',MHD='#f59f00',WD='#c0805a',SP='#ffe066',TIE='#cc5de8'

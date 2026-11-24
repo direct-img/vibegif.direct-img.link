@@ -1,4 +1,5 @@
 // hime cut gamer girl in a cat ear headset mashing her controller, flames burning in her eyes, teeth gritted, sweat flying
+// tags: excited, game, controller, intense, sweat
 const{sin,PI}=Math,T=2*PI
 export const frames=12,delay=70
 const SKIN='#ffe3d1',HAIR='#495057',HD='#343a40',HL='#adb5bd',EYE='#fa5252',ED='#c92a2a',BL='#ffa8a8',HS='#f783ac',HSD='#e64980',HOOD='#69db7c',PAD='#e9ecef',SW='#a5d8ff',LED=['#ff6b6b','#ffd43b','#69db7c','#4dabf7','#b197fc','#f783ac']

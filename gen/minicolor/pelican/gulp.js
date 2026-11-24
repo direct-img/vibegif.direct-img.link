@@ -1,4 +1,5 @@
 // pelican scooping: dips its long bill, comes up with a full pouch, tips back and gulps (a lump slides down the neck)
+// tags: funny, bird, animal, fish
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#7b8cff',L='#c3cbff',Y='#f4c03e',D='#2b2633'

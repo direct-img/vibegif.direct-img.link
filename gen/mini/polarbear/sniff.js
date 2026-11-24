@@ -1,4 +1,5 @@
 // polar bear sniffing the air: it lifts its long snout, nose twitching, little sniff puffs pop out, then lowers its head and blinks
+// tags: calm, animal, winter, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

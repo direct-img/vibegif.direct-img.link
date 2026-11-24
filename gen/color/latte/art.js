@@ -1,4 +1,5 @@
 // latte in a teal cup seen from above at an angle, a heart of foam blooming in the coffee and fading, steam curling up
+// tags: calm, food, coffee, heart, foam
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const CU='#38d9a9',CD='#0ca678',SA='#fff',CO='#a9744f',CR='#c99a6e',FO='#fff4e6',BL='#ffa8a8'

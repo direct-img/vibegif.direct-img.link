@@ -1,4 +1,5 @@
 // a coral circle, a yellow triangle and a blue square with dark outlines sit at the corners of a triangle and swing round to the next corner in eased hops, rounding their corners, spinning and stretching as they travel
+// tags: shapes, colorful, orbit
 export const frames=48,delay=40
 const{sin,cos,tan,PI,max,min,atan2,hypot,floor}=Math,T=2*PI,
 cl=x=>max(0,min(1,x)),

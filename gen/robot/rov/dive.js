@@ -1,4 +1,5 @@
 // underwater ROV robot seen through a brass submarine porthole: yellow-foam submersible with tubular frame, spinning rear thruster, headlight beams, grabber claw and orange tether, bobbing nose-down as bubbles rise and marine snow glints
+// tags: underwater, submarine, sea, porthole, bob, light
 export const frames=24
 let s=7
 const R=()=>(s=s*16807%2147483647)/2147483647,P=Math.PI,TAU=2*P

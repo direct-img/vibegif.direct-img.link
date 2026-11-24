@@ -1,4 +1,5 @@
 // France flag waving on a pole: the blue-white-red tricolor with an anime girl printed in the white stripe, golden-brown hair streaming toward the red, blue eyes, navy sailor top with a red bow, blinking as the cloth ripples
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const P=Math.PI*2,W=232,H=155,X=17,Y=46,N={M:2,L:2,Q:4,C:6},G={M:'moveTo',L:'lineTo',Q:'quadraticCurveTo',C:'bezierCurveTo'}
 let c,t

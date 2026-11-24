@@ -1,4 +1,5 @@
 // Argentina flag waving on a pole: light blue, white, light blue horizontal stripes with the golden Sun of May (face and 32 straight and wavy rays) in the center, and an anime girl on the fly side with long sky-blue hair streaming in the wind, amber eyes gazing at the sun, navy cardigan with an Argentine cockade pin, blinking and smiling
+// tags: anime, wave, country, pride, sun
 import{createCanvas as cc}from'@napi-rs/canvas'
 export const frames=16,delay=75,rim=3
 const Q=2,X=19,Y=44,W=228,H=146,A=6,L=190,T=Math.PI*2,{sin,cos,pow,abs,PI}=Math

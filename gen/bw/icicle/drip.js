@@ -1,4 +1,5 @@
 // icicles hanging from a snowy ledge, a drop swelling on the longest one, falling and splashing into a puddle
+// tags: calm, winter, water, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=70
 export default(c,t)=>{

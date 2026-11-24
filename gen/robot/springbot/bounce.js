@@ -1,4 +1,5 @@
 // little mint-green robot with a TV-screen face riding on one big coil spring, boinging up and down with squash and stretch, antenna wobbling, dust puffs on landing
+// tags: playful, happy, cute
 export const frames=24,delay=45,rim=3
 const P=Math.PI,K=0.26,G=247
 const rr=(c,x,y,w,h,r)=>{c.beginPath();c.roundRect(x,y,w,h,r)}

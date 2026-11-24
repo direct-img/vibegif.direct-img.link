@@ -1,4 +1,5 @@
 // string of firecrackers hanging from a lucky knot, popping one after another at the lit end as the string feeds down
+// tags: excited, lunar-new-year, celebration, loud
 export const frames=48,delay=55,rim=6
 const P=Math.PI*2,N=8,G=18,Y0=64,YP=190,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),rn=n=>(n=Math.sin(n*127.1+311.7)*43758.5453,n-Math.floor(n))
 const KX=128,KY=54

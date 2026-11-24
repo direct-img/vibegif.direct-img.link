@@ -1,4 +1,5 @@
 // blonde girl with twin buns doing a tehepero oops: winking, tongue out, bonking her own head with her fist so little stars pop
+// tags: anime, oops, playful, wink, cute
 const{sin,cos,PI,abs,max}=Math,T=2*PI
 export const frames=8,delay=100
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f59f00',HL='#fff9db',EYE='#f783ac',ED='#c2255c',UN='#fff',COL='#364fc7',RB='#fa5252',BL='#ffa8a8',TG='#ff8fab',ST='#ffd43b'

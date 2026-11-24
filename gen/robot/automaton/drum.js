@@ -1,4 +1,5 @@
 // antique brass clockwork drummer automaton in a red tunic and tall plumed shako hat, standing on a wooden pedestal beating a snare drum with alternating sticks, gears turning in its open chest window
+// tags: clockwork, music, gears, retro
 export const frames=16,delay=75,rim=3
 const P=Math.PI,{sin,cos}=Math
 const B='#d9a441',BH='#f6d47c',BS='#a8742a',BD='#6b4618',RD='#c7362b',RS='#8f241d'

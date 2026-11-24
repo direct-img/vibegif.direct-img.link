@@ -1,4 +1,5 @@
 // red-handled scissors snipping their way down the dashed line of a yellow percent-off coupon, the dashes marching into the blades
+// tags: snip, discount, shopping, red
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=24,delay=70
 const CP='#ffd43b',CPD='#fab005',HD='#ff6b6b',BLD='#dee2e6',X=178

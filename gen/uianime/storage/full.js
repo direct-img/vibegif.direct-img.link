@@ -1,4 +1,5 @@
 // aqua haired girl with twin buns sitting on an overstuffed storage box straining to squash the lid shut, it keeps bursting open and shooting files out while the red "FULL" bar flashes
+// tags: anime, box, strain, anxious, overflow
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#3bc9db',HD='#0c8599',HL='#c5f6fa',EYE='#f76707',TE='#ff8fab',TED='#e64980',SHT='#4c6ef5',SHO='#ffd43b',BL='#ffa8a8',BX='#e8b07a',BXD='#c47f45',TP='#fff3bf',BR='#fa5252',BRL='#ff8787',SW='#a5d8ff',FC=[['#d0ebff','#339af0'],['#d3f9d8','#40c057'],['#fff3bf','#fab005'],['#f3d9fa','#be4bdb']]

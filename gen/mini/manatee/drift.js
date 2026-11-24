@@ -1,4 +1,5 @@
 // manatee drifting: a chubby sea cow bobbing and tilting, its round tail paddle flexes, a flipper paddles, bubbles rise and it blinks
+// tags: calm, animal, ocean, float, slow, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

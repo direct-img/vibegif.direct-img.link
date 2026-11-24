@@ -1,4 +1,5 @@
 // girl with a short ash-brown bob, a green hair clip and a green raglan tee painting this week's column of a contribution grid green square by square, cheering as her streak flame flares and the grid scrolls on
+// tags: proud, anime, coding, green, progress
 export const frames=16,delay=90,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#1d1b22',sk='#ffe7d8',ss='#f4c8b4',hr='#8b7f77',hs='#655b55',hl='#c4bab1',gn='#2f9e55'

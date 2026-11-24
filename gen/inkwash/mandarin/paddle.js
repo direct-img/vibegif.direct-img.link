@@ -1,4 +1,5 @@
 // ink wash pair of mandarin ducks paddling side by side on still water, ripples spreading behind them, soft orange on the drake
+// tags: calm, love, animal, pair, water, ripple
 export const frames=24,delay=85,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

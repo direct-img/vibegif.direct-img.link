@@ -1,4 +1,5 @@
 // silver-haired techwear girl hits a segfault: she RGB-glitches, scatters into pixel blocks, then snaps back together dizzy
+// tags: anxious, anime, coding, dizzy, pixel
 // keyframes [phase, ms]: phase 0 idle, 1 blink, 2 hiccup, 3 split, 4..6 scatter, 7 snap, 8 dizzy
 const K=[[0,500],[1,90],[0,300],[2,70],[0,140],[2,60],[3,70],[3,70],[4,70],[5,80],[6,260],[5,60],[7,60],[8,320],[8,240],[1,90],[0,200]]
 export const frames=K.length,delay=K.map(k=>k[1]),rim=4

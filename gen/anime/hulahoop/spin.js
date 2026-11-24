@@ -1,4 +1,5 @@
 // girl with long magenta hair twirling a striped hula hoop around her waist, hips swaying against it, arms up
+// tags: playful, happy, sway
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#da3ea0',HD='#a61e7a',HL='#fcc2e7',EYE='#15aabf',ED='#0b7285',TEE='#ffd43b',TD='#f59f00',SHO='#20c997',SD='#0ca678',SHOE='#f783ac',BL='#ffa8a8',HOOP=['#ff6b6b','#ffd43b','#69db7c','#4dabf7','#b197fc','#ff922b']

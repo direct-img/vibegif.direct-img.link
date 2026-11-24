@@ -1,4 +1,5 @@
 // blender whirling a pink smoothie, fruit chunks circling in the vortex while the lid rattles and the base hums
+// tags: playful, food, smoothie, fruit, shake
 const{sin,cos,PI,exp}=Math,T=2*PI
 export const frames=16,delay=60
 const GL='#e7f5ff',SM='#f783ac',SL='#faa2c1',BA='#ff6b6b',BD='#e03131',LID='#b197fc',BL='#ffc9c9',FR=['#ff6b6b','#fff3bf','#69db7c','#748ffc','#ffa94d','#69db7c']

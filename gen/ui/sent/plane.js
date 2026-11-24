@@ -1,4 +1,5 @@
 // a paper plane swoops in, flies a loop-the-loop and zooms off the other side, leaving a dashed trail behind it
+// tags: fly, trail, fast, hopeful
 const{sin,cos,PI,atan2,min,max,hypot}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=24,delay=60

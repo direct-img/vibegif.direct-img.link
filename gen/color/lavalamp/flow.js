@@ -1,4 +1,5 @@
 // lava lamp with a happy base, pink blobs rising, merging and sinking through blue goo
+// tags: calm, retro, blobs, slow
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=24,delay=90
 const CAP='#9775fa',CD='#7048e8',GOO='#74c0fc',BLOB='#f783ac',BH='#ffdeeb',BL='#faa2c1'

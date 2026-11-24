@@ -1,4 +1,5 @@
 // ink wash lily, a bud opening into a trumpet bloom with curled-back petals and dark stamens, then fading back to a bud
+// tags: calm, nature, flower, bloom
 import{createCanvas}from'@napi-rs/canvas'
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

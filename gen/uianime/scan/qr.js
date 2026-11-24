@@ -1,4 +1,5 @@
 // cyan haired girl with a bouncy ahoge holds her phone up to a big qr code, a red laser line sweeps down it, then a green check pops and she cheers
+// tags: anime, phone, laser, check, success
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#3bc9db',HD='#0c8599',HL='#e3fafc',EYE='#f06595',ED='#a61e4d',HO='#ffe066',HOD='#fab005',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',PH='#b197fc',PS='#364fc7',LZ='#ff4d4d',OK='#51cf66',SP='#ffe066'

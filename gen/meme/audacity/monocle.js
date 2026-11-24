@@ -1,4 +1,5 @@
 // a posh egg gentleman gasps, his monocle pops out and swings on its chain, top hat hops off his head: THE AUDACITY!
+// tags: shocked, funny, egg, posh, pop
 const{sin,cos,PI,min,max,exp,atan2,hypot}=Math,T=2*PI
 export const frames=26,delay=95,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},pop=u=>(u=cl(u),u<.6?1.25*u/.6:1.25-.25*(u-.6)/.4)

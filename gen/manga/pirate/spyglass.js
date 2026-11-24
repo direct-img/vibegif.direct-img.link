@@ -1,4 +1,5 @@
 // manga pirate captain with an eye patch and wavy ink hair: lifts her spyglass to her eye, extends it, scans, spots something, collapses and lowers it; coat and hair whipping in the wind
+// tags: playful, adventure, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

@@ -1,4 +1,5 @@
 // sleepy lavender bedhead girl in pajamas dozing off while she waits, head nodding, a nose bubble swelling and shrinking, a loading spinner turning above her head
+// tags: anime, doze, tired, zzz, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#b197fc',HD='#7950f2',HL='#e5dbff',PJ='#96f2d7',PD='#20c997',MASK='#f783ac',BL='#ffa8a8',BUB='#d0ebff',SP=['#7950f2','#845ef7','#9775fa','#b197fc','#d0bfff','#e5dbff','#f3f0ff','#fff'],Z=.8

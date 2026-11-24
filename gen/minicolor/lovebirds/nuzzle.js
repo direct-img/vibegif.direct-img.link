@@ -1,4 +1,5 @@
 // two lovebirds on a branch leaning in to nuzzle, eyes closing happily, a little heart floats up between them
+// tags: love, happy, bird, animal, heart, gentle
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#8cc084',L='#c6e0c1',F='#ff7a5c',W='#c9a27e',D='#2b2633'

@@ -1,4 +1,5 @@
 // robot in a yellow welding helmet running a weld bead along a steel plate seam, white-hot arc flash, glowing bead cooling from yellow to red to grey, sparks showering and bouncing
+// tags: sparks, industrial, heat, work
 export const frames=24,delay=50
 const P=Math.PI*2
 const h=n=>{n=Math.sin(n*127.1+311.7)*43758.5453;return n-Math.floor(n)}

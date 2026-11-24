@@ -1,4 +1,5 @@
 // confused girl with mint twin buns holding up an unplugged cable that crackles with little sparks, tilting her head side to side as ? marks pop
+// tags: anime, unplugged, confused, sparks
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=95
 const SKIN='#ffe3d1',HAIR='#63e6be',HD='#12b886',HL='#e6fcf5',EYE='#f06595',ED='#a61e4d',OV='#ffd43b',OD='#f59f00',BL='#ffa8a8',CAB='#dee2e6',PL='#f8f9fa',PR='#adb5bd',ZAP='#ffe066',Q=['#ff8787','#748ffc'],SW='#a5d8ff'

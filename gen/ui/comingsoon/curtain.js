@@ -1,4 +1,5 @@
 // closed stage curtains sway and twitch as if they're about to part, while a spotlight wobbles across them
+// tags: stage, spotlight, excited, sway
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 export default(c,t)=>{

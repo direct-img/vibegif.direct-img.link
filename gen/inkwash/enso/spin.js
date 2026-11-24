@@ -1,4 +1,5 @@
 // ink wash loading spinner, a single brush stroke chasing itself around a zen enso circle with a dark wet head and a dry fading tail
+// tags: calm, zen, loading
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a*.85})`,
 // brush stroke with body: centerline f(u), width w(u), painted from u=a to u=e

@@ -1,4 +1,5 @@
 // puffy grey-blue cloud with a sleepy smiling face and bold black outline bobbing gently, fat blue raindrops swelling under it one after another, dropping and splashing into little droplets on a short blue-grey line below
+// tags: calm, sad, cloud, rain, weather, gentle
 export const frames=36,delay=50
 const{sin,cos,min,max,PI}=Math,T=2*PI
 const cl=x=>min(1,max(0,x))

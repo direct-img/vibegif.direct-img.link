@@ -1,4 +1,5 @@
 // chibi witch with long blonde hair twirling her star wand, leaving a trail of colored sparkles, hat tip flopping
+// tags: playful, chibi, magic, sparkle, wand
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffd43b',HD='#fab005',HL='#fff9db',EYE='#fa5252',ED='#c92a2a',HAT='#7048e8',HATD='#5f3dc4',BAND='#ffd43b',ROBE='#845ef7',BL='#ffa8a8',SP=['#ffd43b','#f783ac','#66d9e8','#b2f2bb']

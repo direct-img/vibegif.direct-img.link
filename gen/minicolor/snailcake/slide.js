@@ -1,4 +1,5 @@
 // cupcake-shell snail sliding along: its foot stretches and gathers, eye stalks wobble, the cherry on top jiggles
+// tags: calm, happy, cupcake, animal, food, slow
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#c9a27e',L='#ead7c3',P='#ff85a8',R='#ee5a5a',D='#2b2633'

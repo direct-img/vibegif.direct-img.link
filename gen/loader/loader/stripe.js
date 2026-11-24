@@ -1,4 +1,5 @@
 // indeterminate progress bar: a pill-shaped track with a thick dark outline, filled with slanted rainbow candy stripes (red, orange, yellow, green, blue, violet) scrolling right, a soft white shine sweeping across now and then
+// tags: progress, bar, candy, rainbow
 export const frames=40,delay=40
 const X=22,Y=94,W=212,H=68,P=22,S=H*.7, // track box, stripe width, slant
   C=['#ff5f7e','#ffa04a','#ffd84d','#4fd18b','#4aa3ff','#9a6bff'],

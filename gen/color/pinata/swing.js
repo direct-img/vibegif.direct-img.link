@@ -1,4 +1,5 @@
 // striped donkey piñata swinging on its rope, bonked by a stick from below, candy popping out and falling
+// tags: excited, celebration, candy, party
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=90
 const ST=['#f783ac','#ffd43b','#4dabf7','#69db7c'],PINK='#faa2c1',SN='#ffd8a8',ROPE='#e0a96d',STICK='#a9744f',CANDY=['#ff6b6b','#b197fc','#ffd43b','#38d9a9','#ffa94d','#4dabf7']

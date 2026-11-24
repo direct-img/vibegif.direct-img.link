@@ -1,4 +1,5 @@
 // ink wash elephant standing in shallow water, trunk curled up spraying an arc of water droplets over its back
+// tags: happy, calm, animal, water, spray
 const{PI,sin,cos,min,max,abs,hypot,floor}=Math,T=2*PI
 const K=a=>a.at?a:`rgba(20,18,16,${a})`
 const R=n=>(n=sin(n*127.1+3.7)*43758.5453,n-floor(n))

@@ -1,4 +1,5 @@
 // chunky wombat digging nose-down into a dirt mound, paws scooping, clods flying back over its back
+// tags: playful, animal, dirt
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#8a94a6',L='#c5cad3',A='#b5835a',D='#2b2633'

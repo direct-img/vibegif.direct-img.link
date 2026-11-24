@@ -1,4 +1,5 @@
 // three gummy bears, red, yellow and green, hopping one after another in a wave like a loading dots row
+// tags: gummy-bears, food, dots, hop, playful, happy
 const{sin,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const B=[['#ff6b6b','#ffa8a8'],['#ffd43b','#fff3bf'],['#69db7c','#b2f2bb']],BL='#ff8787'

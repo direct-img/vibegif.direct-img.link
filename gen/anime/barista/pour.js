@@ -1,4 +1,5 @@
 // barista girl with an espresso-brown bob pouring steamed milk from a steel pitcher into a latte, wiggling the pour, ripples and steam
+// tags: calm, coffee, latte, food, gentle
 // the dark back hair gets a white rim so it doesn't vanish on black
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80

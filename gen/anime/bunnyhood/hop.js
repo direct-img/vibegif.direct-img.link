@@ -1,4 +1,5 @@
 // chibi in a bunny-ear hoodie crouching and hopping, the floppy ears trailing behind the jump and flopping on landing
+// tags: playful, chibi, bunny, animal
 const{sin,cos,PI,max,round}=Math,T=2*PI
 export const frames=16,delay=60
 const SKIN='#ffe3d1',HAIR='#f8f0e3',HD='#d8c8a8',HL='#fff',EYE='#e64980',ED='#a61e4d',HOOD='#fff',HP='#faa2c1',HPD='#f06595',LEG='#b197fc',BL='#ffa8a8'

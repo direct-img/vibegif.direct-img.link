@@ -1,4 +1,5 @@
 // chestnut-haired schoolgirl confessing with her head bowed and eyes squeezed shut, holding out a trembling love letter sealed with a heart
+// tags: shy, love, blush, anxious, hopeful
 const{sin,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#b5703f',HD='#8a4f2a',HL='#ecc19a',BOW='#fa5252',UNI='#4c6ef5',BL='#ff8fab',HT='#f03e3e',PAPER='#fff9db'

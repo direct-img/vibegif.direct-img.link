@@ -1,4 +1,5 @@
 // ink wash chrysanthemum unfurling ring by ring from a tight round bud, short loaded petal strokes over a faint yellow wash, deep-lobed leaves, then fading back to the bud
+// tags: calm, nature, flower, brush
 const T=Math.PI*2,S=Math.sin,C=Math.cos,
 // five tones of one warm black ink, as see-through washes
 K=[.95,.78,.55,.36,.2].map(a=>`rgba(20,18,16,${a})`),

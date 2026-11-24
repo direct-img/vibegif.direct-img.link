@@ -1,4 +1,5 @@
 // top-down modular snake robot slithering in an S-shaped serpenoid wave, a chain of white servo modules with orange bands and dark joints, red LED eyes, camera nose and a flicking forked sensor tongue
+// tags: animal, modular, sci-fi
 export const frames=20,delay=60
 const T=Math.PI*2,N=11,L=250,G=L/N,M=250
 export default(c,t)=>{

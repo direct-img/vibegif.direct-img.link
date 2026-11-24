@@ -1,4 +1,5 @@
 // flustered anime girl with a cobalt-blue bob, yellow hairband and spinning swirl eyes wriggling while tangled up in two crossed git branch lines, conflict markers on each
+// tags: anxious, anime, coding, git, dizzy
 export const frames=14,delay=85,rim=4
 export default(c,t)=>{
 const P=Math.PI,T=P*2,S=Math.sin,C=Math.cos,L='#2a1f2d',a=T*t

@@ -1,4 +1,5 @@
 // paintbrush looping around a figure eight, leaving a rainbow stroke trailing behind its tip
+// tags: happy, art, rainbow, stroke
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=24,delay=60
 const pos=u=>[128+78*sin(u*T),128+46*sin(2*u*T)]

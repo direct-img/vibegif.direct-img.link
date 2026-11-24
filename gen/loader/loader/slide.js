@@ -1,4 +1,5 @@
 // a 2x2 sliding tile puzzle in a grey frame: three dark-outlined tiles take turns gliding clockwise into the empty slot, each tile blending to the color of its new corner (coral, yellow, teal, violet) as it slides
+// tags: game, puzzle, tiles
 export const frames=48,delay=40
 const{sin,PI,max,min,floor}=Math,
 cl=x=>max(0,min(1,x)),

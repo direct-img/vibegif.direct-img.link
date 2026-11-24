@@ -1,4 +1,5 @@
 // rubber duck bobbing and rocking on little rolling waves
+// tags: calm, happy, animal, water, bob
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const Y='#ffd43b',YD='#fab005',O='#ff922b',WA='#74c0fc',BL='#ffa8a8'

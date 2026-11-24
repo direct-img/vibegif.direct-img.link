@@ -1,4 +1,5 @@
 // front view zebra head whose stripes are alternating black and rainbow bands rippling and flowing down its face like op-art waves, wide dark eyes, striped ears and mane tuft
+// tags: animal, op-art, rainbow, ripple, trippy
 import{createCanvas}from'@napi-rs/canvas'
 export const frames=20,delay=80,rim=3
 const S=256,P=['#ff2d6f','#ff8a00','#ffd500','#3ddc4a','#00b7ff','#8b4dff'].map(h=>[1,3,5].map(k=>parseInt(h.slice(k,k+2),16)))

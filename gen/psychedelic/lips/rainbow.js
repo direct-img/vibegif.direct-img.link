@@ -1,4 +1,5 @@
 // glossy red pop-art lips with the mouth open, a twisting wavy rainbow ribbon pouring out and streaming down, sparkles twinkling around it
+// tags: pop-art, sparkle, playful, trippy
 export const frames=24,delay=70
 const P=Math.PI*2,K='#111',rb=['#ff2e63','#ff8c1a','#ffd400','#25d962','#1ea7ff','#9b4dff']
 const sm=(a,b,x)=>(x=Math.min(1,Math.max(0,(x-a)/(b-a))),x*x*(3-2*x))

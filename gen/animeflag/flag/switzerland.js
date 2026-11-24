@@ -1,4 +1,5 @@
 // Swiss flag waving on a silver pole: square red flag with the white cross, and an anime girl printed in the lower hoist corner beside the cross - wavy golden hair with an edelweiss pin, white puff-sleeved blouse and black bodice with red flowers - who tilts her head, blinks and smiles as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=20,delay=70
 const P=Math.PI*2,W=210,H=210,K=2,X0=14,Y0=24,u=W/32
 const RD='#f00',D='#2a1416',SK='#ffe6d8',SK2='#f5c5b3'

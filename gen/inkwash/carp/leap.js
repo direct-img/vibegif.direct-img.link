@@ -1,4 +1,5 @@
 // ink wash carp leaping up a waterfall, arcing through the falling water with splash and spray, vermilion patch on its back
+// tags: excited, animal, fish, waterfall, splash
 export const frames=28,delay=75,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

@@ -1,4 +1,5 @@
 // round disc showing a Julia set fractal that morphs as its constant circles the Mandelbrot cardioid, rainbow bands rippling outward around it and spiraling in rings inside it
+// tags: fractal, math, rainbow, ripple, trippy
 import{createCanvas}from'@napi-rs/canvas'
 export const frames=32,delay=75
 const P=['#ff2e63','#ff8a00','#ffe600','#3ddc5a','#00c2ff','#3b5bff','#b03bff','#ff3bd4'].map(h=>[1,3,5].map(k=>parseInt(h.slice(k,k+2),16))),I=[22,12,48]

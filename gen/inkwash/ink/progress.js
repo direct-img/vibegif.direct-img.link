@@ -1,4 +1,5 @@
 // ink wash progress bar painted as one brush stroke filling from left to right with a dry-brush leading edge, then washing away to restart (loading, progress state)
+// tags: loading, ui, brush, icon
 import{createCanvas}from'@napi-rs/canvas'
 const K='20,18,16',{PI:P,sin,cos,min,max,abs,hypot}=Math,T=P*2
 const cl=(x,a=0,b=1)=>min(b,max(a,x)),ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),mx=(a,b,f)=>a+(b-a)*f

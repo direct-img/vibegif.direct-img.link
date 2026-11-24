@@ -1,4 +1,5 @@
 // neon smiley heart sign on a dark board, glowing pink then flickering off and on with a little buzz
+// tags: love, heart, sign, glow, retro
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const BOARD='#343a40',SCREW='#5c636a',PK='#f783ac',PL='#fff0f6',OFF='#7a3352',WIRE='#ced4da',ZAP='#ffd43b'

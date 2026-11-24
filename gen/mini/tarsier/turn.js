@@ -1,4 +1,5 @@
 // tarsier clinging to a branch: it swivels its head from side to side with its huge eyes, its big ears follow, its tail sways and it blinks
+// tags: anxious, animal, eyes, branch
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

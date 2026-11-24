@@ -1,4 +1,5 @@
 // anime girl with long blonde hair and a flower crown swinging happily on a rope swing that hangs from a git branch with commit dots
+// tags: happy, anime, coding, git, gentle, flower
 export const frames=14,delay=95,rim=4
 export default(c,t)=>{
 c.translate(0,3)

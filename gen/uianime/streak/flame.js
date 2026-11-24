@@ -1,4 +1,5 @@
 // short orange-red haired girl cradling a flickering flame in her palm as a streak badge pops in, its day counter rolls from 6 to 7 with a +1 and she fist pumps beaming while the flame flares up
+// tags: anime, counter, proud, hopeful, achievement
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ff7043',HD='#d9480f',HL='#ffe8cc',EYE='#4dabf7',ED='#1864ab',JK='#20c997',JD='#087f5b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',F1='#ff922b',F2='#ffd43b',F3='#fff9db',BG='#fff4e6',PIN='#74c0fc'

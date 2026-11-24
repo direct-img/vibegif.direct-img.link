@@ -1,4 +1,5 @@
 // rounded progress bar: the striped fill eases out to full while its stripes slide, then slips off the end and wraps round to start again
+// tags: stripes, slide, progress, calm
 const{min,max}=Math
 export const frames=24,delay=70
 const io=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

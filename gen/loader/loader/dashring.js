@@ -1,4 +1,5 @@
 // ten thick orange dashes around a ring inch forward like caterpillars, each stretches its front end then pulls its back end along so the dashes breathe long and short, while the whole ring slowly turns clockwise
+// tags: ring, dashes, caterpillar
 export const frames=40,delay=40
 const{PI,floor}=Math,T=2*PI,N=10,P=T/N,S=.36*P
 const E=x=>(x=x<0?0:x>1?1:x,x<.5?4*x*x*x:1-(2-2*x)**3/2)

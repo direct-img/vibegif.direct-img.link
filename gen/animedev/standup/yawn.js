@@ -1,4 +1,5 @@
 // sleepy lilac-haired anime girl at morning standup holding a coffee mug, fighting a yawn behind her hand then snapping wide awake
+// tags: tired, anime, coffee, morning, work
 export const frames=36,delay=72,rim=3
 const P=Math.PI,{sin,cos,min,max}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

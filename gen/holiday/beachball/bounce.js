@@ -1,4 +1,5 @@
 // striped beach ball bouncing with a squash on landing, spinning on its tilted axis as it flies
+// tags: happy, playful, summer, beach, spin
 export const frames=28,delay=40,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos,n=([x,y,z])=>{const l=Math.hypot(x,y,z);return[x/l,y/l,z/l]}
 const A=n([.34,-.52,.78]),U=n([A[2],0,-A[0]]),V=[A[1]*U[2]-A[2]*U[1],A[2]*U[0]-A[0]*U[2],A[0]*U[1]-A[1]*U[0]]

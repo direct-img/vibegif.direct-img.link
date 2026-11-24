@@ -1,4 +1,5 @@
 // manga chibi bard with a light screentone braid and a feathered cap, strumming a lute while notes float up and one boot taps the beat
+// tags: happy, calm, music, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

@@ -1,4 +1,5 @@
 // blissed-out amanita mushroom with a smiling face on its stem, rainbow ripple bands flowing outward across its wobbling cap, white spots pulsing, sparkles rising around it
+// tags: happy, rainbow, ripple, sparkle
 export const frames=24,delay=70
 const P=['#ff2e93','#ff7a1a','#ffd21f','#3ddc6a','#1ec8ff','#7b5cff'],T=Math.PI*2,{sin,cos}=Math
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version

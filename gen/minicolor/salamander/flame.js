@@ -1,4 +1,5 @@
 // fire salamander resting: little flames flicker along its back, tail sways, slow breaths, blinks
+// tags: calm, fire-salamander, animal, fantasy, breathe, slow
 const{sin,PI,sqrt}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ee5a5a',A='#ff9f43',Y='#f4c03e',D='#2b2633'

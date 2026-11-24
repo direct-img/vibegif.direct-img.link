@@ -1,4 +1,5 @@
 // birthday girl in a party hat behind her cake: makes a wish, puffs her cheeks and blows the candles out one by one, confetti pops, the candles spark back on
+// tags: happy, cake, celebration, candles, wish
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#8f1d4a',HD='#6a1236',HL='#f3a6c4',EYE='#4dabf7',ED='#1864ab',DRESS='#ffd43b',DD='#fab005',HAT='#4dabf7',HS='#fff',POM='#ff6b6b',CAKE='#fff4e6',CR='#f783ac',CRD='#e64980',BERRY='#fa5252',CAN=['#69db7c','#b197fc','#ffa94d'],FL='#ffd43b',FO='#ff922b',BL='#ffa8a8',MO='#c92a2a',CONF=['#ff6b6b','#4dabf7','#ffd43b','#69db7c','#b197fc']

@@ -1,4 +1,5 @@
 // hime-cut girl in a summer yukata watching her senko hanabi sparkler crackle, fanning herself with an uchiwa
+// tags: calm, summer, fireworks, fan
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#5c677d',HD='#3d4657',HL='#c5ccd8',EYE='#e8590c',ED='#a33a06',YU='#4c6ef5',YD='#364fc7',OBI='#ffa94d',FL='#fff',FP='#faa2c1',KZ='#f06595',BL='#ffa8a8',SP='#ffe066',Z=.8

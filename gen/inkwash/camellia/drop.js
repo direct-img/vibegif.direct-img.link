@@ -1,4 +1,5 @@
 // ink wash camellia on a glossy-leaved twig, the whole red blossom drops, lands and settles while a new bud opens
+// tags: sad, calm, nature, flower, fall, slow
 export const frames=32,delay=80,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

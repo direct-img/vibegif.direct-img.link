@@ -1,4 +1,5 @@
 // awkward girl with a hatched bob: a giant sweat drop slides down beside her head while she scratches her cheek with a wobbly smile
+// tags: anxious, funny, embarrassed
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

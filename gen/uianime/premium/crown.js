@@ -1,4 +1,5 @@
 // smug platinum blonde ojou-sama with bouncy drill curls and a jeweled gold crown, eyes half-lidded then tilting back into an ohoho laugh behind her hand, a PRO badge bobs, the crown glints and gold coins spin
+// tags: anime, ojou-sama, smug, laugh, proud
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=16,delay=95
 const SKIN='#ffe3d1',HAIR='#f8f0d4',HD='#d8c58f',EYE='#e64980',ED='#a61e4d',DR='#9775fa',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',GD='#ffd43b',GDD='#f59f00',RU='#ff6b6b',SA='#74c0fc',SP='#ffe066'

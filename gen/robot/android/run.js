@@ -1,4 +1,5 @@
 // sleek white humanoid android running side-on in a full sprint stride cycle, arms pumping, glowing cyan visor, chest core and joints, speed lines streaking behind
+// tags: sprint, fast, speed-lines, sci-fi
 export const frames=20,delay=40
 const P=Math.PI*2,C='#33d6ff'
 const d=a=>[Math.sin(a),Math.cos(a)],ad=(p,l,a)=>{const[x,y]=d(a);return[p[0]+l*x,p[1]+l*y]}

@@ -1,4 +1,5 @@
 // ink wash magnolia branch, goblet buds opening into pale blossoms with a rose blush, then fading back to buds
+// tags: calm, nature, flower
 import{createCanvas}from'@napi-rs/canvas'
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

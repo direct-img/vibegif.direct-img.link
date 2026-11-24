@@ -1,4 +1,5 @@
 // round mint green avatar startled awake: a sleeping jelly ball jolts up with wide eyes and coral surprise marks, wobbles, glances left and right, then dozes off again
+// tags: anxious, startled, jelly, ball, mint
 const{sin,cos,asin,atan2,abs,exp,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

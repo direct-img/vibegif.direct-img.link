@@ -1,4 +1,5 @@
 // "404" adrift in outer space: the 0 is a spinning pink ringed planet with a little smile, the 4s bob gently up and down, stars twinkling all around
+// tags: planet, stars, twinkle, bob, gentle, error
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const A='#4dabf7',B='#b197fc',PL='#f783ac',PB='#faa2c1',PD='#e64980',RG='#ffd43b',BL='#ff8787'

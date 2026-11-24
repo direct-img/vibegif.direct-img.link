@@ -1,4 +1,5 @@
 // two curved arrows chase each other round and round a little face that watches them go
+// tags: face, spin, calm
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=60
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // Alice falling down the rabbit hole with her blue dress billowing and hair streaming up, a pocket watch, playing card, teacup and key tumbling around her past rainbow striped walls rushing upward
+// tags: alice, wonderland, rainbow, fast, trippy, surprise
 export const frames=16,delay=70
 const P=Math.PI*2,H=(h,l=58)=>`hsl(${(h%360+360)%360},90%,${l}%)`
 let z=7;const R=()=>(z=z*16807%2147483647)/2147483647

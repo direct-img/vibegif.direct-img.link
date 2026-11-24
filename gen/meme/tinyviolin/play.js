@@ -1,4 +1,5 @@
 // blob in profile with eyes shut in mock sorrow saws away at a teeny tiny violin, pinky up, sad little notes drifting off ("world's smallest violin")
+// tags: sad, funny, violin, mocking, sympathy
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100,rim=5
 const Y='#ffd43b',BL='#ff8787',VW='#e8803a',VD='#9c4a1a',NT='#4dabf7',TR='#74c0fc'

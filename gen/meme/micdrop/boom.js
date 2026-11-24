@@ -1,4 +1,5 @@
 // a hand lets go of a mic, it hits the stage with a huge BOOM, then the hand casually reaches down and picks it up to drop it all over again
+// tags: proud, smug, funny
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=30,delay=80,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},pop=u=>(u=cl(u),u<.6?1.2*u/.6:1.2-.2*(u-.6)/.4)

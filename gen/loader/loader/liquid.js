@@ -1,4 +1,5 @@
 // dark outlined round-bottom flask of pale glass, a blue stream pours in and the blue liquid rises with a sloshing wavy surface and a light highlight, bubbles drift up, then it drains away and refills
+// tags: flask, science, pour
 const{sin,PI,min,max,exp}=Math,T=2*PI
 export const frames=60,delay=40
 const cl=x=>x<0?0:x>1?1:x,io=x=>(x=cl(x),x<.5?2*x*x:1-2*(1-x)**2),

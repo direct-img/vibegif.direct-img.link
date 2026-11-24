@@ -1,4 +1,5 @@
 // video call tile where someone is passionately going "blah blah blah" and wagging a finger, while their red muted mic pulses in the corner
+// tags: awkward, funny, video-call, work
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=16,delay=Array(16).fill(85),rim=4
 const G={B:'M0 3L0 0L2.3 0Q3.7 0 3.7 1.5Q3.7 3 2.3 3L0 3L0 6L2.5 6Q4 6 4 4.5Q4 3 2.3 3',L:'M0 0L0 6L4 6',A:'M0 6L2 0L4 6M.7 4L3.3 4',H:'M0 0L0 6M4 0L4 6M0 3L4 3'}

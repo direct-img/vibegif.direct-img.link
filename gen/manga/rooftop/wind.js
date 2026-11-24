@@ -1,4 +1,5 @@
 // girl with long wavy white hair at the rooftop chain-link fence, wind streaming her hair and tie, clouds drifting behind the mesh
+// tags: calm, lonely, hopeful, clouds, gentle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

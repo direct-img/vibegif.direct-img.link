@@ -1,4 +1,5 @@
 // girl in a santa hat and red coat tossing a wrapped present up past her head and catching it, eyes following it, snowflakes drifting
+// tags: happy, christmas, snow, celebration
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#6b4226',HD='#4a2c17',HL='#c08a5e',EYE='#2f9e44',ED='#1b5e20',RED='#fa5252',RD='#c92a2a',FUR='#fff',BOX='#51cf66',BXD='#2f9e44',RIB='#ffd43b',BL='#ffa8a8',MO='#c92a2a'

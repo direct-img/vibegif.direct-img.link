@@ -1,4 +1,5 @@
 // manga chibi detective in a deerstalker sweeping her magnifying glass along a trail of footprints, then lifting it so her eye looms huge through the lens
+// tags: playful, chibi, magnifier, mystery
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,hypot}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

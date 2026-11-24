@@ -1,4 +1,5 @@
 // blue envelope with a heart seal flapping its little white wings as it flies off, a trail of puffs streaming out behind it
+// tags: heart, love, wings, fly, happy, hopeful
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=18,delay=70
 const EN='#a5d8ff',FL='#74c0fc',HT='#ff6b6b',BL='#ffa8a8'

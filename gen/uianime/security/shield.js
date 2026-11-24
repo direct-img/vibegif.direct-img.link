@@ -1,4 +1,5 @@
 // royal blue ponytailed girl in a little knight getup braces a big shield with a green check while grumpy bug viruses fly in, bonk off it with a star and tumble away dizzy
+// tags: anime, knight, bugs, check, proud, brave
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=15,delay=90
 const SKIN='#ffe3d1',HAIR='#4c6ef5',HD='#2f44b8',HL='#dbe4ff',EYE='#fcc419',ED='#e67700',TOP='#ff8787',AR='#dee2e6',ARL='#f8f9fa',ARD='#adb5bd',BL='#ffa8a8',GD='#ffd43b',GDD='#f59f00',SH='#e9ecef',SHL='#f8f9fa',OK='#40c057',SP='#ffe066',BUG=['#b197fc','#69db7c','#ff8787']

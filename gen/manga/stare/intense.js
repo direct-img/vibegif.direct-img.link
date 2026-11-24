@@ -1,4 +1,5 @@
 // extreme close-up panel of an unblinking stare: hatched shadow under her ink bangs, big eyes with tiny glinting pupils, focus lines, a sweat bead sliding, then one slow blink
+// tags: closeup, serious, tense
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=90,rim=4
 const F=[...Array(60)].map((_,k)=>[k/60*T+.035*sin(k*12.9),[124,140,132,146][k%4]])

@@ -1,4 +1,5 @@
 // round white robot chef in a puffy toque flipping a pancake high out of a frying pan, the pancake tumbling end over end while its visor eyes follow it, spatula raised in its other hand
+// tags: food, pancake, kitchen, playful, happy
 export const frames=24,delay=60
 const T=Math.PI*2,{sin:S,cos:C,max,min}=Math
 const P=(c,f,s=1)=>{f&&(c.fillStyle=f,c.fill());s&&c.stroke()}

@@ -1,4 +1,5 @@
 // fed up little guy winds up and hurls his laptop off screen yelling YEET, then a fresh laptop drops right back into his hands
+// tags: angry, funny, laptop
 import{Path2D}from'@napi-rs/canvas'
 const{PI,min,max}=Math,T=2*PI
 const U=[0,.12,.2,.3,.335,.37,.41,.45,.5,.62,.84,.9,.94,.97]

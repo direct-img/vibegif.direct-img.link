@@ -1,4 +1,5 @@
 // front-facing porcelain-white android bust with panel seams and glowing blue eyes that glances around and blinks, then glitches: horizontal slices of the face jump sideways with red/cyan RGB split and the eyes flash red
+// tags: face, rgb-split, sci-fi, blink
 export const frames=20
 const G=[0,0,0,0,0,0,.45,1,.7,0,0,0,0,0,0,0,.35,.95,.5,0]
 export const delay=G.map(g=>g?60:110)

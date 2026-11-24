@@ -1,4 +1,5 @@
 // hime-cut girl with slate hair pushes her red glasses up with one finger, the lenses flash white and a glint star pops
+// tags: calm, glasses, cool
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#5c636a',HD='#495057',HL='#ced4da',EYE='#f59f00',ED='#d9480f',VEST='#e9d8a6',RIB='#e03131',FR='#e03131',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // 3am doomscroll: wide awake eyes peek over the blanket, lit by the phone, flicking post after post while the bedside clock races on
+// tags: anxious, tired, phone, night, insomnia
 const{cos,sin,PI}=Math,T=2*PI
 export const frames=16,delay=Array(16).fill(95),rim=4
 const K='#1b1b1f',GL=['#74c0fc','#f783ac','#8ce99a','#ffd43b'],FC=['#d0ebff','#ffdeeb','#d3f9d8','#fff3bf']

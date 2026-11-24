@@ -1,4 +1,5 @@
 // tiny emerald-haired fairy hovering on buzzing dragonfly wings, waving her star wand so glitter sprinkles down
+// tags: happy, calm, magic, glitter, sparkle, float
 const{sin,cos,PI,round,abs}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#12b886',HD='#087f5b',HL='#c3fae8',EYE='#fab005',ED='#e67700',DR='#faa2c1',DD='#f06595',WG='#e3fafc',WV='#66d9e8',BL='#ffa8a8',FL='#fff3bf',GL=['#ffd43b','#f783ac','#66d9e8','#b197fc']

@@ -1,4 +1,5 @@
 // chibi with chocolate double buns trembling over a low table, flipping it off screen with a roar, then calmly sliding a new one back in
+// tags: angry, chibi, calm
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#7b4a2e',HD='#5c3520',HL='#d9a47c',TEE='#d0bfff',TD='#9775fa',RIB='#ff6b6b',WOOD='#e8a35c',WD='#b8742f',BL='#ffa8a8',CUP='#fff',TEA='#69db7c',RG='#f03e3e'

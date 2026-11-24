@@ -1,4 +1,5 @@
 // floating soap bubble with marbled iridescent rainbow film swirling and draining over its surface, gently wobbling, white shine highlights and twinkling sparkles
+// tags: rainbow, calm, float, gentle, sparkle, wobble
 import{createCanvas}from'@napi-rs/canvas'
 const P=Math.PI*2,F=[[255,214,64],[255,140,66],[255,64,160],[150,90,255],[60,170,255],[40,225,200],[150,230,90]]
 const pale=F.map(x=>x.map(v=>v*.68+82|0)),pal=[...F,...pale,[255,255,255],[17,17,17]]

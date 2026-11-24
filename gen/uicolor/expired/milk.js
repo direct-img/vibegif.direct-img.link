@@ -1,4 +1,5 @@
 // spoiled milk carton swaying woozily with spinning spiral eyes and a wobbly mouth, green stink lines wafting up and a fly buzzing round
+// tags: spoiled, woozy, stink, fly, dizzy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const BU='#74c0fc',BUD='#4dabf7',GR='#a9e34b',SB='#c0eb75',FLY='#495057',DR='#a5d8ff'

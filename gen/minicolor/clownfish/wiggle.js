@@ -1,4 +1,5 @@
 // clownfish wiggle-swimming: orange body with white bands kept inside an orange edge, tail and fins fluttering
+// tags: happy, playful, fish, animal, ocean
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#ff9f43',L='#ffcfa1',W='#fff',D='#2b2633'

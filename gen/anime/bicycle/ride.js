@@ -1,4 +1,5 @@
 // girl with a tangerine bob pedals a bicycle with a puppy riding in the front basket, wheels spinning, scarf streaming behind
+// tags: happy, dog, travel, puppy
 const{sin,cos,PI,max,min,hypot,sqrt}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#fd7e14',HD='#e8590c',HL='#ffe8cc',EYE='#339af0',ED='#1864ab',TOP='#fff',STR='#20c997',DEN='#4dabf7',DD='#1c7ed6',SCARF='#20c997',SCD='#0ca678',BIKE='#ff6b6b',BD='#e03131',BAS='#e0a96d',BSD='#b07d4f',PUP='#fff4e6',EAR='#a9744f',SHOE='#fa5252',BL='#ffa8a8'

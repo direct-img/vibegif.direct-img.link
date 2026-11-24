@@ -1,4 +1,5 @@
 // a little traffic cone sways beside a striped road barrier while the warning lamp on top blinks on and off
+// tags: barrier, blink, warning, road
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const ln=(c,w,f)=>{for(const[l,s]of[[w,'#111'],[w-7,'#fff']])c.lineWidth=l,c.strokeStyle=s,c.beginPath(),f(),c.stroke();c.lineWidth=7;c.strokeStyle='#111'}

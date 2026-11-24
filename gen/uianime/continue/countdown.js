@@ -1,4 +1,5 @@
 // arcade girl with a neon magenta side ponytail gripping a joystick and frantically mashing a red button while a "CONTINUE?" screen counts 9 down to 0, pupils shaking and sweat flying
+// tags: anime, arcade, game, anxious, excited
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=100
 const SKIN='#ffe3d1',HAIR='#f03ec8',HD='#a61e8a',HL='#ffd6f5',EYE='#22b8cf',ED='#0b7285',JK='#845ef7',TRIM='#66d9e8',BL='#ffa8a8',FR='#da77f2',SC='#1b1d3a',OFF='#2c2f5a',LIT='#ffe066',HOT='#ff6b6b',DK='#4dabf7',DKD='#1c7ed6',RD='#ff6b6b',RDD='#e03131',SW='#a5d8ff',STAR='#ffd43b'

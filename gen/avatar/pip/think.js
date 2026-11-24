@@ -1,4 +1,5 @@
 // round coral avatar mascot ball thinking: tilts its head, its two white dot eyes squint and drift up to one side then wander across, while three violet loading dots pulse in a wave beside it
+// tags: calm, ball, coral
 export const frames=72,delay=50
 const{PI,sin,cos,max}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

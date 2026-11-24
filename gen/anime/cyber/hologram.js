@@ -1,4 +1,5 @@
 // cyber girl with split cyan and pink hair and a glowing visor tapping holographic screens that pop up and slide around her
+// tags: scifi, screens, glow
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HC='#66d9e8',HCD='#1098ad',HP='#f783ac',HPD='#c2255c',EYE='#9775fa',ED='#5f3dc4',JK='#f8f9fa',JD='#495057',CY='#3bc9db',GL='#c5f6fa',BL='#ffa8a8'

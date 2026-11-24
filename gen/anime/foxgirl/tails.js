@@ -1,4 +1,5 @@
 // kitsune girl with orange fox ears fanning six fluffy tails behind her while blue foxfire circles around
+// tags: calm, fox, animal, fire, mystical
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#e8590c',HL='#ffe8cc',TIP='#fff4e6',EYE='#94d82d',ED='#5c940d',RED='#fa5252',BL='#ffa8a8',FF='#339af0',FC='#d0ebff'

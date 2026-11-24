@@ -1,4 +1,5 @@
 // ink wash figure in a long robe walking under an oil-paper umbrella in the rain, a ripple spreading at each step
+// tags: calm, rain, person, ripple
 export const frames = 24, delay = 80, dither = true
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2
 const I = (a, k) => `rgba(${k || '20,18,16'},${a})`

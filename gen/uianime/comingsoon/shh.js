@@ -1,4 +1,5 @@
 // girl with long plum hair holding a finger to her lips and winking "it's a secret", a little shh bubble puffing beside her
+// tags: anime, secret, wink, playful, calm
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#da77f2',HD='#ae3ec9',HL='#f8f0fc',EYE='#20c997',ED='#087f5b',CARD='#96f2d7',CD='#38d9a9',BL='#ffa8a8',STAR='#ffd43b'

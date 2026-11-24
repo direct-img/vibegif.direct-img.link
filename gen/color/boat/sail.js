@@ -1,4 +1,5 @@
 // sailboat rocking over rolling waves, its little flag flapping at the top of the mast
+// tags: calm, happy, ocean, waves, rock
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const HULL='#ff922b',HD='#e8590c',SAIL='#fff',STR='#4dabf7',FL='#ff6b6b',W1='#74c0fc',W2='#4dabf7'

@@ -1,4 +1,5 @@
 // girl with a messy hatched pixie cut wilting over a test scored zero, paper trembling, gloom lines and a little rain cloud overhead
+// tags: sad, tired, school, rain-cloud, wilt
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=100,rim=4

@@ -1,4 +1,5 @@
 // snail inching along in place: body stretches and bunches up, shell rocks, eye stalks wobble
+// tags: calm, animal, slow
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=90
 export default(c,t)=>{

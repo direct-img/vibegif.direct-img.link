@@ -1,4 +1,5 @@
 // indigo haired girl in a comfy hoodie staring half-lidded at her phone, pulls to refresh, still no notifications, and lets out a big sigh
+// tags: anime, tired, sigh, lonely, refresh
 const{sin,PI,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#748ffc',HD='#4c6ef5',HL='#dbe4ff',EYE='#f783ac',ED='#c2255c',BL='#ffa8a8',HO='#96f2d7',HOD='#20c997',PH='#ffd43b',SCR='#e7f5ff'

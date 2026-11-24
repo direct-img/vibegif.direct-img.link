@@ -1,4 +1,5 @@
 // panicking server rack on fire, cartoon flames flickering out the top, red lights blinking while an extinguisher puffs foam at it
+// tags: server, panic, anxious, flames, error
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=70
 const RK='#495057',SL='#343a40',PN='#a5d8ff',FR=['#ff6b6b','#ff922b','#ffd43b'],EX='#ff6b6b',LED='#ff6b6b',BL='#ffa8a8'

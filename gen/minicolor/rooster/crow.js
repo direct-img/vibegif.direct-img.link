@@ -1,4 +1,5 @@
 // rooster crowing: puffs its chest out, throws its head back and opens its beak, tail feathers swaying
+// tags: proud, bird, animal, morning
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#ff9f43',L='#ffcfa1',R='#ee5a5a',G='#2ec4b6',Y='#f4c03e',D='#2b2633'

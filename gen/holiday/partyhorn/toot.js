@@ -1,4 +1,5 @@
 // party blower giving a little puff, then unrolling with a toot and a burst of confetti, then curling back up
+// tags: excited, playful, celebration, party, confetti
 export const frames=48,delay=50,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),rn=n=>(n=Math.sin(n*127.1+311.7)*43758.5453,n-Math.floor(n))
 const L=182,D=30,U0=22,A=-.7,X0=70,Y0=182,C=0

@@ -1,4 +1,5 @@
 // side-view chibi transfer student with ink low twin tails bowing deeply by the chalkboard with her name on it, then popping up with a happy sparkle
+// tags: shy, anxious, school, chibi, introduction
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

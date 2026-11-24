@@ -1,4 +1,5 @@
 // fish swimming in place with its body waving, tail flicking and bubbles rising from its mouth
+// tags: calm, animal, bubbles, water
 const{sin,PI}=Math,T=2*PI
 export default(c,t)=>{
   const bob=4*sin(t*T),s=x=>(x-56)/124,yc=x=>128+bob+9*s(x)**1.5*sin(4*s(x)-t*T),hh=x=>50*sin(PI*s(x)**.75)

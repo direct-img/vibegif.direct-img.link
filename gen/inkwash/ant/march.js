@@ -1,4 +1,5 @@
 // ink wash line of ants marching along a curving trail, every other one carrying a crumb, seamless loop
+// tags: calm, animal, insect
 export const frames=32,delay=65,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

@@ -1,4 +1,5 @@
 // big sparkle pulsing in the middle while small sparkles pop in and out around it
+// tags: happy, pulse, twinkle
 const{sin,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const star=(c,x,y,r,a=0)=>{

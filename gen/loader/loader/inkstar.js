@@ -1,4 +1,5 @@
 // black ink brush-stroke star with a white sticker rim: ten tapered, slightly curved strokes round an ink dot get flicked out one by one clockwise, then thin away in the same order, so a gap of missing strokes chases round the circle
+// tags: ink, brush, star, minimal
 const{sin,cos,atan2,min,max,PI}=Math,T=2*PI,N=10,M=7
 export const frames=50,delay=40,rim=6
 const cl=x=>min(1,max(0,x)),

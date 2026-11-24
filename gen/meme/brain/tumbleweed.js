@@ -1,4 +1,5 @@
 // side profile of a blank-staring head shown in cross-section, and up top there's nothing but empty desert with a tumbleweed bouncing through on the wind
+// tags: funny, empty, blank
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=24,delay=Array(24).fill(70),rim=4
 const SK='#ffd8b5',SKD='#e8a27a',SKY='#fff1d0',SAND='#f2c879',SD='#cf9440',TW='#a5692c',CA='#69db7c',FL=118

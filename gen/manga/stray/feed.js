@@ -1,4 +1,5 @@
 // crouching girl with short ink pigtails holds out a treat to a stray cat, it licks, then rubs its cheek on her hand, hearts rising
+// tags: calm, love, happy, cat, animal, gentle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

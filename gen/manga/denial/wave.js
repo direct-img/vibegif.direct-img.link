@@ -1,4 +1,5 @@
 // flustered girl with dark-tone wavy hair and a white hairband frantically waving both palms "no no no", motion arcs, sweat drops flying, panicked eyes
+// tags: anxious, flustered, funny
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

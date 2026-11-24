@@ -1,4 +1,5 @@
 // ink wash full moon over a lake, the moon cut out as empty space in a grey sky wash, its reflection breaking into ripples and re-forming, reeds swaying
+// tags: calm, lake, night-sky, reflection
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`
 // brush stroke through points p: width w, alpha (or colour) a, dry-brush hairlines from fraction d, pressure profile f

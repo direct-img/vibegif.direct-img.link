@@ -1,4 +1,5 @@
 // op-art round checkerboard of black and rainbow squares with a magnifying bulge roaming in a figure-eight, warping the grid like a lens as rainbow rings ripple out from it
+// tags: op-art, rainbow, ripple, warp, trippy
 export const frames=24,delay=70
 const R=118,N=16,s=256/N,m=5,P=Math.PI*2
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // happy red balloon bobbing, panics, pops into a burst of rubber bits, the sad scrap and its droopy string flop to the ground, then it puffs back up
+// tags: pop, sad, anxious, surprise, recover
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=24,delay=80
 const RD='#ff6b6b',BL='#ffa8a8',BY='#ffd43b',TR='#74c0fc'

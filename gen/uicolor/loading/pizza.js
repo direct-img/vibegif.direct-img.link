@@ -1,4 +1,5 @@
 // pizza progress circle: slices pop onto the plate one by one clockwise until the pie is whole and smiling with sparkles, then all the slices shrink away to load again
+// tags: food, progress-circle, sparkle, happy, playful
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const CR='#e8a15a',CH='#ffd43b',PP='#fa5252',PR='#a5d8ff',X=128,Y=128,R=92

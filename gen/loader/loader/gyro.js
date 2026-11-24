@@ -1,4 +1,5 @@
 // three tilted orbit rings in coral, teal and gold around a violet nucleus with a pulsing bright core, a white electron bead races along inside each ring, rings and electrons pass correctly in front of and behind the nucleus and step darker at the back
+// tags: atom, science, orbit, spin
 export const frames=40,delay=40
 const{sin,cos,PI,round,floor}=Math,T=2*PI,R=92,D=7,ps=1.1,vx=-.35
 const O=[[1.2,.15,[255,94,98],1],[1.1,1.2,[22,184,166],-1],[1.28,2.25,[255,182,32],1]] // tilt, spin, rgb, direction

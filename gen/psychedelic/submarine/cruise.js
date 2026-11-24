@@ -1,4 +1,5 @@
 // yellow submarine bobbing through a wobbly blob of wavy rainbow water, bubbles streaming from its spinning propeller, neon portholes glowing and periscope turning to look around
+// tags: yellow, rainbow, bubble, neon, playful, trippy
 export const frames=16,delay=80
 const P=Math.PI*2,H=(h,l=56,s=88)=>`hsl(${(h%360+360)%360},${s}%,${l}%)`
 let z=11;const R=()=>(z=z*16807%2147483647)/2147483647

@@ -1,4 +1,5 @@
 // strawberry bedhead girl in star pajamas stretching both arms overhead in a big morning yawn, eyes squeezed shut and tears beading
+// tags: tired, morning, pajamas
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ff9fb8',HD='#e8708f',HL='#ffe0ea',EYE='#20c997',ED='#087f5b',PJ='#bac8ff',PD='#748ffc',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',TEAR='#a5d8ff'

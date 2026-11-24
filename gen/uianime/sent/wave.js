@@ -1,4 +1,5 @@
 // turquoise haired girl waving goodbye as a winged love letter flaps up and away into the corner and vanishes with a twinkle
+// tags: anime, letter, goodbye, wings, hopeful, twinkle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=16,delay=80

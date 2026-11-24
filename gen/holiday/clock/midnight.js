@@ -1,4 +1,5 @@
 // alarm clock counting down the last seconds to midnight, then ringing and hopping in a burst of confetti
+// tags: excited, celebration, new-year, countdown, confetti
 export const frames=48,delay=60,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),rn=n=>(n=Math.sin(n*127.1+311.7)*43758.5453,n-Math.floor(n))
 const M=.5,CX=128,CY=146,R=72

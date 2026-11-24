@@ -1,4 +1,5 @@
 // ink wash incense stick in a small tripod burner, thin translucent smoke ribbons curling upward
+// tags: calm, curl, slow, zen
 export const frames = 24, delay = 90, dither = true
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2
 const I = (a, k) => `rgba(${k || '20,18,16'},${a})`

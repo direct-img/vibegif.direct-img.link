@@ -1,4 +1,5 @@
 // orange four-point paper star with dark brown creases folds its points over the center one after another showing a darker terracotta back, the folded square twists 45 degrees, then all four points spring open again
+// tags: calm, origami, star, fold
 const{cos,sin,PI,min,max,floor}=Math,H=PI/2
 export const frames=60,delay=40
 const cl=x=>min(1,max(0,x)),

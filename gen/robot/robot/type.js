@@ -1,4 +1,5 @@
 // blue robot hunched over a laptop on a desk typing furiously, metal fingers hammering the keys while colorful lines of code type out and scroll up the screen, steam puffing from its head
+// tags: laptop, code, work, steam, fast
 export const frames=32,delay=50
 const T=Math.PI*2,{sin:S,cos:C,max,min}=Math
 const P=(c,f,s=1)=>{f&&(c.fillStyle=f,c.fill());s&&c.stroke()}

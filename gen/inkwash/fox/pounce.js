@@ -1,4 +1,5 @@
 // ink wash fox in snow, crouching then leaping high and diving nose-first into the snow, snow puff bursting, tail and hind legs waving in the air
+// tags: playful, animal, snow, winter, leap
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

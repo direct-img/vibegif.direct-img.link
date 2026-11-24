@@ -1,4 +1,5 @@
 // cockatoo on a perch: it bobs side to side, flicks its crest up into a fan and lays it back down, and blinks
+// tags: playful, animal, bird, bob
 const{sin,PI,min}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // chameleon on a branch slowly shifting color, eyeing a buzzing fly, then snapping it up with its long tongue
+// tags: playful, animal, fly, snap
 const{sin,cos,PI,min,max,hypot,atan2}=Math,T=2*PI
 export const frames=20,delay=80
 const RING=['#69db7c','#38d9a9','#4dabf7','#b197fc','#f783ac','#ffa94d','#ffd43b'],BR='#a9744f',LF='#51cf66',TG='#ff8fab'

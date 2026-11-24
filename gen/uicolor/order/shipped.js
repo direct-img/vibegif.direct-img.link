@@ -1,4 +1,5 @@
 // delivery truck driving along with a smiling parcel hopping on its flatbed, wheels turning, road dashes and speed lines rushing past
+// tags: truck, parcel, delivery, happy, hop, travel
 const{sin,cos,PI,abs,round,max}=Math,T=2*PI
 export const frames=16,delay=60
 const CAB='#4dabf7',CABD='#339af0',WIN='#e7f5ff',TIRE='#343a40',HUB='#ced4da',BED='#868e96',BX='#f0b878',BXD='#d99a5a',TAPE='#ffe8cc',BL='#ffa8a8'

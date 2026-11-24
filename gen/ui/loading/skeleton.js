@@ -1,4 +1,5 @@
 // skeleton placeholder card: gray avatar, text lines and image box with a soft shimmer band sweeping across them
+// tags: placeholder, shimmer, gentle
 const T=2*Math.PI
 export const frames=20,delay=70
 export default(c,t)=>{

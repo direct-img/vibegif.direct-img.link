@@ -1,4 +1,5 @@
 // a rounded teal card with a pale inner square flips left-right in perspective to show its coral back with a pale dot, settles with a springy wobble, then flips top-bottom back to teal; dark outline
+// tags: card, flip, game
 export const frames=48,delay=40
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI,
 // flip angle keys (catmull-rom): hold, tip back, flip, overshoot, wobble, settle

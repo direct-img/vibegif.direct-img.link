@@ -1,4 +1,5 @@
 // Peru's flag waving on a silver pole: red-white-red vertical bands, with a smiling anime girl printed in the white middle band, dark shoulder-length hair blowing in the wind, red cantuta flowers in her hair, white blouse with a red and gold Andean diamond embroidered collar, waving hello and blinking while cantuta petals drift by
+// tags: anime, wave, country, pride, smile
 export const frames=16
 const P=Math.PI
 const p=(c,d)=>{

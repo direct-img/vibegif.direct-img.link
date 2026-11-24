@@ -1,4 +1,5 @@
 // bedhead manga girl under the blanket smashes her ringing alarm clock flat, dozes off happily, then it springs back up ringing
+// tags: tired, funny, bedroom, alarm-clock, sleep, bounce
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

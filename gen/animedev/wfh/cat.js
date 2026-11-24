@@ -1,4 +1,5 @@
 // anime girl in pyjamas and cat-ear headphones coding from home while her orange cat hops onto the laptop, walks across the keys typing jjjj, sits, then hops off and she backspaces
+// tags: happy, anime, coding, pajamas, home, cozy
 export const frames=32,delay=80,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round,floor}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

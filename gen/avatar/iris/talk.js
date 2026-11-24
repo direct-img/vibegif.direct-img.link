@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye talking: the pupil throbs like a speaker cone to the rhythm of speech while the body bounces and mint sound waves pulse out from both sides
+// tags: eye, bounce, ball, blue
 const{sin,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

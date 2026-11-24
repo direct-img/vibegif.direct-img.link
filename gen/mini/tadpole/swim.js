@@ -1,4 +1,5 @@
 // tadpole swimming in place: a wave runs down its tail, its new little back legs kick, it bobs and blows bubbles, and blinks
+// tags: happy, playful, animal, water, wiggle
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

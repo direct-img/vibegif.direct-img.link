@@ -1,4 +1,5 @@
 // salmon nigiri hopping on its wooden board, squishing on landing while a little wasabi buddy watches it go up and down
+// tags: happy, playful, food, squish
 const{sin,PI,abs}=Math,T=2*PI
 export const frames=20,delay=60
 const SA='#ffa94d',SS='#fff4e6',WA='#8ce99a',BD='#d4a373',BDD='#a9744f',BL='#ffa8a8'

@@ -1,4 +1,5 @@
 // ink wash bear standing in a stream, swiping the water with a paw, the fish flung up and caught in its jaws, water splashing
+// tags: animal, stream, splash
 export const frames=32,delay=85,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

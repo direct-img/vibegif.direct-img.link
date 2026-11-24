@@ -1,4 +1,5 @@
 // clockwork brass mechanical bird flying in place, riveted wings of metal feathers beating up and down, copper and steel gears turning behind a round window in its chest, glowing amber lens eye
+// tags: clockwork, brass, gears, steampunk
 export const frames=16,delay=55
 const T=Math.PI*2
 const BR='#d9a54a',BD='#a8752e',BL='#f3d38a',CU='#c8743a',ST='#b9c3cd'

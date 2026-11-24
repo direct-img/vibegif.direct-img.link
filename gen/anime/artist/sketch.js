@@ -1,4 +1,5 @@
 // plum haired artist in a red beret doodling a cat in her sketchbook line by line, tongue out, then flipping to a fresh page
+// tags: happy, art, drawing, cat, focus
 const{sin,cos,PI,hypot,min}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#be4bdb',HD='#862e9c',HL='#f3d9fa',EYE='#40c057',ED='#2b8a3e',BL='#ffa8a8',BER='#fa5252',SMK='#a5d8ff',KRA='#d9a066',PEN='#495057'

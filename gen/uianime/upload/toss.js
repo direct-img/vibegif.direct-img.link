@@ -1,4 +1,5 @@
 // pink haired girl in a sailor top swinging a file up and tossing it into a cloud, the cloud gulps it with a bounce and she cheers, then grabs the next one
+// tags: anime, cloud, file, cheer, happy
 const{sin,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#faa2c1',HD='#e64980',HL='#fff0f6',EYE='#339af0',ED='#1864ab',TOP='#e5dbff',COL='#4263eb',SCF='#fa5252',BL='#ff8fab',CL='#e7f5ff',AR='#4dabf7',FL='#ffe066',FD='#f59f00',SP='#ffd43b'

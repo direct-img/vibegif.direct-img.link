@@ -1,4 +1,5 @@
 // ink wash sparrow hopping along a bare branch, pecking and flicking its tail
+// tags: happy, animal, bird, branch
 const{PI,sin:S,cos:C,hypot:H,min,max,abs}=Math,T=PI*2,
 // warm, semi-transparent ink at alpha a
 ink=a=>`rgba(20,18,16,${a*.8})`,

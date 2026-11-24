@@ -1,4 +1,5 @@
 // swarm of tiny hexagonal nanobots streaming in a figure-eight like a flock, then snapping edge to edge from the center out into a tilting honeycomb panel with glowing cyan seams, a ripple wave rolling across it, before it shatters back into the flock
+// tags: honeycomb, sci-fi, hexagon, flow
 export const frames=36,delay=78
 let s=5
 const R=()=>(s=s*16807%2147483647)/2147483647,P=Math.PI,TAU=2*P,D=14,Q=Math.sqrt(3)

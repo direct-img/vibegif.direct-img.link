@@ -1,4 +1,5 @@
 // crocodile lying low: knobbly back, eyes on top of its head, jaws creak open then snap shut, tail swaying
+// tags: animal, reptile, danger
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=32,delay=70
 const B='#8cc084',L='#c5e0c1',W='#fff',A='#ff85a8',D='#2b2633'

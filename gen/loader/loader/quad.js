@@ -1,4 +1,5 @@
 // four chunky rounded squares in a 2x2, coral amber teal and indigo, the group swings a quarter turn with anticipation and overshoot while each square spins the other way, then squashes and wobbles at every stop
+// tags: squares, colorful, spin
 const{sin,cos,PI,exp}=Math
 // 4 steps of 14 frames: the first holds the rest pose, the swing frames run quicker
 export const frames=56,delay=Array.from({length:56},(_,i)=>(i%=14)?i>2&&i<9?30:40:150)

@@ -1,4 +1,5 @@
 // typing LMAO with a dead straight face: the letters pop into the chat bubble and laugh their heads off while the face never moves
+// tags: funny, chat, laugh, typing
 import{Path2D}from'@napi-rs/canvas'
 const{sin,PI,min,max,abs}=Math,T=2*PI
 const U=[0,.07,.14,.21,.28,.35,...Array.from({length:10},(_,k)=>.4+k*.05),.9,.95]

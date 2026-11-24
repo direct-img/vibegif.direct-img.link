@@ -1,4 +1,5 @@
 // orange tabby curled in a ring chasing its own tail round and round like a spinner, paws scrabbling, eyes locked on the tail tip
+// tags: animal, spinner, chase, tail, playful
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=16,delay=60
 const OR='#ffa94d',OD='#f08c00',PK='#ffc9c9',BL='#ff8787',X=128,Y=134,R=58

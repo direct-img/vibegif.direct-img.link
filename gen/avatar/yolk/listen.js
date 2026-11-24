@@ -1,4 +1,5 @@
 // round yellow avatar ball listening closely: it leans way over toward mint green sound waves coming in from the upper right, black eyes popped wide open, and nods along
+// tags: calm, sound, ball, yellow
 export const frames=60,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // show poodle prancing in place: pompom legs high-step in a trot, its body bobs, ear puffs bounce, the tail pompom wags and it blinks
+// tags: happy, proud, dog, animal, bounce
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

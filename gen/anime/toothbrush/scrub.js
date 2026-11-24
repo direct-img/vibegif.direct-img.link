@@ -1,4 +1,5 @@
 // sleepy aqua-haired girl with a headband and towel brushing her teeth, the brush scrubbing back and forth, foam bubbles puffing and floating off, rinse cup in her other hand
+// tags: tired, morning, foam, sleepy
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#66d9e8',HD='#1098ad',HL='#e3fafc',EYE='#9775fa',ED='#5f3dc4',BAND='#f783ac',TEE='#ffa94d',TOW='#fff',STR='#74c0fc',CUP='#faa2c1',WAT='#a5d8ff',BRUSH='#69db7c',BL='#ffa8a8',MO='#c92a2a'

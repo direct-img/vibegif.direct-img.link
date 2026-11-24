@@ -1,4 +1,5 @@
 // Polish flag waving on a silver pole: white over red, with a counterchanged anime girl printed in the middle - red hair, twin braids and a poppy and daisy wreath in the white band, her braids and folk blouse turning white in the red band - who tilts her head and blinks as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=20,delay=70
 const P=Math.PI*2,W=232,H=145,K=2,X0=14,Y0=26
 const R='#dc143c',D='#5a0b1d',SK='#ffe4d6',SK2='#f6c4b4'

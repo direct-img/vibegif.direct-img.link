@@ -1,4 +1,5 @@
 // turkey strutting in place, tail feathers fanning and rattling, head bobbing with each step
+// tags: playful, thanksgiving, animal, bird, funny
 export const frames=24,delay=60,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,C=Math.cos,G=235
 export default(c,t)=>{

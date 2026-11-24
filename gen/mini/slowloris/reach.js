@@ -1,4 +1,5 @@
 // slow loris on a branch: huge eyes in a dark mask, it slooowly stretches one arm up to the twig ahead, grips it and lets go, head tilting along, and blinks
+// tags: calm, animal, slow, gentle
 const{sin,cos,PI,hypot}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

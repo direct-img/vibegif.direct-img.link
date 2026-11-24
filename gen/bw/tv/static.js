@@ -1,4 +1,5 @@
 // retro tv with wobbling rabbit-ear antennas and snowy static flickering on the screen
+// tags: retro, antenna, flicker
 // the static cycles through three fixed noise patterns so the file stays small
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=80

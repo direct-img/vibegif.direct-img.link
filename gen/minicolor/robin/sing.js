@@ -1,4 +1,5 @@
 // robin singing: red breast puffs out, head tips up, beak chirps three times and little notes float off
+// tags: happy, calm, bird, animal, music, spring
 const{sin,PI,abs,max,min}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#c9a27e',R='#ff7a5c',Y='#f4c03e',D='#2b2633'

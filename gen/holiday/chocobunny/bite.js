@@ -1,4 +1,5 @@
 // chocolate bunny with one ear bitten off, trembling in fright as crumbs fall from the hollow stump
+// tags: anxious, easter, chocolate, bunny, animal, tremble
 export const frames=24,delay=50,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const M='#8a4a25',D='#5c2c14',L='#b8723f'

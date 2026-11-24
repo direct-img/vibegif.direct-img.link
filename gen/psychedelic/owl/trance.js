@@ -1,4 +1,5 @@
 // front-facing purple owl perched on a branch, rainbow scalloped chest feathers flowing downward, big eyes of concentric neon rings pulsing outward, swaying and blinking
+// tags: bird, animal, neon, rainbow, pulse, trippy
 export const frames=16,delay=90
 const P=Math.PI*2,H=(h,l=58)=>`hsl(${(h%360+360)%360},95%,${l}%)`
 export default(c,t,i)=>{

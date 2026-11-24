@@ -1,4 +1,5 @@
 // round violet avatar blip glitching: a glossy violet ball with two white square pixel eyes whose picture suddenly tears into sideways-shifted slices with mint and pink colour fringes and stray pixel blocks, snaps back together, then blinks in surprise
+// tags: anxious, robot, pixel, ball, violet
 export const frames=60,delay=40
 const{sin,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

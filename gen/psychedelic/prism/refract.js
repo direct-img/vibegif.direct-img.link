@@ -1,4 +1,5 @@
 // glass triangular prism splitting a white light beam into a wavy rainbow fan that ripples to the right, sparkles flowing along the light
+// tags: light, rainbow, sparkle, wave, calm, gentle
 const P=Math.PI*2,C=['#ff2d55','#ff8a00','#ffe100','#2ee05a','#1e9bff','#7a3cff']
 const L=(p,q,f)=>[p[0]+(q[0]-p[0])*f,p[1]+(q[1]-p[1])*f]
 export const frames=24,delay=60

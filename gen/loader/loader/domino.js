@@ -1,4 +1,5 @@
 // a ring of twelve ivory dominoes with black pips seen from above at an angle, a toppling wave runs clockwise round it with each domino leaning on the next, and behind the wave they spring back upright one by one
+// tags: game, wave, playful
 const{sin,cos,PI,asin,max,min,hypot}=Math,T=2*PI
 export const frames=36,delay=50
 const N=12,R=80,w=11,W=31,h=W/2,H=56,p=T*R/N,se=sin(.96),ce=cos(.96),a0=asin((p-w)/H)

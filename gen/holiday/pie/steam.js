@@ -1,4 +1,5 @@
 // whole pumpkin pie fresh from the oven, curls of steam rising off the filling
+// tags: calm, cozy, thanksgiving, autumn, food
 export const frames=32,delay=60,rim=5
 const K='#2a1810',P=Math.PI*2,PI=Math.PI,S=Math.sin,C=Math.cos,cx=128,cy=158
 export default(c,t)=>{

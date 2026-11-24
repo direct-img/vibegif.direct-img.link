@@ -1,4 +1,5 @@
 // pine wreath with holly and a red bow, two gold bells swinging and jingling in the middle
+// tags: calm, happy, christmas, bell, swing, gentle
 export const frames=24,delay=50,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos,X=128,Y=136
 const rn=n=>{const s=Math.sin(n*78.233+1.7)*43758.5;return s-Math.floor(s)}

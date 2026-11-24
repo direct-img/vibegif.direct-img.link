@@ -1,4 +1,5 @@
 // dark outlined round speedometer gauge, a segmented arc that lights from green through amber to red as the dark needle revs up in three bursts with overshoot, wobbles at the top while a little lamp turns red, then the needle falls back and settles with a bounce
+// tags: speedometer, gauge, fast
 const{sin,cos,PI,round}=Math,T=2*PI
 export const frames=60,delay=40
 const cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),

@@ -1,4 +1,5 @@
 // sporty red-ponytail girl slamming a squeaky toy hammer down on a purple cartoon bug, which pops right back up
+// tags: playful, anime, coding, hammer, bounce, excited
 // keyframes: [phase, ms] so the windup lingers and the swing snaps
 const K=[[0,110],[.1,110],[.2,110],[.3,45],[.33,45],[.36,90],[.41,90],[.47,100],[.53,110],[.59,70],[.64,70],[.69,80],[.77,150],[.84,60],[.865,60],[.89,60],[.92,90],[.96,100]]
 export const frames=K.length,delay=K.map(k=>k[1]),rim=4

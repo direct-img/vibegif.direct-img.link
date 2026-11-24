@@ -1,4 +1,5 @@
 // ringed planet with a little moon orbiting behind and in front of it, stars twinkling around
+// tags: calm, space, moon, stars, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=70
 const PL='#ffa94d',B1='#ff922b',B2='#ffd8a8',RG='#ffe066',MN='#ced4da',BL='#ff8787'

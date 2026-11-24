@@ -1,4 +1,5 @@
 // cleaning duty chibi in a polka-dot kerchief and apron, dotted braid over her shoulder, humming while she sweeps side to side, dust puffing off the broom
+// tags: calm, happy, chores, humming, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

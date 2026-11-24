@@ -1,4 +1,5 @@
 // manga medusa girl whose hair is little snakes wiggling and flicking their tongues, her ink sunglasses slipping down her nose until she pushes them back up
+// tags: playful, fantasy, snakes, wiggle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,atan2}=Math,T=2*PI
 export const frames=12,delay=110,rim=4

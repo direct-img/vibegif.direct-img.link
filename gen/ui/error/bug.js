@@ -1,4 +1,5 @@
 // a little beetle scuttles in a figure eight over a code editor, the line it's crawling on lights up as the buggy one
+// tags: beetle, code, debug, crawl
 const{sin,cos,PI,atan2,round,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const C=[[0,[28,1],[40,0],[22,0]],[1,[22,1],[58,0]],[2,[30,0],[18,1],[36,0]],[2,[46,0],[26,0]],[1,[16,1],[40,0]],[0,[12,1]],[0,[34,1],[50,0]]]

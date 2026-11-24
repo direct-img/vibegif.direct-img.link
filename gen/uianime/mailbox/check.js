@@ -1,4 +1,5 @@
 // ginger bob girl pulls open her mailbox to find it totally empty, staring with dot eyes and a sweatdrop while a tumbleweed rolls past
+// tags: anime, empty, tumbleweed, lonely, sweatdrop
 const{sin,cos,PI,max,min,abs,hypot,sqrt}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#e8590c',HL='#ffe8cc',EYE='#51cf66',ED='#2b8a3e',BL='#ffa8a8',TOP='#d0bfff',TD='#9775fa',MB='#74c0fc',MBD='#339af0',IN='#343a40',FL='#fa5252',WD='#c98a52',TW='#e0b46c',TWD='#a0763c',SW='#a5d8ff'

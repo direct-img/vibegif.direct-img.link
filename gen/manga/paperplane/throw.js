@@ -1,4 +1,5 @@
 // girl with crosshatched double buns throws a paper airplane that loops around and glides back into her hand
+// tags: happy, playful, school
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,atan2,hypot,min,max}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

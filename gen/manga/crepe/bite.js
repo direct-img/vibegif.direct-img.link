@@ -1,4 +1,5 @@
 // manga girl with screentone twin tails chomps a big crepe, gets cream on her nose, chews happily, then licks it off cross-eyed
+// tags: happy, playful, food, cute
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

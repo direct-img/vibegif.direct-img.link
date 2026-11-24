@@ -1,4 +1,5 @@
 // mind expanding: violet side-profile head with a serene closed eye, its open crown pouring out a swaying rainbow-striped plume with colors cycling and a stream of stars, eyes, spirals and ringed planets that fly out and grow
+// tags: mind, rainbow, stars, calm, spiral, trippy
 export const frames=24,delay=75
 const P=Math.PI*2,ox=123,oy=128,M=12
 const star=c=>{c.beginPath();for(let j=0;j<10;j++){const r=j%2?.45:1,a=j*P/10-P/4;c.lineTo(r*Math.cos(a),r*Math.sin(a))}c.closePath()}

@@ -1,4 +1,5 @@
 // lilac-haired girl with two braids blowing soap bubbles through a wand, rainbow-sheen bubbles growing, drifting up and popping
+// tags: calm, happy, float, rainbow
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#d0bfff',HD='#9775fa',HL='#f3f0ff',EYE='#4c6ef5',ED='#364fc7',DR='#ffc9c9',DD='#ff8787',COL='#fff',BOW='#69db7c',WAND='#ffd43b',BUB='#f8f9fa',BL='#ffa8a8',MO='#c92a2a'

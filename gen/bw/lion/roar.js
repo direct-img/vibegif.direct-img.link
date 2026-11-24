@@ -1,4 +1,5 @@
 // lion roaring: the mane puffs out, the mouth opens wide on its fangs and roar lines burst out
+// tags: angry, animal, mane
 // the mane is one outline: every tuft is stroked wide first, then all of them are filled
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=70

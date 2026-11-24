@@ -1,4 +1,5 @@
 // desk fan with its blades whirring and its head turning slowly side to side
+// tags: calm, wind, slow, summer
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 export default(c,t)=>{

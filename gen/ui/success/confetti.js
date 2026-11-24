@@ -1,4 +1,5 @@
 // a party popper shakes, then bursts with a bang and confetti pieces and streamers flutter down, spinning as they fall
+// tags: party, celebration, happy, excited, burst
 const{sin,cos,PI,min,max,exp}=Math,T=2*PI
 export const frames=28,delay=70
 let z=11;const R=()=>(z=z*16807%2147483647)/2147483647

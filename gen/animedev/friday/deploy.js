@@ -1,4 +1,5 @@
 // nervous girl with messy black hair and a white streak, in a grey cardigan, slamming a big red DEPLOY button next to a FRI calendar, sweat flying
+// tags: anxious, anime, coding, nervous, button
 export const frames=16,delay=85,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,K='#2a1b1e',sk='#ffe4d4',ss='#f6c0aa',hr='#2b2a35',hs='#17161e',hl='#70778f',pu='#9096a4',ps='#6c7282'

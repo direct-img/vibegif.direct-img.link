@@ -1,4 +1,5 @@
 // round coral avatar mascot ball with two white dot eyes idling: breathes softly, blinks, and takes one quick curious glance up to the side before settling again
+// tags: calm, blink, gentle, ball, coral
 export const frames=72,delay=50
 const{PI,sin,cos}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

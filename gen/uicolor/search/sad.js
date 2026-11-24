@@ -1,4 +1,5 @@
 // sad magnifying glass swaying side to side, big eyes peeking left and right for results, a little question mark bobbing beside it
+// tags: no-results, magnifying-glass, question, sway
 const{sin,PI}=Math,T=2*PI
 export const frames=14,delay=100
 const RG='#9775fa',LN='#d0ebff',HN='#ffa94d',BL='#ffa8a8',QM='#ffd43b',SW='#74c0fc'

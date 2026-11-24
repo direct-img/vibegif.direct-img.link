@@ -1,4 +1,5 @@
 // two-tone popsicle slowly melting, drips swelling on its bottom edge and falling into a little puddle
+// tags: sad, food, summer, melt
 // the body and its drips are stroked wide first and filled after, so they read as one outline
 const{sin,PI,min}=Math,T=2*PI
 export const frames=24,delay=70

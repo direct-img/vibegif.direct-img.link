@@ -1,4 +1,5 @@
 // chibi girl with a red ponytail and sweatband sprinting in place on a striped progress bar that rolls under her feet like a treadmill
+// tags: anime, chibi, treadmill, progress-bar, fast, energetic
 const{sin,cos,PI,max,min,sqrt,round,abs}=Math,T=2*PI
 export const frames=12,delay=60
 const SKIN='#ffe3d1',HAIR='#ff6b6b',HD='#e03131',HL='#ffc9c9',EYE='#20c997',ED='#087f5b',TEE='#fff',SHO='#4dabf7',SHD='#1c7ed6',SHOE='#f783ac',BAR='#e7f5ff',ST='#69db7c',SD='#40c057',BL='#ffa8a8',SW='#a5d8ff',Z=.8

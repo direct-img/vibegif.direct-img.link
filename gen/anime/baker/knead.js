@@ -1,4 +1,5 @@
 // baker girl in a polka-dot kerchief kneading a ball of dough on a floured board, pushing it flat and rolling it back, flour puffing up
+// tags: calm, food, baking, dough
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#e0a458',HD='#b8782e',HL='#f7dcae',EYE='#82c91e',ED='#5c940d',BL='#ffa8a8',KER='#ff6b6b',APR='#a5d8ff',WOOD='#e0a96d',WD='#b5803f',DOUGH='#ffe8cc',DS='#f5d0a0'

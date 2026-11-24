@@ -1,4 +1,5 @@
 // two champagne flutes swinging together and clinking, bubbly sloshing and splashing
+// tags: happy, celebration, drink, toast, friends, sparkle
 export const frames=48,delay=50,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),rn=n=>(n=Math.sin(n*127.1+311.7)*43758.5453,n-Math.floor(n))
 const H=.42,K=.9

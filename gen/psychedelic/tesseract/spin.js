@@ -1,4 +1,5 @@
 // tesseract (4D hypercube) wireframe rotating through the fourth dimension and turning itself inside out, edges shading violet to red by 4D depth
+// tags: hypercube, math, wireframe, trippy
 export const frames=20,delay=60
 const T=Math.PI*2,V=[...Array(16)].map((_,i)=>[0,1,2,3].map(b=>i>>b&1?1:-1))
 const E=[];for(let i=0;i<16;i++)for(let b=0;b<4;b++)if(!(i>>b&1))E.push([i,i|1<<b])

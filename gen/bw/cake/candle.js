@@ -1,4 +1,5 @@
 // two-tier birthday cake, candle flame flickering, sparkles popping around it
+// tags: happy, food, birthday, celebration, sparkle
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const star=(c,x,y,r)=>{const k=r*.18;c.beginPath();c.moveTo(x,y-r);for(const[px,py,qx,qy]of[[r,0,k,-k],[0,r,k,k],[-r,0,-k,k],[0,-r,-k,-k]])c.quadraticCurveTo(x+qx,y+qy,x+px,y+py);c.fill();c.stroke()}

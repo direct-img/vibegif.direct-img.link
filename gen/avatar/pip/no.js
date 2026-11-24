@@ -1,4 +1,5 @@
 // round coral avatar mascot ball shaking its head no: its two white dot eyes narrow to firm dashes and slide left and right across the ball as it shakes side to side, then pop open again as it settles
+// tags: shake, ball, coral
 export const frames=56,delay=40
 const{PI,sin,cos}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

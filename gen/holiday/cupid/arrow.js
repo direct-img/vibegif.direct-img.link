@@ -1,4 +1,5 @@
 // little cupid hovering on fluttering wings, drawing its bow with a wink and loosing a heart-tipped arrow that bursts into hearts
+// tags: love, valentines, heart, playful, wink
 export const frames=48,delay=55,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),bp=(t,a,b)=>Math.sin(Math.PI*cl((t-a)/(b-a)))
 const R=.42,OX=98,OY=147,AIM=-.28,D=40

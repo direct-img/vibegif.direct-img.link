@@ -1,4 +1,5 @@
 // chibi boxer with a white wolf cut and flapping sweatband bounces in her stance, then fires jab, jab, cross into impact bursts
+// tags: determined, sports, chibi, punch
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=60,rim=4

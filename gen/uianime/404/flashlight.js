@@ -1,4 +1,5 @@
 // nervous orange-haired girl in pajamas standing in a dark room, sweeping her flashlight beam back and forth and lighting up a "404" on the wall
+// tags: anime, dark, anxious, search
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#e8590c',HL='#ffe8cc',EYE='#4dabf7',PJ='#a5d8ff',PD='#74c0fc',DARK='#232946',DIM='#2f3866',BEAM='#fff3bf',DIG='#ff8787',FL='#ff6b6b',BL='#ffa8a8',SW='#a5d8ff',Z=.74

@@ -1,4 +1,5 @@
 // arrows pop up, crouch and shoot one after another into a happy cloud, which puffs up each time one zips inside
+// tags: arrows, happy, puff, playful
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=60
 const back=u=>(u=min(1,max(0,u)),1+2.7*(u-1)**3+1.7*(u-1)**2)

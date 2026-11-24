@@ -1,4 +1,5 @@
 // nova star: eight long cream kite spikes outlined in dark brown glide one way while sixteen short orange spikes behind them glide the other, then both rest while the gold core in its orange ring swells a soft amber glow and settles
+// tags: star, space, spin
 const{sin,cos,min,max,PI}=Math,T=2*PI
 // 12 gliding frames at 40ms, then 10 resting frames at 60ms while the core glows
 export const frames=22,delay=[...Array(12).fill(40),...Array(10).fill(60)]

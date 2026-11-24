@@ -1,4 +1,5 @@
 // a big blue water droplet pops into view, drops fast and stretches as it plunges into a wide light blue oval pool, thick deep blue ripples ring out across the pool and thin away near its edge, and a small droplet bounces back up and makes its own ripple
+// tags: calm, water, droplet
 export const frames=48,delay=40
 const{sin,PI,max,min}=Math,T=2*PI,cy=172,PX=98,PY=46,k=PY/PX
 const ob=x=>1+2.7*(x-1)**3+1.7*(x-1)**2 // ease-out-back

@@ -1,4 +1,5 @@
 // round potion flask bubbling away, purple liquid sloshing, little puffs of vapor drifting out the top
+// tags: playful, magic, purple, flask
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const LQ='#b197fc',LD='#9775fa',GL='#e7f5ff',VP='#e5dbff',LB='#fff9db'

@@ -1,4 +1,5 @@
 // Australia flag (blue ensign: Union Jack canton, large seven-pointed Commonwealth Star, Southern Cross on the fly) waving while its white stars twinkle, with a cheerful anime girl in front of the lower middle: honey-brown ponytail with a golden wattle sprig, blue eyes, green and gold jersey, waving hello
+// tags: anime, wave, country, pride, stars
 export const frames=16,delay=80,rim=3
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const pth=(c,a)=>{c.beginPath();c.moveTo(a[0],a[1]);for(let k=2;k<a.length;k+=4)c.quadraticCurveTo(a[k],a[k+1],a[k+2],a[k+3])}

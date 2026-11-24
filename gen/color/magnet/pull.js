@@ -1,4 +1,5 @@
 // horseshoe magnet pulling paperclips in, holding them, then dropping them and starting again
+// tags: playful, paperclips, science, repeat
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const R='#fa5252',TIP='#ced4da',CL='#adb5bd'

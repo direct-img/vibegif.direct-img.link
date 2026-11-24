@@ -1,4 +1,5 @@
 // green snail crawling in place with a rainbow lollipop-spiral shell that spins hypnotically and swirly hypnotized eyes on wobbling eyestalks
+// tags: animal, spiral, rainbow, hypnotic, spin, trippy
 export const frames=24,delay=60,rim=4
 const T=Math.PI*2,P=[[255,45,149],[255,122,26],[255,225,26],[43,227,107],[31,184,255],[139,77,255]]
 export default(c,t)=>{

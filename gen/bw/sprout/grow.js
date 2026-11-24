@@ -1,4 +1,5 @@
 // sprout boings up out of the dirt, opens its leaves, wiggles happily, then ducks back down
+// tags: happy, hopeful, nature, plant, garden
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const back=u=>{const s=1.9;return 1+(s+1)*(u-1)**3+s*(u-1)**2}

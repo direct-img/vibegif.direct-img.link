@@ -1,4 +1,5 @@
 // tiny smiling island with a palm tree swaying in the breeze, waves lapping all around it, coconuts in the fronds
+// tags: calm, happy, palm-tree, ocean, waves, summer
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=120
 const SEA='#4dabf7',SL='#a5d8ff',SAND='#ffd8a8',SD='#ffc078',TR='#a9744f',TD='#7f5539',FR='#51cf66',FD='#2f9e44',CO='#8d6346',BL='#ff8787'

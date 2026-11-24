@@ -1,4 +1,5 @@
 // a literal mood swing: a blob on a playground swing is a beaming sunny yellow on the way forward and a sobbing blue on the way back
+// tags: anxious, funny, playground
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 // frames are spaced by swing speed: dense through the fast bottom of the arc, sparse (and held longer) at the slow ends
 const N=20,D=2300,PH=(()=>{const M=2000,cum=[0];for(let j=1;j<=M;j++)cum.push(cum[j-1]+abs(cos(T*(j-.5)/M))+.4);return[...Array(N+1)].map((_,k)=>{const g=k/N*cum[M];let j=0;while(j<M&&cum[j+1]<g)j++;return(j+(g-cum[j])/(cum[j+1]-cum[j]))/M})})()

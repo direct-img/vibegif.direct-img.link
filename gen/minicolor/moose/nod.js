@@ -1,4 +1,5 @@
 // moose facing you with big flat antlers, slowly nodding, an ear flick and a blink
+// tags: calm, animal, slow, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=90
 const B='#b07d55',L='#d9b38c',A='#ecd3a5',D='#2b2633'

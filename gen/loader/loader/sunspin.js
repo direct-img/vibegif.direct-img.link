@@ -1,4 +1,5 @@
 // golden sun disc with a terracotta outline and twelve tapered wavy orange rays that turn slowly while a ripple runs outward along each ray
+// tags: happy, calm, sun, weather, spin, gentle
 const{sin,cos,atan2,PI}=Math,T=2*PI
 export const frames=28,delay=50
 export default(c,t)=>{

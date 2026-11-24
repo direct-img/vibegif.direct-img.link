@@ -1,4 +1,5 @@
 // strawberry bouncing twice a loop with squash and stretch, its seeds jiggling and its leafy cap flapping behind
+// tags: happy, playful, food, fruit
 const{sin,PI,abs,max,min}=Math,T=2*PI
 export const frames=20,delay=60
 const RD='#ff6b6b',SD='#ffe066',LF='#69db7c',LD='#40c057',BL='#ffc9c9',SH='#ced4da'

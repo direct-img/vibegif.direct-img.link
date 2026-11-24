@@ -1,4 +1,5 @@
 // three concentric rings in coral, gold and sky blue, each with a gap, turning clockwise at one, two and three turns per loop, the gaps line up at the top once per loop with a brief slowdown while a violet center dot pops
+// tags: rings, colorful, spin
 export const frames=45,delay=40
 const{sin,cos,PI,max}=Math,T=2*PI
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // green snake curled in a ring biting its own tapering tail, its dark green back diamonds and pale yellow belly scales flowing steadily round the ring and into its mouth, white eye that blinks once
+// tags: snake, animal, spin
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=28,delay=60
 const Rc=82,W=32,a0=.2,a1=T-.22,N=90,P=.34

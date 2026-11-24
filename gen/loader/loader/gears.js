@@ -1,4 +1,5 @@
 // three meshing gears ticking round in a smooth clockwork pulse: a big slate-grey gear with a recessed centre drives a light silver gear above right and a small orange gear below right, bold dark outlines, pale hubs with dark axles
+// tags: clockwork, machine, spin
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=14,delay=60
 const m=8.4,G=[ // n teeth, fill, dark tone, light tone, angle from the big gear

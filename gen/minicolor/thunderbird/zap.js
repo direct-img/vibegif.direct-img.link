@@ -1,4 +1,5 @@
 // thunderbird hovering: lightning-bolt wings beat twice a loop and little sparks crackle off the tips at the top of each beat
+// tags: excited, fantasy, lightning, hover
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ff7a5c',L='#ffbdad',A='#f4c03e',D='#2b2633'

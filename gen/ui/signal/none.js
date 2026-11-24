@@ -1,4 +1,5 @@
 // a phone with no signal, its empty bars light up one by one as it searches and then blink, while its little face looks round sadly
+// tags: phone, sad, search, blink, bars
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=90
 export default(c,t,i)=>{

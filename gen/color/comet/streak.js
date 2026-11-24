@@ -1,4 +1,5 @@
 // comet with a glowing smiley head bobbing in a small loop, its long striped tail swishing, sparks peeling off
+// tags: happy, playful, space, stars, sparkle, swish
 const{sin,cos,PI,max,hypot}=Math,T=2*PI
 export const frames=16,delay=80
 const L=[['#9775fa',1],['#4dabf7',.74],['#d0ebff',.46]],SC=['#ffd43b','#fff','#faa2c1'],HD='#ffd43b',HALO='#fff3bf',BL='#ff8787'

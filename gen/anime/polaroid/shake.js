@@ -1,4 +1,5 @@
 // chibi with chestnut pigtails shaking an instant photo while the picture develops, beaming at it, then flipping it over to a fresh blank one
+// tags: happy, chibi, photo, camera
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#8b4f2f',HD='#6a3a21',HL='#d9a382',EYE='#c0803f',ED='#7f5539',BL='#ffa8a8',CAR='#fcc419',CAD='#f59f00',SKT='#4dabf7',SKD='#1c7ed6',SCR='#f06595',CAM='#ffc9de',CMD='#f783ac',SHOE='#e03131'

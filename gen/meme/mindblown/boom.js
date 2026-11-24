@@ -1,4 +1,5 @@
 // mind blown: eyes go wide, the top of the head pops off in a burst of confetti, flips through the air and lands back on with a bonk, leaving it dizzy
+// tags: excited, shocked, confetti
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 const U=[0,.1,.17,.2,.23,.28,.36,.46,.55,.6,.63,.68,.76,.84,.92,.97]
 export const frames=U.length,delay=[350,100,140,50,60,70,80,80,70,50,70,110,110,110,130,220],rim=4

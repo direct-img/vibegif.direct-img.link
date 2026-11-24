@@ -1,4 +1,5 @@
 // mailbox with its flag down, the door drops open with a puff of dust and a lonely moth flutters out, loops around and leaves, then the door shuts
+// tags: moth, lonely, dust, flag, calm
 const{sin,cos,PI,max,min,abs,floor}=Math,T=2*PI
 export const frames=24,delay=80
 const MB='#4dabf7',DR='#74c0fc',DI='#d0ebff',IN='#343a40',FL='#ff6b6b',PO='#a9744f',MW='#ffe8cc',MS='#e0a96d',MG='#ced4da',BL='#ffa8a8',DU='#e9ecef'

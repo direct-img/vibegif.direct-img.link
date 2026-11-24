@@ -1,4 +1,5 @@
 // three chunky dots hop up one after another in a wave, stretching as they fly and squashing as they land
+// tags: bounce, wave, playful
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=20,delay=60
 export default(c,t)=>{

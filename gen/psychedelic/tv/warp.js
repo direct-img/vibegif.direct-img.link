@@ -1,4 +1,5 @@
 // retro wooden TV with rabbit-ear antennas wobbling and bending like jelly, its screen showing a turning rainbow flower-petal kaleidoscope blooming outward
+// tags: retro, kaleidoscope, rainbow, bloom, wobble, trippy
 export const frames=12,delay=100
 const P=Math.PI*2,H=(h,l=58)=>`hsl(${(h%360+360)%360},95%,${l}%)`
 export default(c,t)=>{

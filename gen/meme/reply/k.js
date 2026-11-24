@@ -1,4 +1,5 @@
 // a long heartfelt blue text message, then the typing dots go on and off forever... and the reply is just "k"
+// tags: sad, annoyed, texting, typing
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=36,delay=[...Array(35).fill(90),1600],rim=4
 const BL='#339af0',GR='#e9ecef'

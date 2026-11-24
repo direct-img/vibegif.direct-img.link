@@ -1,4 +1,5 @@
 // manga alchemist with fluffy white curls and goggles pushed up, pouring one flask into another until it puffs a smoke cloud and sparkles, then she grins
+// tags: playful, science, potion, smoke
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

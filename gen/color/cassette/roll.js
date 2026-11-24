@@ -1,4 +1,5 @@
 // cassette tape whose spinning reels are its eyes, tape ticking along between them, notes floating up
+// tags: happy, music, retro, notes, spin
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const BODY='#4dabf7',BD='#1c7ed6',LAB='#fff9db',BAND='#ff6b6b',STR='#ffd43b',WIN='#495057',TAPE='#a9744f',TL='#d9a47c',BL='#faa2c1',NOTE=['#b197fc','#69db7c']

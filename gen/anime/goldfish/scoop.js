@@ -1,4 +1,5 @@
 // mint-haired girl at a festival goldfish tub: she scoops a fish up on her paper poi, the paper tears, the fish drops back and darts away
+// tags: playful, sad, festival, fish, summer, animal
 const{sin,cos,PI,max,min,atan2,hypot}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#63e6be',HD='#12b886',HL='#e6fcf5',EYE='#f06595',ED='#a61e4d',TEE='#d0bfff',TD='#9775fa',RIB='#ff6b6b',TUB='#4dabf7',TL='#a5d8ff',WA='#99e9f2',WL='#e3fafc',BL='#ffa8a8',POI='#f783ac',Z=.7

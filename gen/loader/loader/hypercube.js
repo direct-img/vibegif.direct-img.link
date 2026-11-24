@@ -1,4 +1,5 @@
 // tesseract wireframe turning in 4D, thick neon tubes with dark outlines, the small inner pink cube swells out through the cyan outer one while it all spins, front edges thicker and brighter
+// tags: tesseract, 3d, neon, spin
 const{sin,cos,PI}=Math
 export const frames=48,delay=40
 // ease in-out with a soft hold at the ends

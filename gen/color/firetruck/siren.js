@@ -1,4 +1,5 @@
 // fire truck rumbling along with its siren flashing red and blue, ladder bobbing, wheels turning, road dashes rolling past
+// tags: excited, lights, drive, rescue
 const{sin,cos,PI,abs,round}=Math,T=2*PI
 export const frames=16,delay=70
 const RD='#ff6b6b',RDD='#e03131',WIN='#a5d8ff',TIRE='#343a40',HUB='#ced4da',LAD='#dee2e6',SB='#4dabf7',SR='#fa5252',G='#ffd43b',BL='#ffa8a8'

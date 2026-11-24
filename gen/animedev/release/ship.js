@@ -1,4 +1,5 @@
 // anime girl with a wavy black bob, big red bow and yellow sundress smashes a champagne bottle on a little ship labelled v1.0, foam and confetti burst, ship rocks and toots, she cheers and grabs the next bottle
+// tags: happy, anime, coding, celebration, champagne, proud
 export const frames=24,delay=95,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,exp}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

@@ -1,4 +1,5 @@
 // tsukkomi girl with white twin tails winds up a paper fan, trembling with an anger mark, then smacks it down into a burst
+// tags: angry, funny, comedy, paper-fan
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

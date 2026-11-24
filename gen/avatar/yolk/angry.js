@@ -1,4 +1,5 @@
 // round yellow avatar ball fuming with anger: its black eyes slant into a glare over a trembling frown, coral red rises through its body like a thermometer while it swells and shakes, then steam puffs blast out of both sides of its head in three bursts and it cools back to yellow
+// tags: fume, shake, ball, yellow
 export const frames=60,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

@@ -1,4 +1,5 @@
 // white battery icon with a thick dark outline lying on its side, four green cells pop in one by one while a yellow lightning bolt in the middle pulses, at full the battery thumps and the cells flash bright green, then they drop out right to left and it starts over
+// tags: energy, pulse, icon
 const{sin,PI,max,min}=Math
 export const frames=48,delay=40
 const F=[.06,.2,.34,.48],B=.64, // cell fill times, beat time

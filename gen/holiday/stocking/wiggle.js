@@ -1,4 +1,5 @@
 // stuffed Christmas stocking wiggling on a gold hook, floppy foot lagging behind, goodies bouncing out the top
+// tags: happy, excited, christmas, gift, bounce
 export const frames=28,delay=50,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos,HX=70,HY=22
 // sampled outline: start point then quadratic segments [cx,cy,x,y]

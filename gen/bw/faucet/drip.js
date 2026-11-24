@@ -1,4 +1,5 @@
 // faucet with a drop swelling at the spout, letting go, and splashing into a puddle with a ripple
+// tags: calm, water, splash
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 export default(c,t)=>{

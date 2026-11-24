@@ -1,4 +1,5 @@
 // ink wash raindrops hitting a still pond, interlocking rings spreading and fading between lily pads, faint slanted rain streaks
+// tags: calm, nature, ripple, slow
 const{sin:S,cos:C,PI,min,max,hypot}=Math,T=PI*2,
 R=s=>()=>(s=s*16807%2147483647)/2147483647,
 K=(a,v=20)=>`rgba(${v+4},${v},${v-3},${a})`

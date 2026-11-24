@@ -1,4 +1,5 @@
 // freckled ginger anime girl hugging a big pink Sponsor heart that beats lub-dub, little hearts floating up, one foot kicking
+// tags: love, anime, coding, pulse
 export const frames=24,delay=80,rim=3
 const P=Math.PI,{sin,cos,min,max,abs}=Math,L='#2b1d26'
 const F=(c,f,col,w=3.5)=>{c.beginPath();f();c.fillStyle=col;c.fill();if(w){c.lineWidth=w;c.strokeStyle=L;c.stroke()}}

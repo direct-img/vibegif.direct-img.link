@@ -1,4 +1,5 @@
 // a VIBE CHECK gauge scans with its needle twitching all over, then slams into the top of the scale and the display flashes IMMACULATE
+// tags: happy, funny, vibe-check, gauge
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=30,delay=80,rim=4
 const cl=u=>min(1,max(0,u)),ez=(t,a,b)=>{const x=cl((t-a)/(b-a));return x*x*(3-2*x)},pop=u=>(u=cl(u),u<.6?1.2*u/.6:1.2-.2*(u-.6)/.4)

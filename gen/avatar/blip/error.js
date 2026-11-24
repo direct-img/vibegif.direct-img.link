@@ -1,4 +1,5 @@
 // round violet avatar blip error and failure: a glossy violet ball whose two white square pixel eyes snap into two white crosses while it shakes its head and flashes coral red twice, sags for a moment, then shakes it off and blinks back to normal
+// tags: anxious, robot, pixel, ball, violet
 export const frames=64,delay=40
 const{sin,PI:P,min,max,abs}=Math,
 k=x=>max(0,min(1,x)),

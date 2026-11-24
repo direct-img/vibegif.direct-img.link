@@ -1,4 +1,5 @@
 // spiral galaxy turning on a round night-sky sticker, two candy-striped arms around a smiley core, stars twinkling
+// tags: calm, space, night-sky, stars, spin, slow
 // both arms match, so half a turn per loop is seamless; the dark sky gets a white rim for dark backgrounds
 const{sin,cos,PI,exp,max,min,hypot}=Math,T=2*PI
 export const frames=20,delay=90

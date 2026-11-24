@@ -1,4 +1,5 @@
 // pig bobbing its head, ears flapping, snout scrunching up with each oink
+// tags: happy, playful, animal, farm, bob
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=70
 const P='#ffc9d6',S='#ff8fab',D='#c2255c',BL='#ffa8c5'

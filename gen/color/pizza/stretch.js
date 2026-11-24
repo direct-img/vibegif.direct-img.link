@@ -1,4 +1,5 @@
 // slice of pizza being lifted off the pie with cheese strings stretching under it
+// tags: happy, food, cheese
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=70
 const CR='#e8a15a',CH='#ffd43b',PP='#fa5252',SAUCE='#ff8787'

@@ -1,4 +1,5 @@
 // girl with screentone twin tails holding out a tamagoyaki on chopsticks, "say aah", over her open bento box
+// tags: love, happy, food, friends, cute
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

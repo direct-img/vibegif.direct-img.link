@@ -1,4 +1,5 @@
 // sad chocolate chip cookie trembles, a crack zigzags down it, it splits in two crying while crumbs tumble off, then it pulls itself back together
+// tags: food, sad, crack, crying, crumbs
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const CK='#e0a96d',CKD='#c98c4f',CH='#5c3d2e',BL='#ffa8a8',TR='#74c0fc'

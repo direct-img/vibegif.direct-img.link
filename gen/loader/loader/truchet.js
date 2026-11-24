@@ -1,4 +1,5 @@
 // indigo panel of 4x4 truchet tiles with thick yellow quarter-arcs, a nonstop wave flips the tiles one after another like cards inside their own squares, each tile's arcs squash to a sliver with rounded ends and open out mirrored so they reconnect into new winding paths
+// tags: pattern, flip, hypnotic
 const{cos,PI,abs,max,min}=Math
 export const frames=80,delay=40
 const S=50,O=28,M=0b1011010011100101,D=.15

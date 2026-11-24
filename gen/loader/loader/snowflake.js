@@ -1,4 +1,5 @@
 // icy blue six-armed snowflake with chunky black outlines and a white-flashing hexagon heart, turning slowly as its branches melt back in crystal by crystal to a small hexagon star, then grow out again one by one with a springy pop
+// tags: calm, winter, snow, slow, gentle
 export const frames=30,delay=[360,...Array(14).fill(70),120,...Array(14).fill(70)]
 const{sin,cos,min,max,PI}=Math
 const cl=x=>min(1,max(0,x)),io=x=>x<.5?2*x*x:1-2*(1-x)**2

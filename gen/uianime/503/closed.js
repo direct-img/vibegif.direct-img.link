@@ -1,4 +1,5 @@
 // brown haired shopkeeper girl with a bun and a blue apron flipping a hanging door sign from OPEN to CLOSED 503, then giving an apologetic little bow with a sorry hand
+// tags: anime, shop, apologetic, sign
 const{sin,cos,PI,max,min,abs,exp}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#a9714b',HD='#6f4428',HL='#ecd2bd',EYE='#51cf66',ED='#2b8a3e',SHT='#fff4e6',APR='#74c0fc',AD='#1c7ed6',BL='#ffa8a8',WOOD='#f3c98b',WD='#c98a45',OP='#d3f9d8',OPD='#2b8a3e',CL='#ffe3e3',CLD='#e03131',SW='#a5d8ff',PIN='#ff8787'

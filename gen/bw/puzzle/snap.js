@@ -1,4 +1,5 @@
 // two jigsaw pieces slide together and snap into place with a click spark, grin about it, then drift apart
+// tags: happy, game, jigsaw
 const{sin,cos,PI,atan2,max}=Math,T=2*PI
 export const frames=24,delay=70
 const D=(c,f,a=11,b=4)=>{for(const[l,s]of[[a,'#111'],[b,'#fff']])c.lineWidth=l,c.strokeStyle=s,c.beginPath(),f(),c.stroke();c.lineWidth=7;c.strokeStyle='#111'}

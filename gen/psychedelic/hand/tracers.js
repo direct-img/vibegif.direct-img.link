@@ -1,4 +1,5 @@
 // white cartoon hand waving side to side and leaving a fan of rainbow afterimage tracer hands behind it, a rainbow eye blinking in the palm
+// tags: body, wave, rainbow, trails, eye, trippy
 export const frames=24,delay=60
 const T=Math.PI*2,K=['#ff2d55','#ff8a1f','#ffe11a','#33e06a','#1fb8ff','#7a4dff','#e040fb']
 const A=t=>.6*Math.sin(T*t)

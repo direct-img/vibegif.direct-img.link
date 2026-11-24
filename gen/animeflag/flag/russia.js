@@ -1,4 +1,5 @@
 // Russia flag: white-blue-red horizontal tricolor waving on a flagpole, with a smiling anime girl printed in the middle, platinum hair in a long side braid, wearing a red-and-gold pearl kokoshnik headdress and a blue sarafan over a white blouse; she blinks and her braid sways as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=16,rim=3
 const W=236,H=157,X=14,Y=30,T=Math.PI*2
 const P=(c,s)=>{c.beginPath();for(const[,k,a]of s.matchAll(/([MLCQZ])([^MLCQZ]*)/g)){

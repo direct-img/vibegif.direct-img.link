@@ -1,4 +1,5 @@
 // key slides into a padlock and turns, the shackle pops up and swings round on its right leg, then it all closes and the key slides out
+// tags: key, security, relief
 // the swing is a horizontal squash about the right leg, so the shackle seems to turn in depth
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=24,delay=70

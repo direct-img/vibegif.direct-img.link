@@ -1,4 +1,5 @@
 // round quokka doing a small happy hop on its long feet, then beaming with its big smile and squinting
+// tags: happy, excited, animal, hop
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#b88a64',L='#ddc3ab',P='#ff85a8',D='#2b2633'

@@ -1,4 +1,5 @@
 // bubble tea cup with tapioca pearls riding up the straw and jiggling at the bottom
+// tags: happy, food, drink, tea, jiggle
 const{sin,cos,PI,hypot}=Math,T=2*PI
 export const frames=20,delay=70
 const TEA='#ffd8a8',PE='#5c3d2e',ST='#f783ac',LID='#e7f5ff',BL='#ffa8a8'

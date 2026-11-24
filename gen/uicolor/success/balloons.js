@@ -1,4 +1,5 @@
 // bunch of smiling balloons bobbing up on wavy strings tied with a bow, confetti fluttering down around them
+// tags: celebration, happy, confetti, bob, float, bow
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=14,delay=100
 const B=[[128,74,'#ffd43b',.2,36],[70,108,'#ff6b6b',0,33],[186,108,'#4dabf7',.55,33]],BL='#ffa8a8'

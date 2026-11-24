@@ -1,4 +1,5 @@
 // smiling star shooting across with a rainbow streak behind it, little sparkles left in its wake
+// tags: happy, playful, space, rainbow, sparkle
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=24,delay=50
 const SY='#ffd43b',TR=['#ff6b6b','#ffd43b','#4dabf7'],BL='#ff8787'

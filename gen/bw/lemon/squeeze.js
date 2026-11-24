@@ -1,4 +1,5 @@
 // lemon squeezed from both sides: it squashes, scrunches its face and squirts juice drops up and away
+// tags: playful, food, fruit, squirt
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 export default(c,t)=>{

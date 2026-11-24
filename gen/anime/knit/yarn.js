@@ -1,4 +1,5 @@
 // cozy chibi with a messy sandy bun and round glasses knitting cross-legged, needles clicking, the striped scarf creeping down, yarn ball rolling
+// tags: calm, happy, cozy, scarf, craft
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#e2c08d',HD='#b8955e',HL='#f7e8cc',EYE='#4dabf7',ED='#1864ab',BL='#ffa8a8',SW='#f783ac',SWD='#e64980',PANT='#748ffc',SOCK='#fff',CUSH='#ffc078',CUD='#fd7e14',Y1='#38d9a9',Y2='#fff4e6',YD='#0ca678',ND='#e0a96d'

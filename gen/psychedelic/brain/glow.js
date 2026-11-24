@@ -1,4 +1,5 @@
 // side view brain whose folds light up with rainbow color waves rippling across the lobes, dark wiggly sulci, neon halo rings pulsing outward
+// tags: body, rainbow, pulse, neon, trippy, excited
 export const frames=16,delay=80
 const P=Math.PI*2
 let s=5

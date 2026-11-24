@@ -1,4 +1,5 @@
 // big question mark bouncing and tilting curiously while its dot hops along on its own beat
+// tags: curious, tilt, playful
 const{sin,PI,abs}=Math,T=2*PI
 export const frames=20,delay=70
 export default(c,t)=>{

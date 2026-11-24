@@ -1,4 +1,5 @@
 // goat bleating: it throws its head back with a wide open mouth and sound marks, its tail flicks and it blinks
+// tags: playful, funny, animal
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

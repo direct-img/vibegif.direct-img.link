@@ -1,4 +1,5 @@
 // round mint green avatar talking: a sleepy jelly ball with closed content eyes murmurs softly, a small mouth shaping mellow syllables while its body pulses gently
+// tags: calm, jelly, gentle, ball, mint
 const{sin,cos,asin,atan2,abs,exp,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

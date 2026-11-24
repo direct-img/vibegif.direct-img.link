@@ -1,4 +1,5 @@
 // tiny chef girl with green hair tossing a pancake sky high out of her pan, watching it flip, and catching it
+// tags: playful, food, pancake
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=70
 const SKIN='#ffe3d1',HAIR='#51cf66',HD='#2f9e44',EYE='#f59f00',ED='#d9480f',BL='#ffa8a8',TIE='#fa5252',PANT='#868e96',PAN='#495057',RIM='#adb5bd',CAKE='#e8a33d',SIDE='#ffe8cc',BUT='#ffe066'

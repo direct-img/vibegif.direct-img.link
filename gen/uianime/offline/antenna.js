@@ -1,4 +1,5 @@
 // worried girl with an orange bob holding her phone up high and waving it around hunting for signal, ahoge twitching like an antenna
+// tags: anime, phone, signal, worried, anxious, search
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=12,delay=95
 const SKIN='#ffe3d1',HAIR='#ffa94d',HD='#f76707',HL='#fff4e6',EYE='#748ffc',ED='#364fc7',HOOD='#74c0fc',HOD='#339af0',BL='#ffa8a8',PH='#ffd43b',SCR='#e3fafc',RED='#fa5252',SW='#a5d8ff'

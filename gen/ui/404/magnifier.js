@@ -1,4 +1,5 @@
 // a magnifying glass sweeps back and forth over 404, and when it hovers the 0 it swells up big with a confused little face
+// tags: magnifying-glass, search, error, confused, swell
 const{sin,PI,max,abs}=Math,T=2*PI
 export const frames=24,delay=70
 const N=(c,g)=>{for(const[w,s]of[[28,'#111'],[14,'#fff']]){

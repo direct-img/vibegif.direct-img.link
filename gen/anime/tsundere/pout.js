@@ -1,4 +1,5 @@
 // red-haired tsundere with her arms crossed, turning her nose up with a "hmph" puff, then sneaking a blushing peek back
+// tags: shy, angry, blush
 const{sin,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#748ffc',HD='#4c6ef5',HL='#dbe4ff',EYE='#22b8cf',ED='#0b7285',BLZ='#495057',RIB='#ffd43b',BL='#ff8fab',MO='#c92a2a'

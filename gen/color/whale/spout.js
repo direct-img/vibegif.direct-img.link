@@ -1,4 +1,5 @@
 // smiling whale bobbing along, tail flapping, water spouting out of its blowhole
+// tags: happy, calm, animal, ocean, bob
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#4dabf7',BE='#d0ebff',WA='#a5d8ff',BL='#faa2c1'

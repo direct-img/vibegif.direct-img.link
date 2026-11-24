@@ -1,4 +1,5 @@
 // ink wash drop of black ink falling onto the page and blooming outward in feathery tendrils, then fading away
+// tags: calm, drop, spread
 const{PI,sin:S,cos:C,min,max,atan2}=Math,T=PI*2,
 rn=s=>()=>(s=s*16807%2147483647)/2147483647,
 cl=(x,a=0,b=1)=>min(b,max(a,x)),

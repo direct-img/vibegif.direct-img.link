@@ -1,4 +1,5 @@
 // smug girl with gradient-tone long hair and side-swept bangs: L-shaped hand at her chin, half-lidded side glance, ufufu squiggles rising and sparkles twinkling
+// tags: playful, smirk, glance
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90,rim=4
 // screentone whose dots grow from tiny at y0 to fat at y1

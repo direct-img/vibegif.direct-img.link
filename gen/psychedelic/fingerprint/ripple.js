@@ -1,4 +1,5 @@
 // fingerprint whorl whose ridges are rainbow stripes rippling outward from the core, new rings born at the center, ragged fingertip edge
+// tags: body, rainbow, pulse, trippy
 export const frames=24,delay=70
 const S=256,P=['#ff2d6f','#ff8a00','#ffd500','#3ddc4a','#00b7ff','#8b4dff'].map(h=>[1,3,5].map(k=>parseInt(h.slice(k,k+2),16)))
 const h=(x,y)=>{let n=Math.sin(x*127.1+y*311.7)*43758.5;return n-Math.floor(n)}

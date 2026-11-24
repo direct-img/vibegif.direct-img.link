@@ -1,4 +1,5 @@
 // navy-haired girl at her desk hopefully watching a CI pipeline go green, green, then red X, and she faceplants onto the desk
+// tags: sad, anime, coding, testing, failure, hopeful
 // keyframes [t, ms]
 const K=[[0,120],[.1,90],[.14,90],[.18,90],[.22,90],[.26,90],[.3,90],[.34,90],[.38,90],[.42,90],[.46,90],[.49,160],[.53,60],[.56,90],[.6,110],[.66,160],[.74,160],[.82,160],[.88,90],[.91,80],[.95,100]]
 export const frames=K.length,delay=K.map(k=>k[1]),rim=4

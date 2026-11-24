@@ -1,4 +1,5 @@
 // clay diya oil lamp for Diwali, its flame flickering and swaying on the wick while little sparkles twinkle
+// tags: calm, hopeful, diwali, lamp, flame, sparkle
 export const frames=24,delay=60,rim=5
 const K='#2a1810',P=Math.PI*2,S=Math.sin
 export default(c,t)=>{

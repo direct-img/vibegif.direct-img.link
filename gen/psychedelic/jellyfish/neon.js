@@ -1,4 +1,5 @@
 // neon jellyfish pulsing its bell, rainbow arches rippling out inside the dome and color bands flowing down its wavy tentacles
+// tags: sea, animal, rainbow, pulse, float, trippy
 export const frames=24,delay=70
 const P=Math.PI*2,X=128
 const C=['#ff2d75','#ff8a1a','#ffd60a','#24e06a','#00c8ff','#3f5bff','#c33cff']

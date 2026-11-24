@@ -1,4 +1,5 @@
 // stick insect: it rocks back and forth like a twig in the breeze with its feet planted, antennae swaying, it blinks
+// tags: calm, stick-insect, animal, insect, wind, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

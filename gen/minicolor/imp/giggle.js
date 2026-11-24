@@ -1,4 +1,5 @@
 // little imp giggling: quick bounces with squeezed eyes and a wide grin, then catches its breath, tail swishing
+// tags: playful, fantasy, bounce
 const{sin,abs,PI}=Math,T=2*PI
 export const frames=24,delay=75
 const B='#ff85a8',L='#ffc2d4',A='#f4c03e',D='#2b2633'

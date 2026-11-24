@@ -1,4 +1,5 @@
 // Canada flag (red-white-red with the red maple leaf) waving on a pole, with a chestnut-haired anime girl in a cozy white sweater and mittens hugging the maple leaf in the white center; her hair blows in the wind and she winks with a little pink heart
+// tags: anime, wave, country, pride, maple-leaf, winter
 export const frames=16,delay=85,rim=3
 const T=Math.PI*2,X=16,W=236,H=118,Y=69,A=6,KW=1.1
 const N={M:2,L:2,Q:4,C:6}

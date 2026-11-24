@@ -1,4 +1,5 @@
 // watermelon slice getting chomped three times, then popping back whole for another round
+// tags: playful, food, fruit, summer
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80
 const RD='#51cf66',RL='#d3f9d8',FL='#ff6b6b'

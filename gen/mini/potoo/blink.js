@@ -1,4 +1,5 @@
 // potoo on a stump: eyes shut it's just another bit of branch, then the huge eyes pop open, glance left and right, and squeeze shut again
+// tags: anxious, funny, animal, bird, camouflage
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

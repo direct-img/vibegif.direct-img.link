@@ -1,4 +1,5 @@
 // orange bob girl in a mint hoodie typing furiously on her phone with both thumbs, tongue poking out, while a chat bubble's three dots bounce
+// tags: anime, phone, fast, thumbs, playful, dots
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=75
 const SKIN='#ffe3d1',HAIR='#ffa94d',HD='#f76707',HL='#fff4e6',EYE='#20c997',ED='#087f5b',HO='#96f2d7',HOD='#20c997',PH='#b197fc',BL='#ffa8a8',TG='#ff8fab',CLIP='#f06595'

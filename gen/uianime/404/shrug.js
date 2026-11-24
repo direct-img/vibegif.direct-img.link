@@ -1,4 +1,5 @@
 // teal bob girl in a yellow hoodie giving a big "dunno" shrug: shoulders up, palms out, head tilted with half-lidded eyes while a question mark pops over her
+// tags: anime, confused, question, hoodie
 const{sin,PI,min}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#3bc9db',HD='#1098ad',HL='#c5f6fa',EYE='#9775fa',ED='#6741d9',HO='#ffd43b',HOD='#f59f00',BL='#ffa8a8',Q='#ff8787',Z=.9

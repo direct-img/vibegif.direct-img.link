@@ -1,4 +1,5 @@
 // ink wash X cross painted in two bold brush strokes with dry-brush tails, holds then fades, error state
+// tags: error, ui, brush, icon
 export const frames = 22, dither = true
 export const delay = [...Array(22)].map((_, i) => i < 11 ? 45 : i == 11 ? 1200 : 70)
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2

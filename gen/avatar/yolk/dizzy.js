@@ -1,4 +1,5 @@
 // round yellow avatar ball feeling dizzy: its black eyes turn into spinning spirals over a wavy mouth, the ball sways around in a woozy circle while three little coloured stars orbit its head, then it shakes its head clear
+// tags: spiral, sway, ball, yellow
 export const frames=72,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

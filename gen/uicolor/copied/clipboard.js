@@ -1,4 +1,5 @@
 // smiling clipboard whose sheet peels off a twin copy that slides out beside it, gets a green check and sparkles, then poofs away
+// tags: copy, check, sparkle, happy
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=80
 const WD='#a9744f',CL='#ced4da',LN='#a5d8ff',CK='#51cf66',BL='#ffa8a8',SP='#ffd43b'

@@ -1,4 +1,5 @@
 // a little 404 signpost stands by a hole; a mole pops up, looks left and right, shrugs and ducks back down
+// tags: mole, animal, error, playful, surprise, shrug
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=32,delay=70
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),bk=u=>(u=cl(u),1+2.7*(u-1)**3+1.7*(u-1)**2)

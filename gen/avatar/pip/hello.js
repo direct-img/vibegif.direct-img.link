@@ -1,4 +1,5 @@
 // round coral avatar mascot ball saying hello: hops up close to the viewer with a pop of yellow ticks, rocks side to side like a wave with its white dot eyes curved into happy arcs, then settles back
+// tags: happy, wave, hop, ball, coral
 export const frames=64,delay=40
 const{PI,sin,cos,min,exp}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

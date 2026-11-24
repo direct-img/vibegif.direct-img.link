@@ -1,4 +1,5 @@
 // fennec fox sitting with its tail wrapped round its feet, huge ears swivelling to listen, blinks
+// tags: calm, fennec-fox, animal, desert, listen
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#efb36a',L='#fadcb8',A='#8c5a36',D='#2b2633'

@@ -1,4 +1,5 @@
 // round yellow avatar ball thinking hard: it leans over and rolls its black eyes up to the left then across to the right, one eye squinting above a wiggly hmm mouth, while three violet thought dots pop up beside its head
+// tags: ball, yellow, curious, eyes
 export const frames=72,delay=50
 const T=Math.PI*2,S=Math.sin,C=Math.cos,A=Math.asin,E=Math.exp,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

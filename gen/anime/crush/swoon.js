@@ -1,4 +1,5 @@
 // lovestruck girl with teal braids swooning: heart eyes pulsing, hands clasped at her cheek, swaying while hearts float up
+// tags: love, hearts, sway
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#38d9a9',HD='#0ca678',HL='#c3fae8',HE='#f03e3e',TOP='#fcc2d7',BL='#ff8fab',RB='#ffd43b',MO='#c92a2a',TG='#ff8fab',HT=['#ff8fab','#f06595','#ffa8a8']

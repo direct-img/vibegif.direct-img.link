@@ -1,4 +1,5 @@
 // long berry red haired girl in a showgirl vest tugging a little stage curtain aside to reveal a spinning "NEW" burst badge with sparkles, beaming, then letting it swing shut again
+// tags: anime, curtain, reveal, sparkle, excited, spin
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#e8366a',HD='#a51d45',HL='#ffc9d9',EYE='#40c057',ED='#2b8a3e',VS='#7950f2',BOW='#ffd43b',BL='#ffa8a8',CU='#f06595',CD='#c2255c',ROD='#fab005',STG='#f3d9fa',BG='#ffd43b',BGD='#f59f00',RED='#f03e3e',SP='#ffe066'

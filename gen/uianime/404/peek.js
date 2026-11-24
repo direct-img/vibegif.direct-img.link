@@ -1,4 +1,5 @@
 // shy girl with long pink hair peeking over the top of a big "404" sign, eyes darting left and right with a nervous sweatdrop, then ducking back down
+// tags: anime, shy, anxious, hide
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#f783ac',HD='#e64980',HL='#ffdeeb',EYE='#51cf66',ED='#2b8a3e',WOOD='#e8b07a',WD='#c47f45',PANEL='#fff9db',DIG='#ff8787',BL='#ffa8a8',SW='#a5d8ff',CLIP='#ffd43b'

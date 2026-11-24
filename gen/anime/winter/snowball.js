@@ -1,4 +1,5 @@
 // chibi girl in earmuffs and a striped scarf packing a snowball, winding up and throwing it off to the side, breath puffing
+// tags: happy, playful, chibi, snow
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#a5d8ff',HD='#4dabf7',HL='#e7f5ff',EYE='#9775fa',ED='#5f3dc4',COAT='#748ffc',CD='#4c6ef5',SC='#fa5252',MUFF='#faa2c1',MD='#f06595',BOOT='#a9744f',SN='#fff',SD='#d0ebff',BL='#ffa8a8',Z=.7

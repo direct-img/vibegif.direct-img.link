@@ -1,4 +1,5 @@
 // lilac-skinned alien girl with bobbling antennae waving hello, a soft UFO plushie tucked under her arm, stars twinkling
+// tags: happy, space, stars, plush, gentle
 const{sin,cos,PI,round,max}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#e5dbff',SK2='#d0bfff',HAIR='#22b8cf',HD='#0c8599',HL='#c5f6fa',EYE='#ff6b6b',ED='#c92a2a',SUIT='#e9ecef',SD='#adb5bd',GO='#ffd43b',UF='#91a7ff',UD='#5c7cfa',DOME='#faa2c1',BL='#f783ac'

@@ -1,4 +1,5 @@
 // honey blonde chibi girl in a round "418" teapot costume with a lid hat, hand on hip as the handle, tipping over to pour tea from her spout arm into a cup while singing
+// tags: anime, chibi, playful, cute
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100
 const SKIN='#ffe3d1',HAIR='#f6c35b',HD='#d4902b',HL='#fff4d1',EYE='#20c997',ED='#087f5b',POT='#e7f5ff',PD='#74c0fc',PN='#1c7ed6',BL='#ffa8a8',TEA='#c77c3a',TL='#e8a76a',CUP='#fcc2d7',CPD='#f06595',SHO='#f783ac',NT='#b197fc',Z=.56

@@ -1,4 +1,5 @@
 // United Kingdom flag waving on a pole: the Union Jack (blue field, red and white crosses and saltires) with an anime girl peeking over its top edge from behind, auburn twin tails with red bows streaming in the wind, green eyes, hands gripping the edge, tilting her head and blinking as the cloth ripples
+// tags: anime, wave, country, pride, united-kingdom
 export const frames=14,delay=85,rim=2
 const P=Math.PI*2,W=232,H=116,X=17,Y=126,N={M:2,L:2,Q:4,C:6},G={M:'moveTo',L:'lineTo',Q:'quadraticCurveTo',C:'bezierCurveTo'}
 let c,t

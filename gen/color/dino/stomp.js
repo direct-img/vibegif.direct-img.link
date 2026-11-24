@@ -1,4 +1,5 @@
 // little dinosaur stomping in place, roaring each time a foot lands and kicking up dust
+// tags: playful, animal, roar, dust
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const G='#69db7c',BE='#d8f5a2',SP='#ffa94d',BL='#ffa8a8'

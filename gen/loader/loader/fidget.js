@@ -1,4 +1,5 @@
 // bright blue three-lobed fidget spinner with silver bearings and a yellow centre cap, spinning clockwise and surging between slow and fast, tapered pale blue motion trails and outer speed arcs stretching behind each lobe as it speeds up
+// tags: calm, fidget-spinner, toy, spin
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=16,delay=50
 const D=58,L=36,B='#2f8cff'

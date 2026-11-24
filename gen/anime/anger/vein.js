@@ -1,4 +1,5 @@
 // red side-ponytail girl fuming with puffed cheeks, the anger mark pulsing on her head, steam puffing out, fists shaking
+// tags: angry, fume, steam, shake
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=12,delay=70
 const SKIN='#ffe3d1',HAIR='#ff6b6b',HD='#e03131',HL='#ffc9c9',EYE='#fab005',ED='#e67700',JK='#20c997',JD='#0ca678',BL='#ff8787',VN='#f03e3e'

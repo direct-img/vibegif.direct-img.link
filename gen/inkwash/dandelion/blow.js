@@ -1,4 +1,5 @@
 // ink wash dandelion clock, its seeds lifting off and drifting away on the wind until the head is bare, then it re-forms
+// tags: calm, hopeful, nature, wind, float, seeds
 export const frames=32,delay=80,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

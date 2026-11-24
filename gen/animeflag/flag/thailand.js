@@ -1,4 +1,5 @@
 // Thailand flag waving on a pole: red, white, wide blue, white, red horizontal stripes with an anime girl in the center greeting with a wai (palms pressed together) and a small bow, long black hair with side-swept bangs, yellow ratchaphruek (golden shower) flowers in her hair, pale gold silk top
+// tags: anime, wave, country, pride, greeting
 import{createCanvas as cc}from'@napi-rs/canvas'
 export const frames=16,delay=75,rim=3
 const Q=2,X=19,Y=44,W=228,H=152,A=6,L=190,T=Math.PI*2,{sin,cos,pow,abs,PI}=Math

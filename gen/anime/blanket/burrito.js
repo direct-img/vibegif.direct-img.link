@@ -1,4 +1,5 @@
 // peach-haired girl rolled up in a starry blanket burrito, only her sleepy face peeking out, wobbling side to side with a slow blink and a drifting z
+// tags: tired, calm, cozy, sleepy, sway
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=110
 const SKIN='#ffe3d1',HAIR='#ffcfa8',HD='#f2a26b',HL='#fff0e4',EYE='#51cf66',ED='#2b8a3e',BLK='#91a7ff',BKD='#5c7cfa',LIN='#fcc2d7',SOCK='#fff',SKS='#ff8787',BL='#ffa8a8',MO='#c92a2a',ZC='#d0bfff'

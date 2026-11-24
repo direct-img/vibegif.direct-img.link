@@ -1,4 +1,5 @@
 // fire-fox sitting still while it burns: ears, chest and tail are flames that flicker, embers drift off the tail tip
+// tags: calm, fire-fox, animal, fantasy, flame
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#ff9f43',A='#f4c03e',D='#2b2633'

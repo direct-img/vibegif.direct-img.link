@@ -1,4 +1,5 @@
 // bowling ball rolls into three pins, they tumble up and spin back down into place, the ball rolls off into the distance and a new one pops in
+// tags: playful, game, sport, roll
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const D=(c,f,a=11,b=4)=>{for(const[l,s]of[[a,'#111'],[b,'#fff']])c.lineWidth=l,c.strokeStyle=s,c.beginPath(),f(),c.stroke();c.lineWidth=7;c.strokeStyle='#111'}

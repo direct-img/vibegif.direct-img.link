@@ -1,4 +1,5 @@
 // orange haired girl clicking a big "not a robot" captcha checkbox, a robot antenna boings out of her head blinking while she sweats nervously at the spinner, then the box ticks green and she beams in relief
+// tags: anime, anxious, sweat, playful
 const{sin,cos,PI,max,min,atan2,hypot}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#ff922b',HD='#d9480f',HL='#ffe8cc',EYE='#22b8cf',ED='#0b7285',TOP='#d0ebff',TD='#4dabf7',BL='#ffa8a8',CRD='#f8f9fa',GR='#ced4da',BLU='#4c6ef5',OK='#40c057',ANT='#adb5bd',BUL='#ff6b6b',SW='#a5d8ff',CLIP='#b197fc',SP='#ffe066',MO='#c92a2a'

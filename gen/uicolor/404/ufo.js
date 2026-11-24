@@ -1,4 +1,5 @@
 // a little ufo hovers over a colorful "404" and beams the 0 up out of it, the 0 dangling and swaying in the tractor beam before it drops back in its slot
+// tags: space, alien, tractor-beam, sway, playful, error
 const{sin,cos,PI,floor}=Math,T=2*PI
 export const frames=16,delay=80
 const C4='#ff6b6b',C0='#ffd43b',C4b='#4dabf7',SA='#b197fc',SD='#9775fa',GL='#d0ebff',AL='#8ce99a',BM='#ffec99',LT=['#ff6b6b','#ffd43b','#69db7c']

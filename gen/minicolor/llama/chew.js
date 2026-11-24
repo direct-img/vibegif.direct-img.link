@@ -1,4 +1,5 @@
 // fluffy llama standing side-on in a little blanket, chewing away, one ear twitches, blinks
+// tags: calm, animal, cozy
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#d6a77a',L='#efd5bd',A='#2ec4b6',D='#2b2633'

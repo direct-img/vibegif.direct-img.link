@@ -1,4 +1,5 @@
 // side profile of a tired girl with long ink hair letting out a huge sigh: a puff cloud drifts from her lips as her shoulders slump, then a deep breath back in
+// tags: tired, sad, profile, slow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=100,rim=4

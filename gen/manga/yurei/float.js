@@ -1,4 +1,5 @@
 // manga yurei girl in a white kimono bobbing in the air, hands drooping, wispy tail for feet, three hitodama flames circling her
+// tags: ghost, yokai, fantasy, spooky
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,round,atan2}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

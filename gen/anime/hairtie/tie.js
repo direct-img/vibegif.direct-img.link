@@ -1,4 +1,5 @@
 // lavender-gray haired girl with a scrunchie in her teeth gathering her long hair up, tying a high ponytail that swishes, then pulling it loose again
+// tags: calm, hair, ponytail, gentle
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#b9b8d6',HD='#8d8ab8',HL='#f1f0fa',EYE='#f06595',ED='#a61e4d',HOOD='#74c0fc',HOD='#4dabf7',SCR='#ff8787',SCD='#e03131',BL='#ffa8a8',MO='#c92a2a'

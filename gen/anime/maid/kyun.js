@@ -1,4 +1,5 @@
 // café maid with slate twin buns doing "moe moe kyun": heart hands wiggle, then a pink heart beam zaps the omurice's ketchup heart
+// tags: playful, love, cafe, food, hearts
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#c9a27e',HD='#9c7650',HL='#f0dfc8',EYE='#f03e3e',ED='#a51111',DRESS='#f783ac',BOW='#e03131',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',BEAM='#f06595',EGG='#ffd43b',KET='#e03131',RIM='#74c0fc'

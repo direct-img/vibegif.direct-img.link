@@ -1,4 +1,5 @@
 // elephant lifting its trunk and spraying a shower of water back over its head onto its back
+// tags: happy, playful, animal, water, splash
 const{sin,cos,PI,atan2}=Math,T=2*PI
 export const frames=24,delay=70
 const sm=x=>x<0?0:x>1?1:x*x*(3-2*x)

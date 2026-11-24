@@ -1,4 +1,5 @@
 // a folded paper map unfolded, a dotted trail marching from a bouncing red pin to a big wobbly "?" where the road runs out
+// tags: lost, pin, question, confused, error
 const{sin,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const P1='#fff4e6',P2='#ffe8cc',WA='#a5d8ff',LA='#c3fae8',TR='#69db7c',PN='#fa5252',Q='#b197fc'

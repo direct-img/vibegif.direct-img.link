@@ -1,4 +1,5 @@
 // stern silver-haired student council girl slamming her white sleeves into a big batsu X, frowning as red impact lines pop
+// tags: anime, forbidden, angry, stern
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=90
 const SKIN='#ffe3d1',HAIR='#e9ecef',HD='#adb5bd',EYE='#5c7cfa',ED='#364fc7',BZ='#364fc7',SL='#fff',TIE='#f03e3e',BL='#ffa8a8',RD='#ff6b6b',Z=.84

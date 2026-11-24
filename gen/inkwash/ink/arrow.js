@@ -1,4 +1,5 @@
 // ink wash right-pointing arrow in bold brush strokes with a dry-brush tail, nudging forward and easing back (next, forward, continue state)
+// tags: ui, brush, icon
 import{createCanvas}from'@napi-rs/canvas'
 const K='20,18,16',{PI:P,sin,cos,min,max,abs,hypot}=Math,T=P*2
 const cl=(x,a=0,b=1)=>min(b,max(a,x)),ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),mx=(a,b,f)=>a+(b-a)*f

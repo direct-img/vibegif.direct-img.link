@@ -1,4 +1,5 @@
 // chibi catgirl with lavender hair waving hello, head tilting, ear twitching, blinking her golden cat eyes
+// tags: happy, animal, hello
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#b197fc',HD='#9775fa',HL='#e5dbff',EAR='#ffc9d6',EYE='#fcc419',ED='#e67700',COL='#364fc7',BOW='#fa5252',BL='#ffa8a8'

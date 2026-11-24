@@ -1,4 +1,5 @@
 // sand runs from the top bulb to the bottom, then the hourglass flips over and it starts again
+// tags: calm, time, sand
 const{PI,min}=Math,T=2*PI
 export const frames=24,delay=90
 const glass=c=>{

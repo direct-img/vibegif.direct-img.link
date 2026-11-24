@@ -1,4 +1,5 @@
 // two mitten hands clapping twice per loop with a burst of lines each time they meet
+// tags: happy, proud, celebration, applause
 const{sin,cos,PI}=Math,T=2*PI
 export const delay=60
 export default(c,t)=>{

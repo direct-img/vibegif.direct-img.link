@@ -1,4 +1,5 @@
 // round yellow and black striped bee with buzzing pale blue wings flying a wide figure-eight over a big pink flower with green leaves, bobbing and turning to face you at each end of the loop, all in bold black outlines
+// tags: playful, animal, flower, nature, float
 export const frames=40,delay=50
 const{sin,cos,sqrt,acos,atan2,abs,max,PI}=Math,T=2*PI,R=25,S=1.7
 const circ=(c,x,y,r)=>(c.beginPath(),c.arc(x,y,r,0,T))

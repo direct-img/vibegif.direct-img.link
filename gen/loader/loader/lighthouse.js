@@ -1,4 +1,5 @@
 // red and white striped lighthouse on a grey rock, its yellow lamp beam sweeping round in 3D (stretching out to one side, flaring into a disc as it faces you, passing behind the tower), blue waves bobbing at the base
+// tags: calm, travel, ocean, light
 const{sin,cos,abs,PI}=Math,T=2*PI
 export const frames=36,delay=50
 const ink='#111',LY=-57

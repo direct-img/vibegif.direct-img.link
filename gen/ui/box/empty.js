@@ -1,4 +1,5 @@
 // cardboard box flaps pop open on an empty box, a spider drops in on its thread and dangles inside, climbs back out and the flaps close
+// tags: spider, lonely, playful
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),ease=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),back=u=>(u=cl(u),1+2.6*(u-1)**3+1.6*(u-1)**2)

@@ -1,4 +1,5 @@
 // rounded window looking down an endless tunnel of nested squares in a pink, orange, yellow, teal, blue, purple cycle, each square turned a bit more than the last, all shrinking toward the centre so the tunnel twists and zooms inward
+// tags: colorful, hypnotic, depth
 const{PI,min}=Math
 export const frames=36,delay=50
 const P=['#ff5d8f','#ff9f43','#ffd23f','#3ddc97','#38a3f5','#8f6bff'],n=P.length,q=.76,A=.16

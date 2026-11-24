@@ -1,4 +1,5 @@
 // five rounded bars in pink, orange, amber, green and blue standing on a common baseline, jumping to different heights on each beat like audio levels, with a springy overshoot
+// tags: music, bounce, excited
 export const frames=48,delay=40
 const C=['#ff4d6d','#ff8a3d','#f5b82e','#2ec98a','#3a9bff'],
   // level of each bar on each of 8 beats (0..1), wraps around for the loop

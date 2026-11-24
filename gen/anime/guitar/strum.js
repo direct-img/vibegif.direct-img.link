@@ -1,4 +1,5 @@
 // little band girl with messy mint hair rocking out on a red electric guitar, head bobbing, strumming hand flying, notes popping out
+// tags: excited, music, rock, notes
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=12,delay=85
 const SKIN='#ffe3d1',HAIR='#a9e34b',HD='#74b816',HL='#e9fac8',EYE='#ff922b',ED='#d9480f',BL='#ffa8a8',JK='#4c6ef5',RIB='#fa5252',SK='#868e96',GT='#e03131',PG='#fff3bf',WD='#a9744f'

@@ -1,4 +1,5 @@
 // empty shopping cart rolling back and forth with a sad face and a tear, one lonely crumb sliding around the bottom of its basket
+// tags: shopping, empty, lonely, tear, roll
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=80
 const BK='#d0ebff',GR='#74c0fc',MT='#ced4da',HD='#ff6b6b',CR='#e0a96d',CH='#8b5a3c',BL='#ffa8a8',TR='#74c0fc'

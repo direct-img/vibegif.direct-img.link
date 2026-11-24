@@ -1,4 +1,5 @@
 // 60s liquid light show in a round glass dish: pink, yellow and cyan dye blobs oozing, merging and splitting, overlaps turning orange, green, violet and white, oil bubbles drifting through
+// tags: retro, merge, color, trippy
 export const frames=32,delay=70
 const S=256,Q=2,P=Math.PI*2,R=113,TH=.8
 let sd=7

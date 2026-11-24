@@ -1,4 +1,5 @@
 // three tulips swaying in a spring breeze, heads nodding one after another as wind swooshes past
+// tags: calm, happy, spring, flower, wind, gentle
 export const frames=24,delay=80,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 export default(c,t)=>{

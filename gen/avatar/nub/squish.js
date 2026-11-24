@@ -1,4 +1,5 @@
 // round mint green avatar getting squished: a coral finger pokes a sleepy jelly ball flat from above, one eye peeks up at it, then it springs back and wobbles until it settles
+// tags: playful, jelly, poke, bounce, ball, mint
 const{sin,cos,asin,atan2,abs,exp,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

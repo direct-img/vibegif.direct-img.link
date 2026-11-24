@@ -1,4 +1,5 @@
 // pink lavender bob girl scratching her head with an awkward smile and a sliding sweatdrop while her thought cloud cycles through a key, a "****" password box and "???"
+// tags: anime, confused, key, sweat, awkward
 const{sin,cos,PI,min}=Math,T=2*PI
 export const frames=18,delay=100
 const SKIN='#ffe3d1',HAIR='#f2b5e8',HD='#c86fb4',HL='#fff0fb',EYE='#4dabf7',ED='#1864ab',SWT='#c3fae8',SWD='#38d9a9',BL='#ffa8a8',PIN='#ffd43b',GD='#ffd43b',GDD='#f59f00',Q='#9775fa',FLD='#e7f5ff',SW='#a5d8ff'

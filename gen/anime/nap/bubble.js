@@ -1,4 +1,5 @@
 // raspberry-haired girl asleep on her folded arms at a desk, a sleep bubble swelling and shrinking from her nose as Z's float up
+// tags: tired, calm, sleep, desk, zzz, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#d6336c',HD='#a61e4d',HL='#ffc9de',CARD='#fff3bf',CD='#fcc419',DESK='#e8b07a',DD='#c47f45',BL='#ffa8a8',BUB='rgba(165,216,255,.55)',ZC='#91a7ff'

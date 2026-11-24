@@ -1,4 +1,5 @@
 // ink wash narcissus growing in a shallow bowl, long blade leaves swaying and small white flowers with golden cups nodding
+// tags: calm, nature, flower
 export const frames=24,delay=90,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

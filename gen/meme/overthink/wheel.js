@@ -1,4 +1,5 @@
 // pink brain sprinting flat out in a hamster wheel under the moon, wide eyed and sweating, question marks popping off it
+// tags: anxious, tired, brain, hamster-wheel
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=12,delay=80,rim=5
 const PK='#faa2c1',PD='#e64980',MT='#ced4da',MD='#868e96',SW='#74c0fc',MN='#ffe066'

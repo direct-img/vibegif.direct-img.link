@@ -1,4 +1,5 @@
 // hand holding a lit sparkler, the burning tip fizzing out streaks of sparks that fork into tiny stars
+// tags: excited, celebration, fire, sparkle
 export const frames=24,delay=50,rim=4
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 // tiny deterministic hash -> [0,1)

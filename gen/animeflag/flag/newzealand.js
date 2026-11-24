@@ -1,4 +1,5 @@
 // New Zealand flag (blue ensign: Union Jack canton, four red white-bordered stars of the Southern Cross) waving, with a smiling anime girl in front of the lower middle: long dark hair blowing in the wind with a red pohutukawa flower, black top with a silver fern, hugging a fluffy kiwi bird that blinks along with her
+// tags: anime, wave, country, pride, stars
 export const frames=16,delay=80,rim=3
 const P=Math.PI*2,S=Math.sin,C=Math.cos
 const pth=(c,a)=>{c.beginPath();c.moveTo(a[0],a[1]);for(let k=2;k<a.length;k+=4)c.quadraticCurveTo(a[k],a[k+1],a[k+2],a[k+3])}

@@ -1,4 +1,5 @@
 // orange-haired girl bawling over her laptop as a big red X error flashes on the screen, tears gushing into puddles
+// tags: anime, sad, tears, laptop
 const{sin,cos,PI,max,abs}=Math,T=2*PI
 export const frames=8,delay=90
 const SKIN='#ffe3d1',HAIR='#ffa94d',HD='#e8590c',HL='#fff4e6',HO='#b197fc',HOD='#7950f2',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',WA='#74c0fc',LT='#dee2e6',LD='#adb5bd',RD='#fa5252',CL='#ff6b6b',Z=.8

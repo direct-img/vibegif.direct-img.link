@@ -1,4 +1,5 @@
 // an invite slides in and the little guy in pajamas dreads it, then a CANCELLED stamp slams down and he breaks into a happy dance
+// tags: happy, funny, introvert, relief
 import{Path2D}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 const U=[.04,.1,.23,.26,.3,...Array.from({length:8},(_,k)=>.34+k*.0625),.86,.92]

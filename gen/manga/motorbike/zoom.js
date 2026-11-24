@@ -1,4 +1,5 @@
 // chibi scooter rider in a starred helmet with goggles zooms right, striped scarf streaming back, wheels spinning past speed lines
+// tags: excited, happy, travel, scooter, chibi, fast
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=60,rim=4

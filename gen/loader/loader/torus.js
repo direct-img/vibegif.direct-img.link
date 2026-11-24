@@ -1,4 +1,5 @@
 // donut of chunky outlined dots wobbling like a spinning coin while the dots stream round the ring, near dots big and warm red, orange and yellow, far dots small and cool teal, blue and violet
+// tags: 3d, dots, spin
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=48,delay=40
 const N=18,M=8,R=1,r=.4

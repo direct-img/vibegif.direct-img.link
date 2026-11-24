@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye searching: lids narrowed, the eye scans left to right in three rows from top to bottom in quick reading hops, snapping back to the left for each new row
+// tags: eye, scan, ball, blue
 const{sin,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

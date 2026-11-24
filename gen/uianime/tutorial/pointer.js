@@ -1,4 +1,5 @@
 // dark brown haired teacher girl in glasses with a low ponytail guiding a cursor across a mini whiteboard with her pointer stick, tapping the OK button so it clicks with a ripple while she winks
+// tags: anime, teacher, whiteboard, cursor, helpful, calm
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#6d4c41',HD='#3e2723',HL='#d7ccc8',EYE='#4dabf7',ED='#1864ab',CA='#ffc078',CD='#e8590c',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',BRD='#adb5bd',BT='#4dabf7',BTD='#1c7ed6',WD='#c47f45',TIP='#ff6b6b',RP='#ffd43b',SC='#ff8787'

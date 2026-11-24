@@ -1,4 +1,5 @@
 // lime bob girl with an ahoge slumps lower and dozes off with a snot bubble as the battery above her drains green to yellow to red, then a plug zaps in, the battery refills and she pops back up wide awake
+// tags: anime, tired, sleep, low, zzz
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=18,delay=95
 const SKIN='#ffe3d1',HAIR='#a9e34b',HD='#74b816',HL='#f4fce3',EYE='#3bc9db',ED='#0c8599',TEE='#a5d8ff',TD='#4dabf7',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',BUB='rgba(165,216,255,.75)',ZP='#ffd43b',PL='#ced4da',LV=['#ff6b6b','#ffd43b','#69db7c']

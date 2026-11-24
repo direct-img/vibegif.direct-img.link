@@ -1,4 +1,5 @@
 // midnight kitchen: a guy in pajamas opens the fridge, stares at the same lone pickle, closes it, glances at you, and opens it again just in case
+// tags: tired, funny, night, food
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=32,delay=85,rim=3
 const cl=u=>min(1,max(0,u)),io=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2),bump=(t,m,w)=>io(1-abs(((t-m+1.5)%1)-.5)/w)

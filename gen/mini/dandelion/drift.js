@@ -1,4 +1,5 @@
 // lion whose mane is dandelion fluff: three seeds blow off and drift away, new ones grow back in their place
+// tags: calm, hopeful, lion, fantasy, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const N=18,F=[1,2,3]

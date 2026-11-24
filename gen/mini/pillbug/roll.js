@@ -1,4 +1,5 @@
 // pillbug: trundles along on its little legs, curls up into a striped ball with an eye peeking from the seam, rolls forward and back, then unrolls and blinks
+// tags: playful, animal, insect, cute
 const{sin,cos,PI,min,max,sqrt}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 const N=7,Lb=170,W=40,G=204,ez=u=>(1-cos(PI*min(1,max(0,u))))/2,rot=([x,y],a)=>[x*cos(a)-y*sin(a),x*sin(a)+y*cos(a)]

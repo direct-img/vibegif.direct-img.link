@@ -1,4 +1,5 @@
 // auburn haired girl in round glasses scribbling lines onto a document with a giant pencil, eraser end wiggling and tongue out, then she beams and slides the finished page away
+// tags: anime, write, glasses, work, playful
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=18,delay=85
 const SKIN='#ffe3d1',HAIR='#c0583c',HD='#86321f',HL='#f6d0c2',EYE='#40c057',ED='#2b8a3e',TOP='#66d9e8',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',GL='#e7f5ff',PB='#ffd43b',PBL='#ffe066',PBD='#f59f00',WO='#ffd8a8',GR='#495057',FE='#ced4da',ER='#ff8fab',PA='#fff',PL='#dee2e6',INK='#5c7cfa',SP='#ffd43b'

@@ -1,4 +1,5 @@
 // white rounded speech bubble with a thick dark outline and a tail at bottom left, three grey dots inside hop up one after another and turn darker at the top of each hop, someone is typing
+// tags: chat, message, bounce
 const{sin,PI,round,max}=Math
 export const frames=36,delay=40
 const mix=(a,b,q)=>'#'+a.map((v,j)=>round(v+(b[j]-v)*q).toString(16).padStart(2,'0')).join('')

@@ -1,4 +1,5 @@
 // round mint green avatar thinking: a sleepy jelly ball sways with an unhurried hmm, one eye open and drifting upward while three violet thought dots bubble up beside it
+// tags: calm, jelly, slow, ball, mint
 const{sin,cos,asin,atan2,abs,min,max,PI:P}=Math,
 S=(a,b,x)=>(x=min(1,max(0,(x-a)/(b-a))),x*x*(3-2*x)),
 M=(a,b,x)=>a+(b-a)*x,

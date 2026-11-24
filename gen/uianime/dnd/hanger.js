@@ -1,4 +1,5 @@
 // midnight blue haired girl in pajamas and a sleep mask dozing while hugging a pillow, breathing slowly as Zzz drift up and a moon "DND" hanger sways on the doorknob beside her
+// tags: anime, sleep, pillow, moon, calm, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=110
 const SKIN='#ffe3d1',HAIR='#3b4a8c',HD='#232c5e',HL='#91a7ff',PJ='#a5d8ff',PW='#f3f0ff',PWD='#d0bfff',MK='#f783ac',MKD='#d6336c',BL='#ffa8a8',DR='#e8b07a',DRD='#c47f45',KN='#fcc419',HG='#fff3bf',NV='#364fc7',MN='#ffd43b',RD='#fa5252',ZC='#91a7ff'

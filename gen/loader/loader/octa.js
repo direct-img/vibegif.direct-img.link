@@ -1,4 +1,5 @@
 // solid octahedron gem with alternating pink and teal facets, flat stepped shading and dark edges, spinning steadily while it tumbles head over heels with an eased flip, grey shadow below and a white glint popping out at rest
+// tags: gem, octahedron, 3d, spin
 const{sin,cos,PI,max,min,round,hypot}=Math
 export const frames=48,delay=40
 const V=[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]]

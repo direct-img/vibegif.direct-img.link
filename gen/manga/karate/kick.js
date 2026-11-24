@@ -1,4 +1,5 @@
 // chibi karate girl with hatched odango buns bounces in her stance, then snaps a high kick through a screentone swoosh
+// tags: determined, martial-arts, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

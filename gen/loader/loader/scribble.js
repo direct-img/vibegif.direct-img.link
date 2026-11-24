@@ -1,4 +1,5 @@
 // hand-drawn terracotta asterisk doodle with nine uneven, slightly crooked marker strokes round a wobbly blob, it breathes in and out while each stroke drifts, bends and stretches at its own pace
+// tags: doodle, hand-drawn, playful
 const{sin,cos,atan2,PI}=Math,T=2*PI,N=9
 export const frames=40,delay=50
 const h=n=>(x=>x-Math.floor(x))(sin(n*127.1+311.7)*43758.5453),

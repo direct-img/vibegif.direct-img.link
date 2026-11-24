@@ -1,4 +1,5 @@
 // little robot cranking a bolt on its own chest with a big wrench, tongue out in concentration, sparks popping, gears turning on its head
+// tags: wrench, bolt, sparks, gears, work, cute
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=90
 const M='#ced4da',MD='#adb5bd',SC='#e7f5ff',G='#ffd43b',G2='#ffa94d',WR='#868e96',BL='#ffa8a8',RD='#ff6b6b',GN='#51cf66'

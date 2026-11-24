@@ -1,4 +1,5 @@
 // sky blue haired girl with a big bow juggling three file icons in a loop over her head, tongue out in concentration, sync arrows on her tee
+// tags: anime, files, focus, playful, bow
 const{sin,PI,max}=Math,T=2*PI
 export const frames=10,delay=110
 const SKIN='#ffe3d1',HAIR='#74c0fc',HD='#1c7ed6',HL='#e7f5ff',EYE='#f76707',ED='#d9480f',TEE='#ffe066',BL='#ffa8a8',BOW='#f783ac',SY='#4dabf7',FC=[['#ffc9c9','#fa5252'],['#b2f2bb','#40c057'],['#d0bfff','#7950f2']]

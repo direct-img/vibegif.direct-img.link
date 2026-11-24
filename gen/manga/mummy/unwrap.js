@@ -1,4 +1,5 @@
 // manga chibi mummy girl with screentone twin buns: she twirls, a loose bandage unravels into a spiral round her while she flusters, then it winds back on
+// tags: playful, halloween, spiral, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

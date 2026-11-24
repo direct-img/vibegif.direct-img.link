@@ -1,4 +1,5 @@
 // manga oni girl with messy white hair, little horns and a fang grin, playfully swinging a studded kanabo club over her shoulder
+// tags: playful, yokai, fantasy
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80,rim=4

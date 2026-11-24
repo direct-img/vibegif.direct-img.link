@@ -1,4 +1,5 @@
 // golden blonde girl with twin buns tapping five rating stars one by one with alternating hands, each lights up gold with a pop, then she throws her arms up beaming as they shimmer before resetting
+// tags: anime, tap, gold, happy, proud
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=85
 const SKIN='#ffe3d1',HAIR='#ffe066',HD='#f0b429',HL='#fff9db',EYE='#9775fa',ED='#5f3dc4',TOP='#74c0fc',RB='#ff6b6b',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',ST='#fcc419',OFF='#e9ecef',SP='#ffe066'

@@ -1,4 +1,5 @@
 // stapler chomping like a hungry mouth with a big eye, and on each bite a staple hops out the front and lands
+// tags: playful, office, hungry, bite
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=70
 export default(c,t)=>{

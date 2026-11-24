@@ -1,4 +1,5 @@
 // South Korean flag (Taegukgi) waving on a silver pole: white field, red and blue taegeuk and the four black trigrams, with a chibi anime girl in a white hanbok with a blue collar, red ribbon and red skirt printed by the hoist, black hair in a side braid tied with a red daenggi and a pink mugunghwa flower, who holds a flower, blinks and glances at the taegeuk as the flag ripples
+// tags: anime, wave, country, pride, chibi
 export const frames=20,delay=70
 const P=Math.PI*2,W=232,H=W*2/3,K=2,X0=14,Y0=26,u=H/48
 const RD='#cd2e3a',BL='#0047a0',D='#1c1622',SK='#ffe6d8',SK2='#f5c5b3'

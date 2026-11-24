@@ -1,4 +1,5 @@
 // snow maiden with long ice-blue hair blowing frosty breath over her palm, the wisps curling away and turning into spinning snowflakes, sleeve drifting
+// tags: calm, snow, winter, frost, ice, gentle
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#f8f0fc',HAIR='#a5d8ff',HD='#4dabf7',HL='#fff',EYE='#91a7ff',ED='#364fc7',KI='#fff',KP='#d0ebff',OBI='#9775fa',OD='#7048e8',ICE='#e7f5ff',BL='#d0bfff'

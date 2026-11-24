@@ -1,4 +1,5 @@
 // dormouse asleep in a teacup: its back rises and falls with each breath, z's drift up, an ear twitches, its tail hangs over the side
+// tags: calm, tired, animal, tea, sleep, slow
 const{sin,cos,PI,min,max}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=24,delay=85,rim=3,rimColor='#111'

@@ -1,4 +1,5 @@
 // robotic metal hand counting on its fingers: starts as a fist, raises index, middle, ring, pinky then thumb for 1 to 5 with a digit display on the wrist, then snaps shut
+// tags: fingers, numbers, body
 export const frames=18
 const H=360,T=55
 export const delay=[...Array(frames)].map((_,i)=>i%3==2?H:T)

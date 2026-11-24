@@ -1,4 +1,5 @@
 // new year girl in a red furisode pulling a stretchy mochi out of her ozoni bowl with chopsticks, it stretches long, she bites it and chews happily
+// tags: playful, food, new-year
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=90
 const SKIN='#ffe3d1',HAIR='#364fc7',HD='#253789',HL='#91a7ff',EYE='#12b886',ED='#087f5b',KIM='#e03131',KD='#a61e1e',COL='#fff',COL2='#faa2c1',BOWL='#c92a2a',BI='#2b2b2b',SOUP='#ffe8cc',MOCHI='#fff',STICK='#a9744f',KAN='#ffd43b',BL='#ffa8a8',MO='#c92a2a'

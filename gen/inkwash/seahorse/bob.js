@@ -1,4 +1,5 @@
 // ink wash seahorse bobbing among swaying seagrass, tail curling and uncurling, dorsal fin fluttering, ochre belly
+// tags: calm, animal, ocean, seagrass
 export const frames=24,delay=85,dither=true
 const{sin,cos,PI,hypot,min,max,abs,round,floor}=Math,T=2*PI
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`

@@ -1,4 +1,5 @@
 // yellow industrial robot holds a red horseshoe magnet over scattered screws, bolts, nuts and washers; it switches on, the hardware leaps up and clings to the poles, then it switches off and everything clatters back down
+// tags: hardware, industrial, attract, yellow
 export const frames=32,delay=60
 const P=Math.PI,FL=236,MX=96,Z=1.05
 const cl=k=>Math.max(0,Math.min(1,k)),ez=k=>k*k*(3-2*k)

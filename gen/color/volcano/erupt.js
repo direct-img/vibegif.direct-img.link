@@ -1,4 +1,5 @@
 // volcano rumbles, then blasts lava blobs and smoke puffs out the top, then settles down
+// tags: excited, lava, smoke
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=70
 const MT='#a9744f',MD='#8d6346',LV='#ff6b6b',LO='#ff922b',LY='#ffd43b',SM='#dee2e6'

@@ -1,4 +1,5 @@
 // badge pops in, a check mark draws itself, a burst of lines goes off, then it shrinks away
+// tags: happy, proud, success, pop
 const{sin,cos,PI,min,max,hypot}=Math,T=2*PI
 export const frames=24,delay=60
 const back=u=>{const s=2;return 1+(s+1)*(u-1)**3+s*(u-1)**2}

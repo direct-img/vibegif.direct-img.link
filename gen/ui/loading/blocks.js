@@ -1,4 +1,5 @@
 // sliding puzzle loader: rounded blocks in a 2x2 tray take turns sliding into the one empty slot, so the gap walks round and round
+// tags: puzzle, slide, playful
 const{min,max}=Math
 export const frames=24,delay=70
 const S=[[44,44],[132,44],[132,132],[44,132]],io=u=>(u=min(1,max(0,u)),u<.5?2*u*u:1-2*(1-u)**2)

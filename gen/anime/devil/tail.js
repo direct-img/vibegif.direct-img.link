@@ -1,4 +1,5 @@
 // little devil with crimson hair and tiny horns hovering on flapping bat wings, spade tail swishing, poking her toy trident with a sly fanged grin
+// tags: playful, wings, halloween, hover
 const{sin,cos,PI,round,max}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#e03131',HD='#a51111',HL='#ffc9c9',EYE='#ff922b',ED='#d9480f',HORN='#495057',WG='#9c36b5',WL='#e599f7',DR='#862e9c',DD='#5f3dc4',GO='#ffd43b',GD='#f59f00',TL='#c92a2a',BL='#ffa8a8'

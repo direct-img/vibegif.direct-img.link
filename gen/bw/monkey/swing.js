@@ -1,4 +1,5 @@
 // monkey swinging from a vine by one arm and waving with the other, its legs and tail lagging behind
+// tags: happy, playful, animal, wave
 // drawn at Z times the base size, so line widths are divided by Z to stay at the usual ink weight
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=85

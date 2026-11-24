@@ -1,4 +1,5 @@
 // snow leopard loafing: its thick spotted tail swishes in a slow S curve, an ear flicks back and it blinks
+// tags: calm, animal, winter, slow
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

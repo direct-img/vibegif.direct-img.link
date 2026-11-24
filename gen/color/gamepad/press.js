@@ -1,4 +1,5 @@
 // game controller wiggling as its four colored buttons get pressed one after another
+// tags: playful, game, controller, buttons, retro
 const{sin,cos,PI,floor}=Math,T=2*PI
 export const frames=24,delay=70
 const BODY='#9775fa',DP='#495057',BTN=[['#ffd43b',0,-20],['#4dabf7',-20,0],['#51cf66',0,20],['#ff6b6b',20,0]]

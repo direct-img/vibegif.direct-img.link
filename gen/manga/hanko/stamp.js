@@ -1,4 +1,5 @@
 // student council girl with long white hair and an ink alice band stamping a document twice with her hanko, thunk lines, a smug beat, then the sheet goes on the pile
+// tags: proud, office, school, serious
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=20,delay=80,rim=4

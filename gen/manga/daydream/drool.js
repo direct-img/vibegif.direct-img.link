@@ -1,4 +1,5 @@
 // girl with a screentone side tail daydreaming of manga meat, drooling with starry eyes while the thought bubble bobs and sparkles
+// tags: happy, playful, food, funny
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=90,rim=4

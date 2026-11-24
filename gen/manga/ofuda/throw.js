@@ -1,4 +1,5 @@
 // exorcist girl with a white pixie cut flicks three paper talismans that spin out across the panel and flash
+// tags: exorcist, talisman, fantasy, spin, flash
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

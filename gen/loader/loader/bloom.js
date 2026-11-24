@@ -1,4 +1,5 @@
 // eight rounded terracotta and coral petals curl out of a fat orange-ringed gold dot like a pinwheel, straighten into an asterisk, turn an eighth of a turn, then wind back up and fold into the dot
+// tags: calm, hopeful, flower, spin, gentle
 const{sin,cos,sqrt,atan2,min,max,PI}=Math,T=2*PI,N=8
 export const frames=40,delay=40
 const cl=x=>min(1,max(0,x)),

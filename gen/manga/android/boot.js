@@ -1,4 +1,5 @@
 // manga android girl booting up: progress bar fills with eyes shut, a scan line sweeps her eyes open, lens irises focus, antenna blinks, then she powers down
+// tags: robot, scifi, progress, glow
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=90,rim=4

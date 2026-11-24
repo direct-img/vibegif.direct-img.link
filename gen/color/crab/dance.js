@@ -1,4 +1,5 @@
 // crab side-stepping back and forth with its claws up, snapping to the beat
+// tags: happy, playful, animal, sidestep, beat
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=70
 const R='#ff6b6b',SP='#ffa8a8',BL='#e03131'

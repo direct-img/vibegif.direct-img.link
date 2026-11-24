@@ -1,4 +1,5 @@
 // 60s paisley teardrop with nested rainbow bands flowing outward from a spinning flower in its belly, scalloped edge beads marching around it
+// tags: retro, rainbow, spin, trippy
 export const frames=18,delay=70,rim=4
 const T=Math.PI*2,P=['#ff2e88','#ff8c1a','#ffd60a','#8be01f','#19c2b8','#7b3fe4'],Q=['#ff2e88','#ffd60a','#19c2b8']
 const bz=(a,b,c,d,u)=>a*(1-u)**3+3*b*u*(1-u)**2+3*c*u*u*(1-u)+d*u**3

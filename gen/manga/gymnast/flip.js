@@ -1,4 +1,5 @@
 // chibi gymnast with a crosshatched top bun swings her arms, springs into a tucked backflip and lands arms up with sparkles
+// tags: happy, proud, sports, sparkle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=18,delay=70,rim=4

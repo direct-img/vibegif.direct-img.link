@@ -1,4 +1,5 @@
 // soccer ball kicked spinning into the goal, the net bulging back around it, then a fresh ball bounces in to start again
+// tags: excited, sport, kick, spin
 const{sin,cos,PI,abs,max,min,exp,hypot}=Math,T=2*PI
 export const frames=24,delay=70
 const GR='#69db7c',GRD='#51cf66',NET='#adb5bd'

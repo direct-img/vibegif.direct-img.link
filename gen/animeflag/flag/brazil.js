@@ -1,4 +1,5 @@
 // Brazil flag (green field, yellow rhombus, blue starry globe with the white ORDEM E PROGRESSO band) rippling on a flagpole, with a sunny anime girl personifying Brazil printed beside the globe: long wavy dark brown hair with yellow ipe blossoms, green eyes, white blouse with a blue sailor collar and a green and yellow sash, swaying her head and laughing
+// tags: anime, wave, country, pride, sunny
 export const frames=16,delay=80,rim=3
 const W=236,H=165,X=16,Y=46,P=Math.PI*2,K='#111',G='#009440',YL='#FFCB00',BL='#302681',u=W/4200
 const star=(c,x,y,r)=>{c.beginPath();for(let k=0;k<10;k++){const q=-Math.PI/2+k*Math.PI/5,s=k%2?r*.4:r;c.lineTo(x+s*Math.cos(q),y+s*Math.sin(q))}c.closePath()}

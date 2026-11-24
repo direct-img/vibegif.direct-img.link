@@ -1,4 +1,5 @@
 // two fists hammering a keyboard in turn, the home row letters A S D F G H J K L bursting out of their keys and flying everywhere
+// tags: angry, funny, rage
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=12,delay=Array(12).fill(65),rim=4
 const G={A:'M0 6L2 0L4 6M.7 4L3.3 4',S:'M3.8 .9Q3.1 0 2 0Q.2 0 .2 1.5Q.2 2.8 2 3Q3.9 3.2 3.9 4.5Q3.9 6 2 6Q.7 6 0 5.1',D:'M0 0L0 6L1.7 6Q4 6 4 3Q4 0 1.7 0L0 0',F:'M4 0L0 0L0 6M0 3L3.2 3',G:'M4 .9Q3.3 0 2.1 0Q0 0 0 3Q0 6 2.1 6Q4 6 4 3.6L2.4 3.6',H:'M0 0L0 6M4 0L4 6M0 3L4 3',J:'M4 0L4 4.2Q4 6 2 6Q0 6 0 4.4',K:'M0 0L0 6M4 0L0 3.8M1.4 2.7L4 6',L:'M0 0L0 6L4 6'}

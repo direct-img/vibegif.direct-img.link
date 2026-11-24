@@ -6,6 +6,7 @@
 // tile images use the plain url, no ?v= cache buster, so copying the image address gives the clean hotlink (a changed file may show stale until caches expire)
 // <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
+// plus catalog.json and a <id>.json per tile ({id,section,description,tags}, tags are the subject and action plus those of an optional `// tags: a, b` second comment line of its gen script), for programs,
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script, so people and AIs can grep for one to hotlink
 // and SKILL.md, a copy of skills/vibegif/SKILL.md, so the agent skill installs with one curl instead of a clone of this repo
 // /test is index.html again but with only the pending sections, unlisted, for approving new ones before they go live
@@ -51,6 +52,8 @@ const issueList=()=>issues().map(n=>{
   return`<li><a href="/newsletter/${n}/">${t}</a><time datetime="${d}">${d}</time></li>`
 }).join('\n')||'<li>no issues yet</li>'
 const about=(s,id)=>{try{return rf(`gen/${s}/${id}.js`,'utf8').match(/^\/\/ ?(.*)/)[1]}catch{}}
+const tagsOf=(s,id)=>{let own=[];try{const m=rf(`gen/${s}/${id}.js`,'utf8').split('\n')[1].match(/^\/\/ ?tags:(.*)/i);if(m)own=m[1].split(',').map(t=>t.trim().toLowerCase().replace(/\s+/g,'-'))}catch{}return[...new Set([...id.split('/'),...own].filter(Boolean))]}
+const items=s=>s.flatMap((ts,k)=>ts.map(t=>({id:t.id,section:sections[k],description:about(sections[k],t.id)??'',tags:tagsOf(sections[k],t.id)})))
 const catalog=s=>`# vibegif: ${s.flat().length} public domain (CC0) animations, hotlink ${site}/<id>.webp (or .gif)
 # transparent background, most are 256x256
 # one line per animation, <id> | what it shows, grouped by section, each section is one art style
@@ -71,6 +74,9 @@ export default{build:{rolldownOptions:{input:['index.html','test.html','faq/inde
     const s=tiles()
     this.emitFile({type:'asset',fileName:'sitemap.xml',source:sitemap(s.flat())})
     this.emitFile({type:'asset',fileName:'catalog.txt',source:catalog(s)})
+    const it=items(s)
+    this.emitFile({type:'asset',fileName:'catalog.json',source:JSON.stringify({count:it.length,items:it})})
+    for(const i of it)this.emitFile({type:'asset',fileName:`${i.id}.json`,source:JSON.stringify(i)})
     this.emitFile({type:'asset',fileName:'SKILL.md',source:rf('skills/vibegif/SKILL.md')})
   }
 }]}

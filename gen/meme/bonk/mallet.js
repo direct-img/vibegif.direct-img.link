@@ -1,4 +1,5 @@
 // squeaky toy mallet comes down BONK on a smiling blob, it squashes flat with spiral eyes and stars circling, then springs back up none the wiser
+// tags: funny, squash, cartoon, violence
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=84,rim=5
 const Y='#ffd43b',BL='#ff8787',HR='#fa5252',HB='#ffd43b',HD='#4dabf7'

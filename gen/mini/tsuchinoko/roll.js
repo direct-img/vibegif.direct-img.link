@@ -1,4 +1,5 @@
 // tsuchinoko, the chubby cryptid snake: it rocks back and forth on its round belly, stubby tail wagging, tongue flicking, it blinks
+// tags: playful, snake, cryptid, rock
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

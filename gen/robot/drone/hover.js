@@ -1,4 +1,5 @@
 // white quadcopter drone hovering in place with blurred spinning rotors and blinking arm lights, its gimbal camera sweeping a cyan scan beam across the ground below
+// tags: scan, camera, sci-fi, cyan
 export const frames=24,delay=70
 const{PI,sin,cos}=Math,T=PI*2,K=.36
 export default(c,t)=>{

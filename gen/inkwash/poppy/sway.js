@@ -1,4 +1,5 @@
 // ink wash poppies, translucent red petals with dark centres swaying on thin wiry stems in a breeze
+// tags: calm, nature, flower
 const{PI,sin,cos,min,max,abs,hypot,round}=Math,T=PI*2
 const ink=(a,k='20,18,16')=>`rgba(${k},${a})`
 const lp=(a,b,x)=>a+(b-a)*x

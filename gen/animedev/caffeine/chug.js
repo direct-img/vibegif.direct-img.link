@@ -1,4 +1,5 @@
 // sleepy anime girl in a hoodie chugs a JAVA coffee mug and powers up, her long dark hair flying up spiky and gold with lightning, then flopping back down
+// tags: tired, anime, coffee, coding, energy, excited
 export const frames=28,delay=80,rim=3
 const P=Math.PI,{sin,cos,min,max,abs,round}=Math,L='#2b1d26'
 const E=t=>t<0?0:t>1?1:t*t*(3-2*t),sg=(t,a,b)=>E((t-a)/(b-a))

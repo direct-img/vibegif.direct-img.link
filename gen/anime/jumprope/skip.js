@@ -1,4 +1,5 @@
 // girl with lime pigtails skipping rope, the rope sweeping over her head and under her hopping feet, pigtails bouncing
+// tags: happy, playful, bounce, game
 const{sin,cos,PI,max,min,abs}=Math,T=2*PI
 export const frames=16,delay=70
 const SKIN='#ffe3d1',HAIR='#94d82d',HD='#66a80f',HL='#e9fac8',EYE='#f06595',ED='#a61e4d',TEE='#ff922b',TD='#e8590c',JEAN='#4dabf7',JD='#1c7ed6',ROPE='#38d9a9',GRIP='#9775fa',TIE='#f783ac',BL='#ffa8a8'

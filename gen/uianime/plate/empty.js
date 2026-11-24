@@ -1,4 +1,5 @@
 // pink odango girl with a napkin bib bouncing eagerly with fork and knife raised, then looking down at her empty plate and tearing up
+// tags: anime, food, sad, tears, hungry
 const{PI}=Math,T=2*PI
 export const frames=16,delay=85
 const SKIN='#ffe3d1',HAIR='#ff8fab',HD='#f06595',HL='#ffdeeb',EYE='#9775fa',ED='#6741d9',BL='#ffa8a8',DR='#74c0fc',TB='#ffd8a8',TBD='#e0a96d',RM='#99e9f2',SV='#dee2e6',MO='#c92a2a',TG='#ff8fab',TR='#a5d8ff'

@@ -1,4 +1,5 @@
 // girl with peach double buns hugging a gray tabby kitten to her cheek, both nuzzling, the kitten purring and kneading while hearts float up
+// tags: love, happy, cat, animal, hug, purr
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=80
 const SKIN='#ffe3d1',HAIR='#ffb4a2',HD='#f08c7a',HL='#ffe3dc',SW='#b2f2bb',SWD='#69db7c',CAT='#adb5bd',CD='#868e96',CW='#f8f9fa',PINK='#ff8fab',BL='#ffa8a8',HT='#f06595'

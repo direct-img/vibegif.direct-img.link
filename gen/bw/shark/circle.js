@@ -1,4 +1,5 @@
 // shark fin circling round a pool of water, bigger as it passes in front, a little wake trailing behind
+// tags: animal, ocean, fin
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=20,delay=70
 export default(c,t)=>{

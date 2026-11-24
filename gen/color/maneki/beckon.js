@@ -1,4 +1,5 @@
 // maneki-neko lucky cat beckoning with its raised paw, hugging a gold koban coin, collar bell swinging
+// tags: happy, hopeful, cat, luck, coin, wave
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=80
 const W='#fff',OR='#ffa94d',DK='#495057',PK='#faa2c1',CO='#ff6b6b',G='#ffd43b',GD='#fab005',CU='#f783ac',CUD='#e64980'

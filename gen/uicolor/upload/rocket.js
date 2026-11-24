@@ -1,4 +1,5 @@
 // happy rocket blasting up and away with a file strapped to its nose, flame flickering, speed streaks and little clouds rushing past
+// tags: space, happy, fast, flame, excited, clouds
 const{sin,PI,round}=Math,T=2*PI
 const dot=(c,x,y,w=c.lineWidth)=>{c.save();c.fillStyle=c.strokeStyle;c.beginPath();c.arc(x,y,w/2,0,T);c.fill();c.restore()}  // a size-0 shape shows as a dot of its stroke, drawn on purpose so it doesn't depend on the canvas version
 export const frames=16,delay=70

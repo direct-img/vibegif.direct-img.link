@@ -1,4 +1,5 @@
 // gingerbread man waving hello with one arm, bobbing and swaying happily, blinking once
+// tags: happy, friendly, christmas, cookie, food
 export const frames=24,delay=50,rim=6
 const P=Math.PI*2,O='#1d1418',sn=Math.sin,cs=Math.cos
 export default(c,t)=>{

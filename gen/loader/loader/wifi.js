@@ -1,4 +1,5 @@
 // signal icon of a dot and three outlined arcs, pale grey when off: the dot pops on pink, then the arcs light up outward in orange, yellow and teal with a springy swell, all hold lit for a beat, then switch off together
+// tags: signal, icon, connecting
 const{sin,PI,min}=Math,T=2*PI
 export const frames=36,delay=50
 const C=['#ff5f7e','#ff9a3c','#ffd23f','#22cfa0'],ON=[.04,.17,.3,.43],OFF=.82,Y=184

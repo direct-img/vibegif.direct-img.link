@@ -1,4 +1,5 @@
 // three amber four-point sparkles, big, medium and small, twinkle one after another: each pops up with a little overshoot, its gold heart flashes pale cream, then it twists and shrinks away
+// tags: happy, sparkle, star
 const{sin,cos,exp,min,max,round,PI}=Math,T=2*PI
 export const frames=36,delay=50
 const cl=x=>min(1,max(0,x)),

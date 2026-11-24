@@ -1,4 +1,5 @@
 // pineapple in sunglasses grooving side to side to the beat, crown leaves swaying behind it and music notes popping up
+// tags: happy, playful, food, sunglasses, music
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=14,delay=90
 const PA='#ffd43b',PD='#f59f00',LF='#69db7c',LD='#40c057',BL='#ffa8a8',NC=['#9775fa','#4dabf7']

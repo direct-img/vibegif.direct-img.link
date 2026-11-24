@@ -1,4 +1,5 @@
 // red envelope wiggling excitedly, then flipping its flap open as a gold coin peeks out and gleams
+// tags: excited, hopeful, lunar-new-year, gift, coin, luck
 export const frames=48,delay=50,rim=6
 const P=Math.PI*2,cl=x=>x<0?0:x>1?1:x,sm=x=>(x=cl(x),x*x*(3-2*x)),bo=x=>(x=cl(x)-1,1+2.7*x**3+1.7*x*x)
 const W=64,T=-70,B=80

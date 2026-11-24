@@ -1,4 +1,5 @@
 // ink wash dancer swirling very long flowing sleeves in sweeping translucent arcs
+// tags: calm, flow, gentle
 export const frames = 30, delay = 75, dither = true
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2
 const I = (a, k) => `rgba(${k || '20,18,16'},${a})`

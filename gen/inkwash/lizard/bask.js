@@ -1,4 +1,5 @@
 // ink wash lizard basking on a warm stone, red throat pulsing, with a quick turn of the head and a flick of its long tail
+// tags: calm, animal, stone
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

@@ -1,4 +1,5 @@
 // puzzled girl with fluffy curly light-tone hair tilting her head, finger on her cheek, question marks orbiting her head, one blink
+// tags: question-marks, head-tilt, cute
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=14,delay=110,rim=4

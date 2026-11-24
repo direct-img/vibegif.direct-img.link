@@ -1,4 +1,5 @@
 // whale carrying a tiny island: it bobs, its palm leaves sway, its tail flicks and it puffs a spout now and then
+// tags: calm, hopeful, island, animal, ocean, gentle
 const{sin,cos,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85
 const B='#4ea8de',L='#a7d4ef',S='#f4c03e',G='#8cc084',D='#2b2633'

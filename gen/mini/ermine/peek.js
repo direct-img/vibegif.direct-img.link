@@ -1,4 +1,5 @@
 // ermine in its winter coat: it pokes up out of a snow hole, sniffs, glances back over its shoulder, blinks, dips down for a moment and pops back up
+// tags: playful, animal, winter, snow
 const{sin,PI,min,max}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 const sm=x=>(x=min(1,max(0,x)))*x*(3-2*x)

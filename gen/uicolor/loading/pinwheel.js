@@ -1,4 +1,5 @@
 // four-color paper pinwheel whirling round on its stick in the breeze, little wind swooshes blowing past
+// tags: wind, toy, spin, breeze, playful, calm
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=16,delay=60
 const C=['#ff6b6b','#ffd43b','#4dabf7','#69db7c'],L=['#ffa8a8','#fff3bf','#a5d8ff','#b2f2bb'],X=128,Y=106,R=88,BL='#ffa8a8'

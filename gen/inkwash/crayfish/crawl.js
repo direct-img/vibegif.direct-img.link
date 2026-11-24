@@ -1,4 +1,5 @@
 // ink wash crayfish crawling over pebbles with claws raised and long antennae waving, wet translucent shell segments and dry-brush legs
+// tags: animal, water, pebbles, claws, slow
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

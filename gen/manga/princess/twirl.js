@@ -1,4 +1,5 @@
 // manga chibi princess twirling in a ball gown: skirt folds sweep around, hem flares, curly white hair swings, sparkles circle her
+// tags: happy, playful, gown, sparkle, chibi
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=16,delay=70,rim=4

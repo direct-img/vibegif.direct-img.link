@@ -1,4 +1,5 @@
 // chibi sprinter with inky twin pigtails holds "set" in the blocks, explodes off in dust, sprints with speed lines, then rewinds
+// tags: determined, excited, sports, chibi, fast
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,abs,min,max}=Math,T=2*PI
 export const frames=20,delay=60,rim=4

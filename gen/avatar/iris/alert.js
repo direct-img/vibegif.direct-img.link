@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye alerted: it crouches, snaps up with a little hop, the eye goes wide and the pupil shrinks to a dot while a coral exclamation mark pops up beside it, then it glances left and right and calms down
+// tags: anxious, eye, hop, ball, blue
 const{sin,cos,PI,min,max,atan2,sqrt,exp}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

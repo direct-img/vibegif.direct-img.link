@@ -1,4 +1,5 @@
 // North Korean flag waving on a silver pole: blue, white and red bands with the red star in a white disc near the hoist, and a smiling anime girl printed in the red panel on the fly side - black hair with a white magnolia flower and a long ponytail streaming in the wind, sky-blue hanbok jacket with white collar - who blinks and beams as the flag ripples
+// tags: anime, wave, country, pride
 export const frames=20,delay=70
 const P=Math.PI*2,W=232,H=116,K=2,X0=14,Y0=30,u=H/36
 const RD='#ec1d25',BL='#034da2',D='#1c1622',SK='#ffe6d8',SK2='#f5c5b3'

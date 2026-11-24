@@ -1,4 +1,5 @@
 // ink wash fisherman in a conical hat standing in a small rocking boat, casting a net that billows open in the air, drapes onto the water and sinks in spreading ripples
+// tags: boat, water, person
 import{createCanvas}from'@napi-rs/canvas'
 const K='20,18,16',{PI:P,sin,cos,min,max,abs,hypot}=Math,T=P*2
 const cl=(x,a=0,b=1)=>min(b,max(a,x)),ss=(a,b,x)=>(x=cl((x-a)/(b-a)),x*x*(3-2*x)),mx=(a,b,f)=>a+(b-a)*f

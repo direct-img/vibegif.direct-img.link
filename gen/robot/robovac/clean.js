@@ -1,4 +1,5 @@
 // round white robot vacuum cleaner gliding diagonally across the floor, side brushes spinning and lidar turning, sweeping up a trail of crumbs and leaving sparkles behind
+// tags: vacuum, home, glide, sparkle, calm
 export const frames=24,delay=60
 const P=Math.PI,R=76,K=.5,cx=140,cy=132,H=Math.PI-.6,fx=Math.cos(H),fz=Math.sin(H),nx=-fz,nz=fx
 let s=7;const rnd=()=>(s=s*16807%2147483647)/2147483647

@@ -1,4 +1,5 @@
 // samoyed grinning: a fluffy white dog with its famous smile pants, tilts its head, perks its ears, wags its plume tail and blinks
+// tags: happy, dog, animal, fluffy
 const{sin,PI,abs,max}=Math,T=2*PI
 export const frames=24,delay=80,rim=3,rimColor='#111'
 export default(c,t)=>{

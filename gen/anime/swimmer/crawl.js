@@ -1,4 +1,5 @@
 // swimmer in a cobalt cap and goggles doing the front crawl, arms windmilling over the water, turning to breathe, splashes at each stroke
+// tags: sport, water, splash, fast
 const{sin,cos,PI,max,min,hypot}=Math,T=2*PI
 export const frames=16,delay=75
 const SKIN='#ffe3d1',HAIR='#3b5bdb',CAP='#4263eb',CD='#364fc7',GOG='#ff922b',LENS='#c5f6fa',EYE='#7950f2',SUIT='#f06595',WA='#4dabf7',WD='#1c7ed6',WL='#a5d8ff',BL='#ffa8a8'

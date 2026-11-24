@@ -1,4 +1,5 @@
 // sun sinks into the sea inside a round sticker while the sky warms to dusk, sparkles on the water, then it rises again
+// tags: calm, sun, ocean, dusk, sparkle, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=90
 const DAY=['#ffa94d','#ffc078','#ffd8a8','#fff3bf'],DUSK=['#7048e8','#9775fa','#f783ac','#ffa94d'],E=[0,60,98,130,156],BL='#ff8787'

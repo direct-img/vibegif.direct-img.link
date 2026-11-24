@@ -1,4 +1,5 @@
 // pegasus flying in place: two slow wing beats per loop, legs tucked, mane and tail streaming, blinks
+// tags: calm, hopeful, fantasy, animal, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=80
 const B='#4ea8de',L='#a7d4ef',A='#ff85a8',D='#2b2633'

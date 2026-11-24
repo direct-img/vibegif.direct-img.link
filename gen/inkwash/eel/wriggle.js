@@ -1,4 +1,5 @@
 // ink wash eel wriggling through water in a long S, one swelling and tapering brushstroke with a wave travelling down to its dry-brush tail
+// tags: animal, water, calm, brushstroke
 const{sin,cos,PI,hypot,min,max,abs,floor,round}=Math,T=2*PI,
 I=a=>`rgba(20,18,16,${a})`,
 R=n=>(n=sin(n*91.7+7.3)*43758.5453)-floor(n),

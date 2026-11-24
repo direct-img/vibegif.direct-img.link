@@ -1,4 +1,5 @@
 // orange industrial robot arm on a pedestal lifts a cardboard box off a conveyor belt, swings it overhead and drops it into a hazard-striped bin while the belt brings the next box
+// tags: factory, conveyor, box, industrial
 export const frames=40,delay=55
 const{PI,sin,cos,atan2,acos,hypot,min,max}=Math,T=PI*2
 const S=[140,186],L1=70,L2=66,BW=30,BH=26

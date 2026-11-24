@@ -1,4 +1,5 @@
 // boxy robot that shudders, powers down and pops apart into a floating exploded view (head, antenna, arms, legs, torso), then the parts snap back together with sparks and its eyes light up again
+// tags: exploded-view, sparks, rebuild, sci-fi
 export const frames=32,delay=60
 const T=Math.PI*2
 const ob=x=>{const s=1.9;return 1+(s+1)*(x-1)**3+s*(x-1)**2}

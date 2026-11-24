@@ -1,4 +1,5 @@
 // girl peeking over a huge heart chocolate box she thrusts toward you, eyes squeezed shut, blushing hard, box trembling, hearts rising
+// tags: shy, love, valentine, heart, blush, gift
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=12,delay=80
 const SKIN='#ffe3d1',HAIR='#ffc9de',HD='#f783ac',HL='#fff0f6',SLV='#9775fa',SD='#7048e8',BOX='#e03131',BXD='#a61e1e',BXL='#ff8787',RIB='#faa2c1',RD='#e64980',BOW='#e64980',BL='#ff6b81',HT='#f06595'

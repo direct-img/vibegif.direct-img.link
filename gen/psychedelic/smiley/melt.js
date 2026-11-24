@@ -1,4 +1,5 @@
 // yellow acid smiley face with spinning spiral eyes melting at the chin into rainbow-striped drips that stretch, drop off and regrow
+// tags: happy, spiral, rainbow, retro, trippy
 export const frames=24,delay=70
 const P=Math.PI*2,X=128,Y=88,R=74,B=11
 const C=['#ffd60a','#ff8a1a','#ff2d75','#c33cff','#3f5bff','#00c8ff','#24e06a']

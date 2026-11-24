@@ -1,4 +1,5 @@
 // four-leaf clover spinning like a pinwheel on its stem with a smiling center, lucky sparkles twinkling around
+// tags: happy, hopeful, nature, luck, sparkle
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const L=['#69db7c','#51cf66'],V='#2f9e44',ST='#40c057',BL='#ffa8a8',SP='#ffd43b'

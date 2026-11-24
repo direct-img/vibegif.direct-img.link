@@ -1,4 +1,5 @@
 // three fat comma teardrops in terracotta, orange and amber with dark outlines chase each other round the center, speeding up, swelling and curling their tails outward until they lock together into a nearly solid swirled disc, then easing apart
+// tags: colorful, spin, chasing
 const{sin,cos,PI}=Math,T=2*PI
 const N=32,b=.4,
   // frames bunch up where the swirl is fast: frame i shows time tau(i/N), held for its share of the loop

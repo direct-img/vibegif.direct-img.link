@@ -1,4 +1,5 @@
 // heavy bipedal battle mech walking to the right side-on: reverse-jointed hydraulic legs, glowing cyan visor, missile pod and swaying antenna, dust kicks up on each footfall
+// tags: battle, heavy, sci-fi
 export const frames=24,delay=65
 const{PI,sin,cos,atan2,acos,hypot,min,max}=Math,T=PI*2
 const G=226,HX=122,L1=56,L2=60,S=36

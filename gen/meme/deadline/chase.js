@@ -1,4 +1,5 @@
 // a panicked little guy sprints for his life while a giant red line spelling DEADLINE closes in behind him, calendar pages flying past
+// tags: anxious, funny, panic, run
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=15,delay=65,rim=3
 const BG='#fff3bf',GR='#ffe066',RED='#f03e3e',SH='#4dabf7',PA='#495057',SKIN='#ffd3b0',HAIR='#5c3d2e'

@@ -1,4 +1,5 @@
 // round coral avatar mascot ball beaming with joy: its two white dot eyes curve into happy arcs as it bounces up and down, tilting side to side, with yellow and pink sparkles popping around it
+// tags: bounce, joy, ball, coral
 export const frames=60,delay=40
 const{PI,sin,cos}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

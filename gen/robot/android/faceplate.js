@@ -1,4 +1,5 @@
 // android head facing forward: the white porcelain faceplate splits into four plates that slide apart, revealing glowing cyan camera eyes, spinning cheek gears, wires and circuitry, then closes again
+// tags: circuitry, gears, reveal, sci-fi
 export const frames=32,delay=70
 const{PI,sin,cos,max,min}=Math,T=PI*2
 const K=(t,k)=>{for(let j=0;j<k.length-1;j++){const[a,u]=k[j],[b,v]=k[j+1];if(t<b){const e=(1-cos(PI*(t-a)/(b-a)))/2;return u+(v-u)*e}}return k.at(-1)[1]}

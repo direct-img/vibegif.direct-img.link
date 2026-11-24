@@ -1,4 +1,5 @@
 // Italy flag waving on a pole: green, white and red vertical tricolor with an anime girl in the white band, long brown wavy hair blowing in the wind, olive sprig hairpin, white sailor blouse with green collar and red bow, waving hello and blinking
+// tags: anime, wave, country, pride
 import{createCanvas as cc}from'@napi-rs/canvas'
 export const frames=16,delay=75,rim=3
 const Q=2,X=19,Y=44,W=228,H=152,A=7,L=180,T=Math.PI*2,{sin,cos,pow,abs}=Math

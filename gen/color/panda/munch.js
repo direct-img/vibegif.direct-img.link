@@ -1,4 +1,5 @@
 // panda sitting and munching on a bamboo stalk, cheeks working, bamboo bobbing with every chew
+// tags: calm, happy, animal, bamboo, eat
 // black parts get a white rim so they still show on dark backgrounds
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=80

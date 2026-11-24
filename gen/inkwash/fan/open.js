@@ -1,4 +1,5 @@
 // ink wash folding fan opening to reveal a small painted plum branch, holding, then folding closed
+// tags: calm, plum, flower
 export const frames = 24, dither = true
 export const delay = [...Array(24)].map((_, i) => i == 10 ? 1300 : i == 23 ? 500 : i == 0 ? 300 : 70)
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2

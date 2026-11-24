@@ -1,4 +1,5 @@
 // a shy little ghost rises out of a hole torn in a page, peeks left and right, then sinks back down
+// tags: shy, peek, page, playful, error
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=24,delay=70
 const PG='#e7f5ff',LN='#a5d8ff',HO='#5f3dc4',HD='#3b2a8a',GH='#fff',GS='#e5dbff',BL='#ffa8a8'

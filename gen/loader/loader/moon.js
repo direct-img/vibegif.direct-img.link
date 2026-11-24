@@ -1,4 +1,5 @@
 // pale yellow cratered moon with a bold black outline and a soft yellow halo, tilted, cycling through its phases as a slate-blue shadow sweeps across it, crescent to full to crescent, pausing at full to glow brighter while two little gold stars twinkle
+// tags: calm, night, space, slow, gentle
 export const frames=48,delay=50
 const{sin,cos,abs,max,PI}=Math,T=2*PI,R=78
 // craters: x,y,r

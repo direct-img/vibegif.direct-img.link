@@ -1,4 +1,5 @@
 // red-haired girl bobbing on the waves in a striped inner tube, sunglasses on her head, licking a grape popsicle that drips
+// tags: calm, happy, ocean, summer, food, waves
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=12,delay=100
 const SKIN='#ffe3d1',HAIR='#e599f7',HD='#be4bdb',HL='#f8f0fc',EYE='#339af0',ED='#1864ab',RG='#38d9a9',RGD='#0ca678',TUBE='#ffd43b',WA='#74c0fc',WL='#d0ebff',POP='#9775fa',PL='#d0bfff',BL='#ffa8a8',SG='#495057',Z=.78

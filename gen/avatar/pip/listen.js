@@ -1,4 +1,5 @@
 // round coral avatar mascot ball listening: leans in with its head tilted and its two white dot eyes wide while blue sound ripples arrive from the corner, giving a small nod as each one lands
+// tags: calm, sound, ball, coral
 export const frames=64,delay=50
 const{PI,sin,cos,min}=Math,T=2*PI,
 e=x=>x<0?0:x>1?1:x*x*(3-2*x),

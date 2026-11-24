@@ -1,4 +1,5 @@
 // Norway flag waving on a flagpole, red field with the white-edged blue Nordic cross, and peeking up in the lower fly corner a rosy-cheeked anime girl with honey blonde braids and a white Nordic knit beanie with a pompom, waving a white mitten while snowflakes fall in the red fields
+// tags: anime, wave, country, pride
 export const frames=16,delay=80,rim=2
 const T=Math.PI*2,W=234,H=170,X=15,Y=22
 const P=(c,s)=>{c.beginPath();let a=s.match(/[MLQCZ]|-?\d*\.?\d+/g),k,j=0

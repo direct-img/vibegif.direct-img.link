@@ -1,4 +1,5 @@
 // burger bouncing on the spot, top bun lagging behind like it's singing, lettuce flapping
+// tags: happy, playful, food, bounce, singing
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 const BUN='#f4a259',PT='#8b5a3c',CH='#ffd43b',LT='#69db7c',TM='#fa5252',SE='#fff4e6'

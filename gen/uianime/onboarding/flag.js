@@ -1,4 +1,5 @@
 // forest green haired tour guide girl in a mustard beret waving a little pennant flag and presenting three step dots that light up 1 2 3 in sequence with a hop each, then all bounce and reset
+// tags: anime, guide, steps, happy, hopeful
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=15,delay=100
 const SKIN='#ffe3d1',HAIR='#4c9a5f',HD='#2d6a3e',HL='#d3f9d8',EYE='#f08c00',ED='#d9480f',VE='#364fc7',SC='#ff6b6b',BE='#ffd43b',BED='#f59f00',BL='#ffa8a8',MO='#c92a2a',TG='#ff8fab',FL='#ff6b6b',ON='#4dabf7',OFF='#f1f3f5',GR='#adb5bd',WD='#c47f45'

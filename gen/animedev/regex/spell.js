@@ -1,4 +1,5 @@
 // witch girl with wavy rose-gold hair, a pointed hat and an indigo cape casting ^[a-z]+$ with her wand, regex glyphs swirling into a glowing magic circle
+// tags: playful, anime, coding, witch, magic, sparkle
 export const frames=16,delay=85,rim=3
 export default(c,t)=>{
   const P=Math.PI,S=Math.sin,C=Math.cos,T=2*P*t,K='#1f1830',sk='#ffe8dc',ss='#f5c8b8',hr='#e9a08f',hs='#c27466',hl='#ffd9c9',ind='#3b2a6b',idd='#281c4c',cy='#3fe0ff'

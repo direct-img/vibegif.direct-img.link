@@ -1,4 +1,5 @@
 // empty dashed star outline waiting to be filled, its dashes marching round as it breathes, sparkles twinkling on and off around it
+// tags: star, hopeful, sparkle, breathe, gentle, calm
 const{sin,cos,PI,max,hypot}=Math,T=2*PI
 export const frames=16,delay=80
 const SY='#ffd43b',R=104,r=46,P=10*hypot(R-r*cos(PI/5),r*sin(PI/5))/20

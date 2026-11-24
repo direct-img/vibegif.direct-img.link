@@ -1,4 +1,5 @@
 // scissors snipping open and shut twice, with a little spark at the tips each time they close
+// tags: craft, sharp, spark, repeat
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

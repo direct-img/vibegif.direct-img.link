@@ -1,4 +1,5 @@
 // folder flap swings open showing nothing inside, a little moth flutters out and flies off, then the flap closes
+// tags: moth, lonely, calm, fly
 const{sin,cos,PI,min,max,abs}=Math,T=2*PI
 export const frames=24,delay=70
 const cl=u=>min(1,max(0,u)),ease=u=>(u=cl(u),u<.5?2*u*u:1-2*(1-u)**2)

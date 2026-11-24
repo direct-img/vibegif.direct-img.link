@@ -1,4 +1,5 @@
 // white cartoon sugar skull wearing a crown of neon flowers that bloom open and closed in a wave, arches of rainbow dots over its eye sockets, star sparkles pulsing inside them, cheek swirls, jaw chattering
+// tags: flowers, neon, sparkle, trippy
 export const frames=16,delay=80
 const P=Math.PI*2,H=(h,l=58)=>`hsl(${(h%360+360)%360},95%,${l}%)`
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // ocean sunfish: a big round flat-backed mola sculling in place, its tall top and bottom fins sweep back and forth together, bubbles rise from its little o mouth
+// tags: calm, animal, ocean, slow, gentle
 const{sin,PI}=Math,T=2*PI
 export const frames=24,delay=85,rim=3,rimColor='#111'
 export default(c,t)=>{

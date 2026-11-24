@@ -1,4 +1,5 @@
 // ink wash ink stick grinding in slow circles on a dark inkstone, ripples spreading across the pool of fresh black ink
+// tags: calm, ink, slow, craft
 const{PI,sin:S,cos:C,max,atan2}=Math,T=PI*2,
 ink=(a,v=18)=>`rgba(${v+3},${v},${v-3},${a*.85})`,
 // brush stroke with body: centerline f(u), width w(u), painted from u=a to u=e

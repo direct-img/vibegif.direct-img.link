@@ -1,4 +1,5 @@
 // mint oven baking a happy little cake that puffs up behind the glowing window while the timer dial ticks round
+// tags: cake, food, happy, baking, puff, hopeful
 const{sin,cos,PI,floor}=Math,T=2*PI
 export const frames=24,delay=90
 const O='#63e6be',OD='#38d9a9',PN='#c3fae8',IN='#ffc078',CK='#fff3bf',CR='#ffd8a8',BL='#ffa8a8',HN='#dee2e6',RD='#ff6b6b',PAN='#adb5bd'

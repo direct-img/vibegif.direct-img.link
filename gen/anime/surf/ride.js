@@ -1,4 +1,5 @@
 // surfer girl with a teal ponytail and a yellow rash guard rides along a curling wave, arms out for balance, spray flying off the tail
+// tags: excited, happy, ocean, wave, summer, sport
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=12,delay=85
 const SKIN='#ffe3d1',HAIR='#1098ad',HD='#0b7285',HL='#c5f6fa',EYE='#fd7e14',ED='#d9480f',RG='#fcc419',RD='#f08c00',SH='#ff6b6b',SHD='#e03131',BRD='#fff',BS='#20c997',HIB='#f06595',WA='#4dabf7',WD='#1c7ed6',WB='#1971c2',FO='#fff',BL='#ffa8a8'

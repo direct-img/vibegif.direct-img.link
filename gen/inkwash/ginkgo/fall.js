@@ -1,4 +1,5 @@
 // ink wash ginkgo twig, golden fan-shaped leaves letting go and fluttering down in a gentle drift
+// tags: calm, nature, autumn, leaves, gentle
 export const frames=30,delay=85,dither=true
 const{sin,cos,PI,min,max,hypot}=Math,T=PI*2
 const I=a=>`rgba(20,18,16,${a})`

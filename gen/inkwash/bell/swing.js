@@ -1,4 +1,5 @@
 // ink wash bronze temple bell hanging from a beam, struck by a swinging log, swaying as sound arcs radiate out
+// tags: calm, temple, sound, slow
 export const frames = 24, delay = 80, dither = true
 const { sin, cos, PI, min, max, abs, hypot, floor } = Math, T = PI * 2
 const I = (a, k) => `rgba(${k || '20,18,16'},${a})`

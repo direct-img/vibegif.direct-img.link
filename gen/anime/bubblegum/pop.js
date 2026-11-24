@@ -1,4 +1,5 @@
 // close-up of a girl with plum space buns blowing a bubblegum bubble that swells, pops all over her face, and gets slurped back in
+// tags: playful, food, messy
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=20,delay=80
 const SKIN='#ffe3d1',HAIR='#cc5de8',HD='#9c36b5',HL='#f3d9fa',EYE='#fab005',ED='#e67700',JK='#3bc9db',GUM='#ff8cc6',GD='#f06595',BL='#ffa8a8'

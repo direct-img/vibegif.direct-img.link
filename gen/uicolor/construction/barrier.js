@@ -1,4 +1,5 @@
 // orange and white striped road barrier, its two warning lamps flashing in turn, the lit lamp wide awake and beaming while the other dozes
+// tags: road, lamp, blink, happy, flash
 const{sin,cos,PI,floor,max}=Math,T=2*PI
 export const frames=16,delay=90
 const OR='#ff922b',ON='#ffd43b',OFF='#c8962e',HS='#495057',PO='#dee2e6',BL='#ffa8a8'

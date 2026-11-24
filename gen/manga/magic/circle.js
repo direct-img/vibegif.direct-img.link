@@ -1,4 +1,5 @@
 // manga mage girl floating over a spinning summoning circle, hatched twin tails lifting in the updraft, spellbook pages fluttering, light rising
+// tags: mage, fantasy, summoning, spin, sparkle
 import{createCanvas}from'@napi-rs/canvas'
 const{sin,cos,PI,max,min,round}=Math,T=2*PI
 export const frames=12,delay=100,rim=4

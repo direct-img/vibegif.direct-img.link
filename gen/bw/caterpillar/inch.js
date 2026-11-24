@@ -1,4 +1,5 @@
 // caterpillar crawling along a twig, a hump rolling through its segments from tail to head
+// tags: calm, animal, insect, crawl, slow
 const{sin,cos,PI,max}=Math,T=2*PI
 export const frames=16,delay=70
 export default(c,t)=>{

@@ -1,4 +1,5 @@
 // giraffe stretching its long neck up to a branch, munching leaves with its jaw working and an ear flicking
+// tags: calm, animal, leaves
 const{sin,cos,PI,abs}=Math,T=2*PI
 export const frames=16,delay=80
 const GY='#ffc078',SP='#a9744f',MZ='#ffe8cc',BR='#8d6346',LF='#69db7c',LD='#51cf66',BL='#ffa8a8'

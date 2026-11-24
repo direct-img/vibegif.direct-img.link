@@ -1,4 +1,5 @@
 // snowflakes of different sizes drifting down and slowly spinning
+// tags: calm, weather, winter, spin, gentle
 const{sin,cos,PI}=Math,T=2*PI
 export const frames=20,delay=90
 const F=[[46,0,20,1],[112,.3,30,1],[186,.62,24,1],[228,.15,16,1],[150,.82,38,1],[70,.55,26,1],[206,.42,32,1]]

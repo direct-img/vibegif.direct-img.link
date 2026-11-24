@@ -1,4 +1,5 @@
 // the cursor keeps opening new tabs until they're thin slivers, the laptop sweats, smokes, and finally crashes before rebooting with two tabs
+// tags: anxious, funny, browser, laptop, overload
 const{sin,cos,PI,min,max,round}=Math,T=2*PI
 const U=[0,...Array.from({length:10},(_,k)=>.06+k*.06),.64,.68,.92]
 export const frames=U.length,delay=[500,...Array(10).fill(130),60,1100,200],rim=4

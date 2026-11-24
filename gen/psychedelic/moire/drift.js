@@ -1,4 +1,5 @@
 // two sets of concentric rings orbiting each other inside a disc, overlapping into shifting rainbow moire interference patterns
+// tags: rings, op-art, rainbow, interference, orbit, trippy
 export const frames=18,delay=80
 const R=118,P=Math.PI*2,B=18
 export default(c,t)=>{

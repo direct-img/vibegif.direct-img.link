@@ -1,4 +1,5 @@
 // round blue avatar ball with one big eye listening: it leans in, the eye opens wide and the pupil dilates while mint sound rings ripple inward and are soaked up, each one making the pupil pulse
+// tags: calm, eye, sound, ball, blue
 const{sin,PI,min,max,atan2,sqrt}=Math
 const ss=x=>(x=max(0,min(1,x)),x*x*(3-2*x))
 const dot=(c,f,x,y,r)=>{c.fillStyle=f;c.beginPath();c.arc(x,y,r,0,7);c.fill()}

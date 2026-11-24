@@ -1,4 +1,5 @@
 // pot of gold with a shamrock on its belly: glints twinkle across the coin pile while one coin flips up and drops back
+// tags: hopeful, happy, st-patricks, gold, treasure, sparkle
 export const frames=32,delay=50,rim=5
 const P=Math.PI*2,S=Math.sin,C=Math.cos,cl=v=>v<0?0:v>1?1:v
 // 4-point twinkle

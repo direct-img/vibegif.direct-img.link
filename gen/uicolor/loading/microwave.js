@@ -1,4 +1,5 @@
 // mint microwave humming away: light on inside, a smiling soup bowl turning round on the spinning plate, the green timer glowing and counting down
+// tags: soup, food, home, countdown, happy
 const{sin,cos,PI,floor}=Math,T=2*PI
 export const frames=20,delay=90
 const BO='#63e6be',BD='#20c997',IN='#fff3bf',BW='#ff8787',SO='#ffd43b',DS='#343a40',GG='#2f9e44',GB='#b2f2bb',BL='#ffa8a8'

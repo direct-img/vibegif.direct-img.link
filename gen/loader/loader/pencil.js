@@ -1,4 +1,5 @@
 // chunky yellow pencil swaying like a wrist as it draws a big bold red heart in one thick stroke, then flipping end over end in 3D so its pink eraser scrubs the heart away in a spray of crumbs, then flipping back to draw again
+// tags: love, heart, draw
 const{sin,cos,abs,hypot,PI}=Math,T=2*PI
 export const frames=60,delay=40
 const ink='#111',red='#ef2d56',L=102,N=240,P0=.25

@@ -1,4 +1,5 @@
 // strawberry frog hopping in place: crouch, leap with legs stretched, land with a squash, then its throat puffs
+// tags: happy, playful, frog, strawberry, animal, fantasy
 const{sin,cos,PI,max,min}=Math,T=2*PI
 export const frames=24,delay=70
 const B='#ee5a5a',L='#f7adad',S='#f4c03e',G='#8cc084',D='#2b2633'

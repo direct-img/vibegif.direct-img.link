@@ -1,4 +1,5 @@
 // a 3x3 grid of rounded squares colored by diagonal from coral through orange, gold and green to blue, a wave runs from the top-left corner to the bottom-right making each square shrink with a quarter turn and spring back
+// tags: grid, colorful, wave
 const{PI,min}=Math
 export const frames=40,delay=40
 const C=['#ff5c7a','#ff8a3d','#f2b52c','#34c38f','#3d8bff'],
