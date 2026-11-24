@@ -48,7 +48,37 @@ const face=(c,o)=>{
   else{c.moveTo(-4,0);c.lineTo(4,0);c.stroke()}
   c.restore()
 }
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const GL={"#":[6.2,'M2.4 0.6L1.4 9.4M5.2 0.6L4.2 9.4M0.4 3.3H6.2M0 6.7H5.8'],
+  3:[5.6,'M0.3 1.2Q1.2 0 2.8 0Q5.2 0 5.2 2.5Q5.2 4.8 2.4 4.8Q5.6 4.8 5.6 7.4Q5.6 10 2.8 10Q1 10 0 8.6'],
+  4:[5.8,'M4 10V0L0 7H5.8'],
+  7:[5.5,'M0 0H5.5L2 10'],
+  A:[6,'M0 10L3 0L6 10M1.2 6.6H4.8'],
+  B:[6,'M0 10V0H3.3Q5.6 0 5.6 2.5Q5.6 4.9 3.3 4.9H0M3.3 4.9Q6 4.9 6 7.45Q6 10 3.3 10H0'],
+  D:[6.2,'M0 0V10H2.4Q6.2 10 6.2 5Q6.2 0 2.4 0Z'],
+  G:[6,'M5.8 1.6Q4.7 0 3.1 0Q0 0 0 5Q0 10 3.1 10Q6 10 6 6.6V5.6H3.4'],
+  I:[3,'M0 0H3M1.5 0V10M0 10H3'],
+  L:[5,'M0 0V10H5'],
+  O:[6.4,'E3.2 5 3.2 5'],
+  P:[5.8,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0'],
+  R:[5.9,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0M2.8 5.6L5.9 10'],
+  T:[6,'M0 0H6M3 0V10'],
+  V:[6,'M0 0L3 10L6 0']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>GL[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 const heart=(c,x,y,s,f='#ff5c8a',w=3)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();c.moveTo(0,8);c.bezierCurveTo(-16,-2,-9,-15,0,-6);c.bezierCurveTo(9,-15,16,-2,0,8);fs(c,f,w/s);el(c,-5,-5,2.4,1.6,-.6);fs(c,'rgba(255,255,255,.75)',0);c.restore()}
 const spark=(c,x,y,s,f='#ffe066',w=2.5)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();for(let k=0;k<8;k++){const r=k%2?3.2:10,a=k*P/4;c.lineTo(S(a)*r,-C(a)*r)}c.closePath();fs(c,f,w/s);c.restore()}
 export const frames=20,delay=90,rim=4
@@ -58,8 +88,8 @@ export default(c,t,i)=>{
   // tombstones of side projects past
   const stone=(x,y,w,h,a,l1,l2)=>{c.save();c.translate(x,y);c.rotate(a);c.beginPath();c.moveTo(-w/2,0);c.lineTo(-w/2,-h+w/2);c.arc(0,-h+w/2,w/2,P,0);c.lineTo(w/2,0);c.closePath();fs(c,GS)
     c.beginPath();c.moveTo(w/2-7,-4);c.lineTo(w/2-7,-h+w/2);c.arc(0,-h+w/2,w/2-7,0,-.6,1);ln(c,3,GSd)
-    tx(c,'RIP',0,-h+w/2-2,11,'#7d7599',0,'DejaVu Sans');tx(c,l1,0,-h+w/2+16,11,'#5b5378',0);if(l2)tx(c,l2,0,-h+w/2+30,11,'#5b5378',0);c.restore()}
-  stone(86,204,54,100,.04,'todo','app');stone(38,212,48,84,-.08,'blog','v3')
+    const ty=-h+w/2-4;lt(c,'RIP',0,ty,10,'#6a6090',.5,0,2.1);lt(c,l1,0,ty+19,10,'#3e3558',.5,0,2.1);if(l2)lt(c,l2,0,ty+36,10,'#3e3558',.5,0,2.1);c.restore()}
+  stone(90,204,60,106,.04,'TODO','APP');stone(43,212,54,92,-.06,'BLOG','V3')
   // tiny ghost drifting between the stones
   const gy=74+S(T)*5,gx=50+S(T)*4
   c.save();c.translate(gx,gy);c.rotate(S(T)*.08);c.beginPath();c.moveTo(-15,10);c.lineTo(-15,-2);c.arc(0,-2,15,P,0);c.lineTo(15,10);for(let k=0;k<4;k++)c.quadraticCurveTo(15-k*7.5-3.75,15+(k%2?-3:3),15-(k+1)*7.5,10);c.closePath();fs(c,'#fff',3)
@@ -73,7 +103,7 @@ export default(c,t,i)=>{
   c.beginPath();c.moveTo(0,0);c.quadraticCurveTo(-2,-14,0,-28);ln(c,8);ln(c,4,'#5fb84f')
   for(const f of[-1,1]){c.save();c.translate(0,-26);c.rotate(f*(.5+.12*S(T*2+f)));c.beginPath();c.moveTo(0,0);c.quadraticCurveTo(f*8,-14,f*20,-12);c.quadraticCurveTo(f*12,2,0,0);fs(c,'#8fe06a',3);c.beginPath();c.moveTo(f*2,-2);c.quadraticCurveTo(f*10,-8,f*16,-10);ln(c,1.6,'#4fa84a');c.restore()}
   c.restore()
-  c.beginPath();c.moveTo(84,228);c.lineTo(84,202);ln(c,4,'#8a5a3a');c.save();c.translate(84,198);c.rotate(-.12);rr(c,-15,-10,30,18,3);fs(c,'#f7deb0',2.8);tx(c,'#47',0,0,11,'#c0503a',0);c.restore()
+  c.beginPath();c.moveTo(84,228);c.lineTo(84,202);ln(c,4,'#8a5a3a');c.save();c.translate(84,198);c.rotate(-.12);rr(c,-18,-11,36,21,3);fs(c,'#f7deb0',2.8);lt(c,'#47',0,-.5,11,'#b03a28',.5,0,2.1);c.restore()
   if(t>.62&&t<.96)spark(c,140,176-sg(t,.62,.8)*8,(.5+.3*S(T*6))*sg(t,.6,.66),'#fff3a0')
   // water drops arcing from the spout
   // the girl: boots, overalls, arms and can
@@ -105,5 +135,5 @@ export default(c,t,i)=>{
   if(pour>.5){const sx=cx-42*C(ca)+21*S(ca),sy=cy-42*S(ca)-21*C(ca);for(let k=0;k<5;k++){const p=(t*5+k/5)%1,x=sx-6-p*8+(k%2)*5,y=sy+8+p*(196-sy-8);el(c,x,y,2.6,3.6);fs(c,'#8fd8ff',2)}}
   // gloved hands on the can
   for(const[sx,sy,x,y]of[[hx-24,140,cx+12,cy-6],[hx-30,148,cx-2,cy+10]]){c.beginPath();c.moveTo(sx,sy+hop);c.quadraticCurveTo((sx+x)/2,y+12,x,y);st(c,10,Y,3.2);el(c,x,y,7.5,7);fs(c,G,3)}
-  if(hop){const p=(t-.6)/.35;c.save();c.translate(226,60-p*20);c.rotate(.2);c.globalAlpha=S(p*P);tx(c,'♪',0,0,22,'#ff9ad6',5,'DejaVu Sans');c.restore();c.globalAlpha=1}
+  if(hop){const p=(t-.6)/.35;c.save();c.translate(226,60-p*20);c.rotate(.2);c.globalAlpha=S(p*P);c.beginPath();c.moveTo(1.5,6);c.lineTo(1.5,-11);c.quadraticCurveTo(4,-4,10,-3);ln(c,7.5);el(c,-3,6,5.5,4,-.4);fs(c,'#ff9ad6',2.8);c.beginPath();c.moveTo(1.5,5);c.lineTo(1.5,-11);c.quadraticCurveTo(4,-4,10,-3);ln(c,2.6,'#ff9ad6');c.restore();c.globalAlpha=1}
 }

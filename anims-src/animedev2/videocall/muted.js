@@ -50,7 +50,32 @@ const face=(c,o)=>{
   else{c.moveTo(-4,0);c.lineTo(4,0);c.stroke()}
   c.restore()
 }
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={"!":[1,'M0.5 0V6.4M0.5 9.7V9.8'],
+  "'":[1,'M0.5 0V2.8'],
+  D:[6.2,'M0 0V10H2.4Q6.2 10 6.2 5Q6.2 0 2.4 0Z'],
+  E:[5.2,'M5.2 0H0V10H5.2M0 4.9H4.2'],
+  M:[7,'M0 10V0L3.5 6.2L7 0V10'],
+  O:[6.4,'E3.2 5 3.2 5'],
+  R:[5.9,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0M2.8 5.6L5.9 10'],
+  T:[6,'M0 0H6M3 0V10'],
+  U:[6,'M0 0V6.6Q0 10 3 10Q6 10 6 6.6V0'],
+  Y:[6,'M0 0L3 5.2L6 0M3 5.2V10']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 const drop=(c,x,y,s=1,r=0)=>{c.save();c.translate(x,y);c.rotate(r);c.scale(s,s);c.beginPath();c.moveTo(0,-9);c.quadraticCurveTo(7,2,0,6);c.quadraticCurveTo(-7,2,0,-9);fs(c,'#8fd8ff',2.5);c.restore()}
 const bangs=(c,H,Hl,pts=[50,26,44,-8,36,6,30,-18,20,0,12,-20,2,-2,-6,-20,-16,-2,-24,-18,-34,4,-42,-8,-50,26])=>{c.beginPath();c.moveTo(-50,26);c.bezierCurveTo(-58,-40,-32,-68,0,-68);c.bezierCurveTo(32,-68,58,-40,50,26);qs(c,pts,.18);c.closePath();fs(c,H);c.beginPath();c.arc(0,-24,40,P*1.2,P*1.48);c.lineWidth=5;c.strokeStyle=Hl;c.stroke()}
 export const frames=30,delay=80,rim=3
@@ -96,8 +121,8 @@ export default(c,t,i)=>{
   c.restore()
   // coworker tile + ping
   rr(c,184,24,48,38,6);fs(c,'#3a4060',2.6);el(c,208,46,12,11);fs(c,'#c8a6ff',2.4);for(const f of[-1,1]){pg(c,208+f*10,40,208+f*5,30,208+f*2,38);fs(c,'#c8a6ff',2.2)}for(const f of[-1,1]){el(c,208+f*5,45,1.8);fs(c,O,0)}
-  if(ping>0){c.save();c.translate(186,86);c.scale(ping,ping);rr(c,-56,-14,104,28,10);fs(c,'#fff',3);pg(c,10,-14,22,-26,24,-14);fs(c,'#fff',0);pl(c,10,-14,22,-26,24,-14);sk(c,3)
-    tx(c,"you're muted!",-4,0,12,'#e0304a',0,'DejaVu Sans');c.restore()}
+  if(ping>0){c.save();c.translate(202,89);c.scale(ping,ping);rr(c,-34,-22,68,44,11);fs(c,'#fff',3);pg(c,-2,-22,4,-33,12,-22);fs(c,'#fff',0);pl(c,-2,-22,4,-33,12,-22);sk(c,3)
+    lt(c,"YOU'RE",0,-9,11,'#d42039',.5,0,2.2);lt(c,'MUTED!',0,10,11,'#d42039',.5,0,2.2);c.restore()}
   // control bar: flashing muted mic, cam, hang up
   const fl=i%4<2||frz,pul=frz?1.18:1+(fl?.06:0)
   c.save();c.translate(92,225);c.scale(pul,pul);el(c,0,0,15);fs(c,fl?'#ff3a4a':'#a8283a',3)

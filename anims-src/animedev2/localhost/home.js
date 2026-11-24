@@ -50,7 +50,27 @@ const face=(c,o)=>{
   else{c.moveTo(-4,0);c.lineTo(4,0);c.stroke()}
   c.restore()
 }
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={".":[1,'M0.5 9.7V9.8'],
+  0:[5.6,'E2.8 5 2.8 5'],
+  1:[3.2,'M0.4 2.1L2.6 0V10'],
+  2:[5.5,'M0.2 2.2Q0.8 0 2.8 0Q5.3 0 5.3 2.6Q5.3 4.4 3.2 6.2L0 10H5.5'],
+  7:[5.5,'M0 0H5.5L2 10']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 const drop=(c,x,y,s=1,r=0)=>{c.save();c.translate(x,y);c.rotate(r);c.scale(s,s);c.beginPath();c.moveTo(0,-9);c.quadraticCurveTo(7,2,0,6);c.quadraticCurveTo(-7,2,0,-9);fs(c,'#8fd8ff',2.5);c.restore()}
 const bangs=(c,H,Hl,pts=[50,26,44,-8,36,6,30,-18,20,0,12,-20,2,-2,-6,-20,-16,-2,-24,-18,-34,4,-42,-8,-50,26])=>{c.beginPath();c.moveTo(-50,26);c.bezierCurveTo(-58,-40,-32,-68,0,-68);c.bezierCurveTo(32,-68,58,-40,50,26);qs(c,pts,.18);c.closePath();fs(c,H);c.beginPath();c.arc(0,-24,40,P*1.2,P*1.48);c.lineWidth=5;c.strokeStyle=Hl;c.stroke()}
 export const frames=20,delay=80,rim=4
@@ -73,8 +93,8 @@ export default(c,t,i)=>{
   rr(c,30,106,196,134,4);sk(c,3.5)
   pl(c,12,116,128,22,244,116);sk(c,4)
   // plate under the gable
-  rr(c,82,70,92,24,7);fs(c,'#7a4e33');rr(c,86,74,84,16,5);fs(c,'#fff6e0',2)
-  tx(c,'127.0.0.1',128,82.5,13.5,'#5a3a26',0)
+  rr(c,74,65,108,29,8);fs(c,'#7a4e33');rr(c,78,69,100,21,6);fs(c,'#fff6e0',2)
+  lt(c,'127.0.0.1',128,79.5,14,'#4a2e1c',.5,0,2.2)
   // windows with warm glow
   for(const x of[44,180]){const g=c.createLinearGradient(0,132,0,176);g.addColorStop(0,'#ffe9a0');g.addColorStop(1,'#ffb85a')
     rr(c,x,132,36,40,5);fs(c,g);pl(c,x+18,132,x+18,172);pl(c,x,152,x+36,152);sk(c,2.6)

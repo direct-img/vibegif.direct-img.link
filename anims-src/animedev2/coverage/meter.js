@@ -51,7 +51,40 @@ const face=(c,o)=>{
   c.restore()
 }
 const drop=(c,x,y,s=1)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();c.moveTo(0,-10);c.bezierCurveTo(7,0,7,8,0,8);c.bezierCurveTo(-7,8,-7,0,0,-10);fs(c,'#a6e1ff',2.6);el(c,-2,2,1.6,2.4);fs(c,'#fff',0);c.restore()}
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={"%":[6.4,'M0.4 10L6 0E1.3 1.9 1.3 1.9E5.1 8.1 1.3 1.9'],
+  0:[5.6,'E2.8 5 2.8 5'],
+  1:[3.2,'M0.4 2.1L2.6 0V10'],
+  2:[5.5,'M0.2 2.2Q0.8 0 2.8 0Q5.3 0 5.3 2.6Q5.3 4.4 3.2 6.2L0 10H5.5'],
+  3:[5.6,'M0.3 1.2Q1.2 0 2.8 0Q5.2 0 5.2 2.5Q5.2 4.8 2.4 4.8Q5.6 4.8 5.6 7.4Q5.6 10 2.8 10Q1 10 0 8.6'],
+  4:[5.8,'M4 10V0L0 7H5.8'],
+  5:[5.5,'M5 0H0.8L0.4 4.4Q1.4 3.6 2.8 3.6Q5.5 3.6 5.5 6.8Q5.5 10 2.6 10Q1 10 0 8.8'],
+  6:[5.5,'M4.8 0.8Q4 0 2.9 0Q0 0 0 5.6Q0 10 2.8 10Q5.5 10 5.5 7.1Q5.5 4.3 2.8 4.3Q0.9 4.3 0.1 5.9'],
+  7:[5.5,'M0 0H5.5L2 10'],
+  8:[5.5,'M2.75 4.7Q0.4 4.7 0.4 2.35Q0.4 0 2.75 0Q5.1 0 5.1 2.35Q5.1 4.7 2.75 4.7Q0 4.7 0 7.35Q0 10 2.75 10Q5.5 10 5.5 7.35Q5.5 4.7 2.75 4.7Z'],
+  9:[5.5,'M0.7 9.2Q1.5 10 2.6 10Q5.5 10 5.5 4.4Q5.5 0 2.7 0Q0 0 0 2.9Q0 5.7 2.7 5.7Q4.6 5.7 5.4 4.1'],
+  A:[6,'M0 10L3 0L6 10M1.2 6.6H4.8'],
+  C:[5.8,'M5.8 1.6Q4.7 0 3.1 0Q0 0 0 5Q0 10 3.1 10Q4.7 10 5.8 8.4'],
+  E:[5.2,'M5.2 0H0V10H5.2M0 4.9H4.2'],
+  G:[6,'M5.8 1.6Q4.7 0 3.1 0Q0 0 0 5Q0 10 3.1 10Q6 10 6 6.6V5.6H3.4'],
+  O:[6.4,'E3.2 5 3.2 5'],
+  R:[5.9,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0M2.8 5.6L5.9 10'],
+  V:[6,'M0 0L3 10L6 0']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 export const frames=26,delay=80,rim=4
 const H='#3f7de8',Hd='#2a55b0',Hl='#9cc4ff',S='#e2ae86',J='#8a5cf0',Jd='#6a3cc8'
 export default(c,t,i)=>{
@@ -63,13 +96,14 @@ export default(c,t,i)=>{
   // gauge
   const gx=62,gy=66,R=50
   if(gold>0){c.save();c.translate(gx,gy+8);for(let k=0;k<9;k++){c.save();c.rotate((k-4)*P/16+sin(t*20+k)*.04);pg(c,-6,-R-4,6,-R-4,0,-R-4-18*gold);fs(c,'#ffd84d',2.5);c.restore()}c.restore()}
-  c.beginPath();c.arc(gx,gy,R,P,0);c.lineTo(gx+R,gy+34);c.quadraticCurveTo(gx+R,gy+40,gx+R-6,gy+40);c.lineTo(gx-R+6,gy+40);c.quadraticCurveTo(gx-R,gy+40,gx-R,gy+34);c.closePath();fs(c,gold>.5?'#fff1b0':'#fff')
+  c.beginPath();c.arc(gx,gy,R,P,0);c.lineTo(gx+R,gy+44);c.quadraticCurveTo(gx+R,gy+50,gx+R-6,gy+50);c.lineTo(gx-R+6,gy+50);c.quadraticCurveTo(gx-R,gy+50,gx-R,gy+44);c.closePath();fs(c,gold>.5?'#fff1b0':'#fff')
   for(const[a,b,col]of[[0,.5,'#ff6b6b'],[.5,.8,'#ffd166'],[.8,1,'#5ad18f']]){c.beginPath();c.arc(gx,gy,R-8,P+a*P,P+b*P);c.lineWidth=8;c.strokeStyle=col;c.stroke()}
   for(let k=0;k<=10;k++){const a=P+k*P/10;c.beginPath();c.moveTo(gx+cos(a)*(R-14),gy+sin(a)*(R-14));c.lineTo(gx+cos(a)*(R-(k%5?19:23)),gy+sin(a)*(R-(k%5?19:23)));c.lineWidth=2;c.strokeStyle=O;c.stroke()}
   const na=P+v/100*P;c.beginPath();c.moveTo(gx,gy);c.lineTo(gx+cos(na)*(R-12),gy+sin(na)*(R-12));st(c,3.5,'#e8344e',2.2);el(c,gx,gy,6);fs(c,'#555c70',2.5)
-  tx(c,(gold>.3?100:min(100,round(v)))+'%',gx,gy+14,15,gold>.5?'#ffd84d':'#fff',4.5);tx(c,'coverage',gx,gy+31,12,'#7a6fa8',0)
+  rr(c,gx-30,gy+9,60,24,7);fs(c,'#2f2a4a',2.5);lt(c,(gold>.3?100:min(100,round(v)))+'%',gx,gy+21,14,gold>.5?'#ffd84d':'#fff',.5,0,2.1)
+  lt(c,'COVERAGE',gx,gy+42,11,'#4b3f8f',.5,0,2.1)
   // hose from the pump to the gauge
-  c.beginPath();c.moveTo(150,230);c.bezierCurveTo(70,240,24,210,gx-30,gy+40);st(c,5,'#3a3f57',2.5)
+  c.beginPath();c.moveTo(150,230);c.bezierCurveTo(70,240,24,214,gx-30,gy+50);st(c,5,'#3a3f57',2.5)
   // back hair + side ponytail
   const hy=86+hh*6,hx=158
   c.save();c.translate(hx,hy);c.scale(.8,.8)
@@ -101,6 +135,6 @@ export default(c,t,i)=>{
   arm(hx-38,140+hh*5,hx-50,150+hh*12,124,ty)
   if(pose){c.beginPath();c.moveTo(hx+38,140);c.quadraticCurveTo(hx+66,128,hx+70,96);st(c,13,S,3.2)
     c.save();c.translate(hx+70,88);c.rotate(.2);for(const a of[-.25,.2]){c.beginPath();c.moveTo(0,0);c.lineTo(sin(a)*20,-cos(a)*20);st(c,6,S,3)}el(c,0,4,9,8.5);fs(c,S,3.2);c.restore()
-    for(let k=0;k<5;k++){const a=k*1.26+t*6;star(c,hx+cos(a)*72,hy+sin(a)*54,4+2*sin(t*50+k),'#ffe14d',2)}}
+    for(let k=0;k<5;k++){const a=k*1.26+t*6;star(c,hx+cos(a)*60,hy+sin(a)*54,4+2*sin(t*50+k),'#ffe14d',2)}}
   else arm(hx+38,140+hh*5,hx+50,150+hh*12,176,ty)
 }

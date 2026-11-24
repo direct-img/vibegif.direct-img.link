@@ -48,7 +48,26 @@ const face=(c,o)=>{
   c.restore()
 }
 const drop=(c,x,y,s=1,r=0)=>{c.save();c.translate(x,y);c.rotate(r);c.scale(s,s);c.beginPath();c.moveTo(0,-10);c.bezierCurveTo(7,0,7,8,0,8);c.bezierCurveTo(-7,8,-7,0,0,-10);fs(c,'#a6e1ff',2.6);el(c,-2,2,1.6,2.4);fs(c,'#fff',0);c.restore()}
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={E:[5.2,'M5.2 0H0V10H5.2M0 4.9H4.2'],
+  F:[5.2,'M5.2 0H0V10M0 4.9H4.2'],
+  O:[6.4,'E3.2 5 3.2 5'],
+  R:[5.9,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0M2.8 5.6L5.9 10']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 export const frames=28,delay=[...Array(28)].map((_,k)=>k>=8&&k<12?120:75),rim=4
 const H='#3a2218',Hl='#74503a',S='#8d5a3b',Sd='#6e4229',C='#f2b632',Cd='#c98a14',K='#2f3d7a',I=['#6e3205','#f2b640']
 const CF=['#ff5d8f','#ffd23f','#4cc9f0','#7ae582','#b388ff','#ff8c42']
@@ -95,8 +114,8 @@ export default(c,t,i)=>{
   c.beginPath();c.arc(0,-24,40,P*1.2,P*1.44);c.lineWidth=4.5;c.strokeStyle=Hl;c.stroke()
   c.restore()
   // what's in her hands
-  const paper=(x,y,s,r=0,sy=1)=>{c.save();c.translate(x,y);c.rotate(r);c.scale(s,s*sy);rr(c,-26,-32,52,64,4);fs(c,'#fffdf5',3);tx(c,'OFFER',0,-18,12,'#2f9e5b',4,'DejaVu Sans');c.lineWidth=2.4;c.strokeStyle='#c8c4d8';for(const y of[-4,4,12]){c.beginPath();c.moveTo(-17,y);c.lineTo(17,y);c.stroke()}
-    pg(c,...[...Array(10)].flatMap((_,k)=>{const q=k%2?4:9,a=k*P/5-P/2;return[12+cos(a)*q,22+sin(a)*q]}));fs(c,'#ffd23f',2.2);c.restore()}
+  const paper=(x,y,s,r=0,sy=1)=>{c.save();c.translate(x,y);c.rotate(r);c.scale(s,s*sy);rr(c,-29,-33,58,66,4);fs(c,'#fffdf5',3);lt(c,'OFFER',0,-19,13,'#1f8a4c',.5,0,2.2);c.lineWidth=2.4;c.strokeStyle='#c8c4d8';for(const y of[-3,5,13]){c.beginPath();c.moveTo(-19,y);c.lineTo(19,y);c.stroke()}
+    pg(c,...[...Array(10)].flatMap((_,k)=>{const q=k%2?4:9,a=k*P/5-P/2;return[14+cos(a)*q,23+sin(a)*q]}));fs(c,'#ffd23f',2.2);c.restore()}
   const env=(x,y,s,a=1,back)=>{c.save();c.globalAlpha=a;c.translate(x,y);c.scale(s,s);const fy=1-2*op
     if(back){if(fy<0){c.save();c.translate(0,-22);c.scale(1,fy);pg(c,-34,0,0,26,34,0);fs(c,'#e0d3b5',3);c.restore()}c.restore();return}
     rr(c,-34,-22,68,44,4);fs(c,'#f6efe0',3)

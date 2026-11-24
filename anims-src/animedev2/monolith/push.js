@@ -53,7 +53,29 @@ const face=(c,o)=>{
   else{c.moveTo(-4,0);c.lineTo(4,0);c.stroke()}
   c.restore()
 }
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono',al='center')=>{c.font=`bold ${z}px ${fn}`;c.textAlign=al;c.textBaseline='middle';c.lineJoin='round';c.lineWidth=w;c.strokeStyle=O;if(w)c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={H:[6,'M0 0V10M6 0V10M0 5H6'],
+  I:[3,'M0 0H3M1.5 0V10M0 10H3'],
+  L:[5,'M0 0V10H5'],
+  M:[7,'M0 10V0L3.5 6.2L7 0V10'],
+  N:[6,'M0 10V0L6 10V0'],
+  O:[6.4,'E3.2 5 3.2 5'],
+  T:[6,'M0 0H6M3 0V10']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 // 4-point sparkle, sweat drop
 const spk=(c,x,y,r,f='#fff6a8',w=2.4)=>{c.beginPath();for(let k=0;k<8;k++){const q=k*P/4,d=k%2?r*.28:r;c.lineTo(x+cos(q)*d,y+sin(q)*d)}c.closePath();fs(c,f,w)}
 const drop=(c,x,y,s=1,a=0)=>{c.save();c.translate(x,y);c.rotate(a);c.scale(s,s);c.beginPath();c.moveTo(0,-10);c.bezierCurveTo(7,0,7,8,0,8);c.bezierCurveTo(-7,8,-7,0,0,-10);fs(c,'#a6e1ff',2.6);el(c,-2,2,1.6,2.4);fs(c,'#fff',0);c.restore()}
@@ -81,7 +103,7 @@ export default(c,t,i)=>{
   rr(c,0,-128,66,128,5);fs(c,'#a3a9b8');pg(c,66,-128,76,-136,76,-10,66,0);fs(c,'#7d8496',3)
   pg(c,0,-128,10,-136,76,-136,66,-128);fs(c,'#c3c8d4',3)
   c.beginPath();c.moveTo(18,-128);c.lineTo(24,-108);c.lineTo(16,-94);c.moveTo(54,-30);c.lineTo(46,-18);c.lineTo(52,-6);ln(c,2.2,'#6b7284')
-  c.save();c.translate(48,-64);c.rotate(-P/2);rr(c,-38,-11,76,22,3);fs(c,'#8b91a2',2.4);tx(c,'MONOLITH',0,1,12,'#fff',0);c.restore()
+  c.save();c.translate(52,-60);c.rotate(P/2);rr(c,-49,-12,98,24,4);fs(c,'#555c70',2.4);lt(c,'MONOLITH',0,0,13,'#fff',.5,0,2.1);c.restore()
   el(c,14,-8,9,5);fs(c,'#7cc860',2.4)
   c.restore()
   // dust when it slides back

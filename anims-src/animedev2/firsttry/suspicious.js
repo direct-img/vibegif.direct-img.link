@@ -49,7 +49,28 @@ const face=(c,o)=>{
   else{c.moveTo(-4,0);c.lineTo(4,0);c.stroke()}
   c.restore()
 }
-const tx=(c,s,x,y,z,f,w=5,fn='DejaVu Sans Mono')=>{c.font=`bold ${z}px ${fn}`;c.textAlign='center';c.textBaseline='middle';c.lineWidth=w;c.strokeStyle=O;c.strokeText(s,x,y);c.fillStyle=f;c.fillText(s,x,y)}
+// hand-lettered text: glyphs are centerline paths on a grid with cap height 10 (baseline 10), stroked thick with round caps
+const G={"?":[5,'M0 2.2Q0.6 0 2.6 0Q5 0 5 2.4Q5 4 3.2 4.9Q2.4 5.3 2.4 6.6M2.4 9.7V9.8'],
+  A:[6,'M0 10L3 0L6 10M1.2 6.6H4.8'],
+  D:[6.2,'M0 0V10H2.4Q6.2 10 6.2 5Q6.2 0 2.4 0Z'],
+  E:[5.2,'M5.2 0H0V10H5.2M0 4.9H4.2'],
+  P:[5.8,'M0 10V0H3.2Q5.8 0 5.8 2.8Q5.8 5.6 3.2 5.6H0'],
+  S:[5.6,'M5.4 1.5Q4.4 0 2.9 0Q0.3 0 0.3 2.6Q0.3 4.5 2.9 4.9Q5.6 5.4 5.6 7.6Q5.6 10 2.9 10Q1.1 10 0 8.5']}
+// gp traces one glyph path: M L H V Q Z as in svg (absolute, one segment per letter) plus E cx cy rx ry for a full ellipse
+const gp=(c,d)=>{c.beginPath();let x=0,y=0
+  for(const[,o,a]of d.matchAll(/([MLHVQEZ])([^MLHVQEZ]*)/g)){const n=a.trim()?a.trim().split(/[\s,]+/).map(Number):[]
+    if(o=='M')c.moveTo(x=n[0],y=n[1]);else if(o=='L')c.lineTo(x=n[0],y=n[1]);else if(o=='H')c.lineTo(x=n[0],y);else if(o=='V')c.lineTo(x,y=n[0])
+    else if(o=='Q')c.quadraticCurveTo(n[0],n[1],x=n[2],y=n[3]);else if(o=='E'){c.moveTo(n[0]+n[2],n[1]);c.ellipse(n[0],n[1],n[2],n[3],0,0,2*Math.PI)}else c.closePath()}}
+// lt(c, text, x, y, h, fill, align=.5, ol=1.4, wt=1.9): x is the anchor (align 0 left, .5 center, 1 right), y the middle of the cap height,
+// h the cap height in px, ol the outline thickness in px on each side (0 for none), wt the stroke weight in grid units
+// returns the drawn width in px. strokes use lineCap/lineJoin round, draws all outlines before all fills so letters don't cut each other
+const lt=(c,s,x,y,h,f,al=.5,ol=1.4,wt=1.9,O='#2b1d2e')=>{
+  const k=h/10,gs=[...s].map(ch=>G[ch]??[2.6,'']),tr=1.5+wt*.5+2*ol/k,W=gs.reduce((q,g)=>q+g[0],0)+tr*(gs.length-1)
+  c.save();c.translate(x-W*k*al,y-5*k);c.scale(k,k);c.lineCap=c.lineJoin='round'
+  const ps=[];let px=0;for(const g of gs){if(g[1])ps.push([px,g[1]]);px+=g[0]+tr}
+  for(const[pass,col,lw]of[[0,O,wt+2*ol/k],[1,f,wt]])if(lw>wt||pass){c.strokeStyle=col;c.lineWidth=lw;for(const[q,d]of ps){c.save();c.translate(q,0);gp(c,d);c.stroke();c.restore()}}
+  c.restore();return W*k
+}
 const heart=(c,x,y,s,f='#ff5c8a',w=3)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();c.moveTo(0,8);c.bezierCurveTo(-16,-2,-9,-15,0,-6);c.bezierCurveTo(9,-15,16,-2,0,8);fs(c,f,w/s);el(c,-5,-5,2.4,1.6,-.6);fs(c,'rgba(255,255,255,.75)',0);c.restore()}
 const spark=(c,x,y,s,f='#ffe066',w=2.5)=>{c.save();c.translate(x,y);c.scale(s,s);c.beginPath();for(let k=0;k<8;k++){const r=k%2?3.2:10,a=k*P/4;c.lineTo(S(a)*r,-C(a)*r)}c.closePath();fs(c,f,w/s);c.restore()}
 export const frames=20,delay=100,rim=4
@@ -66,7 +87,7 @@ export default(c,t,i)=>{
     for(let k=0;k<8;k++){const a=k*P/4+T*.25;c.beginPath();c.moveTo(C(a)*40,S(a)*40);c.lineTo(C(a)*50,S(a)*50);ln(c,4,'#7cf29a')}
     el(c,0,0,34);fs(c,'#3fcf6a',4);el(c,-8,-12,10,6,-.5);fs(c,'rgba(255,255,255,.45)',0)
     c.beginPath();c.moveTo(-15,1);c.lineTo(-4,12);c.lineTo(16,-11);c.lineWidth=13;c.strokeStyle=O;c.stroke();c.lineWidth=7;c.strokeStyle='#fff';c.stroke()
-    rr(c,-38,40,76,22,8);fs(c,'#fff',3.5);tx(c,'PASSED',0,51,15,'#2fa856',0,'DejaVu Sans')
+    rr(c,-42,39,84,26,9);fs(c,'#fff',3.5);lt(c,'PASSED',0,52,13,'#1c8a45',.5,0,2.2)
     c.restore()}
   // messy bun + back hair
   c.save();c.translate(hx,hy);c.scale(.9,.9);c.rotate(-sus*.12)
@@ -106,6 +127,6 @@ export default(c,t,i)=>{
   if(sus>.5){const rub=S(T*6)*2;sleeve(hx+40,172,hx+58,236,hx-4+rub,hy+50);el(c,hx-4+rub,hy+48,9,8);fs(c,Sk,3);c.beginPath();c.moveTo(hx-10+rub,hy+44);c.lineTo(hx+2+rub,hy+44);ln(c,2)}
   else{sleeve(hx+40,172,hx+52,220,hx+30,226);el(c,hx+30,226,8.5,8);fs(c,Sk,3)}
   // suspicious ? marks
-  if(sus>.5)for(let k=0;k<2;k++){const p=(t*2+k/2)%1;c.save();c.translate(hx+52+k*16,hy-58-p*10+k*14);c.rotate(.2-k*.3);c.scale(.7+.3*S(p*P),.7+.3*S(p*P));tx(c,'?',0,0,24,k?'#ffd23a':'#ff8fb8',5,'DejaVu Sans');c.restore()}
+  if(sus>.5)for(let k=0;k<2;k++){const p=(t*2+k/2)%1;c.save();c.translate(hx+52+k*16,hy-58-p*10+k*14);c.rotate(.2-k*.3);c.scale(.7+.3*S(p*P),.7+.3*S(p*P));lt(c,'?',0,0,21,k?'#ffd23a':'#ff8fb8',.5,1.8,2.4);c.restore()}
   if(sur){c.beginPath();for(const a of[-2.2,-1.6,-1]){c.moveTo(hx+C(a)*68,hy-10+S(a)*62);c.lineTo(hx+C(a)*80,hy-10+S(a)*74)}ln(c,4)}
 }
