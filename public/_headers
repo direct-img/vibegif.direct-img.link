@@ -1,0 +1,5 @@
+# save-as and download suggest <subject>-<action>.vibegif.<ext> instead of just <action>.<ext>, the url stays the same
+/:subject/:action.webp
+  Content-Disposition: inline; filename=":subject-:action.vibegif.webp"
+/:subject/:action.gif
+  Content-Disposition: inline; filename=":subject-:action.vibegif.gif"

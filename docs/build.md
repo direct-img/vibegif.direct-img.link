@@ -14,7 +14,7 @@ The site is deployed by Cloudflare Pages (project `vibegif`) from this repo, wit
 
 On each push Pages clones the repo, runs `npm clean-install`, then `npm run build`, and uploads `dist`.
 
-- `npm run build` is `vite build`, with `site/` as Vite's root (the pages), `public/` copied as is (renders, favicon, robots.txt, 404.html) and the output in the top-level `dist/`. `vite.config.js` fills the gallery and also writes `sitemap.xml`, `catalog.txt`, `catalog.json` and `SKILL.md` into `dist`.
+- `npm run build` is `vite build`, with `site/` as Vite's root (the pages), `public/` copied as is (renders, favicon, robots.txt, 404.html, `_headers`) and the output in the top-level `dist/`. `vite.config.js` fills the gallery and also writes `sitemap.xml`, `catalog.txt`, `catalog.json` and `SKILL.md` into `dist`.
 - The renders in `public/` are committed, so the build doesn't run `npm run gen`.
 - There's no wrangler config, the settings live in the Pages dashboard under Settings, Build.
 - Node isn't pinned, so the build image picks its default. To pin it, set a `NODE_VERSION` environment variable or add a `.node-version` file.

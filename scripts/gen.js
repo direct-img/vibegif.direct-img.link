@@ -6,11 +6,13 @@
 // a file can export dither=true to keep semi-transparent pixels (soft ink washes) in the gif: gif alpha is all or nothing, so instead of cutting at half
 // the alpha is ordered-dithered (8x8 bayer) into a fine stipple that reads as the same tone, the webp keeps the real alpha either way
 // delay can be one number or a list with one entry per frame (ms), a number is spread to every frame since sharp only applies it to the first
+// every render is stamped with its source line (scripts/stamp.js), CC0 https://vibegif.direct-img.link/<id>
 import{createCanvas}from'@napi-rs/canvas'
 import sharp from'sharp'
-import{readdirSync as rd,existsSync as ex,mkdirSync as mk,statSync as st}from'fs'
+import{readdirSync as rd,existsSync as ex,mkdirSync as mk,statSync as st,writeFileSync as wf}from'fs'
 import{dirname,resolve}from'path'
 import{pathToFileURL as url}from'url'
+import{src,tagWebp,tagGif}from'./stamp.js'
 const S=256,redo=process.argv.slice(2)
 const B=[0,32,8,40,2,34,10,42,48,16,56,24,50,18,58,26,12,44,4,36,14,46,6,38,60,28,52,20,62,30,54,22,3,35,11,43,1,33,9,41,51,19,59,27,49,17,57,25,15,47,7,39,13,45,5,37,63,31,55,23,61,29,53,21]
 const walk=d=>rd(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):`${d}/${e.name}`)
@@ -37,11 +39,11 @@ for(const[k,f]of files.entries()){
   })
   mk(dirname(o),{recursive:true})
   const img=b=>sharp(Buffer.concat(b),{raw:{width:S,height:S*frames,channels:4,pageHeight:S}})
-  await img(px).webp({lossless:true,effort:6,loop:0,delay}).toFile(o+'.webp')
-  await img(dither?px.map(p=>{
+  wf(o+'.webp',tagWebp(await img(px).webp({lossless:true,effort:6,loop:0,delay}).toBuffer(),src(id)))
+  wf(o+'.gif',tagGif(await img(dither?px.map(p=>{
     const q=Buffer.from(p)
     for(let k=3,j=0;k<q.length;k+=4,j++)q[k]=q[k]>B[(j>>8&7)*8+(j&7)]*4+2?255:0
     return q
-  }):px).gif({effort:10,loop:0,delay}).toFile(o+'.gif')
+  }):px).gif({effort:10,loop:0,delay}).toBuffer(),src(id)))
   console.log(`${id}  webp ${st(o+'.webp').size}b  gif ${st(o+'.gif').size}b`)
 }
