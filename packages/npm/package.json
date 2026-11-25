@@ -1,6 +1,6 @@
 {
   "name": "vibegif",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Search vibegif's public domain animated webp/gifs and get hotlinkable URLs",
   "type": "module",
   "exports": {
@@ -10,9 +10,13 @@
     }
   },
   "types": "./index.d.ts",
+  "bin": {
+    "vibegif": "cli.js"
+  },
   "files": [
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "cli.js"
   ],
   "engines": {
     "node": ">=18"

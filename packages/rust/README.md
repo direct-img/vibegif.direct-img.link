@@ -2,7 +2,7 @@
 
 # vibegif (Rust)
 
-Search [vibegif](https://vibegif.direct-img.link)'s 1,400+ public domain (CC0) animations from Rust and get URLs you can hotlink. Blocking, Rust 1.85+.
+Search [vibegif](https://vibegif.direct-img.link)'s 1,400+ public domain (CC0) animations from Rust or the terminal and get URLs you can hotlink. Blocking, Rust 1.85+.
 
 ```
 cargo add vibegif
@@ -33,5 +33,17 @@ An `Item` has `id`, `section`, `description` and `tags`. `item.url("webp")` is i
 Search scores each query term: an exact tag beats a tag prefix, which beats a word in the description. Results come best first, ties break by id, and an empty query returns everything that passes the filters, in id order. A plain `catalog.search("cat")` works too. It returns 50 at most unless you set `.limit(n)` (`.limit(None)` for every match).
 
 The catalog comes from [catalog.json](https://vibegif.direct-img.link/catalog.json). It's fetched on first use and checked again once it's an hour old (`Catalog::new().ttl(duration)`, or `catalog.refresh(true)` to check now). An unchanged catalog costs a 304, and a failed check keeps the items already fetched. `Catalog` is `Send + Sync`, so one can be shared across threads.
+
+## Command line
+
+```sh
+vibegif search rainbow brain -n 3  # id, URL and description per line
+vibegif random -s loader --gif     # one random loader, as a gif
+vibegif lucky                      # any anim at all
+vibegif get cat/blink --json       # JSON instead of tab-separated lines
+vibegif sections                   # name and count per line, tags too
+```
+
+Install it with `cargo install vibegif`. `-t` filters by tag (repeatable), `-n 0` lists every match and `vibegif --help` has the rest. It exits 1 when nothing matches.
 
 Tests: `cargo test`

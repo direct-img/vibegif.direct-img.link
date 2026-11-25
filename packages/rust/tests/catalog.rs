@@ -190,3 +190,40 @@ fn catalog_is_send_sync() {
     fn check<T: Send + Sync>() {}
     check::<Catalog>();
 }
+
+#[test]
+fn cli() {
+    let url = serve().0;
+    let run = |args: &[&str]| {
+        let o = std::process::Command::new(env!("CARGO_BIN_EXE_vibegif"))
+            .args(args)
+            .env("VIBEGIF_CATALOG", &url)
+            .output()
+            .unwrap();
+        (o.status.code().unwrap(), String::from_utf8(o.stdout).unwrap(), String::from_utf8(o.stderr).unwrap())
+    };
+    let ok = |out: String| (0, out, String::new());
+    assert_eq!(
+        run(&["search", "cat", "-n", "2"]),
+        ok(format!(
+            "cat/blink\t{SITE}/cat/blink.webp\ta cat blinking slowly, glow of a screen\n\
+             cat/loaf\t{SITE}/cat/loaf.webp\tcat loaf under the night sky\n"
+        ))
+    );
+    assert_eq!(
+        run(&["get", "brain/glow", "--json", "--gif"]),
+        ok(format!(
+            "{{\"id\":\"brain/glow\",\"section\":\"psychedelic\",\"description\":\"side view brain with a rainbow glow\",\
+             \"tags\":[\"brain\",\"rainbow\",\"glow\"],\"url\":\"{SITE}/brain/glow.gif\"}}\n"
+        ))
+    );
+    assert_eq!(
+        run(&["random", "-s", "science"]),
+        ok(format!("brain/zap\t{SITE}/brain/zap.webp\tneurons firing in a brain\n"))
+    );
+    assert_eq!(run(&["sections"]), ok("animals\t3\npsychedelic\t1\nscience\t1\n".into()));
+    assert_eq!(run(&["get", "nope/x"]), (1, String::new(), "vibegif: no match\n".into()));
+    let usage = "vibegif: lucky doesn't take -n\nRun 'vibegif --help' for usage.\n";
+    assert_eq!(run(&["lucky", "-n", "3"]), (2, String::new(), usage.into()));
+    assert_eq!(run(&["--version"]), ok(format!("vibegif {}\n", env!("CARGO_PKG_VERSION"))));
+}

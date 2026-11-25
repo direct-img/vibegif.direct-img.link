@@ -2,7 +2,7 @@
 
 # vibegif (JavaScript)
 
-Search [vibegif](https://vibegif.direct-img.link)'s 1,400+ public domain (CC0) animations from JavaScript and get URLs you can hotlink. No dependencies, works in browsers, Node 18+, Bun and Deno, with types included.
+Search [vibegif](https://vibegif.direct-img.link)'s 1,400+ public domain (CC0) animations from JavaScript or the terminal and get URLs you can hotlink. No dependencies, works in browsers, Node 18+, Bun and Deno, with types included.
 
 ```
 npm i vibegif
@@ -31,5 +31,17 @@ An `Item` has `id`, `section`, `description` and `tags`. `item.url()` is its web
 Search scores each query term: an exact tag beats a tag prefix, which beats a word in the description. Results come best first, ties break by id, and an empty query returns everything that passes the filters, in id order. It returns 50 at most unless you pass `limit` (`limit: null` for every match).
 
 The catalog comes from [catalog.json](https://vibegif.direct-img.link/catalog.json). It's fetched on first use and checked again once it's an hour old (`new Catalog({ ttl: seconds })`, or `await catalog.refresh(true)` to check now). An unchanged catalog costs a 304, and a failed check keeps the items already fetched. Calls made while a fetch is in flight share it.
+
+## Command line
+
+```sh
+npx vibegif search rainbow brain -n 3  # id, URL and description per line
+npx vibegif random -s loader --gif     # one random loader, as a gif
+npx vibegif lucky                      # any anim at all
+npx vibegif get cat/blink --json       # JSON instead of tab-separated lines
+npx vibegif sections                   # name and count per line, tags too
+```
+
+`npx` runs it without installing anything; after `npm i -g vibegif` it's just `vibegif`. `-t` filters by tag (repeatable), `-n 0` lists every match and `vibegif --help` has the rest. It exits 1 when nothing matches.
 
 Tests: `npm test`

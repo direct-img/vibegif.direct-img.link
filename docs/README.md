@@ -17,7 +17,7 @@ Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Building a UI with an AI agent? Give it the [skill](../skills/vibegif/SKILL.md) and it finds and adds anims on its own.
 
-Searching from code? [Python](../packages/python) `pip install vibegif`, [JavaScript](../packages/npm) `npm i vibegif`, [Rust](../packages/rust) `cargo add vibegif`.
+Searching from code or the terminal? [Python](../packages/python) `pip install vibegif`, [JavaScript](../packages/npm) `npm i vibegif`, [Rust](../packages/rust) `cargo add vibegif`.
 
 <a href="https://starry.direct-img.link">
   <picture>
