@@ -1,3 +1,5 @@
+<p align="center"><img src="https://vibegif.direct-img.link/serverless/cloud.webp" width="128" alt="girl lying on a cloud with her laptop"></p>
+
 # Cloudflare build machine
 
 What `npm run build` runs on, measured in a Cloudflare Pages preview build on 2026-10-25. Cloudflare doesn't publish these specs, so they can change without notice.
