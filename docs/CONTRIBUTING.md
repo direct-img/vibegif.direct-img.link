@@ -1,6 +1,6 @@
-<p align="center"><img src="https://vibegif.direct-img.link/officechair/spin.webp" width="128" alt="girl spinning in an office chair"></p>
-
 # Contributing
+
+![girl spinning in an office chair](https://vibegif.direct-img.link/officechair/spin.webp)
 
 Got AI? Use them to make new items or whole new sections, then open a PR to add them to this public domain gallery. Editing or improving existing items is welcome too.
 

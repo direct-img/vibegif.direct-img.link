@@ -1,6 +1,6 @@
-<p align="center"><img src="https://vibegif.direct-img.link/buildpass/cheer.webp" width="128" alt="girl cheering with party poppers as the build passes"></p>
-
 # Build
+
+![girl cheering with party poppers as the build passes](https://vibegif.direct-img.link/buildpass/cheer.webp)
 
 The site is deployed by Cloudflare Pages (project `vibegif`) from this repo, with these settings:
 
