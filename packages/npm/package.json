@@ -1,0 +1,37 @@
+{
+  "name": "vibegif",
+  "version": "0.1.0",
+  "description": "Search vibegif's public domain animated webp/gifs and get hotlinkable URLs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "gif",
+    "webp",
+    "animation",
+    "cc0",
+    "public-domain"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://vibegif.direct-img.link",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direct-img/vibegif.direct-img.link.git",
+    "directory": "packages/npm"
+  }
+}

@@ -1,0 +1,23 @@
+[package]
+name = "vibegif"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Search vibegif's public domain animated webp/gifs and get hotlinkable URLs"
+license = "CC0-1.0"
+homepage = "https://vibegif.direct-img.link"
+repository = "https://github.com/direct-img/vibegif.direct-img.link"
+documentation = "https://docs.rs/vibegif"
+readme = "README.md"
+keywords = ["gif", "webp", "animation", "cc0", "public-domain"]
+categories = ["multimedia::images", "api-bindings"]
+include = ["src/**", "tests/**", "README.md"]
+
+[dependencies]
+fastrand = "2.5.*"
+serde = { version = "1.0.*", features = ["derive"] }
+serde_json = "1.0.*"
+ureq = "3.5.*"
+
+[dev-dependencies]
+flate2 = "1.1.*"
