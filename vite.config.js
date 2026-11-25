@@ -5,7 +5,8 @@
 // hand-made files that have no gen file go in the first section
 // only files inside a subject folder are tiles, so root files like favicon.webp stay out
 // tile images use the plain url, no ?v= cache buster, so copying the image address gives the clean hotlink (a changed file may show stale until caches expire)
-// <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons
+// <!--ld--> gets CC0 license data for every tile image, so image search can list them under creative commons,
+// plus a WebSite entry named vibegif, which Google reads for the site name it shows in results
 // and the build writes sitemap.xml with the page and its tile images (google reads up to 1000 images per page)
 // plus catalog.json ({count,items:[{id,section,description,tags}]}, tags are the subject and action plus those of an optional `// tags: a, b` second comment line of its gen script), for programs,
 // plus catalog.txt, one line per tile: <id> | the first comment line of its gen script | its tags line, so people and AIs can grep for one to hotlink
@@ -37,8 +38,9 @@ const figure=t=>{
   const links=['webp','gif'].filter(k=>t.fm[k]).map(k=>`<a href="/${t.id}.${k}">${k}</a>`).join(' ')
   return`<figure><a href="/${t.id}.${t.x}"><img src="${t.src}" alt="${t.id.replace('/',' ')}" width="${t.w}" height="${t.h}" loading="lazy" decoding="async"></a><figcaption>${links}</figcaption></figure>`
 }
-const ld=all=>`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':
-  all.map(t=>({'@type':'ImageObject',contentUrl:site+t.src,license:cc0,acquireLicensePage:site+'/'}))})}</script>`
+const ld=all=>`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':[
+  {'@type':'WebSite',name:'vibegif',alternateName:'vibegif.direct-img.link',url:site+'/'},
+  ...all.map(t=>({'@type':'ImageObject',contentUrl:site+t.src,license:cc0,acquireLicensePage:site+'/'}))]})}</script>`
 const sitemap=all=>`<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>${site}/</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod>
