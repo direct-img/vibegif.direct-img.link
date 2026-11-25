@@ -17,6 +17,8 @@ Want to add some? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Building a UI with an AI agent? Give it the [skill](../skills/vibegif/SKILL.md) and it finds and adds anims on its own.
 
+Using Python? `pip install vibegif` and search the catalog from code, see [packages/python](../packages/python).
+
 <a href="https://starry.direct-img.link">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://starry.direct-img.link/direct-img/vibegif.direct-img.link/dark.svg">

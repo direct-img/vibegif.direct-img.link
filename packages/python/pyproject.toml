@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibegif"
+version = "0.1.0"
+description = "Search vibegif's public domain animated webp/gifs and get hotlinkable URLs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "CC0-1.0"
+keywords = ["gif", "webp", "animation", "cc0", "public-domain"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://vibegif.direct-img.link"
+Source = "https://github.com/direct-img/vibegif.direct-img.link/tree/main/packages/python"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["vibegif"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
