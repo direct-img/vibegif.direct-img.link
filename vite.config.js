@@ -35,8 +35,8 @@ const tiles=(list=sections)=>{
   }))
 }
 const figure=t=>{
-  const links=['webp','gif'].filter(k=>t.fm[k]).map(k=>`<a href="/${t.id}.${k}">${k}</a>`).join(' ')
-  return`<figure><a href="/${t.id}.${t.x}"><img src="${t.src}" alt="${t.id.replace('/',' ')}" width="${t.w}" height="${t.h}" loading="lazy" decoding="async"></a><figcaption>${links}</figcaption></figure>`
+  const links=['webp','gif'].filter(k=>t.fm[k]).map(k=>`<a href="/${t.id}.${k}" target="_blank">${k}</a>`).join(' ')
+  return`<figure><a href="/${t.id}.${t.x}" target="_blank"><img src="${t.src}" alt="${t.id.replace('/',' ')}" width="${t.w}" height="${t.h}" loading="lazy" decoding="async"></a><figcaption>${links}</figcaption></figure>`
 }
 const ld=all=>`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':[
   {'@type':'WebSite',name:'vibegif',alternateName:'vibegif.direct-img.link',url:site+'/'},
